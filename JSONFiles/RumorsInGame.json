@@ -1,0 +1,122 @@
+{
+   "Level0Rumor": 
+   {
+     "ThereIsAFranenstine":
+   {
+   	   "Name": "There is a Frankenstine",
+	   "Description": "Ahhh a Frankenstine, this is clearly a debug rumor with three options",
+	   "Quests":["Burn Frankenstine", "Save Frankenstine", "Dance with Frankenstine"],
+	   "RepeatableType": "repeatable"
+	   
+   },
+
+   "StompinGrounds":
+   {  
+      "Name": "Stompin grounds",
+	   "Description": "Orks think they are tougher than you are, show em' who's boss",
+	   "Quests":["The only option is to fight."],
+	   "RepeatableType": "basic"
+	  
+	   
+   }, 
+
+    "EgyptTroubles":
+   {  
+     "Name": "Egypt troubles",
+	   "Description": "The mummies from sandy land are attacking, 
+	   better do something before they steal your beer, and a mop",
+	   "Quests":["Fight the mummies with fire", "Hunt down the source of the mummies", "Pretend to be mummies so the mummies don't get you"],
+	   "RepeatableType": "basic"
+	 
+   },
+
+    "Hide and Seek":
+   {  
+      "Name": "Hide and seek",
+	   "Description": "Our eccentric mayor has challenged the town
+	   to a game of hide and seek, anyone not found by the end of the day
+	   will win a prize",
+	   "Quests":["Play hide and seek"],
+	   "RepeatableType": "fetch"
+	   
+   }, 
+
+    "Treasure in the deeps":
+   {  
+       "Name": "Treasure in the deeps",
+	   "Description": "They say that their is a treasure long forgotten 
+	   burried beneath the town, send anyone brave enough to go find it",
+	  "Quests":["Go get the treasure"],
+	  "RepeatableType": "basic"
+   },
+
+   "Haunted house of haunts":
+   {  
+   "Name": "Haunted house of haunts",
+	   "Description": "Go look a the old 
+	   mcGuffin mannor and see if ghosts are real",
+	  "Quests":["Do research on ghosts", " Prepare for a fight with ghosts" , "Sneak into the house for some awsome recon"],
+	  "RepeatableType": "story"
+	  
+   },
+
+     "The hardest quest ever":
+   {  
+   "Name": "The hardest quest ever",
+	   "Description": "An impossible quest for debugging purposes",
+	  "Quests":["DebugHardQuest"],
+	  "RepeatableType": "story"
+	  
+   }
+  
+   },
+
+  "Level1Rumor":
+  {
+       "A LEVEL 1 QUEST":
+	   { "Name": "A LEVEL 1 QUEST",
+	   "Description": "You found me!",
+	    "Quests":["Test"],
+		"RepeatableType": "basic"
+	   },
+
+	  "CheckCheck":
+	   {
+	   	   "Name": "CheckCheck",
+		   "Description": "Another level one rumor",
+		   "Quests":["Test"],
+		   "RepeatableType": "fetch"
+	   }
+
+  },
+
+  "Unlockable Rumors":
+
+  {
+      "Hello World":
+  	  {
+	  	  "Name": "Hello World",
+		  "Description": "You found me!",
+		   "Quests":["Test"],
+		   "RepeatableType": "story"
+	  },
+
+	  "Wrong":
+  	  {
+	  	  "Name": "Right place, wrong indexer",
+		  "Description": "uhhhhhhhhhhhhh",
+		   "Quests":["Test"],
+		   "RepeatableType": "fetch"
+	  },
+
+	    "OneStepBeyond":
+  	  {
+	  	  "Name": "OneStepBeyond",
+		  "Description": "OneStepBeyond Hello world!",
+		   "Quests":["Test"],
+		   "RepeatableType": "story"
+	  }
+
+  }
+  
+}

@@ -1,0 +1,791 @@
+{
+
+  "Deirdre Downton": {
+    "Parchments, Please": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "So, you're the squirt that runs this place now?",
+          "NONE"
+        ],
+        [
+          "Ehehehe, little young I'd say, but I suppose we'll see in time.",
+          "NONE"
+        ],
+        [
+          "I'm Deidre Downton- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
+          "NONE"
+        ],
+        [
+          "But don't get too starstruck dearie- so long as you keep my lips wet, you and I will be square!",
+          "NONE"
+        ],
+        [
+          "By the way... I don't see your bartending certification hung up anywhere. That might prove to be an issue.",
+          "NONE"
+        ],
+        [
+          "Don't get me wrong- I'll still be ordering something. Just figured you might want to rectify that quickly, ehehehe~",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [ [ "both", "Deirdre Downton", "Deidre can Help" ] ]
+    },
+
+    "Deidre can Help": {
+      "Name": "Deidre can Help",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Hmm? You're looking at me funny, dearie.",
+          "NONE"
+        ],
+        [
+          "Ehehe! Then again, you always look funny.",
+          "NONE"
+        ],
+        [
+          "You're concerned about the quake from earlier, hmm? Don't fret, why don't you let Auntie Deidre go figure it out?",
+          "NONE"
+        ],
+        [
+          "I'll be back tomorrow with everything you need to know. Just hand me that little quest contract and I'll be on my way... after you give me a little something to drink for the trouble.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Deidre Returns": {
+      "Name": "Hello World",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Never fear, my dear- I've returned with the requested information despite its... foreboding nature... eheheheh~",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Conversation1": {
+      "Name": "Conversation1",
+      "IsConversationOneShot": false,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Morning, dearie. Glad to see your bar starting to flourish with each passing day!",
+          "NONE"
+        ],
+        [
+          "Of course, you have a long way to go before you reach my level of success, hmm?",
+          "NONE"
+        ],
+        [
+          "Ehehehe... for future notice, the quicker you serve me a drink, the quicker I'll quit teasing you!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
+
+  },
+
+  "Artie": {
+
+    "Introduction": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "What's up, barkeep? By the way, I should probably introduce myself- you'll be seeing a lot of me!",
+          "NONE"
+        ],
+        [
+          "Name's Artemis Cagosh, but that's such a mouthful. You should just call me Artie.",
+          "NONE"
+        ],
+        [
+          "And don't worry- this thing ain't for bashin' skulls- well, not yours, at least!",
+          "NONE"
+        ],
+        [
+          "It's mainly for gettin' rid of some of the more hefty chunks of rock down in the mines... heh, you know what I mean?",
+          "NONE"
+        ],
+        [
+          "Er, sorry- didn't mean to talk your ear off.",
+          "NONE"
+        ],
+        [
+          "What, you need me to pick something up from City Hall? Well sure, pal! A quick drink might be appreciated though.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [ [ "both", "Artie", "AfterExplosion" ] ]
+    },
+
+    "AfterExplosion": {
+      "Name": "AfterExplosion",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Man, you won't believe the day I had, barkeep...",
+          "NONE"
+        ],
+        [
+          "Or, uh, maybe you will, dependin' on whether or not you felt that quake from here, heh.",
+          "NONE"
+        ],
+        [
+          "Point is, the mines've collapsed, and I'm outta work for a bit.",
+          "NONE"
+        ],
+        [
+          "Not really sure what to do in the meantime, but figure a drink might help me for a bit.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Artie Can Help": {
+      "Name": "Artie Can Help",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Say, barkeep? Without a job, I don't have much to do.",
+          "NONE"
+        ],
+        [
+          "If there's anything I can help you with, lemme know.",
+          "NONE"
+        ],
+        [
+          "I ain't good at much, but I got a muscle or two I can leverage.",
+          "NONE"
+        ],
+        [
+          "That is, so long as I'm hydrated, hah!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Conversation1": {
+      "Name": "Conversation1",
+      "IsConversationOneShot": false,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Hey pal! Glad to see a friendly face, 'specially considerin' the recent events.",
+          "NONE"
+        ],
+        [
+          "Everyone's losin' their heads over this Spire thing, and I gotta tell you, I'm not quite sure what to make of it.",
+          "NONE"
+        ],
+        [
+          "I just wish there was a way to help more, y'know?",
+          "NONE"
+        ],
+        [
+          "Anyways, pass me a drink- gotta hankerin' for one of your brews!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
+
+  },
+
+  "Old Man Horace": {
+
+    "Introduction": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "Greetings and salutations, friend!",
+          "NONE"
+        ],
+        [
+          "The name's Horace R. Schuster and, I assure you, the pleasure's all mine.",
+          "NONE"
+        ],
+        [
+          "This is such a quaint little pub you have here- much more modest than the ritzy establishments I'd frequent in my youth!",
+          "NONE"
+        ],
+        [
+          "Those places were so lifeless and ostentatious though, I much more greatly appreciate the modest decor you have here!",
+          "NONE"
+        ],
+        [
+          "But I shan't waste any more of your precious time, and will get straight to the point.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [ [ "both", "Old Man Horace", "AfterExplosion" ] ]
+    },
+
+    "AfterExplosion": {
+      "Name": "AfterExplosion",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "My goodness! Did you hear that?",
+          "NONE"
+        ],
+        [
+          "'Twas enough to ruin an old man's already poor hearing.",
+          "NONE"
+        ],
+        [
+          "Something that powerful must have impacted dozens of civilians. I'm fortunate to have been here, unaffected. And yet, I now have a responsibility to aid those who were.",
+          "NONE"
+        ],
+        [
+          "Friend, I have always dreamed of becoming an adventurer, but my family business prevented me from doing so. Perhaps this is a chance to change all that.",
+          "NONE"
+        ],
+        [
+          "If you hear of anything that suits my talents, please, allow me to help.",
+          "NONE"
+        ],
+        [
+          "In the meantime, I'd love to partake in another of your finest brews.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Horace Can Help": {
+      "Name": "Horace Can Help",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Greetings, friend! I've been told you could use a hand with relief efforts!",
+          "NONE"
+        ],
+        [
+          "Well, fortunately for you, I have, not one, but two hands right here!",
+          "NONE"
+        ],
+        [
+          "I may not have the strength of my youth, but I've found how to wield words over the years.",
+          "NONE"
+        ],
+        [
+          "Come now! First a drink, and then I'll be on my way.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Conversation1": {
+      "Name": "Conversation1",
+      "IsConversationOneShot": false,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Ah, there's my favorite bartender. Although it's not as if I frequent any other establishment, ho ho!",
+          "NONE"
+        ],
+        [
+          "Have you been hearing about the protests up in the Borough? I imagine the Corporeal doesn't appreciate the civil unrest at their doorstep one bit!",
+          "NONE"
+        ],
+        [
+          "It makes an old man wish there was more he could do in times like this, to help the next generation.",
+          "NONE"
+        ],
+        [
+          "...it also tends to make me quite parched! Ho ho ho!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
+
+  },
+
+  "Nell": {
+
+    "Your Civic Duty": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "So you're the altruistic bartender who's been helping coordinate disaster relief after Tuesday's events, hmm? I must say, it's a pleasure to meet you. ",
+          "NONE"
+        ],
+        [
+          "The name's Nell. I'm a freelance journalist, and I'm interested in writing a quick spot about this bar, if you don't mind?",
+          "NONE"
+        ],
+        [
+          "Oh, who am I kidding, of course you don't. There's no such thing as bad publicity!",
+          "NONE"
+        ],
+        [
+          "That being said, there's no such thing as a bad free drink either... if you catch my drift?",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
+
+  },
+
+  "Mavis": {
+
+    "Introduction": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "...um, excuse me?",
+          "NONE"
+        ],
+        [
+          "I don't mean to, er, come off as disrespectful- I imagine you're probably busy! And believe me, I know what it's like to be busy.",
+          "NONE"
+        ],
+        [
+          "But, um... well, I represent the College of Magical Research and Recovery, and, um... well, thanks to your actions, you've kind of brought us to an impasse.",
+          "NONE"
+        ],
+        [
+          "Although we at the College didn't call for the citizens to protest, we would have benefitted greatly, if, y'know, they'd succeeded.",
+          "NONE"
+        ],
+        [
+          "...which they didn't.",
+          "NONE"
+        ],
+        [
+          "*ahem*",
+          "NONE"
+        ],
+        [
+          "Please don't get me wrong though! I'm not here to chew you out or anything. I just need you to know what's at stake here.",
+          "NONE"
+        ],
+        [
+          "Because, if we at the College are right (and we often are)...",
+          "NONE"
+        ],
+        [
+          "...then there's a terrible storm brewing on the horizon.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
+
+
+  },
+
+  "Gaius": {
+
+    "Introduction": {
+      "Name": "Introduction",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "...",
+          "NONE"
+        ],
+        [
+          ".......",
+          "NONE"
+        ],
+        [
+          "Bartender.",
+          "NONE"
+        ],
+        [
+          "I wish not to impede your financial gains, as you have impeded the Corporeal's efforts, so I will be brief.",
+          "NONE"
+        ],
+        [
+          "We understand the public's thirst for information, but there is a reason for our secrecy.",
+          "NONE"
+        ],
+        [
+          "For you see, our city is in more danger than anyone yet realizes.",
+          "NONE"
+        ],
+        [
+          "And things are about to get much, much worse.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    }
+  },
+
+  "Jim": {
+
+    "Introduction": {
+      "Name": "???",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": true,
+      "Stanzas": [
+        [
+          "...or maybe that confused look on your face means that you're still working on learning the ropes? Hah!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Now You Know Me": {
+      "Name": "Jim",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Name's Jim. I've been a patron of your parents since they opened this place!",
+          "NONE"
+        ],
+        [
+          "...you still seem a little rattled. Tell you what, why don't I give you a helping hand! It's the least I can do for your parents' decades of service.",
+          "NONE"
+        ],
+        [
+          "To start off, why don't you make me a drink? Been a while since I've had one of your parent's expert brews.",
+          "NONE"
+        ],
+        [
+          "It shouldn't be all that hard. Each of the taps are color-coded after all, ho ho!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Jim Explains Rumors": {
+      "Name": "Jim Explains Rumors",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Whoa there- looks like one of your patrons has given you a quest!",
+          "NONE"
+        ],
+        [
+          "...what're you giving me that look for? You didn't think that serving drinks was your ONLY job as a bartender, right?",
+          "NONE"
+        ],
+        [
+          "Whether wittingly or unwittingly, people tend to spill all sorts of interesting problems to whomever provides them alcohol.",
+          "NONE"
+        ],
+        [
+          "It's up to you to help resolve these issues in the most efficient way- by passing them off to another patron and bribing them with drinks- ho ho!",
+          "NONE"
+        ],
+        [
+          "This first one's easy- you just need someone to pick up your bartending certification, right?",
+          "NONE"
+        ],
+        [
+          "Why not just ask the first person to come through the bar next? I'll take a seat in the back, just in case.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "EndDay1": {
+      "Name": "Jim",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Looks like you had a fairly successful first day!",
+          "NONE"
+        ],
+        [
+          "I'm gonna head on out so you can close up shop, but don't worry- I'll be here bright and early in the morn'!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Day 2 Intro": {
+      "Name": "Jim",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Mornin', kid! Y'know, I'm starting to get used to it being you behind that bar instead of your folks.",
+          "NONE"
+        ],
+        [
+          "Despite your age, you actually make for a pretty good barkeep. Ho ho!",
+          "NONE"
+        ],
+        [
+          "Now then, why don't you pour me a-",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+
+    "The Commotion": {
+      "Name": "Jim",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "...holy smokes- kid, did you feel that?",
+          "NONE"
+        ],
+        [
+          "I don't think it's just me... I only had a couple drinks before stopping by!",
+          "NONE"
+        ],
+        [
+          "Felt almost like an earthquake, but a lot more violent and sudden. I wonder what's happened?",
+          "NONE"
+        ],
+        [
+          "Whoa, whoa, hold on now- I see that look of eager curiosity in your eyes, but you've got a bar to run, right?",
+          "NONE"
+        ],
+        [
+          "Why don't you have send another one of your patrons off? I know Deidre is a fairly perceptive lass, she may be best suited to the task.",
+          "NONE"
+        ],
+        [
+          "And it'll give you the opportunity to keep doing your job! Speaking of which...",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "After Sending Deidre": {
+      "Name": "Jim",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "And now we wait! Ol' Deidre may be a little... eccentric, but I can speak to her reliability.",
+          "NONE"
+        ],
+        [
+          "Also, you may have realized this already, but your efforts to help out don't go unnoticed.",
+          "NONE"
+        ],
+        [
+          "The more tasks you hand out to folks, the more chummy they'll tend to be with you.",
+          "NONE"
+        ],
+        [
+          "And who knows? Maybe you'll end up learning something new about them in the process!",
+          "NONE"
+        ],
+        [
+          "Anways, I'm gonna go nurse this drink in the back for a while and let you tend the bar. Best of luck!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Answer the Call": {
+      "Name": "Answer the Call",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "So I take it you've heard the news by now, hmm? After all, it's not like you can't see it from here, ho ho!",
+          "NONE"
+        ],
+        [
+          "Of course, I don't mean to make light of this situation. The Spire has been our benefactor of magical power for as long as anyone can remember.",
+          "NONE"
+        ],
+        [
+          "After all, that's why Kastonia was built around that looming tower!",
+          "NONE"
+        ],
+        [
+          "But I digress... there's not much that can be done about the Spire now, but the devastation caused by yesterday's event is still very present.",
+          "NONE"
+        ],
+        [
+          "I know this isn't quite what you signed up for, kid, but maybe you could see about sending another patron off to provide aid? The city could use it.",
+          "NONE"
+        ],
+        [
+          "Here, I'll hand this off to you while you think it over.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "GDC Tutorial End": {
+      "Name": "GDC Tutorial End",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Goodness! That sounded rather foreboding, didn't it? I wonder what they meant by that.",
+          "NONE"
+        ],
+        [
+          "Unfortunately for you, the devs aren't willing to divulge that information quite yet. What a bunch of teases, ho ho!",
+          "NONE"
+        ],
+        [
+          "However, I have good news. If you're interested in keeping up with this game's development cycle, you can follow the devs on Twitter!",
+          "NONE"
+        ],
+        [
+          "Check them out at @ArmsAndAle, and give them a follow! I'm sure they'd appreciate it.",
+          "NONE"
+        ],
+        [
+          "Well, alright kid. That's about all I've got for now. Hopefully I'll be seeing you soon.",
+          "NONE"
+        ],
+        [
+          "Watch out for the release of 'A Tale of Arms and Ale' this coming May!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    }
+
+  }
+}
+

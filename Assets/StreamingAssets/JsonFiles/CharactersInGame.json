@@ -1,0 +1,83 @@
+{
+  "Unlockable": {
+
+    "Deirdre Downton": {
+      "Name": "Deirdre Downton",
+      "patronsTolerance": "HIGH",
+      "skills": [ "smart", "strong" ],
+      "backStory1": "“Heh heh… Good evening, bartender. Mind if an old crone rests her bones here awhile? And if you could bring me a good, strong brew, maybe I won’t hex you, heh heh heh~”",
+      "backStory2": "“Heh heh heh… your brewing may be nothing to sneeze at, but there’s no beating my potions, bartender. People come from all around to get their hands on them, and will pay most any price! Want to sample? Heh heh heh~!”",
+
+      "backStory3": "“Heh heh… You’ve done right by this old witch, bartender! If you do me a favor, I might have something good for you, heh heh~ I need something very special for my potion brewing, a very rare palladium cauldron! It’s properties are perfect for what I intend, and I know exactly where one is. The only problem is an this old witch, powerful though I may be, can’t journey such distances and transport it without a little assistance. I need someone spry to fetch it! Find me someone with the vigor and competence to transport such a valuable and important item and you’ll be rewarded well! Heh heh heh!”",
+      "BIO": "Deidre's ancestors have been the city's most popular/trusted potion brewers for centuries, though most of the city's living memory is only of her. Though intimidating at first glance for some, she has a good sense of humor and is generally kind, but is full of sharp wit. She tends to know more than she lets on, and has immense wisdom hidden beneath her old and frail exterior."
+
+    },
+
+    "Artie": {
+      "Name": "Artie",
+      "patronsTolerance": "High",
+      "skills": [ "strong", "sway" ],
+      "backStory1": "[FPO] Artie",
+      "backStory2": "[FPO] Artie2 ",
+      "backStory3": "[FPO] Artie 3",
+      "BIO": "Once a laborer in the mines, Artie chose to forgo that path and become an adventurer. Nowadays they use their immense strength and trusty hammer to bust skulls instead of rocks."
+    },
+
+    "Old Man Horace": {
+      "Name": "Old Man Horace",
+      "patronsTolerance": "MID",
+      "skills": [ "sway", "smart" ],
+      "backStory1": " Horace always dreamed of being an adventurer, ever since he was very young. However, his family was in the cobbling business (making shoes and boots) and since this is a town of adventurers, replacement shoes and boots were always in demand Horace didn’t complain, he enjoyed his work and was never low on things to do.",
+      "backStory2": "During quieter days, he often daydreamed about adventure, thought of a world beyond the city. Horace took extra care to study those who came into his shop, their mannerisms, how they carried themselves, and especially their fantastical stories of peril and heroism. ",
+      "backStory3": " Many years passed and after a long and fruitful life of shoemaking, Horace retired at the age of 50 and closed up his shop. Horace now lives his retired life as a brave adventurer, just like the ones he saw growing up. Horace greets each challenge as a chance to tell an amazing story when he gets home from a long venture.However back in his day, monsters were meaner, scarier and had teeth as long as yer arms!",
+      "BIO": "Horace always dreamed of being an adventurer, ever since he was very young. However, his family was in the cobbling business (making shoes and boots) and since this is a town of adventurers, replacement shoes and boots were always in demand Horace didn't complain, he enjoyed his work and was never low on things to do."
+    },
+
+    "Nell": {
+      "Name": "Nell",
+      "patronsTolerance": "NONE",
+      "skills": [ "Sneak", "Sway" ],
+      "backStory1": "[FPO] nell1",
+      "backStory2": "[FPO] nell2",
+      "backStory3": "[FPO] nell 3",
+      "BIO": "A hard-boiled investigative journalist who specializes in exposing criminals and bringing them to justice. Lately, her main focus has been following the activity of a shadowy criminal, known only as 'Sleazy Pete'."
+    },
+
+    "Mavis": {
+      "Name": "Mavis Hullbrook",
+      "patronsTolerance": "NONE",
+      "skills": [ "Smart", "sneak" ],
+      "backStory1": "[FPO] Mavis 1",
+      "backStory2": "[FPO] Mavis 2",
+      "backStory3": "[FPO] Mavis 3",
+      "BIO": "Despite being incredibly gifted and bright, Mavis' timid nature often leaves her doing the work no one else wants to do. She may be overworked and underappreciated, but no one knows the bureaucratic processes of The College better than she."
+    },
+
+
+    "Gaius": {
+      "Name": "Gaius",
+      "patronsTolerance": "NONE",
+      "skills": [ "Strong", "smart" ],
+      "backStory1": "[FPO] Gaius 1",
+      "backStory2": "[FPO] Gaius 2",
+      "backStory3": "[FPO] Gaius 3",
+      "BIO": "Once a banner standard for the Corporeal's crusaders, Gaius now falls back to a role of liasion. No one knows what happened during the battle that left him a solitary survivor, but ever since, he tends to avoid others, and is never seen without his armor on."
+    },
+
+
+    "Jim": {
+      "Name": "Jim",
+      "patronsTolerance": "HIGH",
+      "skills": [ "???" ],
+      "backStory1": "“Jim jim jim”",
+      "backStory2": "“Jimmy jim jim",
+      "backStory3": "“Jim jam jimmy”",
+      "BIO": "JIM!"
+    }
+
+  }
+
+}
+
+  
+

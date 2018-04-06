@@ -1,0 +1,383 @@
+{
+
+
+
+
+  "Hi There Darren!": {
+    "Name": "Hi There Darren!",
+    "Description": "\"Darren wants some information on the spire! Send someone to help
+     This person should be pretty smart!",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Smart", 5 ] ],
+    "Rewards": [
+      [ "ING", "RED", 10 ],
+      [ "GOLD", "RED", 50 ]
+    ],
+    "EXP": 10,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "HOME",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "How are you Darren?": {
+    "Name": "How are you Darren?",
+    "Description": "\"Darren is doing alright, but you should probably",
+    "get" "him",
+    "som" "info",
+    "on" "the",
+    "spire!" "Send",
+    "someone" "strong",
+    "to" "carry",
+    "his" "books!\",",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Strong", 4 ] ],
+    "Rewards": [ [ "ING", "BLUE", 20 ] ],
+    "EXP": 15,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "HOME",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+
+  },
+
+  "Say bye to Hermias": {
+    "Name": "Say bye to Hermias",
+    "Description": " Hermias says she needs to leave on business, Send someone with a high 
+    smart to see her off and bid her adieu",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Smart", 5 ] ],
+    "Rewards": [
+      [ "ING", "GREEN", 10 ],
+      [ "ING", "YELLOW", 10 ]
+    ],
+    "EXP": 20,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Ask Furbrow about his camera": {
+    "Name": "Ask Furbrow about his camera",
+    "Description": ""Ah yes" my camera! " This is a quotation check ",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ "Sway", 4 ],
+    "Rewards": [ [ "ING", "YELLOW", 10 ] ],
+    "EXP": 20,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH_WEST",
+    "MaxPatron": 2,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Introduce Furbrow to Nell": {
+    "Name": "Introduce Furbrow to Nell",
+    "Description": "The world needs newspapers and newspapers need pictures!",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sway", 4 ] ],
+    "Rewards": [ [ "GOLD", "YELLOW", 200 ] ],
+    "EXP": 15,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "EAST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Say hi to gem": {
+    "Name": "Say hi to gem",
+    "Description": "\"Gem is smart, no doubt about that, but she wants to get an A on her next 
+     Advanced magics exam,send someone to help her out.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Smart", 5 ] ],
+    "Rewards": [
+      [ "ING", "GREEN", 10 ],
+      [ "ING", "YELLOW", 10 ]
+    ],
+    "EXP": 25,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "EAST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Greet Astur": {
+    "Name": "Greet Astur",
+    "Description": "Astur could use some help beating up bad guys",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Strong", 5 ] ],
+    "Rewards": [
+      [ "ING", "YELLOW", 20 ],
+      [ "ING", "BLUE", 20 ],
+      [ "GOLD", "BLUE", 50 ]
+    ],
+    "EXP": 30,
+    "PatronReward": [],
+    "QuestChains": [ [ "win", "Hello World" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "NORTH_WEST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Suggest that Horace run for mayor": {
+    "Name": "Suggest that Horace run for mayor",
+    "Description": "\"\"That's flattering but no\" get someone to sway Horace\",",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sway", 4 ] ],
+    "Rewards": [
+      [ "ING", "GREEN", 10 ],
+      [ "ING", "YELLOW", 10 ]
+    ],
+    "EXP": 5,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "NORTH",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Thank Horace for being such a nice person": {
+    "Name": "Thank Horace for being such a nice person",
+    "Description": ""Thank You Friend"",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [
+      [ "Smart", 5 ],
+      [ "Strong", 4 ]
+    ],
+    "Rewards": [ [ "GOLD", "FOO", 200 ] ],
+    "EXP": 15,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "WEST",
+    "MaxPatron": 3,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Have a Talk with Rodney": {
+    "Name": "Have a Talk with Rodney",
+    "Description": "It's probably best not to make a scene at the library, and I'm sure Rodney feels the same way.  I'm sure if you pay him a visit where he works, he'd be more than happy to supply the necklace.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sway", 3 ] ],
+    "Rewards": [
+      [ "GOLD", "ANY", 200 ],
+      [ "ING", "RED", 15 ],
+      [ "ING", "BLUE", 10 ]
+    ],
+    "EXP": 10,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH_EAST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Have a 'Talk' with Rodney": {
+    "Name": "Have a 'Talk' with Rodney",
+    "Description": "From his physical description, I wouldn't expect Rodney to put up much of a fight. Why don't you pay him a visit at the Kastonia Municipal Library, and see if you can't shake him.",
+    "Allegiance": "NONE",
+    "Rival": "NATURE",
+    "Checks": [ [ "Strong", 4 ] ],
+    "Rewards": [
+      [ "ING", "BLUE", 15 ],
+      [ "ING", "GREEN", 15 ]
+    ],
+    "EXP": 15,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH_WEST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Assist Candace": {
+    "Name": "Assist Candace",
+    "Description": "Candace, who claims to have begun working on her invention long before Gulrig, lives on the outskirts of the Slums, a good distance away from the patent office.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "strong", 3 ] ],
+    "Rewards": [
+      [ "ING", "YELLOW", 15 ],
+      [ "ING", "RED", 10 ],
+      [ "GOLD", "YELLOW", 50 ]
+    ],
+    "EXP": 10,
+    "PatronReward": [],
+    "QuestChains": [ [ "win", "Candace’s Contraption" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "NORTH_WEST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Assist Gulrig": {
+    "Name": "Assist Gulrig",
+    "Description": "Gulrig, who claims Candace had been spying on his invention from day one, lives across town near the Grand Market. Although not a great distance from the patent office, the mistrustful inventor's house is claimed to be booby-trapped from top to bottom. You might want to tread carefully here.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Smart", 3 ] ],
+    "Rewards": [ [ "ING", "BLUE", 30 ] ],
+    "EXP": 10,
+    "PatronReward": [],
+    "QuestChains": [ [ "win", "Gulrig’s Gizmo" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "HOME",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Preach Unto the Masses": {
+    "Name": "Preach Unto the Masses",
+    "Description": "There's nary a better place to sell than the Grand Market, especially early in the morning. You'll want to secure a good spot before the crowd rolls in, so you won't be ignored amidst the rest of the merchants.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sway", 4 ] ],
+    "Rewards": [
+      [ "ING", "GREEN", 20 ],
+      [ "ING", "BLUE", 20 ],
+      [ "GOLD", "BLUE", 100 ]
+    ],
+    "EXP": 25,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "HOME",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Hit the Books": {
+    "Name": "Hit the Books",
+    "Description": "Perhaps the best place to begin one's search would be within the cities' archives. Although massive, a thorough search of its texts should yield the answer... eventually.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Smart", 6 ] ],
+    "Rewards": [
+      [ "ING", "GREEN", 30 ],
+      [ "ING", "BLUE", 30 ]
+    ],
+    "EXP": 35,
+    "PatronReward": [],
+    "QuestChains": [ [ "win", "A Discernible Cure" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Schedule a Check-Up": {
+    "Name": "Schedule a Check-Up",
+    "Description": " Rumor has it that an old dwarf started exhibiting similar symptoms about a month back, but was able to overcome his sickness. He lives in the slums as a hermit, but perhaps his house holds the key to solving this mystery.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sneak", 6 ] ],
+    "Rewards": [
+      [ "ING", "RED", 30 ],
+      [ "ING", "YELLOW", 30 ]
+    ],
+    "EXP": 35,
+    "PatronReward": [],
+    "QuestChains": [ [ "win", "A Discernible Cure" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "SOUTH_EAST",
+    "MaxPatron": 1,
+    "DaysToCompleteQuest": 5
+  },
+
+  "Uproot a Cure": {
+    "Name": "Uproot a Cure",
+    "Description": "As it turns out, there's a patch of Demoiselle Lilies in the courthouse garden. The building, of course, is guarded round-the-clock, so it may be a little difficult to procure one. You may want to proceed with caution.",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sneak", 8 ] ],
+    "Rewards": [ [ "GOLD", "EHH", 300 ] ],
+    "EXP": 20,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "WEST",
+    "MaxPatron": 2,
+    "DaysToCompleteQuest": 5
+  },
+
+
+  "Haggle with Horton": {
+    "Name": "Haggle with Horton",
+    "Description": "\"Demoiselle Lilies are incredibly expensive, if only because they're sold at one location in the city: Horton's Horticulture.",
+    "It" "may",
+    "be" "possible",
+    "however",
+    "to" "convince",
+    "him" "to",
+    "give" "one",
+    "up" "for",
+    "the" "sake",
+    "of" "medicine-",
+    "you’ll" "just",
+    "have" "to",
+    "devise" "a",
+    "compelling" "argument.\",",
+    "Allegiance": "NONE",
+    "Rival": "NONE",
+    "Checks": [ [ "Sway", 8 ] ],
+    "Rewards": [
+      [ "ING", "RED", 10 ],
+      [ "ING", "YELLOW", 10 ],
+      [ "ING", "GREEN", 10 ],
+      [ "ING", "BLUE", 10 ]
+    ],
+    "EXP": 25,
+    "PatronReward": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "Location": "HOME",
+    "MaxPatron": 2,
+    "DaysToCompleteQuest": 5
+  }
+
+}
+

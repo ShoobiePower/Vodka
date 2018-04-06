@@ -1,0 +1,160 @@
+{
+
+  "Send a Courier": {
+    "Name": "Send a Courier",
+    "Description": "Judging by the amount of adventurers that come through this bar, you should be able to find someone willing to make the trek. Ideally, this person should be athletic enough to make it to City Hall and back in a day's time- you can't wait too long for this, after all!",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [ [ "both", "Jim", "The Commotion" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Deidre]",
+        "Thank goodness Artie managed to secure your certification- you never know when a city-mandated inspection will come through!",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Horace]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Nell]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Mavis]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Gaius]"
+    ],
+        "BanList": []
+  },
+
+  "Locate the Source": {
+    "Name": "Locate the Source",
+    "Description": "It shouldn't be too difficult to figure out where that racket came from. If you have someone follow the sea of worried faces running about, they're sure to discover the source of the quake soon enough!",
+    "Checks": [ "Smart" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [ [ "both", "Jim", "Answer the Call" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Deirdre Downton", "Deidre Returns" ],
+      [ "both", "Old Man Horace", "Horace Can Help" ],
+      [ "both", "Artie", "Artie Can Help" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+        "It didn't take Deidre very long to figure out what had gone awry. The Spire, a citadel of magical essence that has loomed over Kastonia since its inception, has broken. A large shard unexpectedly snapped from hundreds of feet in the air, and shattered against the earth, causing catastrophic damage.",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Artie]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Horace]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Nell]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Mavis]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Gaius]"
+    ],
+        "BanList": []
+  },
+
+  "Help Move the Rubble": {
+    "Name": "Help Move the Rubble",
+    "Description": "The Spire chunk may have shattered when it hit the ground, but the debris is still cumbersome. Someone who boasts impressive muscles would be best-fit to take on this quest!",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Deirdre Downton", "Conversation1" ],
+      [ "both", "Old Man Horace", "Conversation1" ],
+      [ "both", "Artie", "Conversation1" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Help Move the Rubble- Deidre]",
+        "Unsurprisingly, it took Artie very little effort to help clear the streets of debris. Boasting impressive muscles, other workers looked to them to lead the relief efforts, and the task was completed impressively quickly.",
+        "Needing a little assistance, Horace managed to help move the  rubble out of the way. He was rewarded with cheers from passersby, and a sore back.",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Help Move the Rubble- Nell]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Help Move the Rubble- Mavis]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Help Move the Rubble- Gaius]"
+    ],
+        "BanList": []
+  },
+
+  "Empower the Workers": {
+    "Name": "Empower the Workers",
+    "Description": "By this point, the first responders must be exhausted, but there's still plenty more work to be done. It may be wise to send off one of your more charming patrons, to give the workers a much-needed morale boost!",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Deirdre Downton", "Conversation1" ],
+      [ "both", "Old Man Horace", "Conversation1" ],
+      [ "both", "Artie", "Conversation1" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Empower the Workers- Deidre]",
+        "Although feeling the plight of the workers, Artie just coulden't find the right words, a few joined up, but the work was difficult and exhausting.",
+        "Using a little of his vast fortune, Horace started a constuction company, hiring some of the recently laid-off miners to do some repair work.",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Empower the Workers- Nell]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Empower the Workers- Mavis]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Empower the Workers- Gaius]"
+    ],
+        "BanList": []
+  },
+
+"Stir the Crowds!": {
+        "Name": "Stir the Crowds!",
+        "Description": "A successful protest is always enkindled by bold chants and a steely resolve. If the citizens want the information they deserve, they'll need all the encouragement they can get!",
+        "Checks": [ "Sway" ],
+        "PatronReward": [ ],
+        "RumorOnReturn": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [
+            [ "both", "Gaius", "Introduction" ]
+        ],
+        "Location": "HOME",
+        "DaysToCompleteQuest": 5,
+        "Responces": [
+            "Holding near-celebrity status across Kastonia, protesters were quick to follow Deidre's lead once she arrived, and managed to push past the guards to confront government officials!",
+            "Although not one for long-winded speeches and persuasive words, Artie managed to rally the crowds by simply raising their hammer in the air, and spouting incoherent war cries. It worked out well enough!",
+            "A natural wordsmith, Horace immediately took to his role as a soapbox orator, leading the crowd in a string of politically-charged tunes! Eventually, they managed to push past the guards and confront government officials.",
+            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Nell]",
+            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Mavis]",
+            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Gaius]"
+        ],
+        "BanList": [ ]
+    },
+
+  "Hold the Line!": {
+    "Name": "Hold the Line!",
+    "Description": "The guards have been holding protesters back for hours now, without relief- they could surely use some extra muscle! After all, if the city gives in to anarchy, then all may be lost.",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Mavis", "Introduction" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+        "Sure, Deidre may not have been the most physically fit patron for the job, but no one could bring themselves to get in Ol' Deidre's way. After all, she's one of Kastonia's most beloved celebrities!",
+        "Upon realizing Artie was there to aid them, looks of relief washed over the faces of the City Hall guards. The protesters didn't manage to budge another inch after they arrived, and civility was maintained!",
+        "Horace isn't a particularly strong noble, but he gave this task his all. He even managed to turn a few protesters away, with his kindly and genuine smile. Who could hit a man with a smile like that?",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Nell]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Mavis]",
+        "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Gaius]"
+    ],
+        "BanList": []
+  }
+
+}
+

@@ -1,0 +1,7 @@
+{
+    "Strong" : ["Frail", "Average" , "Hearty", "Tough", "Tank" ],    
+     "Smart" : ["Dull", "Mundane", "Keen", "Bright", "Genius"],
+    "Sneak" : ["Clumsy", "Normal", "Hushed" , "Quiet" , "Silent"],
+    "Sway" : ["Bumbling" ,"Common", "Well Spoken", "Charismatic" ,"Silver-Tongued"]
+	
+}

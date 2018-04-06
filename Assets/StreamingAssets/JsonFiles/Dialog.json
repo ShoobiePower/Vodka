@@ -1,0 +1,73 @@
+{
+
+  "Deidre Downton": {
+    "Rumor Offering": [ "Ehehehe... An old crone like me has her ways of knowing things...", "One of my customers mentioned something particularly... interesting... ehehehe~" ],
+    "Quest Return Line": [ "You know I've got better things to do, right...? Ehehehe, just kidding, dearie! You're too cute to turn down." ],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": [ "Dearie, why don't you pass me" ],
+    "Adventure Request Line": [ "Any work for old Deirdre, barkeep?", "Need auntie Deidre to help make your problems go away...?", "Ehehe, I'm in the mood to stretch these old bones. What needs doing?" ],
+    "Small Talk Lines": [ "Ehehehe~", "Your brewing's not bad, barkeep, but you ought to stop by my shop at some point if you want to be truly wowed.", "Mind if an old crone rests her bones here awhile?" ],
+    "About To Leave Line": [ "Wrong drink, dearie... but I won't hold it against you. You're just too cute! Ehehehehe~", "Not to pry, dearie, but where's your bartending certification? Shouldn't it be hung up on the wall somewhere?" ]
+  },
+
+  "Artie": {
+    "Rumor Offering": [ "The workers were chattin' about something earlier- have you heard about this yet?", "Y'know, I'd do this myself, but I just don't got the time today.", "Got a job that needs doing." ],
+    "Quest Return Line": [ "Hah, that wasn't so hard. You softballin' me here, pal?", "Bit touch 'n go there for a while, but you KNOW your favorite orc's got it covered!" ],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": [ "I'm feelin' kinda parched. Could you be a pal and toss me" ],
+    "Adventure Request Line": [ "Come on pal, throw me a bone. Whattya need doin'?", "Heard there's work to be done, how can I help?", "Never thought I'd say this, but I think my hammer's gettin' dull. Gimme somethin' to do!" ],
+    "Small Talk Lines": [ "That dwarf over there thinks he can beat me at armwrestling. Pft, yeah right.", "Hah! That sure hit the spot... Thanks, as always, pal!" ],
+    "About To Leave Line": [ "What, you need me to pick something up from City Hall? Well sure, pal! Just tell me where to go.", "That's ok, pal! I ain't gonna bash ya over the head for a wrong order! U-um, not that I'd do that anyways!" ]
+  },
+
+  "Old Man Horace": {
+    "Rumor Offering": [ "I've got a real humdinger of a story for you!", "Sounds like there's a real commotion going on.", "Seems there's a bit of trouble, but nothing that can't be handled" ],
+    "Quest Return Line": [ "What-ho! What a rousing adventure that was! Reminds me of my days as a youthful rapscallion..." ],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": [ "My good barkeep! Could you go ahead and serve me" ],
+    "Adventure Request Line": [ "It's time to give back to the fair citizens of Kastonia!" ],
+    "Small Talk Lines": [ "You know, back in my day, monsters were meaner, scarier and had teeth as long as your arms!", "Treasure, drinks and the open road, what more could one want?" ],
+    "About To Leave Line": [ "Not quite what I asked for, but why don't you give it another go! This old man's got nowhere better to be, anyways- ho ho!" ]
+  },
+
+  "nell": {
+    "Rumor Offering": [ "Hey barkeep, you want a bit of insider info before it makes the headlines tomorrow? Apparently the Spire's collapse has stirred up some political unrest in the Borough..." ],
+    "Quest Return Line": [ "Man oh MAN, that'll make a great story! ...it's not narcassistic to write about myself, is it?" ],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": [ "Can a gal get a drink around here? Preferably" ],
+    "Adventure Request Line": [ "Ready to go!" ],
+    "Small Talk Lines": ["I'm glad you're out for the people, barkeep."],
+    "About To Leave Line": [ "FPO: ABOUT TO LEAVE LINE" ]
+  },
+
+  "Mavis": {
+    "Rumor Offering": ["I-I'm a little overwhelmed right now. Could you, um, maybe give me a hand? Please?"],
+    "Quest Return Line": ["It's just one thing after another."],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": ["If it isn't too much trouble, do you have"],
+    "Adventure Request Line": ["I guess I can fit another thing into my itinerary"],
+    "Small Talk Lines": ["I, um, I should get going. Thank you for your time."],
+    "About To Leave Line": []
+  },
+
+  "Gaius": {
+    "Rumor Offering": ["Another task for the noble to accomplish.", "The work for the just never ends.", "No matter how much we do, there will always be more.", "Would you take up your standard as I have taken mine?"],
+    "Quest Return Line": ["The Divines have guided my steps.", "Perhaps my work is not yet done."],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": ["While it doesn't affect me like it used to, may I have"],
+    "Adventure Request Line": ["What am I called to do?"],
+    "Small Talk Lines": ["May you find peace in the stars"],
+    "About To Leave Line": []
+  },
+
+  "Jim": {
+    "Rumor Offering": [ "Go ahead and hand this quest out to the next patron that steps into the bar? I'd go myself, but... well, it'd be a shame to waste this drink now, wouldn't it?" ],
+    "Quest Return Line": [ "I have a bit of swing in me yet!" ],
+    "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
+    "Drink Request Line": [ "Why don't you go ahead and pour me" ],
+    "Adventure Request Line": [ "Gotta keep maintain your youth doing something! Have anything for me?" ],
+    "Small Talk Lines": [ "You've got this, kid.", "I'll see ya around, kid!", "Good luck, kid.", "Good luck. I know you'll do your parents proud." ],
+    "About To Leave Line": [ "Well now, I didn't expect you to pick up the reins so quickly!", "Mmm, that hits the spot! Thanks, kid. I'm gonna go find a table to nurse this drink. In the meantime, why don't you serve some other patrons?", "You still there, kid? Click on me if you are..." ]
+  }
+
+}

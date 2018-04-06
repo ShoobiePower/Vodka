@@ -1,0 +1,284 @@
+{
+  
+ 
+
+   
+    "Burn Frankenstine":
+   {
+   	   "Name": "Burn Frankenstine",
+	   "Description": "The corporial want you to burn Frankenstine",      
+	   "Allegiance": "CORPOREAL",
+	   "Rival": "NATURE",
+	   "Checks": [["{NAME} 's skill with the english language allows the party to come up with some sick burns, disses, and rhymes",   
+	    "The party could not get the fire started, they all look like fools before Frankenstine",
+		"Smart", 5],
+		["{NAME} 's great strength allows them to breakdance like a champ",
+		"Sure your words are tight, but your team does not have the sweet moves to back it up, go home, buffen up and try again!",
+		"Strong",7]],
+	   "Rewards": [["ING","RED", 20], ["GOLD","RED", 20], ["PTS","CORPOREAL", 20]],
+	   "EXP": 10,
+	   "PatronReward": [],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "DINOTOPIA",
+	   "MaxPatron": 5
+	   
+	   
+   },
+
+   "Save Frankenstine":
+    {
+   	   "Name": " Save Frankenstine",
+	   "Description": "The Defenders want you to save Frankenstine",
+	   "Allegiance": "NATURE",
+	   "Rival": "CORPOREAL",
+	   "Checks": [["Frankenstine's sneakery is no match for {NAME} 's finding skills",
+	   "The party couldent find the elusive Frankenstines",
+	   "Smart", 7],["{NAME} came up with a pretty good way to smuggle Frankenstine",
+	   "Frankenstine was caught, mission failed...",
+	   "Sneak", 5]] ,
+	   "Rewards": [["ING","GREEN", 20]],
+	   "EXP": 20,
+	    "PatronReward": [["win", "Frankenstine"]],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "MOOMIN_VALLEY",
+	   "MaxPatron": 5
+	   
+   },
+
+   "Dance with Frankenstine":
+   {
+   	   "Name": " Dance with Frankenstine",
+	   "Description": "I want to Dance with Frankenstine",
+	   "Allegiance": "NONE",
+	   "Rival": "NONE",
+	   "Checks": [["After years of training {NAME} steps up and shows Frankenstine what's what in the world of dance",
+	   "'You are bad at dance' laughs the immortal god of the dance Frankenstine",
+	   "Sway", 4]] ,
+	   "Rewards": [["ING","YELLOW", 20]],
+	   "EXP": 5,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "DINOTOPIA",
+	   "MaxPatron": 5
+   },
+
+   "The only option is to fight.":
+   {
+   	   "Name": " The only option is to fight.",
+	   "Description": "Gotta go beat up some orks",
+	   "Allegiance": "NONE",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} is just too good at fighting orks!",
+	   "The orks win, mission failed...",
+	   "Strong", 5]] ,
+	   "Rewards": [["ING","GREEN", 20], ["GOLD","FOO",150]],
+	   "EXP": 10,
+	    "PatronReward": [],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "WONDERLAND",
+	   "MaxPatron": 5
+   },
+
+   "Fight the mummies with fire":
+   {
+   	   "Name": " Fight the mummies with fire",
+	   "Description": "Bandages are flamable, a little fire magic and you should be 
+	   able to ... wrap this one up quick!",
+	   "Allegiance": "CORPOREAL",
+	   "Rival": "COLLEGE",
+	   "Checks": [["If highschool has taught {NAME} anything, its that mummies are weak against fire!",
+	   "The parties combined fire magic is too weak to even scratch the mummy",
+	   "Smart", 6]] ,
+	   "Rewards": [["ING","RED", 20], ["PTS","CORPOREAL", 20] ],
+	   "EXP": 15,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "TERABITHIA",
+	   "MaxPatron": 5
+   },
+
+   "Hunt down the source of the mummies":
+    {
+   	   "Name": "Hunt down the source of the mummies",
+	   "Description": "Where thier smoke, their is a mummy
+	   Go to the sandy lands and try to fight the source of 
+	   the mummies and end mummy attacks once and for all",
+	   "Allegiance": "COLLEGE",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} found there way through the vast desert",
+	   "The party got lost in the desert, thankfully eveyone is fine",
+	   "Smart", 6], ["In a brilliant disguise, {NAME} fooled the mummies by dressing the party up in gause ",
+	   "The mummies found the party trying to gain access to the temple, the party was quickly scarred off.",
+	   "Sneak", 6],[
+	   "{NAME} fought the mummy king and stopped its reign of terror",
+	   "The mummy king's ancient magic thwarted the best efforts of the party",
+	   "Strong",7]] ,
+	   "Rewards": [["ING","RED", 20], ["ING","GREEN", 20], ["ING","BLUE", 20] ],
+	   "EXP": 25,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "TERABITHIA",
+	   "MaxPatron": 5
+   },
+
+   "Pretend to be mummies so the mummies don't get you":
+   {
+       "Name": "Pretend to be mummies so the mummies don't get you",
+	   "Description": "As a quick bandage to the situation, you could 
+	   alwayse dress the down up as mummies",
+	   "Allegiance": "NONE",
+	   "Rival": "NEIGHBORHOOD",
+	   "Checks": [["{NAME} wrapped things up quite nicely",
+	   "Can't pull the wool over the mummy's eyes, the town is found and mummy havoc reigns",
+	   "Smart", 2]] ,
+	   "Rewards": [["ING","YELLOW", 20]],
+	   "EXP": 10,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "TERABITHIA",
+	   "MaxPatron": 5
+   },
+
+   "Play hide and seek":
+   {
+      "Name": "Play hide and seek",
+	   "Description": "Send your sneakiest guy or gal to Go
+	   fool the mayor out of some sweet cash",
+	   "Allegiance": "NEIGHBORHOOD",
+	   "Rival": "NONE",
+	   "Checks": [["Despite his best efforts, the mayor simply could not find {NAME}. At sundown {NAME} and the rest of the winners were rewared with bags of money and a firm handshake from the eccentric mayor",
+	   "'Found you, and you , and you!' the mayor found all of the party members, the competition is lost.",
+	   "Sneak", 4]] ,
+	   "Rewards": [["ING","RED", 20], ["ING","YELLOW", 20], ["PTS","COLLEGE",20]],
+	   "EXP": 5,
+	    "PatronReward": [["both", "Sneaky guy"]],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "HYRULE",
+	   "MaxPatron": 5
+   },
+
+   "Go get the treasure":
+  {
+      "Name": "Go get the treasure",
+	   "Description": "Send a team to the underground to go find some gems or something
+	   best send a few strong people to defend against what lurks down there",
+	   "Allegiance": "ARCHAEOLOGICAL",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} decyphered a map leading to the wreckage of the HMS Calling all dawns",
+	   "The ancient map could not be deciphered, the treasure may be lost forever",
+	   "Smart", 5], ["Once in the wreckage, the party was confronted by the crew who's loyalty lasted long after their demise, {NAME} bravely fought them off!",
+	   "Once in the wreckage, the party was confronted by the crew who's loyalty lasted long after their demise, they were much too strong for the party.",
+	   "Strong",4]] ,
+	   "Rewards": [["GOLD","FOO", 200]],
+	   "EXP": 15,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "LABYRINTH",
+	   "MaxPatron": 5
+   },
+
+   "Do research on ghosts":
+  {
+      "Name": "Do research on ghosts",
+	   "Description": "Why walk when you can learn that ghosts don't exist.",
+	   "Allegiance": "COLLEGE",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} 's has read a lot of ghost stories and has come to the conclusion that they don't exist",
+	   "The books at the libarary were too scarry ,Mortalkind still does not know the true meaning of ghosts" ,
+	   "Smart", 3]] ,
+	   "Rewards": [["GOLD","ANY", 20], ["PTS","CORPOREAL",20], ["PTS","COLLEGE",10]],
+	   "EXP": 10,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "HYRULE",
+	   "MaxPatron": 5
+   },
+
+   " Prepare for a fight with ghosts":
+   {
+      "Name": " Prepare for a fight with ghosts",
+	   "Description": "Hi- Yaaaa!",
+	   "Allegiance": "CORPOREAL",
+	   "Rival": "NATURE",
+	   "Checks": [["{NAME} has fought a ghost or two back in their day, easy stuff says {NAME}",
+	   "Turns out ghosts are stronger than they look",
+	   "Strong", 7], ["A mini ghost is easily dispatched by {NAME}",
+	   "The suprise attack by the mini ghost spooks the entire team for years to come.",
+	   "Strong",3]] ,
+	   "Rewards": [["ING","GREEN", 20], ["ING","YELLOW", 10]],
+	   "EXP": 10,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "HALFBLOOD",
+	   "MaxPatron": 5
+   },
+
+   "Sneak into the house for some awsome recon":
+    {
+      "Name": "Sneak into the house for some awsome recon",
+	   "Description": "you have to be even sneakier than ghosts in order to
+	   spy on them!",
+	   "Allegiance": "AA",
+	   "Rival": "NONE",
+	   "Checks": [["Ghosts are sneaky, but {NAME} was sneakier!",
+	   "The ghosts detected you almost instantly",
+	   "Sneak", 5], ["{NAME} provided crucial insights on ghosts",
+	   "people still cant explain ghosts",
+	   "Smart",3]] ,
+	   "Rewards": [["ING","BLUE", 20],["GOLD","ANYWORD", 20], ["ING","YELLOW", 20]],
+	   "EXP": 20,
+	    "PatronReward": [["Fail","Unlockable Guy"]],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "HALFBLOOD",
+	   "MaxPatron": 5
+   },
+
+    "Test":
+    {
+      "Name": "This is the right number",
+	   "Description": "The right number song, I'm very very glad that we got it right!",
+	   "Allegiance": "AA",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} was the first spacehuman to go past the bounds of hello world",
+	   "Time to test story!",
+	   "Sneak", 2]],
+	   "Rewards": [["ING","RED",30]],
+	   "EXP": 20,
+	   "PatronReward": [["Fail","Unlockable Guy"]],
+	   "QuestChains":  [["win" , "OneStepBeyond"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "MOOMIN_VALLEY",
+	   "MaxPatron": 5
+   },
+
+    "DebugHardQuest":
+    {
+   	   "Name": "Debug Impossible Quest",
+	   "Description": "Here to test what failue looks like with multi patron quests",
+	   "Allegiance": "COLLEGE",
+	   "Rival": "NONE",
+	   "Checks": [["{NAME} found there way through the vast desert",
+	   "The party got lost in the desert, thankfully eveyone is fine",
+	   "Smart", 20]],
+	   "Rewards": [["ING","RED", 20], ["ING","GREEN", 20], ["ING","BLUE", 20] ],
+	   "EXP": 25,
+	    "PatronReward": [ ],
+	   "QuestChains":  [["win" , "Hello World"]],
+	   "TownEvents": [["Fail" , "DeathByGlamour"], ["Win", "MetalSlug2"], ["both","The Flinstones have gripes"]],
+	   "Location": "HALFBLOOD",
+	   "MaxPatron": 2
+   },
+  }
+

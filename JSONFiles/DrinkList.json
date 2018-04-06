@@ -1,0 +1,80 @@
+{
+
+
+"FiercePunch":
+   {
+          "Name": "Fierce Punch",
+        "Red": 2,
+		"Yellow": 0,
+		"Blue":0,
+		"Green": 0,
+       "Flavor": "Sweet",  
+	   "Correct Price": 10,
+	   "Mix Up Price":3
+      
+   },
+
+   "Gruntilda's Brewhaha":
+   {
+          "Name": "Gruntilda's Brewhaha",
+        "Red": 0,
+		"Yellow": 0,
+		"Blue":0,
+		"Green": 2,
+       "Flavor": "Magic",  
+	   "Correct Price": 10,
+	   "Mix Up Price":3
+   },
+
+   "Dish Water":
+   {
+          "Name": "Dish Water",
+        "Red": 0,
+		"Yellow": 0,
+		"Blue":2,
+		"Green": 0,
+       "Flavor": "Bitter",  
+	   "Correct Price": 10,
+	   "Mix Up Price":3
+   },
+
+   "Sunsplash cidar":
+   {
+          "Name": "Sunsplash cidar",
+        "Red": 0,
+		"Yellow": 2,
+		"Blue":0,
+		"Green": 0,
+       "Flavor": "Fruity",  
+	   "Correct Price": 10,
+	   "Mix Up Price":3
+   },
+
+    "Twicelers Greed":
+   {
+          "Name": "Twiceler's Greed",
+        "Red": 0,
+		"Yellow": 0,
+		"Blue":1,
+		"Green": 2,
+       "Flavor": "Bitter",  
+	   "Correct Price": 18,
+	   "Mix Up Price":5
+      
+   },
+
+   "Five Nights at Fruitys":
+   {
+          "Name": "Five Nights at Fruity's",
+        "Red": 1,
+		"Yellow": 1,
+		"Blue":1,
+		"Green": 1,
+       "Flavor": "Fruity",  
+	   "Correct Price": 25,
+	   "Mix Up Price":6
+      
+   },
+
+ 
+}

@@ -1,0 +1,200 @@
+{
+
+
+"Dragonbite":
+   {
+          "Name": "Dragonbite",
+        "Red": 2,
+		"Yellow": 0,
+		"Blue":0,
+		"Green": 0,
+       "Flavor": "Bitter",  
+	   "Correct Price": 5,
+	   "Mix Up Price": 2,
+      "Buff" : "Strong"
+   },
+
+  "Goldfire": {
+    "Name": "Goldfire",
+    "Red": 2,
+    "Yellow": 1,
+    "Blue": 0,
+    "Green": 0,
+    "Flavor": "Strong",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Smart"
+  },
+
+  "Flare": {
+    "Name": "Flare",
+    "Red": 1,
+    "Yellow": 2,
+    "Blue": 0,
+    "Green": 0,
+    "Flavor": "Classic",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Sneak"
+  },
+
+  "Solarburst": {
+    "Name": "Solarburst",
+    "Red": 0,
+    "Yellow": 2,
+    "Blue": 0,
+    "Green": 0,
+    "Flavor": "Sweet",
+    "Correct Price": 5,
+    "Mix Up Price": 2,
+    "Buff": "Strong"
+  },
+
+
+
+  "Dewfire": {
+    "Name": "Dewfire",
+    "Red": 2,
+    "Yellow": 0,
+    "Blue": 0,
+    "Green": 1,
+    "Flavor": "Bitter",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Smart"
+  },
+
+  "Boomshine": {
+    "Name": "Boomshine",
+    "Red": 2,
+    "Yellow": 1,
+    "Blue": 0,
+    "Green": 1,
+    "Flavor": "Strong",
+    "Correct Price": 15,
+    "Mix Up Price": 10,
+    "Buff": "Sneak"
+  },
+
+  "Faded Glory": {
+    "Name": "Faded Glory",
+    "Red": 1,
+    "Yellow": 2,
+    "Blue": 1,
+    "Green": 0,
+    "Flavor": "Classic",
+    "Correct Price": 15,
+    "Mix Up Price": 10,
+    "Buff": "Sway"
+  },
+
+"Sun Special":
+  {
+    "Name": "Sun Special",
+    "Red": 0,
+    "Yellow": 2,
+    "Blue": 1,
+    "Green": 0,
+    "Flavor": "Sweet",
+    "Correct Price": 5,
+    "Mix Up Price": 2,
+    "Buff": "Strong"
+  },
+
+  "Father Thyme": {
+    "Name": "Father Thyme",
+    "Red": 1,
+    "Yellow": 0,
+    "Blue": 0,
+    "Green": 2,
+    "Flavor": "Bitter",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Smart"
+  },
+
+  "Morning Dew": {
+    "Name": "Morning Dew",
+    "Red": 1,
+    "Yellow": 0,
+    "Blue": 1,
+    "Green": 2,
+    "Flavor": "Strong",
+    "Correct Price": 15,
+    "Mix Up Price": 10,
+    "Buff": "Sneak"
+  },
+
+  "Twicler's Greed": {
+    "Name": "Twicler's Greed",
+    "Red": 1,
+    "Yellow": 0,
+    "Blue": 2,
+    "Green": 1,
+    "Flavor": "Classic",
+    "Correct Price": 15,
+    "Mix Up Price": 10,
+    "Buff": "Sway"
+  },
+
+  "Twilight": {
+    "Name": "Twilight",
+    "Red": 0,
+    "Yellow": 1,
+    "Blue": 2,
+    "Green": 0,
+    "Flavor": "Sweet",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Strong"
+  },
+
+  "Brinewater": {
+    "Name": "Brinewater",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 0,
+    "Green": 2,
+    "Flavor": "Bitter",
+    "Correct Price": 5,
+    "Mix Up Price": 3,
+    "Buff": "Smart"
+  },
+
+  "Mint to Be": {
+    "Name": "Mint to Be",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 1,
+    "Green": 2,
+    "Flavor": "Strong",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Sneak"
+  },
+
+  "Water": {
+    "Name": "Water",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 2,
+    "Green": 1,
+    "Flavor": "Classic",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Sway"
+  },
+
+  "Sweetwater": {
+    "Name": "Sweetwater",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 2,
+    "Green": 0,
+    "Flavor": "Sweet",
+    "Correct Price": 5,
+    "Mix Up Price": 3,
+    "Buff": "Sway"
+  }
+
+}

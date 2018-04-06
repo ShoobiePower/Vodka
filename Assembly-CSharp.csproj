@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{A6B8F5CA-B3C5-3809-C788-2AFFDAFA2C37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_0;UNITY_5_4;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/UnityIndie/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/UnityIndie/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AdventureSctructure\CostCalculator.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Quests\Quest.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Quests\QuestOptionUI.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Rumors\Rumor.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Rumors\RumorBoardUI.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Rumors\RumorManager.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Rumors\RumorWarehouse.cs" />
+     <Compile Include="Assets\Scripts\AdventureSctructure\Unlocker.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Conversation\Conversation.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Conversation\ConversationWarehouse.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\OnHold\Stanza.cs" />
+     <Compile Include="Assets\Scripts\Drink\Dispencer.cs" />
+     <Compile Include="Assets\Scripts\Drink\DispencerSlot.cs" />
+     <Compile Include="Assets\Scripts\Drink\Drink.cs" />
+     <Compile Include="Assets\Scripts\Drink\FillableMug.cs" />
+     <Compile Include="Assets\Scripts\Drink\StartingCupLocation.cs" />
+     <Compile Include="Assets\Scripts\EndOfDayBook.cs" />
+     <Compile Include="Assets\Scripts\EndOfDayManager\IEndOfDayStates.cs" />
+     <Compile Include="Assets\Scripts\EndOfDayManager\States\Patron\StatDescriptorLoader.cs" />
+     <Compile Include="Assets\Scripts\EndOfDayMap.cs" />
+     <Compile Include="Assets\Scripts\ExitGame.cs" />
+     <Compile Include="Assets\Scripts\Items\GoldCounter.cs" />
+     <Compile Include="Assets\Scripts\Items\IPurchaseable.cs" />
+     <Compile Include="Assets\Scripts\Items\Invintory\InventoryManager.cs" />
+     <Compile Include="Assets\Scripts\Items\Invintory\ItemParser.cs" />
+     <Compile Include="Assets\Scripts\Items\Item\Currency.cs" />
+     <Compile Include="Assets\Scripts\Items\Item\Equipment.cs" />
+     <Compile Include="Assets\Scripts\Items\Item\Ingredent.cs" />
+     <Compile Include="Assets\Scripts\Items\Item\SpecialLoot.cs" />
+     <Compile Include="Assets\Scripts\Items\Item\StoreableItem.cs" />
+     <Compile Include="Assets\Scripts\JSON\JSONObject.cs" />
+     <Compile Include="Assets\Scripts\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\Scripts\JSON\VectorTemplates.cs" />
+     <Compile Include="Assets\Scripts\Loaders\ConversationLoader.cs" />
+     <Compile Include="Assets\Scripts\Loaders\DrinkLoader.cs" />
+     <Compile Include="Assets\Scripts\Loaders\JsonDialogueLoader.cs" />
+     <Compile Include="Assets\Scripts\Loaders\QuestLoader.cs" />
+     <Compile Include="Assets\Scripts\Loaders\RumorLoader.cs" />
+     <Compile Include="Assets\Scripts\Loaders\patronLoader.cs" />
+     <Compile Include="Assets\Scripts\Managers\ApperanceManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\BarManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\BattleReportManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\DebugStuff.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\AbstBookStates.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\EndOfDayIdle.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\MapOpen.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\PatronBioScreenOpen.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\PatronStatScreen.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\QuestPageOpen.cs" />
+     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDaySummaryBoard.cs" />
+     <Compile Include="Assets\Scripts\Managers\IBarManagerState.cs" />
+     <Compile Include="Assets\Scripts\Managers\IOrder.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\Command.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\CommandWithUndo.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\ICommand.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\ICommandWithUndo.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\UndoCommand.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\AcceptAdventure.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\AddIngredentFromInvintory.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\AddQuestToBook.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ChooseQuestFromMenu.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseAdventureMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseBattleReport.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\DismissAdventurer.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\DoNotAddQuestToBook.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\GetInfoFromEndOfDayButton.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\InteractWithBookOfPatrons.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\InteractWithEndOfDayMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\JumpToSeat.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenAndClosePatronInfoSheet.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenBar.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenEndOfDayMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenQuestChoiceFromRumor.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenTaverkeeperJournal.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\PanDown.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\PlayStartNextDayAnimation.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\PurchaseItemFromShop.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\RecycleDrink.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScanForPatron.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollBarUp.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollEndOfDayMenuDown.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollLeftInBar.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollLeftInQuestsAtLocation.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollRightInBar.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollRightInQuestsAtLocation.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SelectQuestOption.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ServeDrink.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToIdle.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToPatronBio.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToPatronStat.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToQuest.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\Commands\ToggleQuestInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\Managers\Input\InputManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\MusicManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\OrderManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\Sound\AudioCommand.cs" />
+     <Compile Include="Assets\Scripts\Managers\Sound\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\StoreManager.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\MapManager.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\MapStates\DeployState.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\MapStates\IMapStates.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\MapVisualEffects.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\PatronCheatSheet.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\QuestInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\QuestMenu.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\Region.cs" />
+     <Compile Include="Assets\Scripts\MapRelated\Road.cs" />
+     <Compile Include="Assets\Scripts\Patrons\Accessorys\ISeatStates.cs" />
+     <Compile Include="Assets\Scripts\Patrons\Accessorys\IconPack.cs" />
+     <Compile Include="Assets\Scripts\Patrons\Accessorys\Mug.cs" />
+     <Compile Include="Assets\Scripts\Patrons\Accessorys\Seat.cs" />
+     <Compile Include="Assets\Scripts\Patrons\Patron.cs" />
+     <Compile Include="Assets\Scripts\Patrons\PatronManager.cs" />
+     <Compile Include="Assets\Scripts\Patrons\SetUp\PatronFactory.cs" />
+     <Compile Include="Assets\Scripts\TapSystem.cs" />
+     <Compile Include="Assets\Scripts\TimeOfDay\TimeOfDayManager.cs" />
+     <Compile Include="Assets\Scripts\TimeOfDay\TimeOfDayPanel.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ObserverSetup\IObserver.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ObserverSetup\ISubject.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\ObserverSetup\ObserverMediator.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\TalkingHead.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day1Task1.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day1Task2.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day1Task3.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day1Task4.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day2Task1.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day2Task2.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day3Task1.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day4Task1.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5Task1.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\MapTask.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tasks\TutorialTask.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tutorial.cs" />
+     <Compile Include="Assets\Scripts\Util\ABSTFadableObject.cs" />
+     <Compile Include="Assets\Scripts\Util\FadingText.cs" />
+     <Compile Include="Assets\Scripts\Util\Toast.cs" />
+     <Compile Include="Assets\Scripts\Util\ToastPool.cs" />
+     <Compile Include="Assets\Scripts\Util\UnlockerLoader.cs" />
+     <Compile Include="Assets\TitleScreenPackage\Scripts\ButtonManager.cs" />
+     <None Include="Assets\Scripts\JSON\readme.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/UnityIndie/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/UnityIndie/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

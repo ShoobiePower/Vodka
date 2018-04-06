@@ -1,0 +1,372 @@
+{
+ 
+ "Random":
+ {
+
+"JussufLaw":
+   {
+          "Name": "Jussuf Law",
+       "Disposition": "Reserved",
+       "allegiance": "Corporeal",  
+       "patronsTolerance": "LOW",
+       "stats": [ 3, 6, 2, 5],  
+       "backStory1": "Although Jussuf is incredibly learned in the arts of spellcasting and arcana, he has never chosen to wield such magic, no matter how tempting.",
+       "backStory2": "He was much more of a rough-and-tumble kid in his youth, taking great pleasure in playing outside, amongst the trees and by the river, with his group of friends. When he’d return home, he would almost always be covered from head to toe in dirt, his clothes torn and filthy, still brandishing a wide grin on his face.",
+       "backStory3": "Jussuf’s decision to join the Corporeal came from an accident he witnessed as a child, one which scarred him for life. One of his childhood friends, who had been learning the arcane arts from their father. While showing off some spells of electromancy, their fingers slipped and they lost control, accidentally hitting one of their friends and stopping their heart. ",
+       "Patience": "MID",
+   },
+
+   "DarrenHoward":
+   {
+          "Name": "Darren Howard",
+       "Disposition": "Reserved",
+       "allegiance": "None",  
+       "patronsTolerance": "LOW",
+       "stats": [ 2, 5, 2, 3],  
+       "backStory1": "A scholar who came to the city long ago to study the spire. He is adamant to stay independent and not join any of the factions, He seems perpetually nervous, but no one really seems to know why.",
+       "backStory2": "He was born in an Elven city but felt out of place, so he left in his mid 20s to roam the world in search of knowledge and eventually wound up here. When he couldn’t find out anything about the spire, he decided to start researching it himself.",
+       "backStory3": "The true source of his nervousness is that he’s always afraid someone is going to take advantage of him. When he first arrived in the city and started researching the spire, a man sent him a letter saying he had information. When Darren went to meet him, the man was a no show and Darren came back to his home to find it ransacked. Since then, he has been very reclusive with his research and habitually looking over his shoulder.",
+       "Patience": "MID",
+   },
+
+   "TerraEbascio":
+   {
+          "Name": "Terra Ebascio",
+       "Disposition": "Stalwart",
+       "allegiance": "None",  
+       "patronsTolerance": "NONE",
+       "stats": [ 4, 5, 3, 3], 
+       "backStory1": "Practically a child prodigy when it comes to robotics. You’ll never see her without one of her small robotic companions sitting on her shoulder or hovering nearby.",
+       "backStory2": "She plans on joining the Artificer’s Alliance as soon as she graduates from school. Her great grandfather was a member and she remembers stories being told about all the amazing things that he did.",
+       "backStory3": "Her family is currently going through financial troubles and that’s one of the reasons she’s taking on odd jobs. With any luck, she will graduate early and be able to join the AA so she can earn a stipend to send back to her family.",
+       "Patience": "MID",
+   },
+
+   "Furbrow":
+   {
+          "Name": "Furbrow Horkins",
+       "Disposition": "Upbeat",
+       "allegiance": "None",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 3, 1, 1, 4],  
+       "backStory1": "Ah’ve been an intern for the archeological society fer five years now, ‘an ah thoroughly enjoy it!  We find all sorts o’ fascinatin’ stuff!  Well, they find all sorts o’ fascinatin’ stuff.  Ah mostly take pictures with this contraption ah made, which ah’m callin’ a ‘camera’.  Ah don’t know why it annoys ‘em.  Maybe ‘cause the flash ruins most o’ the artifacts we find.  But, ah always say, mah pictures are memories, ‘an memories last forever!",
+       "backStory2": "Ah’m beginnin’ t’ think ah shouldn’t be with ‘em archaeology diggers.  They don’t appreciate mah work enough.  Ah actually don’t care ‘bout artifacts or nothin’, ‘an they don’t seem t’ care about me.  Ah care about preservin’ the world.  Maybe th’ adventurin’ life is where ah’m meant t’ be.  Gimme yer best, tavernkeep, an’ ah’ll show ya what ah kin do.",
+       "backStory3": "Ya’ll never believe it!  Ah found a person who said he’s so impressed with mah camera, he wants t’ mass produce it.  Whate’er that means.  But ‘e gave me a big sack o’ gold fer the blueprints, and ah gave it to ‘im.  Jokes on ‘im though.  Haha!  There ain’t a person in the world who cares about preservin’ memories as much as me.  Now, ah kin live a life o’ luxury an laugh at ‘em archaeology diggers all ah want.",
+       "Patience": "HIGH",
+   },
+
+   "Gem":
+   {
+         "Name": "Gem",
+       "Disposition": "Upbeat",
+       "allegiance": "None",  
+       "patronsTolerance": "NONE",
+       "stats": [ 1, 3, 5, 4],  
+       "backStory1": "I know I shouldn’t be in here, but most people don’t care.  I won’t order anything for grown-ups, don’t worry!  I know what I can get away with.",
+       "backStory2": "There’s a few of us back home.  I’m the oldest, so they all follow me, but we all follow- (*next slide*) … (or *looks down*) (*next slide*) I shouldn’t say that. (*next slide*).  Thank you.  You’re really sweet, and a good friend.",
+       "backStory3": "I know what I can get away with- I always do- so I’ll tell you: me and my friends follow Knor.  He’s strong, and he’s not nice.  He makes us steal from people, and we don’t get to keep it.  We don’t want to work with him, but we have to.  I’m telling you because I want you to help.  Don’t tell anyone that I told you. (receive rumor)",
+       "Patience": "LOW",
+   },
+
+   "Matthias":
+   {
+          "Name": "Matthias Gale",
+       "Disposition": "Reserved",
+       "allegiance": "evil",  
+       "patronsTolerance": "LOW",
+       "stats": [ 3, 6, 3, 4],  
+       "backStory1": "It’s a pleasure meeting you.  I’m sure it will be one of many, as I enjoy my absence from the Order.  My father joined it long before I was born.  I’m not so keen on the Order myself, but I still believe I should honor his wishes by joining it.  Unfortunately, the work is tedious and the days are long.  Which, brings me here.",
+       "backStory2": "I’m sorry to ask this of you, but have you ever been in a situation in which both sides are right and yet equally wrong?  The work I do promotes safety and peace, but also creates control and forbiddance.  What sacrifices justify such safety?  And while our laws might save some, who judges the lawmakers?  These are things I must come to terms with...  Thank you for listening to my rambling..",
+       "backStory3": "Do not tell another soul, but I have a burden to lift from my shoulders.  I trust my father dearly, but I realized the irony of our work.  While we catalogue magics as forsaken, we must learn them ourselves.  We prevent others from using them, yet we retain the knowledge in our minds.  What, then, would stop us from using such powers or allowing that knowledge to corrupt our minds?  I trust my father, but that does not prevent me from being wary of him.",
+       "Patience": "MID",
+   },
+
+
+
+
+   "Giaus":
+  {
+        "Name": " Giaus The Meek, Banner Standard of the Black 16th ",
+      "Disposition": "Stalwart",
+      "allegiance": "CORPOREAL",  
+      "patronsTolerance": "MID",
+      "stats": [ 5, 3, 1, 3],  
+      "backStory1": " Gaius has earned his surname of meek as he never is seen without his armor, some think it to be paranoia from a traumatic battle in which Gaius was the only member of the Black 16th to survive. Others believe that Gaius is noble and would never abandon the memory of his fellow guild members whose memory is preserved on his breastplate.",    
+      "backStory2": " Although his armor is quite current, the banner that Gaius carries is quite old. This is due to the banner being held as a holy artifact by the corporeal. Gaius was predestined to be a banner carrier. The stars predicted that with Gaius, the banner of the corporeal would never fall. ",
+      "backStory3": " Gaius fell along-side his comrades in the great raid of the 700s. After the battle was over he stood, believing that he had simply been knocked unconscious during the fighting. Later he discovered that his fate during that battle had been much worse. In fear of being found out and persecuted by the ones the honorably serves, he keeps his secret under a suit of plate mail and a tightly clasped face guard.",
+      "Patience": "MID",
+  },
+
+  "Tina":
+  {
+        "Name": " Tina Guildenshire ",
+      "Disposition": "Upbeat",
+      "allegiance": "None",  
+      "patronsTolerance": "NONE",
+      "stats": [ 3, 4, 3, 6],  
+      "backStory1": " Congratulations and welcome to the Neighborhood betterment society! We here at the NBS have chosen to sponsor YOU and your establishment {NAME} to be a part of our Betterment Battalion! We are sure that you are thrilled and want to get started right away! Your elected regional representative “Tina Guildenshire” will be able to assist you with what we call “the first steps”, we look forward to your cooperation and again, congratulations. – The NBS.",
+      "backStory2": " “When in doubt, upsell! This tried and true team player tactic is only a gain for everyone involved, customers love being presented with the chance to buy more, employees should love the opportunity to share their enthusiasm for your great products and you will love the betterment of the community through the sale of your eye-catching products. - The Wholesome Helper Handbook page 352.",
+      "backStory3": " “Look, barkeep, I’ll level with ya. My name’s not really Tina Guilden- whatever, it’s Tharrsa Glentelle. The NBS just stuck me with that name because it was friendlier or something… Do me a favor, never sell out, especially not to the NBS.” ",
+      "Patience": "HIGH",
+  },
+
+  "Astur":
+   {
+          "Name": "Astur Wercest",
+       "Disposition": "Stalwart",
+       "allegiance": "COLLEGE",  
+       "patronsTolerance": "MID",
+       "stats": [ 4, 3, 2, 3],  
+       "backStory1": "Astur is known to be a capable hand when you need some muscle. She’s an elf approaching middle-age, so she’s experienced the world change over almost two centuries over, there’s never not a dull story with this one. You know she’s a member of the College. ",
+       "backStory2": "Astur tells you of her time in The College with her wife who she says disappeared years ago. Apparently the both of them were a well renowned duo in The College’s ranks. Through working together, they developed a special bond between them and eventually fell in love. Along the way on a mission, something happened which caused the two of them to get separated, and when Astur was waiting for her wife at the rendezvous point, she never showed up.",
+       "backStory3": "You discover that the story that Astur told about how her wife disappeared was a lie. Astur’s wife, Dalia, was hit by a very rare disease that affects only a small population of the elven population. The disease is a slow killing process and there was currently no way to prevent or treat it. As Dalia’s strength slowly faded over the years, all Astur could do was watch and care for her as best she could. Dalia passed away and Astur never took off her wedding ring ever again. She continues her work at The College because of the legacy she and Dalia created there. ",
+       "Patience": "MID",
+   },
+
+
+
+   "ProtoCharacter":
+   {
+   	   "Name": "ProtoCharacter",
+	   "Disposition": "STALWART",
+	   "allicence": "None",
+	   "patronsTolerance": "MID",
+	   "stats": [ 4, 4, 4, 4],   
+	   "backStory1": "Drank some sanka",
+	   "backStory2": "Too hype for me",
+	   "backStory3": "The first character I built as a json object",
+	   "Patience": "MID",	   
+   },
+
+   "Namesly":
+   {  
+         "Name": "Namesly",
+        "Disposition": "RESERVED",
+	   "allicence": "Mafia",
+	   "patronsTolerance": "HIGH",
+	   "stats": [3,3,5,6], 
+	   "backStory1": "Got five haircuts at the same time",
+	   "backStory2": "Got money",
+	   "backStory3": "Buys another strip mall every eighth note",
+	   "Patience":"HIGH", 
+   }, 
+
+    "Treasure Chipps mc ahoy":
+   {  
+      "Name": "Example",
+       "Disposition": "UPBEAT",
+	   "allicence": "AA",
+	   "patronsTolerance": "LOW",
+	   "stats": [4,5,5,3], 
+	   "backStory1": "Told you about stairs",
+	   "backStory2": "Spun the wheel",
+	   "backStory3": "Was careful around friends",
+	   "Patience":"LOW",   
+   },
+
+    "Flabber Ghast":
+   {  
+        "Name": "Character",
+        "Disposition": "DARK",
+	   "allicence": "Corporeal",
+	   "patronsTolerance": "NONE",
+	   "stats": [2,6,3,4], 
+	   "backStory1": "A ghost",
+	   "backStory2": "Spooky",
+	   "backStory3": "can't drink",
+	   "Patience":"HIGH",   
+   }, 
+
+    "Regina Spekktor":
+   {  
+       "Name": "Person",
+       "Disposition": "STALWART",
+	    "allicence": "Daredevil",
+	   "patronsTolerance": "HIGH",
+	   "stats": [3,5,4,6], 
+	   "backStory1": "Loves Paris in the rain",
+	   "backStory2": "Belives the most human color is blue",
+	   "backStory3": "Wrote a song called Fedelity",
+	   "Patience":"HIGH", 
+   },
+
+    "Ghost Lady":
+   {  
+   "Name": "patron",
+    "Disposition": "ARROGANT",
+	   "allicence": "None",
+	   "patronsTolerance": "LOW",
+	   "stats": [2,7,4,2], 
+	   "backStory1": "Dated the captian of outter space",
+	   "backStory2": "is the sister of Regina Spekktor",
+	   "backStory3": "Can't hold on to that feelin'. As she is a ghost",
+	   "Patience":"MID", 
+   },
+
+"Crendor":
+   {  
+       "Name": "Guy",
+       "Disposition": "RESERVED",
+	   "allicence": "Brewmaster",
+	   "patronsTolerance": "NONE",
+	   "stats": [7,2,3,4], 
+	   "backStory1": "Has a podcast, I think",
+	   "backStory2": "The only reason Nathan knows any WoW lore",
+	   "backStory3": "Because inside useless things is Treasure",
+	   "Patience":"LOW",
+   },
+
+    "Profesor noName":
+   {  
+       "Name": "A guy",
+       "Disposition": "DARK",
+	   "allicence": "College",
+	  "patronsTolerance": "LOW",
+	   "stats": [3,7,2,4], 
+	   "backStory1": "Good",
+	   "backStory2": "Nice",
+	   "backStory3": "Smart",
+	   "Patience":"LOW", 
+   },
+
+    "Terry Fishman":
+   {  
+       "Name": "Terry Fishman",
+       "Disposition": "ARROGANT",
+	   "allicence": "Evil",
+	   "patronsTolerance": "MID",
+	   "stats": [5,1,5,1], 
+	   "backStory1": "Glub",
+	   "backStory2": "Glub",
+	   "backStory3": "G1u8",
+	   "Patience":"MID",  
+   },
+
+    "Skeletony":
+   {  
+      "Name": "Skeletony",
+       "Disposition": "STALWART",
+	   "allicence": "Archaeological",
+	   "patronsTolerance": "HIGH",
+	   "stats": [3,6,4,2], 
+	   "backStory1": "Skeleton",
+	   "backStory2": "Cousin of Rattle me bones",
+	   "backStory3": "Refuses any and all wheel spinnery",
+	   "Patience":"HIGH",
+   },
+
+   "Treeman Twigborne":
+   {  
+       "Name": "Sample patron",
+	   "Disposition": "RESERVED",
+	   "allicence": "Nature",
+	   "patronsTolerance": "HIGH",
+	   "stats": [8,5,1,2], 
+	   "backStory1": "Tree",
+	   "backStory2": "Shifty",
+	   "backStory3": "likes Sunlight",
+	   "Patience":"LOW",
+	},
+
+	"Adira Shamoon":
+   {
+          "Name": "Adira Shamoon",
+       "Disposition": "UPBEAT",
+       "allegiance": "NONE",  
+       "patronsTolerance": "Low",
+       "stats": [ 3, 4, 2, 3],  
+       "backStory1": " “Hello! Can I get a, umm… Well, I don’t know, I’ll try anything, as long as it’s not TOO strong, haha!” ",
+       "backStory2": "“Oh man… I probably shouldn’t have too many of these if we’re going on a mission soon. But… one more can’t hurt!”",
+       "backStory3": " “Ah, my life was so boring before I found The Damsels! I didn’t necessarily hate scholarly life, but reading about the world is so different from experiencing it! It’s great fun!”",
+       "Patience": "HIGH",
+   },
+
+   "Deirdre Downton":
+   {
+          "Name": "Deirdre Downton",
+       "Disposition": "Arrogant",
+       "allegiance": "NONE",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 3, 6, 4, 3],  
+       "backStory1": "“Heh heh… Good evening, bartender. Mind if an old crone rests her bones here awhile? And if you could bring me a good, strong brew, maybe I won’t hex you, heh heh heh~”",
+       "backStory2": "“Heh heh heh… your brewing may be nothing to sneeze at, but there’s no beating my potions, bartender. People come from all around to get their hands on them, and will pay most any price! Want to sample? Heh heh heh~!”",
+
+       "backStory3": "“Heh heh… You’ve done right by this old witch, bartender! If you do me a favor, I might have something good for you, heh heh~ I need something very special for my potion brewing, a very rare palladium cauldron! It’s properties are perfect for what I intend, and I know exactly where one is. The only problem is an this old witch, powerful though I may be, can’t journey such distances and transport it without a little assistance. I need someone spry to fetch it! Find me someone with the vigor and competence to transport such a valuable and important item and you’ll be rewarded well! Heh heh heh!”",
+       "Patience": "MID",
+   }, 
+
+   "Eva K’neva":
+   {
+          "Name": "Eva K’neva",
+       "Disposition": "Stalwart",
+       "allegiance": "None",  
+       "patronsTolerance": "MID",
+       "stats": [ 5, 3, 1, 4],  
+       "backStory1": " “Oi, bartender! Can I get a round of ales for me and my girls? Adventuring sure works a mighty thirst, ha ha ha!”",
+       "backStory2": "“--And then I say, ‘Liquor? I barely know her!’ HA HA HA HA! Whew, barkeep, keep ‘em comin’! Gotta keep the mood lively, ya see!”",
+       "backStory3": "“Hey, you’re one hell of barkeep! You ever need anything, just ask The Dare Devil Damsels and we’ll handle whatever it may be! Consider yourself our friend and ally, and likewise from us to you! Cheers!”",
+       "Patience": "MID",
+   },
+
+   "Harlow Holloway":
+   {
+          "Name": "Harlow Holloway",
+       "Disposition": "Stalwart",
+       "allegiance": "None",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 6, 2, 1, 3],  
+       "backStory1": "“Hullo, little barkeep! Bring Harlow something warm and strong, yah? And much of it! HA HA HA HA HA!”",
+       "backStory2": "“Ach, Harlow is missing sweet leetle husband, back in home land! But Harlow’s heart needs excitement, and is Harlow’s duty to help those in need!",
+       "backStory3": "“Little barkeep is good person! You have Harlow’s thanks and friendship! The Damsels will remember you!”",
+       "Patience": "MID",
+   }
+
+},
+
+"Unlockable":
+{
+    "Unlockable Guy":
+   {
+          "Name": "Unlockable guy",
+       "Disposition": "Stalwart",
+       "allegiance": "None",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 6, 2, 1, 3],  
+       "backStory1": "OPTICBLA2T",
+       "backStory2": "2NOPTICBLA2T",
+       "backStory3": "CLICK IVE BEEN UNLOCKED",
+       "Patience": "MID",
+   },
+
+   "Frankenstine":
+   {
+   	   "Name": "Frankenstine",
+	   "Disposition": "upbeat",
+       "allegiance": "None",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 6, 4, 1, 2],  
+       "backStory1": "Since you didn't kill me, I am your friend",
+       "backStory2": "Oh golly how can you dance!",
+       "backStory3": "Fire bad! Pasta rad!",
+       "Patience": "MID",
+   },
+
+
+    "Sneaky guy":
+   {
+   	   "Name": "Unlockable hide and seek",
+	   "Disposition": "upbeat",
+       "allegiance": "None",  
+       "patronsTolerance": "HIGH",
+       "stats": [ 2, 4, 5, 2],  
+       "backStory1": "Since you didn't kill me, I am your friend",
+       "backStory2": "Oh golly how can you dance!",
+       "backStory3": "Fire bad! Pasta rad!",
+       "Patience": "MID",
+   }
+}
+
+}
+
+  
+

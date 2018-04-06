@@ -1,0 +1,150 @@
+{
+
+
+   "Hello":
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+	},
+
+    "Talk": 
+	{
+		"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["... Hey", "...", "Hi", "* small wave"],
+    "Upbeat" : ["HOI", "hey there", "Good day!", "Nice place you got here!"],
+    "Dark" : ["*scowl" , "uh", "*sigh", "Not today."],
+	"Arrogant" : ["Arrogant talk 1" , "Arrogant talk 2", "Arrogant talk 3", "Arrogant talk 4"]
+		
+	},
+
+	"Rumor":  
+	{
+	"Stalwart" : ["So I heared about", "I got a job that needs doing" , "Got something you might want to hear"],    
+     "Reserved" : ["Uh, could you do this for me... please", "I need some help with a job", "reserved rumor 3", "reserved rumor 4"],
+    "Upbeat" : ["Upbeat rumor 1", "Upbeat rumor 2", "Upbeat rumor 3"],
+    "Dark" : ["Dark rumor 1" , "Dark rumor 2", "Dark rumor 3", "Dark rumor 4"],
+	"Arrogant" : ["Arrogant rumor 1" , "Arrogant rumor 2", "Arrogant rumor 3", "Arrogant rumor 4"]
+	},
+	
+	
+	"Drink": 
+	{
+	"Stalwart" : ["Stalwart drink 1", "Stalwart drink 2" , "Stalwart drink 3", "Stalwart drink 4", "Stalwart drink 5" ],    
+     "Reserved" : ["Reserved drink 1", "Reserved drink 2", "Reserved drink 3", "Reserved drink 4"],
+    "Upbeat" : ["Upbeat drink 1", "Upbeat drink 2", "Upbeat drink 3" , "upbeat drink 4"],
+    "Dark" : ["Dark drink 1" , "Dark drink 2", "Dark drink 3"],
+	"Arrogant" : ["Arrogant drink 1" , "Arrogant drink 2", "Arrogant drink 3"]
+	},
+
+	"About drunk": 
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+	},
+
+	"Drunk": 
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+	}, 
+
+	"Go On Quest":
+	{
+	"Stalwart" : ["Stalwart go on quest 1", "Stalwart go on quest 2" , "Stalwart go on quest 3"],    
+     "Reserved" : ["Reserved go on quest 1", "Reserved go on quest 2", "Reserved go on quest 3", "Reserved go on quest 4"],
+    "Upbeat" : ["Upbeat go on quest 1", "Upbeat go on quest 2", "Upbeat go on quest 3"],
+    "Dark" : ["Dark go on quest 1" , "Dark go on quest 2", "Dark go on quest 3", "Dark go on quest 4"],
+	"Arrogant" : ["Arrogant go on quest 1" , "Arrogant go on quest 2", "Arrogant go on quest 3", "Arrogant go on quest 4"]
+	}, 
+
+	"Decline":
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+	}, 
+
+	"Accept":
+	{
+	"Stalwart" : ["Warmachine", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+	},
+
+	"Exit":
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+
+	},
+
+	"Order":
+	{
+	"Stalwart" : ["Ah I truely need a drink as strong as I am ... ", "I would like " , "I want a" ],    
+     "Reserved" : ["One ", "... ", "May I have "],
+    "Upbeat" : ["Hey, can I have ", "May I have ", "You know what I could go for... "],
+    "Dark" : ["Serve me a " , "The thirst burns, one ", " I desire a ", "A drink as awful as I ... "],
+	"Arrogant" : ["I demand you serve me " , "I require ", "Barkeep, I require ", "Get me a"]
+
+	},
+
+	"Special Order":
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+
+	},
+
+	"No beer order":
+	{
+	"Stalwart" : ["YO", "*Grunts" , "Hey", "barkeep...", "Ahoy barkeep" ],    
+     "Reserved" : ["Hello", "Hi", "Good Day", "Hello barkeep"],
+    "Upbeat" : ["Greetings", "Well met", "Good day!"],
+    "Dark" : ["*does a jig" , "Hello", "*toodles recorder", "Doot"],
+	"Arrogant" : ["Yes" , "Greetings", "* Stares blankly", "Fine Day"]
+
+	},
+
+	"Triumph":
+	{
+	"Stalwart" : ["Stalwart Triumph 1", "Stalwart Triumph 2" , "Stalwart Triumph 3"],    
+     "Reserved" : ["Reserved Triumph 1", "Reserved Triumph 2", "Reserved Triumph 3", "Reserved Triumph 4"],
+    "Upbeat" : ["Upbeat Triumph 1", "Upbeat Triumph 2", "Upbeat Triumph 3"],
+    "Dark" : ["Dark Triumph 1" , "Dark Triumph 2", "Dark Triumph 3", "Dark Triumph 4"],
+	"Arrogant" : ["Arrogant Triumph 1" , "Arrogant Triumph 2", "Arrogant Triumph 3", "Arrogant Triumph 4"]
+
+	},
+
+	"Fail":
+	{
+	"Stalwart" : ["Stalwart fail 1", "Stalwart fail 2" , "Stalwart fail 3", "Stalwart fail 4", "Stalwart fail 5" ],    
+     "Reserved" : ["Reserved fail 1", "Reserved fail 2", "Reserved fail 3", "Reserved fail 4"],
+    "Upbeat" : ["Upbaeat fail 1", "Upbaeat fail 2", "Upbaeat fail 3"],
+    "Dark" : ["Dark fail 1" , "Dark fail 2", "Dark fail 3"],
+	"Arrogant" : ["Arrogant fail 1" , "Arrogant fail 2", "Arrognant fail 3", "Arrogant fail 4"]
+
+	}
+
+
+}
+
+

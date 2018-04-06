@@ -1,0 +1,64 @@
+{
+  "Drinks": [
+   
+    
+   {
+   	   "Name": "StockBeer",
+	   "Description": "Green, mean and goes to your spleen",
+	   // Specal Traits???
+	   "Cost": "10",
+	   "value": "35",
+	   "timeToDrink": "10",
+	   "isAlcoholic": true,
+	   "alcoholContent" : "1"
+ 
+   },
+
+    {
+		"Name": "Juice",
+	   "Description": "Best with a straw of sorts",
+	   // Specal Traits???
+	   "Cost": "5",
+	   "value": "25",
+	   "timeToDrink": "5",
+	   "isAlcoholic": false,
+	   "alcoholContent" : "0"
+	},
+
+	 {
+		"Name": "ErrorDrink",
+	   "Description": "Tastes like tears",
+	   // Specal Traits???
+	   "Cost": 413,
+	   "value": 4,
+	   "timeToDrink": 60,
+	   "isAlcoholic": false,
+	   "alcoholContent" : 0
+	},
+
+   ],
+
+  "Ingredients":
+  [
+       
+	   { "Name": "A level one quest",
+	   "Description": "You should not see this",
+	   // Checks
+	   "Allegiance": "Error",
+	   "Rival": "Happiness",
+	   "Length":1
+	   }
+  ],
+
+  "AdventureItems":
+  [
+       
+	   { "Name": "A level one quest",
+	   "Description": "You should not see this",
+	   // Checks
+	   "Allegiance": "Error",
+	   "Rival": "Happiness",
+	   "Length":1
+	   }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+
+  "Deirdre": {
+
+    "Parchments, Please": {
+      "Name": "Parchments, Please",
+      "Description": "Your first quest! In all the commotion of getting the bar up and running again, you neglected to pick up your bartending certification from City Hall. You could always run across town to grab it, but there may be a better way to accomplish this...",
+      "Quests": [ "Send a Courier" ],
+      "IsUnlockedFromStart": true
+
+    }
+
+  },
+
+  "Artie": {
+    
+
+  },
+
+  "OldManHorace": {
+
+
+  },
+
+
+  "Nell": {
+
+        "Your Civic Duty": {
+            "Name": "Your Civic Duty",
+            "Description": "The Spire's on the brink of collapsing, and the Corporeal has yet to issue any kind of response. It's only been a couple days, but the citizens have grown restless over the lack of transparency, and are currently protesting in front of City Hall. At this rate, they may even manage to push past the line of guards who are keeping them at bay.",
+            "Quests": [ "Stir the Crowds!", "Hold the Line!" ],
+            "IsUnlockedFromStart": true
+
+        }
+
+    },
+
+  "Mavis": {
+
+    },
+
+  "Gaius": {
+
+    },
+
+
+  "Jim": {
+
+    "The Commotion": {
+      "Name": "The Commotion",
+      "Description": "That earth-shattering commotion from earlier was very worrying- it'd probably be in your best interests, simply as a citizen of Kastonia, to figure out what happened. Unfortunately, you can't just go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
+      "Quests": [ "Locate the Source" ],
+      "IsUnlockedFromStart": true
+
+    },
+
+    "Answer the Call": {
+      "Name": "Answer the Call",
+      "Description": "The number of casualties and property damage is still unknown. People continue to provide as much support as they can, but since it's been almost twenty-four hours, first responders have become incredibly fatigued. It might be worth it to send someone off to help.",
+      "Quests": [ "Help Move the Rubble", "Empower the Workers" ],
+      "IsUnlockedFromStart": false
+
+    }
+
+  }
+
+}
