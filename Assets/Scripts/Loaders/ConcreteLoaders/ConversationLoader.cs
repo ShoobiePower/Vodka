@@ -43,8 +43,7 @@ public class ConversationLoader : Loader
     {
         Conversation conversationToReturn = new Conversation(conversationToConstruct[(int)ConversationParserHelper.NAME].str, conversationToConstruct[(int)ConversationParserHelper.ONESHOT].b);
         for (int i = 0; i < conversationToConstruct[(int)ConversationParserHelper.STANZA].Count; i++)
-        {
-            Stanza stanzaToAdd = new Stanza(conversationToConstruct[(int)ConversationParserHelper.STANZA][i][0].str, getEmotionForStanza(conversationToConstruct[(int)ConversationParserHelper.STANZA][1])))
+        ;
             conversationToReturn.addStanza(stanzaToAdd);
         }
         AddAllKindsOfUnlocker(conversationToReturn, conversationToConstruct);
