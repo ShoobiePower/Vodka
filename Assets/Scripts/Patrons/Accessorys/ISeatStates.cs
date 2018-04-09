@@ -7,7 +7,7 @@ public interface ISeatStates
 
     void FillSeat(Patron patronToSit);
     void TalkWithPatron();
-    void ConsumeBeverage(); //Drink DrinkToConsume
+    void ConsumeBeverage(); 
     void PatronWantsToGoOnAdventure(); 
     void PatronSharesARumor();
     void PatronReturnsFromQuest();
@@ -72,7 +72,6 @@ public class PatronSeated : ISeatStates
     {
         // cannot drink unless they have ordered
         Debug.Log("Cannot drink unless they have ordered");
-       // TalkWithPatron(); // HACK if the patron hasent ordered, and the player insists on giving them as drink, they will order instead. ''HERE
     }
 
 
@@ -83,8 +82,6 @@ public class PatronSeated : ISeatStates
 
     public void TalkWithPatron()
     {
-        //seatToKeepTrackOf.IsHasOrdered = true;
-        // seatToKeepTrackOf.orderBubble.displayDrinkRequest(seatToKeepTrackOf.transform.position, seatToKeepTrackOf.patron.DrinkThePatronWants.listIngredentsInDrink());
         if (seatToKeepTrackOf.patron.CurrentConversation == null || seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
         {
             seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.DRINK, seatToKeepTrackOf.patron.ID) + seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
@@ -93,7 +90,11 @@ public class PatronSeated : ISeatStates
 
         else
         {
+            if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
+                SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+
             seatToKeepTrackOf.patronSays(seatToKeepTrackOf.patron.CurrentConversation.dioOut());
+            
         }
 
     }

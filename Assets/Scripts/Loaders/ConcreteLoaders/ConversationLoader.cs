@@ -16,7 +16,7 @@ public class ConversationLoader : Loader
     public List<Conversation> loadPatronConversationsBasedOnId(byte patronID)
     {
         List<Conversation> conversationsToReturn = new List<Conversation>();
-        for(int i = 0; i < jsonObject[patronID].Count; i++)
+        for (int i = 0; i < jsonObject[patronID].Count; i++)
         {
             if (jsonObject[patronID][i][(int)ConversationParserHelper.UNLOCKEDFROMSTART].b == true)
             {
@@ -42,8 +42,10 @@ public class ConversationLoader : Loader
     private Conversation conversationConstructor(JSONObject conversationToConstruct)
     {
         Conversation conversationToReturn = new Conversation(conversationToConstruct[(int)ConversationParserHelper.NAME].str, conversationToConstruct[(int)ConversationParserHelper.ONESHOT].b);
+
         for (int i = 0; i < conversationToConstruct[(int)ConversationParserHelper.STANZA].Count; i++)
-        ;
+        {
+            Stanza stanzaToAdd = new Stanza(conversationToConstruct[(int)ConversationParserHelper.STANZA][i][0].str, getEmotionForStanza(conversationToConstruct[(int)ConversationParserHelper.STANZA][i][1].str));
             conversationToReturn.addStanza(stanzaToAdd);
         }
         AddAllKindsOfUnlocker(conversationToReturn, conversationToConstruct);
@@ -56,9 +58,26 @@ public class ConversationLoader : Loader
      {
         case "none":
          {
-           break;
+           return Stanza.stanzaEmotion.NONE;
          }
-     }
+        case "cheerful":
+         {
+            return Stanza.stanzaEmotion.CHEERFUL;
+         }
+        case "inquisitive":
+        {
+         return Stanza.stanzaEmotion.INQUISITIVE;
+        }
+            case "special":
+        {
+           return Stanza.stanzaEmotion.SPECIAL;
+        }
+        default:
+         {
+            Debug.Log("Error on emote, defaulting to none");
+            return Stanza.stanzaEmotion.NONE;
+         }
+      }
    }
 
     private void AddAllKindsOfUnlocker( Conversation conversationToModify,JSONObject whatToAdd)

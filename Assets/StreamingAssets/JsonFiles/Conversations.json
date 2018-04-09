@@ -519,7 +519,7 @@
       "Stanzas": [
         [
           "...or maybe that confused look on your face means that you're still working on learning the ropes? Hah!",
-          "NONE"
+          "cheerful"
         ]
       ],
       "PatronReward": [],
@@ -536,7 +536,7 @@
       "Stanzas": [
         [
           "Name's Jim. I've been a patron of your parents since they opened this place!",
-          "NONE"
+          "inquisitive"
         ],
         [
           "...you still seem a little rattled. Tell you what, why don't I give you a helping hand! It's the least I can do for your parents' decades of service.",
@@ -548,7 +548,7 @@
         ],
         [
           "It shouldn't be all that hard. Each of the taps are color-coded after all, ho ho!",
-          "NONE"
+          "none"
         ]
       ],
       "PatronReward": [],
@@ -565,7 +565,7 @@
       "Stanzas": [
         [
           "Whoa there- looks like one of your patrons has given you a quest!",
-          "NONE"
+          "special"
         ],
         [
           "...what're you giving me that look for? You didn't think that serving drinks was your ONLY job as a bartender, right?",

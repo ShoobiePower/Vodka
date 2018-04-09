@@ -7,7 +7,6 @@ public interface IBarManagerState  {
     void ClickPatron();
     void MakeDrink(byte slotToUse, FillableMug targetMug ); //Drink targetDrink
     void PauseBar();
-
 }
 
 
@@ -40,7 +39,6 @@ public class PatronHighlighted : IBarManagerState
 
             case Patron.whatDoTheyWantToDo.ADVENTURE:
                 {
-                    // if (barManager.SelectedSeat.patron.CurrentConversation == null) { barManager.SelectedSeat.patron.CurrentConversation = barManager.conversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID); }
                     barManager.SelectedSeat.patron.CurrentConversation = barManager.ConversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID);
                     barManager.setBarState(barManager.patronIsConversing());
                     barManager.SelectedSeat.TalkWithPatron();
@@ -52,7 +50,6 @@ public class PatronHighlighted : IBarManagerState
                     if (barManager.RumorManager.getNumberOfRumorsLeftInCharacter(barManager.SelectedSeat.patron.ID) == 0)
                     {
                        
-                        //if (barManager.SelectedSeat.patron.CurrentConversation == null) { barManager.SelectedSeat.patron.CurrentConversation = barManager.conversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID); }
                         barManager.SelectedSeat.patron.CurrentConversation = barManager.ConversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID);
                         barManager.SelectedSeat.patron.currentActivity = Patron.whatDoTheyWantToDo.GOHOME;
                         barManager.setBarState(barManager.patronIsConversing());
@@ -64,7 +61,6 @@ public class PatronHighlighted : IBarManagerState
                         Rumor rumorToShare = barManager.RumorManager.getRandomRumorFromWarehouseByCharacter(barManager.SelectedSeat.patron.ID);
                         barManager.SelectedSeat.patron.CurrentConversation = barManager.ConversationWarehouse.getSpecificConversationFromLoader(barManager.SelectedSeat.patron.ID, rumorToShare.RumorName);
                         barManager.SendInfoToRumorBoard(rumorToShare);
-                       // barManager.rumorBoard.labelPatronRumorBoard(rumorToShare);
                         barManager.setBarState(barManager.patronIsConversing());
                         barManager.SelectedSeat.TalkWithPatron();
                         break;
@@ -88,7 +84,6 @@ public class PatronHighlighted : IBarManagerState
 
     public void MakeDrink(byte SlotToUse, FillableMug targetMug)
     {
-        //targetDrink.addIngredentToDrink(barManager.inventoryManager.useIngredentFromInvintory(SlotToUse));
     }
 
     public void PauseBar()

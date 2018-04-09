@@ -154,6 +154,7 @@ public class BarManager : Colleague , ISubject
 
     public void ClickPatron()
     {
+        if (selectedSeat.patron != null) // Here
         barManagerState.ClickPatron();
     }
 

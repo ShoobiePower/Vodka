@@ -143,7 +143,6 @@ public class Seat : ABSTFadableObject, ISubject
 
             case Patron.whatDoTheyWantToDo.ADVENTURE:
                 {
-                    //seatState.PatronWantsToGoOnAdventure(); // Sets the state to I WANT TO ADVENTURE, locking it out of ordering drinks, as of 2/8 I might need to burn this to the ground.
                     patronWantsIcons.PatronWantsToGoOnAnAdventure(); // displays icon for I want to adventure. 
                     break;
                 }

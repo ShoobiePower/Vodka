@@ -12,7 +12,7 @@ public class Conversation : ISubject
         isConversationOver = false;
         registerSelfToMediator();
     }
-    //stores stanzas
+
     List<Stanza> stanzasInConversation = new List<Stanza>();
     List<Unlocker> thingsThisConversationUnlocks = new List<Unlocker>();
     public List<Unlocker> ThingsThisConversationUnlocks{ get { return thingsThisConversationUnlocks; } set { thingsThisConversationUnlocks = value; } }
@@ -44,6 +44,13 @@ public class Conversation : ISubject
         string stanzaToReturn = stanzasInConversation[stanzaNumber].stanzaSays();
         incrementStanza();
         return stanzaToReturn;
+    }
+
+    public string emoteOut()
+    {
+        if (stanzasInConversation[stanzaNumber].thisStanzasEmotion == Stanza.stanzaEmotion.NONE) { return string.Empty; }
+        else
+        return stanzasInConversation[stanzaNumber].thisStanzasEmotion.ToString().ToLower();
     }
 
     // increment stanza
