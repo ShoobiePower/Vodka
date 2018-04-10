@@ -201,6 +201,7 @@
     <Compile Include="Assets\Scripts\Tutorial\Tasks\TutorialTask.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Util\ABSTFadableObject.cs" />
+    <Compile Include="Assets\Scripts\Util\DropDownToast.cs" />
     <Compile Include="Assets\Scripts\Util\FadingText.cs" />
     <Compile Include="Assets\Scripts\Util\Toast.cs" />
     <Compile Include="Assets\Scripts\Util\ToastPool.cs" />

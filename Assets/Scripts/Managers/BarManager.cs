@@ -29,7 +29,7 @@ public class BarManager : Colleague , ISubject
     public RumorManager RumorManager { get { return rumorManager; } }
 
     [SerializeField]
-    ToastPool toastPool;
+    DropDownToast DropDownToast; //Toast Pool
     #endregion
 
     //A master switch for our ui, used for the purpose of the end of day manager rework.
@@ -410,7 +410,7 @@ public class BarManager : Colleague , ISubject
                 toastToShow = "Bond level up! \n Skill learned " + selectedSeat.patron.PatronSkills[selectedSeat.patron.Level -1].ToString();
             }
 
-            toastPool.SendToastFromLocation(selectedSeat.ToastStartPoint.position, toastToShow );
+            DropDownToast.AddMessageToQueue(toastToShow);
         }
 
         tutorial.notifyObserver(Mediator.ActionIdentifiers.DRINK_SERVED);
@@ -424,7 +424,7 @@ public class BarManager : Colleague , ISubject
         if(buff != Patron.SkillTypes.NONE)
         {
             string toastToShow = "Menu match! Buff gained: " + buff.ToString();
-            toastPool.SendToastFromLocation(selectedSeat.ToastStartPoint.position, toastToShow);
+            DropDownToast.AddMessageToQueue(toastToShow);
         }
     }
 
