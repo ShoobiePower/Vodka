@@ -14,6 +14,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
     [SerializeField] EndOfDaySummaryManager endOfDaySummaryManager;
     [SerializeField] BattleReportManager battleReportManager;
     [SerializeField] RumorBoardUI rumorBoard;
+    [SerializeField] PauseManager pauseManager;
 
     [SerializeField] MusicManager musicManager;
 
@@ -35,6 +36,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
         battleReportManager.SetDirector(this);
         rumorBoard.SetDirector(this);
         inputManager.SetDirector(this);
+        pauseManager.SetDirector(this);
        // musicManager.SendMessage(this);
 
 }
@@ -108,10 +110,14 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
         else if (sender == rumorBoard)
         {
-            //Quest questToAdd = rumorBoard.selectQuestFromOptions(indexer);
             barManager.setBarState(barManager.dismissPatron());
             SoundManager.Instance.AddCommand("SelectQuest1"); // TODO: Randomize this command  
            
+        }
+
+        else if (sender == pauseManager)
+        {
+            barManager.setBarState(pauseManager.getStoredBarState());
         }
     }
 
@@ -229,6 +235,17 @@ public class ManagerDirector : MonoBehaviour, IDirector
     {
         Debug.Log(commandToActivate);
         commandToActivate.Execute(battleReportManager);
+    }
+
+    public void ActivatePauseManagerCommand(Command commandToActivate)
+    {
+        commandToActivate.Execute(pauseManager);
+    }
+
+    public void pauseGame()
+    {
+        pauseManager.pauseGame(barManager.BarManagerState);
+        barManager.setBarState(barManager.barIsPaused());
     }
 
     // EndOfDay Summary Section

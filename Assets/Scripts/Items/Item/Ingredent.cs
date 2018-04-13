@@ -3,9 +3,10 @@ using System.Collections;
 
 public class Ingredient : StoreableItem {
 
-    public enum ingredientColor {RED, YELLOW, GREEN, BLUE, LENGTH }
+    public enum ingredientColor { RED, YELLOW, GREEN, BLUE, LENGTH }
     private ingredientColor thisIngredentsColor;
-    public ingredientColor ThisIngredentsColor { get { return thisIngredentsColor; } }
+    public ingredientColor ThisIngredentsColor { get { return thisIngredentsColor; } set { thisIngredentsColor = value; } }
+    private string[] NamesForIngredent = {"Firehops", "Skyburst", "Everdeep", "Beryluna" }; 
     Sprite howDoILook;
 
 	public Ingredient(ingredientColor ThisIngredentsColor)
@@ -15,7 +16,7 @@ public class Ingredient : StoreableItem {
 
     public override string sayName()
     {
-        return thisIngredentsColor.ToString(); // an overrided to string may let us put in neat names for our ingredents
+        return NamesForIngredent[(byte)thisIngredentsColor]; //thisIngredentsColor.ToString(); 
     }
 
     public override Sprite displayArt()
@@ -26,4 +27,7 @@ public class Ingredient : StoreableItem {
         }
         return howDoILook;
     }
+
+    
+
 }

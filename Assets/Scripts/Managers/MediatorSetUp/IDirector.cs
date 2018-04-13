@@ -22,6 +22,8 @@ public interface IDirector {
     void ActivateEndOfDaySummaryCommand(Command commandToActivate);
     void ActivateRumorBoardUICommand(Command comandToActivate);
     void ActivateBattleReportCommand(Command commandToActivate);
+    void ActivatePauseManagerCommand(Command commandToActivate);
+    void pauseGame();
 
 
     // I need to fix my ducttape at some point
@@ -31,6 +33,7 @@ public interface IDirector {
     void ReportOnPatronReturning(Patron returningPatron);
 
     void RecordPatronLevelUp(Patron patronThatLeveledUp);
+
 
 
 

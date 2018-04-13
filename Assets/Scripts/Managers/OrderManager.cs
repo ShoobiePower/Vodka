@@ -14,7 +14,7 @@ public class OrderManager : MonoBehaviour {
     private List<Ingredient.ingredientColor> allUnlockedIngredentColors = new List<Ingredient.ingredientColor>();
     public enum OrderOptions {  BYCOLOR, BYWITHOUTCOLOR, LENGTH }
 
-    private string[] drinkNames = new string[16];
+   // private string[] drinkNames = new string[16];
 
     public enum orderAccuracy {NONE,MIXUP, CORRECT};
 
@@ -25,7 +25,7 @@ public class OrderManager : MonoBehaviour {
     {
         dLoader.init();
         allLockedDrinksInGame = dLoader.populateDrinkCollection();
-        loadDrinkNames();
+       // loadDrinkNames();
     }
 
 
@@ -81,32 +81,32 @@ public class OrderManager : MonoBehaviour {
             {
                 //Debug.Log("FoundDrinkOfName" + allLockedDrinksInGame[j].DrinkName);
                 allDrinksTheBartenderKnows.Add(allLockedDrinksInGame[j]);
-                hideQuestionMarkOnDrinkChart(allLockedDrinksInGame[j].DrinkName);
+               // hideQuestionMarkOnDrinkChart(allLockedDrinksInGame[j].DrinkName);
                 allLockedDrinksInGame.RemoveAt(j);
                 j--;
             }
         }
     }
 
-    private void loadDrinkNames() 
-    {
-        for( int i = 0; i < allLockedDrinksInGame.Count; i++)
-        {
-            drinkNames[i] = allLockedDrinksInGame[i].DrinkName;
-            allQuestionMarkBlocks[i].gameObject.SetActive(true);
-        }
-    }
+    //private void loadDrinkNames() 
+    //{
+    //    for( int i = 0; i < allLockedDrinksInGame.Count; i++)
+    //    {
+    //        drinkNames[i] = allLockedDrinksInGame[i].DrinkName;
+    //        allQuestionMarkBlocks[i].gameObject.SetActive(true);
+    //    }
+    //}
 
-    private void hideQuestionMarkOnDrinkChart(string drinkUnlocked)
-    {
-      for (int i = 0; i < drinkNames.Length; i++)
-        {
-            if (drinkUnlocked == drinkNames[i])
-            {
-                allQuestionMarkBlocks[i].gameObject.SetActive(false);
-            }
-        }
-    }
+    //private void hideQuestionMarkOnDrinkChart(string drinkUnlocked)
+    //{
+    //  for (int i = 0; i < drinkNames.Length; i++)
+    //    {
+    //        if (drinkUnlocked == drinkNames[i])
+    //        {
+    //            allQuestionMarkBlocks[i].gameObject.SetActive(false);
+    //        }
+    //    }
+    //}
 
     public orderAccuracy determineDrinkPrice(IOrder PatronOrder , Drink drinkMade)
     {

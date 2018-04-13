@@ -57,43 +57,41 @@ public class OrderByFlavor : IOrder
 
 public class OrderByIngredent : IOrder
 {
-    Ingredient.ingredientColor ingredentToInclude;
+    Ingredient ingredentToInclude;
 
-    
-    
     public OrderByIngredent(Ingredient.ingredientColor colorOfRequest)
     {
-        ingredentToInclude = colorOfRequest;
+        ingredentToInclude = new Ingredient(colorOfRequest);
     }
 
     public bool checkAccuracy(Drink drinkToCheck)
     {
-        return (drinkToCheck.DrinkIngredents[(int)ingredentToInclude] != 0);
+        return (drinkToCheck.DrinkIngredents[(int)ingredentToInclude.ThisIngredentsColor] != 0);
     }
 
     public string describeOrder()
     {
        // string preloadedString = string.Format(" a drink that has <color=red>{0}</color> ", ingredentToInclude);
-        return System.String.Format(" a drink that has {0} ", ingredentToInclude); 
+        return System.String.Format(" a drink that has {0} ", ingredentToInclude.sayName()); 
     }
 }
 
 public class OrderByLackOfIngredent : IOrder
 {
-    Ingredient.ingredientColor ingredentToAvoid;
+    Ingredient ingredentToAvoid;
 
     public OrderByLackOfIngredent()
     {
-        ingredentToAvoid = (Ingredient.ingredientColor)UnityEngine.Random.Range((int)Ingredient.ingredientColor.RED, (int)Ingredient.ingredientColor.LENGTH);
+        ingredentToAvoid = new Ingredient((Ingredient.ingredientColor)UnityEngine.Random.Range((int)Ingredient.ingredientColor.RED, (int)Ingredient.ingredientColor.LENGTH));
     }
 
     public bool checkAccuracy(Drink drinkToCheck)
     {
-        return (drinkToCheck.DrinkIngredents[(int)ingredentToAvoid] == 0);
+        return (drinkToCheck.DrinkIngredents[(int)ingredentToAvoid.ThisIngredentsColor] == 0);
     }
 
     public string describeOrder()
     {
-        return " a drink without " + ingredentToAvoid;
+        return System.String.Format(" a drink without {0} " ,ingredentToAvoid.sayName());
     }
 }

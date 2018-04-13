@@ -113,6 +113,7 @@
     <Compile Include="Assets\Scripts\Managers\DebugStuff.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\AbstBookStates.cs" />
+    <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\DrinkMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\EndOfDayIdle.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\MapOpen.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\PatronBioScreenOpen.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ChooseQuestFromMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseAdventureMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseEndOfDaySummary.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\ContinueGame.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\DismissAdventurer.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\GetInfoFromEndOfDayButton.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\InteractWithBookOfPatrons.cs" />
@@ -141,6 +143,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenEndOfDayMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenTaverkeeperJournal.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\PlayStartNextDayAnimation.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\QuitToMainMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\RecycleDrink.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScanForPatron.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollBarUp.cs" />
@@ -149,6 +152,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ScrollRightInBar.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SelectQuestOption.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ServeDrink.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToDrinkMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToIdle.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToPatronBio.cs" />
@@ -162,6 +166,7 @@
     <Compile Include="Assets\Scripts\Managers\MediatorSetUp\ManagerDirector.cs" />
     <Compile Include="Assets\Scripts\Managers\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Managers\OrderManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\PauseManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound\AudioCommand.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound\SoundManager.cs" />
     <Compile Include="Assets\Scripts\MapRelated\MapManager.cs" />

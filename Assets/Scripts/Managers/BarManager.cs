@@ -65,6 +65,7 @@ public class BarManager : Colleague , ISubject
     IBarManagerState endOfDayBar;
 
     IBarManagerState barManagerState;
+    public IBarManagerState BarManagerState { get { return barManagerState; } }
     #endregion
 
 

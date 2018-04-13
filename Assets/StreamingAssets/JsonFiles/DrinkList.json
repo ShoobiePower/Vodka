@@ -11,7 +11,8 @@
        "Flavor": "Bitter",  
 	   "Correct Price": 5,
 	   "Mix Up Price": 2,
-      "Buff" : "Strong"
+    "Buff": "Strong",
+    "Description": "Desc FPO"
    },
 
   "Goldfire": {
@@ -23,7 +24,8 @@
     "Flavor": "Strong",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Smart"
+    "Buff": "Smart",
+    "Description": "Desc FPO"
   },
 
   "Flare": {
@@ -35,7 +37,8 @@
     "Flavor": "Classic",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Sneak"
+    "Buff": "Sneak",
+    "Description": "Desc FPO"
   },
 
   "Solarburst": {
@@ -47,7 +50,8 @@
     "Flavor": "Sweet",
     "Correct Price": 5,
     "Mix Up Price": 2,
-    "Buff": "Strong"
+    "Buff": "Strong",
+    "Description": "Desc FPO"
   },
 
 
@@ -61,7 +65,8 @@
     "Flavor": "Bitter",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Smart"
+    "Buff": "Smart",
+    "Description": "Desc FPO"
   },
 
   "Boomshine": {
@@ -73,7 +78,8 @@
     "Flavor": "Strong",
     "Correct Price": 15,
     "Mix Up Price": 10,
-    "Buff": "Sneak"
+    "Buff": "Sneak",
+    "Description": "Desc FPO"
   },
 
   "Faded Glory": {
@@ -85,11 +91,11 @@
     "Flavor": "Classic",
     "Correct Price": 15,
     "Mix Up Price": 10,
-    "Buff": "Sway"
+    "Buff": "Sway",
+    "Description": "Desc FPO"
   },
 
-"Sun Special":
-  {
+  "Sun Special": {
     "Name": "Sun Special",
     "Red": 0,
     "Yellow": 2,
@@ -98,7 +104,8 @@
     "Flavor": "Sweet",
     "Correct Price": 5,
     "Mix Up Price": 2,
-    "Buff": "Strong"
+    "Buff": "Strong",
+    "Description": "Desc FPO"
   },
 
   "Father Thyme": {
@@ -110,7 +117,8 @@
     "Flavor": "Bitter",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Smart"
+    "Buff": "Smart",
+    "Description": "Desc FPO"
   },
 
   "Morning Dew": {
@@ -122,7 +130,8 @@
     "Flavor": "Strong",
     "Correct Price": 15,
     "Mix Up Price": 10,
-    "Buff": "Sneak"
+    "Buff": "Sneak",
+    "Description": "Desc FPO"
   },
 
   "Twicler's Greed": {
@@ -134,7 +143,8 @@
     "Flavor": "Classic",
     "Correct Price": 15,
     "Mix Up Price": 10,
-    "Buff": "Sway"
+    "Buff": "Sway",
+    "Description": "Desc FPO"
   },
 
   "Twilight": {
@@ -146,7 +156,8 @@
     "Flavor": "Sweet",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Strong"
+    "Buff": "Strong",
+    "Description": "Desc FPO"
   },
 
   "Brinewater": {
@@ -158,7 +169,8 @@
     "Flavor": "Bitter",
     "Correct Price": 5,
     "Mix Up Price": 3,
-    "Buff": "Smart"
+    "Buff": "Smart",
+    "Description": "Desc FPO"
   },
 
   "Mint to Be": {
@@ -170,7 +182,8 @@
     "Flavor": "Strong",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Sneak"
+    "Buff": "Sneak",
+    "Description": "Desc FPO"
   },
 
   "Water": {
@@ -182,7 +195,8 @@
     "Flavor": "Classic",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Sway"
+    "Buff": "Sway",
+    "Description": "Desc FPO"
   },
 
   "Sweetwater": {
@@ -194,7 +208,8 @@
     "Flavor": "Sweet",
     "Correct Price": 5,
     "Mix Up Price": 3,
-    "Buff": "Sway"
+    "Buff": "Sway",
+    "Description": "Desc FPO"
   }
 
 }
