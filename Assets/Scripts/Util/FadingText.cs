@@ -107,18 +107,59 @@ public class FadingText : MonoBehaviour
         
     }
 
+
+    string hypertextClose = "";
+
     private void addNextCharacter()
     {
-        dioToFade.text += dioToSpellOut[currentCharacterIndex];
+        if (dioToSpellOut[currentCharacterIndex] == '<')
+        {
+            if (hypertextClose != "") //if we're currently typing color
+            {
+                //We want to stop typing color
+                currentCharacterIndex = GetNextClosingAngleBracketIndex(currentCharacterIndex);
+                hypertextClose = "";
+            }
+            else //we're not typing out colored text and we now want to
+            {
+                currentCharacterIndex = GetNextClosingAngleBracketIndex(currentCharacterIndex);
+                int hypertextCloseStartIndex = GetNextOpeningAngleBracketIndex(currentCharacterIndex);
+                int hypertextCloseLength = GetNextClosingAngleBracketIndex(hypertextCloseStartIndex) - hypertextCloseStartIndex + 1;
+                hypertextClose = dioToSpellOut.Substring(hypertextCloseStartIndex, hypertextCloseLength);
+            }
+        }
+
         currentCharacterIndex++;
+
+        dioToFade.text = dioToSpellOut.Substring(0, currentCharacterIndex) + hypertextClose;
+
         if (currentCharacterIndex == dioToSpellOut.Length)
         {
             isTextAnimating = false;
         }
-        
     }
 
-    
+    private int GetNextClosingAngleBracketIndex(int currentIndex)
+    {
+        return dioToSpellOut.IndexOf('>', currentIndex);
+    }
+
+    private int GetNextOpeningAngleBracketIndex(int currentIndex)
+    {
+        return dioToSpellOut.IndexOf('<', currentIndex);
+    }
+
+    //private void addNextCharacter()
+    //{
+    //    dioToFade.text += dioToSpellOut[currentCharacterIndex];
+    //    currentCharacterIndex++;
+    //    if (currentCharacterIndex == dioToSpellOut.Length)
+    //    {
+    //        isTextAnimating = false;
+    //    }
+    //}
+
+
 
     //private string formatText(string textToFormat)  // TODO give public accessTo designer to change how many characters before cut off. // make this a util tool too!
     //{

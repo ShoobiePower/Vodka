@@ -234,7 +234,7 @@ public class OrderManager : MonoBehaviour {
 
             case OrderOptions.BYWITHOUTCOLOR:
                 {
-                    return new OrderByLackOfIngredent();
+                    return new OrderByLackOfIngredient();
                    
                 }
 

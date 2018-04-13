@@ -21,7 +21,7 @@ public class AudioCommand : MonoBehaviour
     void Start()
     {
         this.source.clip = Clip;
-        this.source.name = Clip.name;
+        //this.source.name = Clip.name;
     }
 
     private void Awake()

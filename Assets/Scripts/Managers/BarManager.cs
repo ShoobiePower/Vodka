@@ -81,10 +81,10 @@ public class BarManager : Colleague , ISubject
         conversationWarehouse = new ConversationWarehouse();
         conversationWarehouse.initConversationWarehouse(patronManager.NumberOfPatronsInGame);
         orderManager.init();
-        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.RED);
-        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.YELLOW);
-        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.GREEN);
-        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.BLUE);
+        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.red);
+        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.yellow);
+        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.green);
+        orderManager.unlockNewDrinksBasedOnIngredients(Ingredient.ingredientColor.blue);
         JumpToStarterSeat();
         tutorial.Init(this);
     }

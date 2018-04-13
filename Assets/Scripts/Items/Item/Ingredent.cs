@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ingredient : StoreableItem {
 
-    public enum ingredientColor {RED, YELLOW, GREEN, BLUE, LENGTH }
+    public enum ingredientColor {red, yellow, green, blue, LENGTH }
     private ingredientColor thisIngredentsColor;
     public ingredientColor ThisIngredentsColor { get { return thisIngredentsColor; } }
     Sprite howDoILook;
