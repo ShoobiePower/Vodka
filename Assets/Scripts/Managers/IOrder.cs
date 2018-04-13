@@ -72,7 +72,7 @@ public class OrderByIngredent : IOrder
     public string describeOrder()
     {
        // string preloadedString = string.Format(" a drink that has <color=red>{0}</color> ", ingredentToInclude);
-        return System.String.Format(" a drink that has {0} ", ingredentToInclude.sayName()); 
+        return System.String.Format(" a drink that has <color={0}>{1}</color> ", ingredentToInclude.ThisIngredentsColor ,ingredentToInclude.sayName()); 
     }
 }
 
@@ -82,7 +82,7 @@ public class OrderByLackOfIngredient : IOrder
 
     public OrderByLackOfIngredient()
     {
-        ingredentToAvoid = new Ingredient((Ingredient.ingredientColor)UnityEngine.Random.Range((int)Ingredient.ingredientColor.RED, (int)Ingredient.ingredientColor.LENGTH));
+        ingredentToAvoid = new Ingredient((Ingredient.ingredientColor)UnityEngine.Random.Range((int)Ingredient.ingredientColor.red, (int)Ingredient.ingredientColor.LENGTH));
     }
 
     public bool checkAccuracy(Drink drinkToCheck)
@@ -92,6 +92,6 @@ public class OrderByLackOfIngredient : IOrder
 
     public string describeOrder()
     {
-        return System.String.Format(" a drink without <color=red>{0}</color> " ,ingredentToAvoid.sayName());
+        return System.String.Format(" a drink without <color={0}>{1}</color> ", ingredentToAvoid.ThisIngredentsColor, ingredentToAvoid.sayName());
     }
 }
