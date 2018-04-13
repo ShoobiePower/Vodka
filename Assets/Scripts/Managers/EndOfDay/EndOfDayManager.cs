@@ -41,6 +41,9 @@ public class EndOfDayManager : Colleague {
     MapOpen mapOpenScript;
 
     [SerializeField]
+    DrinkMenu drinkMenuScript;
+
+    [SerializeField]
     Button[] menuButtons;
 
     [SerializeField]
@@ -51,6 +54,7 @@ public class EndOfDayManager : Colleague {
     IEndOfDayStates patronBioScreenOpened;
     IEndOfDayStates questPageOpen;
     IEndOfDayStates mapOpen;
+    IEndOfDayStates drinkMenu;
 
     IEndOfDayStates currentManagementState;
 
@@ -87,6 +91,7 @@ public class EndOfDayManager : Colleague {
 
     public void setManagerState(IEndOfDayStates newEndOfDayState)
     {
+        Debug.Log(newEndOfDayState);
         currentManagementState.HidePresetAssets();
         currentManagementState = newEndOfDayState;
         currentManagementState.ShowPresetAssets();
@@ -121,6 +126,11 @@ public class EndOfDayManager : Colleague {
     public void FlipToMap()
     {
         setManagerState(swapToMapOpenScreen());
+    }
+
+    public void FlipToDrinkMenu()
+    {
+        setManagerState(swapToDrinkMenuOpen());
     }
 
     public void ScrollUp()
@@ -166,6 +176,11 @@ public class EndOfDayManager : Colleague {
         return mapOpen;
     }
 
+    public IEndOfDayStates swapToDrinkMenuOpen()
+    {
+        return drinkMenu;
+    }
+
     private void setUpAllEndOfDayStates()
     {
         endOfDayIdle = endOfDayIdleScript;
@@ -173,6 +188,7 @@ public class EndOfDayManager : Colleague {
         patronBioScreenOpened = patronBioScreenOpenedScript;
         questPageOpen = questPageOpenScript;
         mapOpen = mapOpenScript;
+        drinkMenu = drinkMenuScript;
 
         // for each child of this game object
         foreach (Transform child in transform)

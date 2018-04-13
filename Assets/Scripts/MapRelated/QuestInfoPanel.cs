@@ -57,7 +57,6 @@ public class QuestInfoPanel : MonoBehaviour
 
     public Quest GetQuestFromLocation()
     {
-        Debug.Log(questIndex);
        return targetLocation.findQuestAtThisLocationByIndex(questIndex);   //Index 0 is "no quest", but the list of quests at the location starts counting at 0.  So, subtract one.  There's probably a more intuitive way of doing this
     }
 

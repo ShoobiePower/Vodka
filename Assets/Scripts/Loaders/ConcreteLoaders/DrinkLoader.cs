@@ -9,7 +9,7 @@ public class DrinkLoader : Loader  {
                                        // private static patronLoader instance = null;
                                        // private static readonly object padloc = new object();
 
-    private enum drinkjsonHelper {NAME,RED,YELLOW,BLUE,GREEN,FLAVOR,CORRECT,MIXUP,BUFF};   
+    private enum drinkjsonHelper {NAME,RED,YELLOW,BLUE,GREEN,FLAVOR,CORRECT,MIXUP,BUFF, DESCRIPTION};   
 
     public override void init()
     {
@@ -41,7 +41,25 @@ public class DrinkLoader : Loader  {
         drinkToCreate.ThisDrinksFlavor = drinkFlavorParser(jsonObject[drinkIndexer][(int)drinkjsonHelper.FLAVOR].str);
         drinkToCreate.NumberOfIngredentsInDrink = addAllIngredents(drinkToCreate);
         drinkToCreate.Buff = drinkBuffParser(jsonObject[drinkIndexer][(int)drinkjsonHelper.BUFF].str);
+        drinkToCreate.DrinkDescription = jsonObject[drinkIndexer][(int)drinkjsonHelper.DESCRIPTION].str;
+        drinkToCreate.RecipeForDrink = createRecipe(drinkToCreate);
+
         return drinkToCreate;
+    }
+
+    private string createRecipe(Drink drinkToCreatRecipieFor)
+    {
+        string stringToReturn = string.Empty;
+        Ingredient tempIngredent = new Ingredient(Ingredient.ingredientColor.LENGTH); // HACK used as an indexer Ingredent to help us get the names for the ingredents
+        for (Ingredient.ingredientColor i = 0; i < Ingredient.ingredientColor.LENGTH; i++)
+        {
+            if (drinkToCreatRecipieFor.DrinkIngredents[(byte)i] > 0)
+            {
+                tempIngredent.ThisIngredentsColor = i;
+                stringToReturn += drinkToCreatRecipieFor.DrinkIngredents[(byte)i] + "X" + tempIngredent.sayName().ToString().ToLower() + "\n";
+            }
+        }
+        return stringToReturn;
     }
 
     private int addAllIngredents(Drink drinkWithIngredentsToCount)
@@ -55,7 +73,6 @@ public class DrinkLoader : Loader  {
 
         return runningTotalToReturn;
     }
-
 
 
     private Drink.flavor drinkFlavorParser(string flavorToParse)

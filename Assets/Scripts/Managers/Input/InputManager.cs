@@ -117,6 +117,8 @@ public class InputManager : Colleague {
            
     }
 
+   
+
     #region RumorPageChoiceCommands
 
     public void selectQuestOption0()
@@ -277,6 +279,12 @@ public class InputManager : Colleague {
         command = new SwapEndOfDayStateToMap();
         Director.ActivateEndOfDayManagerCommand(command);
     }
+
+    public void swapEndOfDayStateToDrinkMenu()
+    {
+        command = new SwapEndOfDayStateToDrinkMenu();
+        Director.ActivateEndOfDayManagerCommand(command);
+    }
     #endregion
 
 
@@ -301,6 +309,24 @@ public class InputManager : Colleague {
         SoundManager.Instance.AddCommand("UISound");
     }
 
+    #endregion
+
+    #region pauseMenuCommands
+    public void PauseGame()
+    {
+        Director.pauseGame();
+    }
+    public void ContinueGame()
+    {
+        command = new ContinueGame();
+        Director.ActivatePauseManagerCommand(command);
+    }
+
+    public void QuitGame()
+    {
+        command = new QuitToMainMenu();
+        Director.ActivatePauseManagerCommand(command);
+    }
     #endregion
 
     public void TurnPageInBattleReport()

@@ -29,6 +29,12 @@ public class Drink  {
     private byte mixUpPrice;
     public byte MixUpPrice { get { return mixUpPrice; } set { mixUpPrice = value; } }
 
+    private string drinkDescription;
+    public string DrinkDescription { get { return drinkDescription; } set { drinkDescription = value; } }
+
+    private string recipeForDrink;
+    public string RecipeForDrink { get { return recipeForDrink; } set { recipeForDrink = value; } }
+
     public bool TryAddIngredentToDrink(Ingredient ingredentToAddToDrink)
     {
         if (ingredentToAddToDrink != null && numberOfIngredentsDrink < MAX_INGREDIENTS_IN_CUP)
@@ -65,14 +71,15 @@ public class Drink  {
         return numberOfIngredentsDrink;
     }
 
-    
-
     //public string listIngredentsInDrink()
     //{
-    //    string ing = " ";
-    //    foreach (Ingredent i in ingredentsInDrink)
+    //    string ing = string.Empty;
+    //    for ( byte i = 0; i < MAX_INGREDIENTS_IN_CUP; i++)  // Ingredient.ingredientColor i = 0; i < Ingredient.ingredientColor.LENGTH ; i++
     //    {
-    //        ing += i.ThisIngredentsColor.ToString() + "\n";
+    //        if (drinkIngredents[(byte)i] > 0)
+    //        {
+    //            ing += drinkIngredents[(byte)i] + "X" + i.ToString().ToLower() + "\n";
+    //        }
     //    }
     //    return ing;
     //}
@@ -86,17 +93,4 @@ public class Drink  {
     //    return ingredentsInDrink.Count;
     //}
 
-    //public void requestADrink() // move this to a json file, make drinks in json file, give name, have patrons order drink by name. 
-    //{
-    //    if (ingredentsInDrink.Count > 0 )
-    //    {
-    //        ingredentsInDrink.Clear();
-    //    }
-    //    int numOfIngredent = Random.Range(2, 4);
-    //    for (int i = 0; i < numOfIngredent; i++)
-    //    {
-    //        ingredentsInDrink.Add(new Ingredent((Ingredent.ingredentColor)Random.Range(0, (int)Ingredent.ingredentColor.LENGTH)));
-    //    }
-    //}
-    
 }
