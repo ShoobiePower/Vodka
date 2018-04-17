@@ -16,6 +16,8 @@ public class EndOfDayManager : Colleague {
 
     public Image backDropForEndOfDayManager;
 
+    private bool hasTheDayEnded = false; //HACK used to check if the journal is opened from the end of the day or from the bar. 
+
     [SerializeField]
     Button OpenBarButton;
 
@@ -85,6 +87,7 @@ public class EndOfDayManager : Colleague {
 
     public void pullUpEndOfDayScreen()
     {
+        hasTheDayEnded = true; // HACK 
         setManagerState(swapToIdle());
         currentManagementState.ShowPresetAssets();
     }
@@ -152,7 +155,14 @@ public class EndOfDayManager : Colleague {
 
     public IEndOfDayStates swapToIdle()
     {
-        areEndOfDayPropsActive(true);
+        if (hasTheDayEnded) // HACK
+        {
+            areEndOfDayPropsActive(true);
+        }
+        else
+        {
+            Director.CloseTavernKeeperJournalFromBar(); // HACK
+        }
         return endOfDayIdle;
     }
 
@@ -217,6 +227,7 @@ public class EndOfDayManager : Colleague {
 
     public override void EndPhase()
     {
+        hasTheDayEnded = false; // HACK
         areEndOfDayPropsActive(false);
         Director.EndPhase(this);
     }

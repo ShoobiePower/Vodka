@@ -227,6 +227,11 @@ public class InputManager : Colleague {
 
     }
 
+    public void OpenTavernKeeperJournalFromBar()
+    {
+        Director.OpenTavernKeeperJournalFromBar();
+    }
+
     public void openTavernkeeperMap()
     {
         command = new OpenEndOfDayMap();
@@ -312,20 +317,27 @@ public class InputManager : Colleague {
     #endregion
 
     #region pauseMenuCommands
-    public void PauseGame()
+    public void TogglePauseMenu()
     {
-        Director.pauseGame();
+        command = new TogglePauseGame();
+        Director.ActivatePauseManagerCommand(command);
     }
+
     public void ContinueGame()
     {
-        command = new ContinueGame();
-        Director.ActivatePauseManagerCommand(command);
+        Director.LeaveExitMenu();
     }
 
     public void QuitGame()
     {
         command = new QuitToMainMenu();
         Director.ActivatePauseManagerCommand(command);
+    }
+
+    public void PullUpQuitGameMenu()
+    {
+        Director.PullUpExitMenu();
+        
     }
     #endregion
 

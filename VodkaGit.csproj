@@ -14,11 +14,12 @@
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
-    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+    <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,25 +51,26 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <HintPath>E:/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AbstractDropDownObject.cs" />
     <Compile Include="Assets\Scripts\AdventureSctructure\CostCalculator.cs" />
     <Compile Include="Assets\Scripts\AdventureSctructure\Quests\Quest.cs" />
     <Compile Include="Assets\Scripts\AdventureSctructure\Quests\QuestOptionUI.cs" />
@@ -158,6 +160,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToPatronBio.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToPatronStat.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\SwapEndOfDayStateToQuest.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\TogglePauseGame.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ToggleQuestInfoPanel.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\TurnPageInBattleReport.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\InputManager.cs" />
@@ -166,7 +169,8 @@
     <Compile Include="Assets\Scripts\Managers\MediatorSetUp\ManagerDirector.cs" />
     <Compile Include="Assets\Scripts\Managers\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Managers\OrderManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Pause\PauseManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Pause\PauseScrollDownComponent.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound\AudioCommand.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound\SoundManager.cs" />
     <Compile Include="Assets\Scripts\MapRelated\MapManager.cs" />

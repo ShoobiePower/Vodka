@@ -37,9 +37,12 @@ public class ManagerDirector : MonoBehaviour, IDirector
         rumorBoard.SetDirector(this);
         inputManager.SetDirector(this);
         pauseManager.SetDirector(this);
-       // musicManager.SendMessage(this);
+        // musicManager.SendMessage(this);
 
-}
+        // HACK: Requird so the end of day manager dosen't display unknown for the first day. 
+        endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();
+
+    }
 
     public void EndPhase(Colleague sender) 
     {
@@ -115,10 +118,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
            
         }
 
-        else if (sender == pauseManager)
-        {
-            barManager.setBarState(pauseManager.getStoredBarState());
-        }
     }
 
     #region things I would like to RE Re factor
@@ -151,6 +150,17 @@ public class ManagerDirector : MonoBehaviour, IDirector
     public void OpenMapFromBar(Patron patronToSend)
     {
         mapManager.mapOpenFromBar(patronToSend);
+    }
+
+     public void OpenTavernKeeperJournalFromBar()
+    {
+        endOfDayManager.openTavernKeeperJournal();
+        barManager.setBarState(barManager.barIsPaused());
+    }
+
+    public void CloseTavernKeeperJournalFromBar()
+    {
+        barManager.setBarState(barManager.noOneInteractedWith());
     }
 
     // For now, I just want to get this done, but I need to refactor this. 
@@ -242,10 +252,17 @@ public class ManagerDirector : MonoBehaviour, IDirector
         commandToActivate.Execute(pauseManager);
     }
 
-    public void pauseGame()
+    public void PullUpExitMenu()
     {
-        pauseManager.pauseGame(barManager.BarManagerState);
+        pauseManager.OpenExitGamePopUp(); // barManager.BarManagerState
+        pauseManager.StoreBarState(barManager.BarManagerState);
         barManager.setBarState(barManager.barIsPaused());
+    }
+
+    public void LeaveExitMenu()
+    {
+        pauseManager.ResumeGame();
+        barManager.setBarState(pauseManager.getStoredBarState());
     }
 
     // EndOfDay Summary Section

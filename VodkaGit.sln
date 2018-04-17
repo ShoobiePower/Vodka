@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VodkaGit", "VodkaGit.csproj", "{D64C173F-0947-792E-B56B-C7A0C1A8FF18}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VodkaGit.Editor", "VodkaGit.Editor.csproj", "{024BD24A-54C4-0AAB-3BD9-5E529968E208}"

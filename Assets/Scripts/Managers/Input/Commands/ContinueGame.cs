@@ -9,7 +9,7 @@ public class ContinueGame : CommandWithUndo
         var target = Bar.GetComponent<PauseManager>();
         if (target is PauseManager)
         {
-            target.resumeGame();
+           // target.resumeGame();
         }
         base.Execute(Bar);
     }
