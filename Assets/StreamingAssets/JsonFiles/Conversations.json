@@ -15,7 +15,7 @@
           "NONE"
         ],
         [
-          "I'm Deidre Downton- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
+          "I'm <color=purple>Deidre Downton</color>- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
           "NONE"
         ],
         [
@@ -125,7 +125,7 @@
           "NONE"
         ],
         [
-          "Name's Artemis Cagosh, but that's such a mouthful. You should just call me Artie.",
+          "Name's <color=#00FF7F>Artemis Cagosh</color>, but that's such a mouthful. You should just call me <color=#00FF7F>Artie</color>.",
           "NONE"
         ],
         [
@@ -255,7 +255,7 @@
           "NONE"
         ],
         [
-          "The name's Horace R. Schuster and, I assure you, the pleasure's all mine.",
+          "The name's <color=yellow>Horace R. Schuster</color> and, I assure you, the pleasure's all mine.",
           "NONE"
         ],
         [
@@ -389,7 +389,7 @@
           "NONE"
         ],
         [
-          "The name's Nell. I'm a freelance journalist, and I'm interested in writing a quick spot about this bar, if you don't mind?",
+          "The name's <color=purple>Nell</color>. I'm a freelance journalist, and I'm interested in writing a quick spot about this bar, if you don't mind?",
           "NONE"
         ],
         [
@@ -427,7 +427,7 @@
           "NONE"
         ],
         [
-          "But, um... well, I represent the College of Magical Research and Recovery, and, um... well, thanks to your actions, you've kind of brought us to an impasse.",
+          "But, um... well, I represent the <color=blue>College of Magical Research and Recovery</color>, and, um... well, thanks to your actions, you've kind of brought us to an impasse.",
           "NONE"
         ],
         [
@@ -486,7 +486,7 @@
           "NONE"
         ],
         [
-          "I wish not to impede your financial gains, as you have impeded the Corporeal's efforts, so I will be brief.",
+          "I wish not to impede your financial gains, as you have impeded the <color=blue>Corporeal's</color> efforts, so I will be brief.",
           "NONE"
         ],
         [
@@ -535,7 +535,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "Name's Jim. I've been a patron of your parents since they opened this place!",
+          "Name's <color=orange>Jim</color>. I've been a patron of your parents since they opened this place!",
           "inquisitive"
         ],
         [
@@ -543,11 +543,11 @@
           "NONE"
         ],
         [
-          "To start off, why don't you make me a drink? Been a while since I've had one of your parent's expert brews.",
+          "To start off, why don't you make me a <color=yellow>drink</color>? Been a while since I've had one of your parent's expert brews.",
           "NONE"
         ],
         [
-          "It shouldn't be all that hard. Each of the taps are color-coded after all, ho ho!",
+          "It shouldn't be all that hard. Each of the taps are <color=yellow>color-coded</color> after all, ho ho!",
           "none"
         ]
       ],
@@ -564,7 +564,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "Whoa there- looks like one of your patrons has given you a quest!",
+          "Whoa there- looks like one of your patrons has given you a <color=yellow>quest</color>!",
           "special"
         ],
         [
@@ -572,7 +572,7 @@
           "NONE"
         ],
         [
-          "Whether wittingly or unwittingly, people tend to spill all sorts of interesting problems to whomever provides them alcohol.",
+          "Whether wittingly or unwittingly, people tend to spill all sorts of <color=yellow>interesting problems</color> to whomever provides them alcohol.",
           "NONE"
         ],
         [
@@ -656,7 +656,7 @@
           "NONE"
         ],
         [
-          "Felt almost like an earthquake, but a lot more violent and sudden. I wonder what's happened?",
+          "Felt almost like an <color=red>earthquake</color>, but a lot more violent and sudden. I wonder what's happened?",
           "NONE"
         ],
         [
@@ -685,7 +685,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "And now we wait! Ol' Deidre may be a little... eccentric, but I can speak to her reliability.",
+          "And now we wait! Ol' <color=purple>Deidre</color> may be a little... eccentric, but I can speak to her reliability.",
           "NONE"
         ],
         [
@@ -697,7 +697,7 @@
           "NONE"
         ],
         [
-          "And who knows? Maybe you'll end up learning something new about them in the process!",
+          "And who knows? Maybe you'll end up <color=yellow>learning something new about them</color> in the process!",
           "NONE"
         ],
         [
@@ -722,7 +722,7 @@
           "NONE"
         ],
         [
-          "Of course, I don't mean to make light of this situation. The Spire has been our benefactor of magical power for as long as anyone can remember.",
+          "Of course, I don't mean to make light of this situation. The <color=yellow>Spire</color> has been our benefactor of magical power for as long as anyone can remember.",
           "NONE"
         ],
         [
@@ -730,7 +730,7 @@
           "NONE"
         ],
         [
-          "But I digress... there's not much that can be done about the Spire now, but the devastation caused by yesterday's event is still very present.",
+          "But I digress... there's not much that can be done about the <color=yellow>Spire</color> now, but the devastation caused by yesterday's event is still very present.",
           "NONE"
         ],
         [
@@ -767,7 +767,7 @@
           "NONE"
         ],
         [
-          "Check them out at @ArmsAndAle, and give them a follow! I'm sure they'd appreciate it.",
+          "Check them out at <color=yellow>@ArmsAndAle</color>, and give them a follow! I'm sure they'd appreciate it.",
           "NONE"
         ],
         [
@@ -775,7 +775,7 @@
           "NONE"
         ],
         [
-          "Watch out for the release of 'A Tale of Arms and Ale' this coming May!",
+          "Watch out for the release of <color=yellow>'A Tale of Arms and Ale'</color> this coming May!",
           "NONE"
         ]
       ],
