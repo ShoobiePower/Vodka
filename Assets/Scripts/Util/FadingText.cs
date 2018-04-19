@@ -41,16 +41,17 @@ public class FadingText : MonoBehaviour
 
     public virtual void sendWhatToSay(string patronsName, string dioOut)
     {
-            dioToFade.color = FullHereColorForText;
-            nameToFade.color = FullHereColorForText;
-            this.gameObject.SetActive(true);
-            isTextAnimating = true;
-            dioToSpellOut = dioOut;
-            currentCharacterIndex = 0;
-            dioToFade.text = string.Empty;
-            nameToFade.text = patronsName;
-            fadeCountdown = howLongIsThisFade;
-            isShouldFade = false;
+        dioToFade.color = FullHereColorForText;
+        nameToFade.color = FullHereColorForText;
+        this.gameObject.SetActive(true);
+        isTextAnimating = true;
+        dioToSpellOut = dioOut;
+        currentCharacterIndex = 0;
+        dioToFade.text = string.Empty;
+        nameToFade.text = patronsName;
+        fadeCountdown = howLongIsThisFade;
+        isShouldFade = false;
+        hypertextClose = string.Empty;
     }
 
     public void cutOff(float speedOfSeatFade)

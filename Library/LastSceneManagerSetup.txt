@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TitleScreenPackage/Scene/TitleScreen.unity
+- path: Assets/Scencely.unity
   isLoaded: 1
   isActive: 1
