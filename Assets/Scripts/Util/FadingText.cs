@@ -27,8 +27,8 @@ public class FadingText : MonoBehaviour
 
     private void Start()
     {
-        //textToFade = this.gameObject.GetComponentInChildren<Text>();
         FullHereColorForText = dioToFade.color;
+
     }
 
 
@@ -41,17 +41,16 @@ public class FadingText : MonoBehaviour
 
     public virtual void sendWhatToSay(string patronsName, string dioOut)
     {
-        dioToFade.color = FullHereColorForText;
-        nameToFade.color = FullHereColorForText;
-        this.gameObject.SetActive(true);
-        isTextAnimating = true;
-        dioToSpellOut = dioOut;
-        currentCharacterIndex = 0;
-        dioToFade.text = string.Empty;
-        //dioToFade.text = dioOut;  // Format text
-        nameToFade.text = patronsName;
-        fadeCountdown = howLongIsThisFade;
-        isShouldFade = false;
+            dioToFade.color = FullHereColorForText;
+            nameToFade.color = FullHereColorForText;
+            this.gameObject.SetActive(true);
+            isTextAnimating = true;
+            dioToSpellOut = dioOut;
+            currentCharacterIndex = 0;
+            dioToFade.text = string.Empty;
+            nameToFade.text = patronsName;
+            fadeCountdown = howLongIsThisFade;
+            isShouldFade = false;
     }
 
     public void cutOff(float speedOfSeatFade)
@@ -68,25 +67,14 @@ public class FadingText : MonoBehaviour
 
     }
 
-    // Make conversation marker appear
-    public void activateConversationMarker()
+
+
+    public void ConversationMarkerOn()
     {
         conversationMarker.gameObject.SetActive(true);
-        showArrow();
     }
 
-    public void showArrow()
-    {
-
-    }
-
-    // Show dot when conversation is at it's end
-    public void showDot()
-    {
-
-    }
-
-    public void deactivateConversationMarker()
+    public void SignalEndOfConversation()
     {
         conversationMarker.gameObject.SetActive(false);
     }
@@ -149,32 +137,4 @@ public class FadingText : MonoBehaviour
         return dioToSpellOut.IndexOf('<', currentIndex);
     }
 
-    //private void addNextCharacter()
-    //{
-    //    dioToFade.text += dioToSpellOut[currentCharacterIndex];
-    //    currentCharacterIndex++;
-    //    if (currentCharacterIndex == dioToSpellOut.Length)
-    //    {
-    //        isTextAnimating = false;
-    //    }
-    //}
-
-
-
-    //private string formatText(string textToFormat)  // TODO give public accessTo designer to change how many characters before cut off. // make this a util tool too!
-    //{
-    //    StringBuilder strBuilder = new StringBuilder(textToFormat);
-    //    int i = 0;
-    //    for (int j = 0; j < textToFormat.Length; j++)
-    //    {
-    //        if (i >= charactersBeforeBreak && strBuilder[j] == ' ')
-    //        {
-    //            strBuilder[j] = '\n';
-    //            i = 0;
-    //        }
-    //        i++;
-    //    }
-    //    textToFormat = strBuilder.ToString();
-    //    return textToFormat;
-    //}
 }

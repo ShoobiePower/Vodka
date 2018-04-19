@@ -8,6 +8,8 @@ public class Quest
     public enum questStatus { PENDING, TAKEN,PASS};
     questStatus currentQuestStatus = questStatus.PENDING;
 
+    private byte tokenNumber; 
+
     private byte daysToCompleteQuest;
     public byte DaysToCompleteQuest { get { return daysToCompleteQuest; } set { daysToCompleteQuest = value; } }
 
@@ -85,6 +87,16 @@ public class Quest
     {
         resolution = personalResponcesForQuest[i];
         return personalResponcesForQuest[i];
+    }
+
+    public void SetTokenNumberForQuest(byte i)
+    {
+        tokenNumber = i; 
+    }
+
+    public byte GetTokenNumberForQuest()
+    {
+        return tokenNumber;
     }
 
 }

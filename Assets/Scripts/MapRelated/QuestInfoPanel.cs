@@ -27,8 +27,6 @@ public class QuestInfoPanel : MonoBehaviour
         targetLocation = _targetRegion;
 
         pendingPatron = patronToGoOnAdventure;
-        //QuestInfoRightArrow.gameObject.SetActive(false);
-        //QuestInfoLeftArrow.gameObject.SetActive(false);
         ChooseQuestButton.gameObject.SetActive(false);
 
         questMenu.activateQuestMenu();
@@ -108,6 +106,12 @@ public class QuestInfoPanel : MonoBehaviour
         questMenu.deactivateQuestMenu();
         gameObject.SetActive(false);
     }
+
+    //public void DisplayLocationDescription()
+    //{
+
+    //}
+
 
     private string listSkillsNeededForQuest(Quest q)
     {

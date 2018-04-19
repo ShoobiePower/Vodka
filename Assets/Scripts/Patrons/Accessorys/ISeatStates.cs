@@ -82,6 +82,7 @@ public class PatronSeated : ISeatStates
 
     public void TalkWithPatron()
     {
+
         if (seatToKeepTrackOf.patron.CurrentConversation == null || seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
         {
             seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.DRINK, seatToKeepTrackOf.patron.ID) + seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());

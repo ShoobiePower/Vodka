@@ -18,6 +18,8 @@ public class Seat : ABSTFadableObject, ISubject
 
     [SerializeField]
      FadingText fadingText;
+    public FadingText FadingText { get { return fadingText; } }
+    
 
     [SerializeField]
     float timeToFadeInOut;
@@ -185,11 +187,13 @@ public class Seat : ABSTFadableObject, ISubject
 
     public ISeatStates orderHasBeenTaken()
     {
+   
         return patronOrdered;
     }
 
     public ISeatStates patronIsdrinking()
     {
+        
         return patronIsDrinking;
     }
 
@@ -262,7 +266,7 @@ public class Seat : ABSTFadableObject, ISubject
         activateConversationMarkerOnStartConversation();
         seatState.TalkWithPatron();
         textTimerHasBeenCutOff = false;
-        checkIfConversationIsOver();
+        checkIfConversationContinues();
     }
 
     public void patronSays(string thingToSay)
@@ -272,18 +276,21 @@ public class Seat : ABSTFadableObject, ISubject
 
     public void patronSays(string patronName, string thingToSay)
     {
-        fadingText.sendWhatToSay(patronName + " : ", thingToSay);
+       fadingText.sendWhatToSay(patronName + " : ", thingToSay);
     }
 
    private void activateConversationMarkerOnStartConversation()
     {
-        fadingText.activateConversationMarker();
+        fadingText.ConversationMarkerOn();
     }
 
-    private void checkIfConversationIsOver()
+    private void checkIfConversationContinues()
     {
         if (patron.CurrentConversation.IsConversationOver)
-        fadingText.showDot();
+        {
+            fadingText.SignalEndOfConversation();
+        }
+
     }
 
     public void cutOffPatronsSentence()

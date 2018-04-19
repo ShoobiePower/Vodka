@@ -9,6 +9,9 @@ public class QuestMenu : MonoBehaviour{  // monobehaviour
     Button[] menuChoices;
 
     [SerializeField]
+    Image[] menuTokens;
+
+    [SerializeField]
     Button quitOutButton;
 
     private int numberOfActiveButtons;
@@ -49,7 +52,14 @@ public class QuestMenu : MonoBehaviour{  // monobehaviour
             if (menuButton.isActiveAndEnabled)
             {
                 menuChoices[i].GetComponentInChildren<Text>().text = questsAtThisLocation[i].QuestName;
-               // menuTokens[i].GetComponentInChildren<Image>().sprite = null;
+                if (questsAtThisLocation[i].getQuestStatus() != Quest.questStatus.TAKEN)
+                {
+                    menuTokens[i].sprite = ApperanceManager.instance.GetEmptySeatToken();
+                }
+                else
+                {
+                    menuTokens[i].sprite = ApperanceManager.instance.ThisPatronsBarToken(questsAtThisLocation[i].GetTokenNumberForQuest());
+                }
                 i++;
             }
         }

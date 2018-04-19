@@ -75,6 +75,8 @@ public class ManagerDirector : MonoBehaviour, IDirector
             barManager.setBarState(barManager.noOneInteractedWith());
             mapManager.TimeProgressesForQuests();
 
+            timeManager.incrementDayCount();
+
             for (byte i = 0; i < mapManager.QuestingPatrons.Count; i++)
             {
                 if (!mapManager.QuestingPatrons[i].IsOnQuest)
@@ -155,12 +157,18 @@ public class ManagerDirector : MonoBehaviour, IDirector
      public void OpenTavernKeeperJournalFromBar()
     {
         endOfDayManager.openTavernKeeperJournal();
+        pauseManager.StoreBarState(barManager.BarManagerState); // HERE
         barManager.setBarState(barManager.barIsPaused());
     }
 
     public void CloseTavernKeeperJournalFromBar()
     {
-        barManager.setBarState(barManager.noOneInteractedWith());
+        if (pauseManager.getStoredBarState() is BarPaused)
+        {
+            barManager.setBarState(barManager.noOneInteractedWith());
+        }
+        else
+        barManager.setBarState(pauseManager.getStoredBarState());   // barManager.noOneInteractedWith()
     }
 
     // For now, I just want to get this done, but I need to refactor this. 
@@ -262,7 +270,14 @@ public class ManagerDirector : MonoBehaviour, IDirector
     public void LeaveExitMenu()
     {
         pauseManager.ResumeGame();
-        barManager.setBarState(pauseManager.getStoredBarState());
+
+        if (pauseManager.getStoredBarState() is BarPaused)  // DUPE CODE please refactor;
+        { 
+            barManager.setBarState(barManager.noOneInteractedWith());
+        }
+        else
+            barManager.setBarState(pauseManager.getStoredBarState());   // barManager.noOneInteractedWith()
+        //barManager.setBarState(pauseManager.getStoredBarState());
     }
 
     // EndOfDay Summary Section

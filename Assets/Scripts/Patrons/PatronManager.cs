@@ -106,14 +106,15 @@ public class PatronManager : Colleague {
             if (returningPatron.currentActivity != Patron.whatDoTheyWantToDo.TURNIN)
             {
                 Regulars.Add(returningPatron);
-                returningPatron.CurrentConversation = null; // HERE
+                returningPatron.CurrentConversation = null; 
+                resetDefaults(returningPatron);
 
             }
             else
             {
                 PatronsForTheDay.Add(returningPatron); // ensures our little quester shows up the next day.
             }
-            resetDefaults(returningPatron);
+            
             returningPatron.OrderThePatronWants = null;
             Debug.Log("patronReturning");
         }

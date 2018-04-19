@@ -38,6 +38,9 @@ public class TimeOfDayManager : Colleague, ISubject
 
         registerSelfToMediator();
 
+        dayNumber = 1; // HACK
+        incrementDayCount(); 
+
     }
 
     private void Update()
@@ -94,7 +97,7 @@ public class TimeOfDayManager : Colleague, ISubject
 
     public override void EndPhase() 
     {
-        incrementDayCount();
+        notifyObserver(Mediator.ActionIdentifiers.END_DAY_FADE_OUT);
         Director.EndPhase(this);
     }
 

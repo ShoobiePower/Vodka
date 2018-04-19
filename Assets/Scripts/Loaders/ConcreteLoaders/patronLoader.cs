@@ -49,6 +49,7 @@ public class patronLoader : Loader
         string craftedBIO = @randomlyCraftedPatron[(int)jsonHelper.BIO].str;
         Patron patronToReturn = new Patron(craftedName,patronSkills, CraftedDrinkLevel, craftedBIO);
         patronToReturn.ID = patronID;
+        Debug.Log(craftedName + "Has been spawned");
         return patronToReturn;
     }
 

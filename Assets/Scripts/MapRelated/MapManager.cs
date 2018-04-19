@@ -59,7 +59,7 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         mapMode.openMapProps();
     }
 
-    public void mapOpenFromBar(Patron inPatronOnAdventure)    //THIS IS CALLED FROM OUTSIDE THE MAP SYSTEM.  This should start the chain of events needed to construct an adventure.
+    public void mapOpenFromBar(Patron inPatronOnAdventure)   
     {
         if (deployState == null)
         {

@@ -11,6 +11,7 @@ public class ConversationLoader : Loader
     public override void init()
     {
         loadJson("/JsonFiles/Conversations.json");
+        Debug.Log("HIT");
     }
 
     public List<Conversation> loadPatronConversationsBasedOnId(byte patronID)

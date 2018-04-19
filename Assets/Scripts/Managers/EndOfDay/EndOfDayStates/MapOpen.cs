@@ -57,14 +57,15 @@ public class MapOpen : MonoBehaviour, IMapStates, IEndOfDayStates
 
     public void regionClicked(Region region)
     {
-        Debug.Log("This is: " + region.name);
-        Debug.Log("Patrons at this location" + region.giveNamesOfPatronsAtThisLocation());
-        Debug.Log("Active quests at this location" + region.giveNamesOfQuestsAtThisLocation());
+        ShowQuestInfoPanel();
+        //Debug.Log("This is: " + region.name);
+        //Debug.Log("Patrons at this location" + region.giveNamesOfPatronsAtThisLocation());
+        //Debug.Log("Active quests at this location" + region.giveNamesOfQuestsAtThisLocation());
     }
 
     public void ShowQuestInfoPanel()
     {
-        throw new NotImplementedException();
+
     }
 
     public void HideQuestInfoPanel()

@@ -45,14 +45,9 @@ public class PauseManager : Colleague
         pausePanel.gameObject.SetActive(true);
     }
 
-    public void OpenJournal()
-    {
-
-    }
-
     public void quitToMainMenu()
     {
-        SceneManager.LoadScene("TitleScreen");
+        Application.Quit();
     }
 
     public void ResumeGame()

@@ -54,6 +54,9 @@ public class BattleReportManager : Colleague
     [SerializeField]
     BondSlider bondSlider;
 
+    [SerializeField]
+    Text DrinkSkill;
+
     #endregion
 
     #region Props For Summary
@@ -142,6 +145,7 @@ public class BattleReportManager : Colleague
         QuestSkillCheckList.text = questToReportOn.convertChecksToString();
         BattleReportPatronToken.sprite = ApperanceManager.instance.ThisPatronsToken(patronCarryingReport.ID);
         bondSlider.LoadListOfChecks(questToReportOn.TrialsOfTheQuest);
+        DrinkSkill.text = patronCarryingReport.SkillGrantedByDrink.ToString();
         //bondSlider.SetSliderDefautValue(patronCarryingReport.BondPoints, patronCarryingReport.ThresholdToNextBondLevel);
         showExpGain();
     }

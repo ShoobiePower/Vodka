@@ -94,7 +94,6 @@ public class EndOfDayManager : Colleague {
 
     public void setManagerState(IEndOfDayStates newEndOfDayState)
     {
-        Debug.Log(newEndOfDayState);
         currentManagementState.HidePresetAssets();
         currentManagementState = newEndOfDayState;
         currentManagementState.ShowPresetAssets();

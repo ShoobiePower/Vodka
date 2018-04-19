@@ -84,6 +84,7 @@ public class DeployState : MonoBehaviour, IMapStates
             mapManager.PatronToGoOnAdventure.QuestToCompleete = mapManager.getQuestInfoPanel.GetQuestFromLocation();
             mapManager.sendPatronOnQuest(mapManager.PatronToGoOnAdventure);
             mapManager.getQuestInfoPanel.GetQuestFromLocation().ChangeQuestStatusToTaken();
+        mapManager.getQuestInfoPanel.GetQuestFromLocation().SetTokenNumberForQuest(mapManager.PatronToGoOnAdventure.ID);
     }
 
     public void GetRefrenceOfMapManager(MapManager constructMapManager)

@@ -145,9 +145,13 @@ public class MakePatronDrink : IBarManagerState
     {
         if (barManager.SelectedSeat.CanDrink)
         {
-            if (barManager.SelectedSeat.patron.OrderThePatronWants == null) { barManager.SelectedSeat.patron.OrderThePatronWants = barManager.OrderManager.makeARandomOrder(); }
+            if (barManager.SelectedSeat.patron.OrderThePatronWants == null)
+            {
+                barManager.SelectedSeat.patron.OrderThePatronWants = barManager.OrderManager.makeARandomOrder();
+                barManager.SelectedSeat.TalkWithPatron();
+            }
+
             barManager.theBarsTaps.unlockTapSystem();
-            barManager.SelectedSeat.TalkWithPatron();
         }
         else
         {
