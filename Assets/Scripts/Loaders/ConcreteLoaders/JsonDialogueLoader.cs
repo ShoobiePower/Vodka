@@ -8,7 +8,7 @@ public class JsonDialogueLoader : Loader
     private static JsonDialogueLoader instance = null;
     private static readonly object padloc = new object();
 
-    public enum responceType { RUMOR, QUESTRETURN, CHAINRETURN, DRINK, GOQUEST, TALK, ABOUTTOLEAVE }; 
+    public enum responceType { RUMOR, QUESTRETURN, CHAINRETURN, DRINKWITH,DRINKWITHOUT, GOQUEST, TALK, ABOUTTOLEAVE }; 
    
 
 
@@ -40,7 +40,6 @@ public class JsonDialogueLoader : Loader
 
     public string dioOut(responceType type, int patronID)
     {
-        // Debug.Log(jsonString);
         string dioToSend = @jsonObject[patronID][(int)type][Random.Range(0, jsonObject[patronID][(int)type].Count)].str;
         return dioToSend;
     }

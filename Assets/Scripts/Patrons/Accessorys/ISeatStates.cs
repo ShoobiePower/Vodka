@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Text;
 
 public interface ISeatStates 
 {
@@ -85,7 +86,9 @@ public class PatronSeated : ISeatStates
 
         if (seatToKeepTrackOf.patron.CurrentConversation == null || seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
         {
-            seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.DRINK, seatToKeepTrackOf.patron.ID) + seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
+            StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder() ,seatToKeepTrackOf.patron.ID));
+            sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
+            seatToKeepTrackOf.patronSays(sb.ToString());  // JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder().responceType.DRINK, seatToKeepTrackOf.patron.ID) +
             seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.orderHasBeenTaken());
         }
 
@@ -150,7 +153,9 @@ public class PatronOrdered : ISeatStates
 
     public void TalkWithPatron()
     {
-        seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.DRINK, seatToKeepTrackOf.patron.ID) + seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
+        StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder(), seatToKeepTrackOf.patron.ID));
+        sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
+        seatToKeepTrackOf.patronSays(sb.ToString());  // JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder().responceType.DRINK, seatToKeepTrackOf.patron.ID) +
     }
 
     public void PatronSharesARumor()

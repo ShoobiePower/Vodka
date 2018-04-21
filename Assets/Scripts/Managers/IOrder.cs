@@ -2,10 +2,12 @@
 using System.Collections;
 using System;
 
+
 public interface IOrder {
 
     string describeOrder();
     bool checkAccuracy(Drink drinkToCheck);
+    JsonDialogueLoader.responceType getKindOfOrder();
 }
 
 public class OrderByName : IOrder
@@ -31,6 +33,11 @@ public class OrderByName : IOrder
     {
         return " a " + drinkDesired.DrinkName;
     }
+
+    public JsonDialogueLoader.responceType getKindOfOrder()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class OrderByFlavor : IOrder
@@ -52,7 +59,10 @@ public class OrderByFlavor : IOrder
         return " a " + desiredFlavor.ToString() + " drink";
     }
 
-    
+    public JsonDialogueLoader.responceType getKindOfOrder()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class OrderByIngredent : IOrder
@@ -72,7 +82,12 @@ public class OrderByIngredent : IOrder
     public string describeOrder()
     {
        // string preloadedString = string.Format(" a drink that has <color=red>{0}</color> ", ingredentToInclude);
-        return System.String.Format(" a drink that has <color={0}>{1}</color> ", ingredentToInclude.ThisIngredentsColor ,ingredentToInclude.sayName()); 
+        return System.String.Format("<color={0}>{1}</color>", ingredentToInclude.ThisIngredentsColor ,ingredentToInclude.sayName()); 
+    }
+
+    public JsonDialogueLoader.responceType getKindOfOrder()
+    {
+        return JsonDialogueLoader.responceType.DRINKWITH;
     }
 }
 
@@ -92,6 +107,11 @@ public class OrderByLackOfIngredient : IOrder
 
     public string describeOrder()
     {
-        return System.String.Format(" a drink without <color={0}>{1}</color> ", ingredentToAvoid.ThisIngredentsColor, ingredentToAvoid.sayName());
+        return System.String.Format("<color={0}>{1}</color>", ingredentToAvoid.ThisIngredentsColor, ingredentToAvoid.sayName());
+    }
+
+    public JsonDialogueLoader.responceType getKindOfOrder()
+    {
+        return JsonDialogueLoader.responceType.DRINKWITHOUT;
     }
 }
