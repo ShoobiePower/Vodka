@@ -13,6 +13,19 @@ public class QuestOptionUI : MonoBehaviour {
     [SerializeField]
     Text QuestDescription;
 
+    [SerializeField]
+    RectTransform GrownSize;
+
+    [SerializeField]
+    RectTransform ShrunkSize;
+
+    [SerializeField]
+    float TransitionSpeed;
+
+    private Vector2 DefaultSize;
+
+    private Vector2 DesiredSize;
+
 
     Quest questContainedInOption;
     public Quest QuestContainedInOption
@@ -25,6 +38,16 @@ public class QuestOptionUI : MonoBehaviour {
             activateQuestOption();
             labelQuestOption();
         }
+    }
+
+    private void Start()
+    {
+        DefaultSize = this.gameObject.GetComponent<RectTransform>().sizeDelta;
+    }
+
+    public void Update()
+    {
+        this.gameObject.GetComponent<RectTransform>().sizeDelta = Vector2.Lerp(this.gameObject.GetComponent<RectTransform>().sizeDelta, DesiredSize,TransitionSpeed);
     }
 
     public void activateQuestOption()
@@ -55,21 +78,26 @@ public class QuestOptionUI : MonoBehaviour {
         }
     }
 
-    //private void labelRewardIcon(byte whichImageToLable ,StoreableItem itemToDesplay)
-    //{
-    //    RewardIcons[whichImageToLable].sprite = itemToDesplay.displayArt();
-    //}
-
     public void labelQuestOption()
     {
         deactivateAllRewardIcons();
 
         QuestName.text = QuestContainedInOption.QuestName;
         QuestDescription.text = QuestContainedInOption.QuestDescription;
-        //for(byte i = 0; i < QuestContainedInOption.RewardsFromQuest.Count; i++)
-        //{
-        //    activateRewardIcon(i);
-        //    labelRewardIcon(i, QuestContainedInOption.RewardsFromQuest[i]);
-        //}
+    }
+
+    public void GrowQuestOption()
+    {
+        DesiredSize = GrownSize.sizeDelta;
+    }
+
+    public void ShrinkQuestOption()
+    {
+        DesiredSize = ShrunkSize.sizeDelta;
+    }
+
+    public void MakeQuestOptionSizeNormal()
+    {
+        DesiredSize = DefaultSize;
     }
 }
