@@ -8,19 +8,39 @@ public class QuestOptionUI : MonoBehaviour {
     Text QuestName;
 
     [SerializeField]
-    Image[] RewardIcons;
-
-    [SerializeField]
     Text QuestDescription;
 
-    [SerializeField]
-    RectTransform GrownSize;
+    private
+    Color desiredColor;
 
     [SerializeField]
-    RectTransform ShrunkSize;
+    Color defaultColor;
+
+    [SerializeField]
+    Color GrowColor;
+
+    [SerializeField]
+    Color ShrinkColor;
+
 
     [SerializeField]
     float TransitionSpeed;
+
+    [SerializeField]
+    float GrowSize;
+
+    [SerializeField]
+    float ShrinkSize;
+
+    // When there is one quest option
+    [SerializeField]
+    RectTransform position0;
+
+    // When there are two quest options.
+    [SerializeField]
+    RectTransform TransformOfDefaultPosition;
+
+    private Vector3 DefaultPosition;
 
     private Vector2 DefaultSize;
 
@@ -42,12 +62,16 @@ public class QuestOptionUI : MonoBehaviour {
 
     private void Start()
     {
-        DefaultSize = this.gameObject.GetComponent<RectTransform>().sizeDelta;
+        DefaultSize = new Vector2(1, 1);
+        this.gameObject.GetComponent<RectTransform>().localScale = DefaultSize;
+        DesiredSize = DefaultSize;
+        desiredColor = defaultColor;
     }
 
     public void Update()
     {
-        this.gameObject.GetComponent<RectTransform>().sizeDelta = Vector2.Lerp(this.gameObject.GetComponent<RectTransform>().sizeDelta, DesiredSize,TransitionSpeed);
+        this.gameObject.GetComponent<RectTransform>().localScale = Vector2.Lerp(this.gameObject.GetComponent<RectTransform>().localScale, DesiredSize,(TransitionSpeed * Time.deltaTime));
+        this.gameObject.GetComponent<Image>().color = Vector4.Lerp(this.gameObject.GetComponent<Image>().color, desiredColor, (TransitionSpeed * Time.deltaTime));
     }
 
     public void activateQuestOption()
@@ -60,44 +84,61 @@ public class QuestOptionUI : MonoBehaviour {
         this.gameObject.SetActive(false);
     }
 
-    private void activateRewardIcon(byte rewardIconToActivate)
-    {
-        RewardIcons[rewardIconToActivate].gameObject.SetActive(true);
-    }
-
-    private void deactivateRewardIcon(byte rewardIconToDeactivate)
-    {
-        RewardIcons[rewardIconToDeactivate].gameObject.SetActive(false);
-    }
-
-    private void deactivateAllRewardIcons()
-    {
-        for (byte i = 0; i < RewardIcons.Length; i++)
-        {
-            deactivateRewardIcon(i);
-        }
-    }
 
     public void labelQuestOption()
     {
-        deactivateAllRewardIcons();
-
         QuestName.text = QuestContainedInOption.QuestName;
         QuestDescription.text = QuestContainedInOption.QuestDescription;
     }
 
     public void GrowQuestOption()
     {
-        DesiredSize = GrownSize.sizeDelta;
+        growButtonSize();
+        fadeToGrownColor();
+    }
+
+    private void growButtonSize()
+    {
+        DesiredSize = new Vector2(GrowSize, GrowSize);
+    }
+
+    private void fadeToGrownColor()
+    {
+        desiredColor = GrowColor;
     }
 
     public void ShrinkQuestOption()
     {
-        DesiredSize = ShrunkSize.sizeDelta;
+        shrinkButton();
+        fadeToShrunkColor();
+    }
+
+    private void shrinkButton()
+    {
+        DesiredSize = new Vector2(ShrinkSize, ShrinkSize);
+    }
+
+    private void fadeToShrunkColor()
+    {
+        desiredColor = ShrinkColor;
     }
 
     public void MakeQuestOptionSizeNormal()
     {
+        this.gameObject.GetComponent<RectTransform>().transform.localScale = DefaultSize;
         DesiredSize = DefaultSize;
+        this.gameObject.GetComponent<Image>().color = defaultColor;
+        desiredColor = defaultColor;
+    }
+    // This is only to be used by rumor option 0;
+    // this moves the option to the center of the rumor board and should be the only time this moves
+    public void CenterOption0()
+    {
+        this.transform.position = position0.transform.position;
+    }
+
+    public void UseDefaultPosition()
+    {
+        this.transform.position = TransformOfDefaultPosition.transform.position;
     }
 }

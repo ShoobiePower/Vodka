@@ -11,7 +11,12 @@ public class RumorBoardUI : Colleague {
     Text RumorDescription;
 
     [SerializeField]
+    Button SelectQuestOptionButton;
+
+    [SerializeField]
     QuestOptionUI[] questOptionsForRumor;
+
+    private int highLightedQuestsIndex;
 
 
     public string getRumorName()
@@ -27,9 +32,18 @@ public class RumorBoardUI : Colleague {
     // we want to deActivate
     public void deActivatePatronRumorBoard()
     {
-        Debug.Log("This rumor board should be deactivated");
         this.gameObject.SetActive(false);
         deactivateQuestOptions();
+    }
+
+    private void activateSelectQuestButton()
+    {
+        SelectQuestOptionButton.gameObject.SetActive(true);
+    }
+
+    private void deActivateSelectQuestButton()
+    {
+        SelectQuestOptionButton.gameObject.SetActive(false);
     }
 
     private void deactivateQuestOptions()
@@ -48,13 +62,33 @@ public class RumorBoardUI : Colleague {
         for (int i = 0; i < rumorToLabelBoardWith.QuestForThisRumor.Count; i++)
         {
             questOptionsForRumor[i].activateQuestOption();
+            questOptionsForRumor[i].MakeQuestOptionSizeNormal();
             questOptionsForRumor[i].QuestContainedInOption = rumorToLabelBoardWith.QuestForThisRumor[i];
+            questOptionsForRumor[i].UseDefaultPosition();
         }
+        if (rumorToLabelBoardWith.QuestForThisRumor.Count < 2) // Magic number to be refactored
+        {
+           questOptionsForRumor[0].CenterOption0();
+        }
+
+        deActivateSelectQuestButton();
     }
 
-    public void SelectQuestFromOptions(byte indexer)
+    public void HilightQuestOption(int indexer)
     {
-        Director.GetQuestFromBoard(questOptionsForRumor[indexer].QuestContainedInOption);
+        for (int i = 0; i < questOptionsForRumor.Length; i++)
+        {
+            questOptionsForRumor[i].ShrinkQuestOption();
+        }
+
+        questOptionsForRumor[indexer].GrowQuestOption();
+        highLightedQuestsIndex = indexer;
+        activateSelectQuestButton();
+    }
+
+    public void SelectQuestFromOptions()
+    {
+        Director.GetQuestFromBoard(questOptionsForRumor[highLightedQuestsIndex].QuestContainedInOption);
         EndPhase();
     }
 

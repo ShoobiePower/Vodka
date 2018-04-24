@@ -121,17 +121,18 @@ public class InputManager : Colleague {
 
     #region RumorPageChoiceCommands
 
-    public void selectQuestOption0()
+    public void HilightQuestOption(int i)
     {
-        command = new SelectQuestOption(0);
+        command = new HilightQuestChoice(i);
         Director.ActivateRumorBoardUICommand(command);
     }
 
-    public void selectQuestOption1()
+    public void selectQuestOption()
     {
-        command = new SelectQuestOption(1);
+        command = new SelectQuestOption();
         Director.ActivateRumorBoardUICommand(command);
     }
+
     #endregion
 
     #region DrinkCommands
