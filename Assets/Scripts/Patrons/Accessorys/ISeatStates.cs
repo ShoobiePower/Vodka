@@ -89,7 +89,7 @@ public class PatronSeated : ISeatStates
         {
             StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder() ,seatToKeepTrackOf.patron.ID));
             sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
-            seatToKeepTrackOf.patronSays(sb.ToString());  // JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder().responceType.DRINK, seatToKeepTrackOf.patron.ID) +
+            seatToKeepTrackOf.patronSays(sb.ToString()); 
             seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.orderHasBeenTaken());
         }
 
