@@ -13,6 +13,8 @@ public class FadingText : MonoBehaviour
     private Color FullHereColorForBox;
     private Color FullHereColorForText;
 
+    private Button AdvanceTextButton;
+
     [SerializeField]
     float howLongBeforeNextCharacter;
 
@@ -28,7 +30,7 @@ public class FadingText : MonoBehaviour
     private void Start()
     {
         FullHereColorForText = dioToFade.color;
-
+        AdvanceTextButton = this.gameObject.GetComponent<Button>();
     }
 
 
@@ -136,6 +138,16 @@ public class FadingText : MonoBehaviour
     private int GetNextOpeningAngleBracketIndex(int currentIndex)
     {
         return dioToSpellOut.IndexOf('<', currentIndex);
+    }
+
+    public void makeButtonClickable()
+    {
+        AdvanceTextButton.enabled = true; 
+    }
+
+    public void makeButtonUnCkickable()
+    {
+        AdvanceTextButton.enabled = false;
     }
 
 }

@@ -24,7 +24,7 @@ public class TransitionToNight : ITimeOfDayStates
 
     public void startAnimation(Image imageToAnimate)
     {
-        imageToAnimate.color += new Color(0, 0, 0, maxAlphaValue / 5) * Time.deltaTime;
+        imageToAnimate.color += new Color(0, 0, 0, maxAlphaValue / 3) * Time.deltaTime;
         if (imageToAnimate.color.a >= maxAlphaValue)
         {
             endAnimation(imageToAnimate);
@@ -53,8 +53,8 @@ public class TransitionToDay : ITimeOfDayStates
     public void startAnimation(Image imageToAnimate)
     {
 
-        imageToAnimate.color -= new Color(0, 0, 0, maxAlphaValue / 5) * Time.deltaTime;
-        timeOfDayManager.TimeOfDayPanel.Calendar.color -= new Color(0, 0, 0, maxAlphaValue / 5) * Time.deltaTime;
+        imageToAnimate.color -= new Color(0, 0, 0, maxAlphaValue / 2.5f) * Time.deltaTime;
+        timeOfDayManager.TimeOfDayPanel.Calendar.color -= new Color(0, 0, 0, maxAlphaValue / 2.5f) * Time.deltaTime;
         if (imageToAnimate.color.a <= 0)
         {
             endAnimation(imageToAnimate);
@@ -103,7 +103,7 @@ public class DisplayText : ITimeOfDayStates
      public void startAnimation(Image imageToAnimate)
     {
 
-        timeOfDayManager.TimeOfDayPanel.Calendar.color += new Color(0, 0, 0, maxAlphaValue / 5) * Time.deltaTime;
+        timeOfDayManager.TimeOfDayPanel.Calendar.color += new Color(0, 0, 0, maxAlphaValue / 3) * Time.deltaTime;
         if (timeOfDayManager.TimeOfDayPanel.Calendar.color.a >= maxAlphaValue)
         {
             endAnimation(imageToAnimate);
