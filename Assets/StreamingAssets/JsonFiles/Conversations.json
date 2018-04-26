@@ -15,7 +15,7 @@
           "NONE"
         ],
         [
-          "I'm <color=purple>Deidre Downton</color>- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
+          "I'm <color=#CC18C9>Deidre Downton</color>- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
           "NONE"
         ],
         [
@@ -52,7 +52,7 @@
           "NONE"
         ],
         [
-          "You're concerned about the quake from earlier, hmm? Don't fret, why don't you let Auntie Deidre go figure it out?",
+          "You're concerned about the quake from earlier, hmm? Don't fret, why don't you let Auntie <color=#CC18C9>Deidre</color> go figure it out?",
           "NONE"
         ],
         [
@@ -111,8 +111,8 @@
           "NONE"
         ],
         [
-            "But Ol' Auntie Deidre has a few tricks up her really baggy sleeves.",
-            "NONE"
+          "But Ol' <color=#CC18C9>Auntie Deidre</color> has a few tricks up her really baggy sleeves.",
+          "NONE"
         ],
         [
             "If you mix two ingredients of the same type, it'll give the guzzler a temporary perk.",
@@ -255,10 +255,10 @@
                 "Hey pal! Glad to see a friendly face, 'specially considerin' the recent events.",
                 "NONE"
             ],
-            [
-                "Everyone's losin' their heads over this Spire thing, and I gotta tell you, I'm not quite sure what to make of it.",
-                "NONE"
-            ],
+          [
+            "Everyone's losin' their heads over this <color=yellow>Spire</color> thing, and I gotta tell you, I'm not quite sure what to make of it.",
+            "NONE"
+          ],
             [
                 "I just wish there was a way to help more, y'know?",
                 "NONE"
@@ -297,10 +297,10 @@
                 "But if ya ask me Barkeep, I don't think anyone knows what's goin' on, and we oughta just help each other through all this.",
                 "NONE"
             ],
-            [
-                "I'm not the religious type or anything, but the <color=#64B5F6>Corporeal're</color> a wise bunch- about as wise as the College is smart.",
-                "NONE"
-            ],
+          [
+            "I'm not the religious type or anything, but the <color=#64B5F6>Corporeal're</color> a wise bunch- about as wise as the <color=#01B117>College</color> is smart.",
+            "NONE"
+          ],
             [
                 "Ohh! Sorry. Didn't mean to go on so long!",
                 "NONE"
@@ -454,7 +454,7 @@
           "NONE"
         ],
         [
-          "Have you been hearing about the protests up in the Borough? I imagine the Corporeal doesn't appreciate the civil unrest at their doorstep one bit!",
+          "Have you been hearing about the protests up in the Borough? I imagine the <color=#64B5F6>Corporeal</color> doesn't appreciate the civil unrest at their doorstep one bit!",
           "NONE"
         ],
         [
@@ -491,22 +491,22 @@
                 "Pah, the collapse of an old building, magical or not, ought not be cause for alarm.",
                 "NONE"
             ],
-            [
-                "The people are in good hands between the <color=#64B5F6>Corporeal's</color> aid and the College's research on the matter.",
-                "NONE"
-            ],
-            [
-                "I'm not one for gossip or debate, but I've heard that the College and <color=#64B5F6>Corporeal</color> are bickering of late.",
-                "NONE"
-            ],
-            [
-                "It seems the <color=#64B5F6>Corporeal</color> are restricting particular magics from the College, who claim it impedes their research.",
-                "NONE"
-            ],
-            [
-                "Nevertheless, those College youngesters are smart, and I'm certain they'll get all the information they need before long!",
-                "NONE"
-            ]
+          [
+            "The people are in good hands between the <color=#64B5F6>Corporeal's</color> aid and the <color=#01B117>College's</color> research on the matter.",
+            "NONE"
+          ],
+          [
+            "I'm not one for gossip or debate, but I've heard that the <color=#01B117>College</color> and <color=#64B5F6>Corporeal</color> are bickering of late.",
+            "NONE"
+          ],
+          [
+            "It seems the <color=#64B5F6>Corporeal</color> are restricting particular magics from the <color=#01B117>College</color>, who claim it impedes their research.",
+            "NONE"
+          ],
+          [
+            "Nevertheless, those <color=#01B117>College</color> youngesters are smart, and I'm certain they'll get all the information they need before long!",
+            "NONE"
+          ]
         ],
         "PatronReward": [ ],
         "QuestChains": [ ],
@@ -526,7 +526,7 @@
           "NONE"
         ],
         [
-          "Perhaps it would be finer if Artie was in better spirits, wouldn't you say?",
+          "Perhaps it would be finer if the kind <color=#00FF7F>orc</color> there was in better spirits, wouldn't you say?",
           "NONE"
         ],
         [
@@ -550,18 +550,18 @@
             "IsConversationOneShot": true,
             "IsConversationUnlockedFromStart": true,
             "Stanzas": [
-                [
-                    "So you're the altruistic bartender who helped the city guard and the Corporeal last night.",
-                    "NONE"
-                ],
+              [
+                "So you're the altruistic bartender who helped the city guard and the <color=#64B5F6>Corporeal</color> last night.",
+                "NONE"
+              ],
                 [
                     "I assume you thought through your decision? The people aren't thrilled about it.",
                     "NONE"
                 ],
-                [
-                    "See, I'm an investigative journalist. It's my job to expose the things others don't want exposed.",
-                    "NONE"
-                ],
+              [
+                "See, I'm an investigative journalist. <color=#B71434>Nell's</color> the name. It's my job to expose the things others want hidden.",
+                "NONE"
+              ],
                 [
                     "I'd say your efforts held me back, but that might not be the case. Actually, you might have opened a door.",
                     "NONE"
@@ -584,14 +584,14 @@
             "IsConversationOneShot": true,
             "IsConversationUnlockedFromStart": false,
             "Stanzas": [
-                [
-                    "My, my. We're the Corporeal's favorite now, aren't we?",
-                    "NONE"
-                ],
-                [
-                    "It's no bother to me, but the College might start whining.",
-                    "NONE"
-                ],
+              [
+                "My, my. We're the <color=#64B5F6>Corporeal's</color> favorite now, aren't we?",
+                "NONE"
+              ],
+              [
+                "It's no bother to me, but the <color=#01B117>College</color> might start whining.",
+                "NONE"
+              ],
                 [
                     "By the way, if they ever drop by, be sure to ask them about the Flux Experiment.",
                     "NONE"
@@ -619,11 +619,11 @@
           "IsConversationUnlockedFromStart": false,
           "Stanzas": [
             [
-              "Well, well. It seems the College is excited about their new discovery, aren't they? I wonder how they got that information?",
+              "Well, well. It seems the <color=#01B117>College</color> is excited about their new discovery, aren't they? I wonder how they got that information?",
               "NONE"
             ],
             [
-              "It's a good thing the Corporeal are understanding. I've been shown forgiveness for many, should I say intrusions? on their privacy.",
+              "It's a good thing the <color=#64B5F6>Corporeal</color> are understanding. I've been shown forgiveness for many, should I say intrusions? on their privacy.",
               "NONE"
             ],
             [
@@ -652,7 +652,7 @@
           "NONE"
         ],
         [
-          "I'm <color=#D19F7E>Mavis</color>. I represent the <color=00FA9A>College of Magical Research and Recovery</color>.",
+          "I'm <color=#D19F7E>Mavis</color>. I represent the <color=#01B117>College of Magical Research and Recovery</color>.",
           "NONE"
         ],
         [
@@ -660,24 +660,24 @@
           "NONE"
         ],
         [
-          "If we're correct, and we normally are, then the Spire isn't its own source of magic; it somehow gets its magic from somewhere else.",
+          "If we're correct, and we normally are, then the <color=yellow>Spire</color> isn't its own source of magic; it somehow gets its magic from somewhere else.",
           "NONE"
         ],
         [
-          "The issue is that our readings of the Spire vary dramatically, so it's hard to gather any good data.",
+          "The issue is that our readings of the <color=yellow>Spire</color> vary dramatically, so it's hard to gather any good data.",
           "NONE"
         ],
         [
-          "We could set up an experiment with a device we purchased from the Artifer's Alliance, but, well, we'd need to be near the Spire for it to work.",
+          "We could set up an experiment with a device we purchased from the <color=orange>Artificer's Alliance</color>, but, well, we'd need to be near the <color=yellow>Spire</color> for it to work.",
           "NONE"
         ],
         [
-            "And, uh, the Corporeal wouldn't be happy to see us tinkering around there.",
-            "NONE"
+          "And, uh, the <color=#64B5F6>Corporeal</color> wouldn't be happy to see us tinkering around there.",
+          "NONE"
         ],
         [
-            "I even considered scheduling an information exchange between the College and Corporeal leaders, but that would take weeks to set up with our current relations.",
-            "NONE"
+          "I even considered scheduling an information exchange between the <color=#01B117>College</color> and <color=#64B5F6>Corporeal</color> leaders, but that would take weeks to set up with our current relations.",
+          "NONE"
         ],
         [
           "Um, of course, you seem to know a few people that are in good standing with them.",
@@ -726,10 +726,10 @@
                     "I greet you in the name of the <color=yellow>Pantheon</color> and their servants, the <color=#64B5F6>Corporeal</color>.",
                     "NONE"
                 ],
-                [
-                    "I am <color=yellow>Gaius</color>, the <color=#64B5F6>Corporeal's</color> former flag-bearer and current liaison.",
-                    "NONE"
-                ],
+              [
+                "I am <color=#5A9399>Gaius</color>, the <color=#64B5F6>Corporeal's</color> former flag-bearer and current liaison.",
+                "NONE"
+              ],
                 [
                     "I have come for two reasons. First, to thank you for maintaining order yesterday. Second, to ask of you something else.",
                     "NONE"
@@ -813,26 +813,26 @@
                     "But, we have none.",
                     "NONE"
                 ],
-                [
-                    "The Spire's collapse is a mystery, one foretold in the ancient texts I gave you, but no reason or cure was ever prescribed.",
-                    "NONE"
-                ],
-                [
-                    "I'm afraid that our last option requires gathering information from another faction, one we have fought for centuries, called the Eyes.",
-                    "NONE"
-                ],
-                [
-                    "I personally wish to avoid them at all costs and have considered another option, one the Corporeal would not favor.",
-                    "NONE"
-                ],
+              [
+                "The <color=yellow>Spire's</color> collapse is a mystery, one foretold in the ancient texts I gave you, but no reason or cure was ever prescribed.",
+                "NONE"
+              ],
+              [
+                "I'm afraid that our last option requires gathering information from another faction, one we have fought for centuries, called the <color=#B70000>Eyes</color>.",
+                "NONE"
+              ],
+              [
+                "I personally wish to avoid them at all costs and have considered another option, one the <color=#64B5F6>Corporeal</color> would not favor.",
+                "NONE"
+              ],
                 [
                     "There is a relic that charges around magical entities.",
                     "NONE"
                 ],
-                [
-                    "I can stand watch over the Spire tonight, give the relic to your friend, and gather more information on the Spire.",
-                    "NONE"
-                ],
+              [
+                "I can stand watch over the <color=yellow>Spire</color> tonight, give the relic to your friend, and gather more information on the <color=yellow>Spire</color>.",
+                "NONE"
+              ],
                 [
                     "I leave the choice to you, as you are the one with the resources to act.",
                     "NONE"
@@ -872,7 +872,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "Name's <color=orange>Jim</color>. I've been a patron of your parents since they opened this place!",
+          "Name's <color=#D8D222>Jim</color>. I've been a patron of your parents since they opened this place!",
           "inquisitive"
         ],
         [
@@ -1001,7 +1001,7 @@
           "NONE"
         ],
         [
-          "Why don't you have send another one of your patrons off? I know Deidre is a fairly perceptive lass, she may be best suited to the task.",
+          "Why don't you have send another one of your patrons off? I know <color=#CC18C9>Deidre</color> is a fairly perceptive lass, she may be best suited to the task.",
           "NONE"
         ],
         [
@@ -1022,7 +1022,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "And now we wait! Ol' <color=purple>Deidre</color> may be a little... eccentric, but I can speak to her reliability.",
+          "And now we wait! Ol' <color=#CC18C9>Deidre</color> may be a little... eccentric, but I can speak to her reliability.",
           "NONE"
         ],
         [
