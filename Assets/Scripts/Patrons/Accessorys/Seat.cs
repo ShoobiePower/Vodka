@@ -306,6 +306,7 @@ public class Seat : ABSTFadableObject, ISubject
     {
         startExitAnimation();
         this.GetComponent<BoxCollider2D>().enabled = false;
+        makeTextBoxUnclickable();
         patronWantsIcons.startExitAnimation();
         patronsMug.fadeMug(timeToFadeInOut);
         if (!textTimerHasBeenCutOff)
@@ -320,6 +321,16 @@ public class Seat : ABSTFadableObject, ISubject
     public void unHilightBarToken()
     {
         barTokenBackground.sprite = ApperanceManager.instance.getUnHilightedBarSeatToken();
+    }
+
+    public void makeTextBoxUnclickable()
+    {
+        fadingText.makeButtonUnCkickable();
+    }
+
+    public void makeTextBoxClickable()
+    {
+        fadingText.makeButtonClickable();
     }
 
     #region Observer Pattern

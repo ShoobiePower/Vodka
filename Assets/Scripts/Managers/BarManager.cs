@@ -155,8 +155,10 @@ public class BarManager : Colleague , ISubject
 
     public void ClickPatron()
     {
-        if (selectedSeat.patron != null) // Here
-        barManagerState.ClickPatron();
+        if (selectedSeat.patron != null)
+        {
+            barManagerState.ClickPatron();
+        }
     }
 
     public void OpenBattleReport()
@@ -438,7 +440,6 @@ public class BarManager : Colleague , ISubject
     private void playRandomDrinkSound()
     {
         int rand = Random.Range(0, drinkSounds.Length - 1);
-        Debug.Log(drinkSounds[rand].CommandText);
         SoundManager.Instance.AddCommand(drinkSounds[rand].CommandText);
     }
 

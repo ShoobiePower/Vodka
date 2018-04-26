@@ -35,6 +35,7 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
         seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(patronToSit.ID);
         seatToKeepTrackOf.barToken.sprite = ApperanceManager.instance.ThisPatronsBarToken(patronToSit.ID);
         seatToKeepTrackOf.GetComponent<BoxCollider2D>().enabled = true;
+        seatToKeepTrackOf.makeTextBoxClickable();
         seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.SeatIsFilled());
     }
 
