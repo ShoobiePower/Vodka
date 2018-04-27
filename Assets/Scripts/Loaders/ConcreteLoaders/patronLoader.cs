@@ -42,6 +42,7 @@ public class patronLoader : Loader
     private Patron spawnPatron(byte lockLevel, byte patronIndex, byte patronID) // I dont know about this... parsing stuff. Not sure if its a pain or if its good. 
     {
         JSONObject randomlyCraftedPatron = jsonObject[lockLevel][patronIndex];
+        Debug.Log(lockLevel + " : "+ patronIndex);
         string craftedName = randomlyCraftedPatron[(int)jsonHelper.NAME].str;
         FallThroughHelper = craftedName;
         Patron.SkillTypes[] patronSkills = packageSkills(randomlyCraftedPatron[(int)jsonHelper.SKILLS]);// package(randomlyCraftedPatron[(int)jsonHelper.SKILLS]);

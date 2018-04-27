@@ -70,8 +70,8 @@
     "Rumor Offering": [ "Go ahead and hand this quest out to the next patron that steps into the bar? I'd go myself, but... well, it'd be a shame to waste this drink now, wouldn't it?" ],
     "Quest Return Line": [ "I have a bit of swing in me yet!" ],
     "Chain Quest Return Line": [ "OBSOLETE; DELETE" ],
-    "Drink with Request Line": [ "Why don't you go ahead and pour me a drink with {DRINK}?" , "Got any {DRINK} back in there?" ],
-    "Drink without Request Line": [ "Why don't you go ahead and pour me a drink without {DRINK}?" , "I've had a bit too much {DRINK} already today. How about something without it?"],
+    "Drink with Request Line": [ "Why don't you go ahead and pour me a drink with {DRINK}?", "Got any {DRINK} back in there?" ],
+    "Drink without Request Line": [ "Why don't you go ahead and pour me a drink without {DRINK}?", "I've had a bit too much {DRINK} already today. How about something without it?" ],
     "Adventure Request Line": [ "Gotta keep maintain your youth doing something! Have anything for me?" ],
     "Small Talk Lines": [ "You've got this, kid.", "I'll see ya around, kid!", "Good luck, kid.", "Good luck. I know you'll do your parents proud." ],
     "About To Leave Line": [ "Well now, I didn't expect you to pick up the reins so quickly!", "Mmm, that hits the spot! Thanks, kid. I'm gonna go find a table to nurse this drink. In the meantime, why don't you serve some other patrons?", "You still there, kid? Click on me if you are..." ]

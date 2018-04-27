@@ -6,7 +6,7 @@ public class Day2Task2 : TutorialTask
     public Day2Task2(Tutorial tutorial) : base(tutorial)
     {
         //For Nathan C: So, here's the issue: Jim needs to give his "Day 2 Intro"
-        tutorial.forcePatronIntoBarToSitAt("Deirdre Downton", 1);
+        tutorial.forcePatronIntoBarToSitAt("Deidre Downton", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Clear();
         TutorialReactions.Add(Mediator.ActionIdentifiers.MAP_OPEN, OpenMap);

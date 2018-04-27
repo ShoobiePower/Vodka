@@ -194,6 +194,7 @@ public class BarManager : Colleague , ISubject
 
     public void SendAdventurerHome(Patron patronsToSendBack)
     {
+        Debug.Log("Hit");
        patronManager.putAPatronBack(patronsToSendBack);
        Director.ReportOnPatronReturning(patronsToSendBack);
     }

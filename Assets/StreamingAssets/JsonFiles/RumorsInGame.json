@@ -1,23 +1,23 @@
 {
 
-  "Deirdre": {
+  "Deidre": {
 
-        "Parchments, Please": {
-            "Name": "Parchments, Please",
-            "Description": "Your first quest! In all the commotion of getting the bar up and running again, you neglected to pick up your bartending certification from City Hall. You could always run across town to grab it, but there may be a better way to accomplish this...",
-            "Quests": [ "Send a Courier" ],
-            "IsUnlockedFromStart": true
-        }
+    "Parchments, Please": {
+      "Name": "Parchments, Please",
+      "Description": "Your first quest! In all the commotion of getting the bar up and running again, you neglected to pick up your bartending certification from City Hall. You could always run across town to grab it, but there may be a better way to accomplish this...",
+      "Quests": [ "Send a Courier" ],
+      "IsUnlockedFromStart": true
+    }
 
   },
 
   "Artie": {
-    
+
     "Unemployment": {
-        "Name": "Unemployment",
-        "Description": "The collapsed mines put a lot of good people out of work, including Artie. Maybe you can help them out!",
-        "Quests": [ "Give a Gift", "Contract Artie" ],
-        "IsUnlockedFromStart": false
+      "Name": "Unemployment",
+      "Description": "The collapsed mines put a lot of good people out of work, including Artie. Maybe you can help them out!",
+      "Quests": [ "Give a Gift", "Contract Artie" ],
+      "IsUnlockedFromStart": false
     }
   },
 
@@ -31,50 +31,50 @@
 
 
 
-    },
+  },
 
   "Mavis": {
     "A Lack of Info": {
-        "Name": "A Lack of Info",
-        "Description": "The Codex gave the College an interesting lead, but now they need to take one more step. Unfortunately, that step might be on the Corporeal's toes.",
-        "Quests": [ "Conduct an Experiment", "Ask the Corporeal" ],
-        "IsUnlockedFromStart": true
-        }
-    },
+      "Name": "A Lack of Info",
+      "Description": "The Codex gave the College an interesting lead, but now they need to take one more step. Unfortunately, that step might be on the Corporeal's toes.",
+      "Quests": [ "Conduct an Experiment", "Ask the Corporeal" ],
+      "IsUnlockedFromStart": true
+    }
+  },
 
   "Gaius": {
-        "A Matter of Magic": {
-            "Name": "A Matter of Magic",
-            "Description": "The divine text is in another, indecipherable language. It could be meaningless, given for the sake of a test. But, it seems unlikely Gaius would fabricate scripture from the Book. If you want to learn what it means, you could take it to the College. It might help their research, and they'd appreciate the show of support regardless. Then again, the Corporeal may not be happy with that decision.",
-            "Quests": [ "Give it to the College", "Return it" ],
-            "IsUnlockedFromStart": false
-        },
-
-          "Forbidden Actions": {
-            "Name": "Forbidden Actions",
-            "Description": "After gaining the Coporeal's trust, Gaius has another dilemma- to follow the path given to the Corporeal by the Pantheon or use a magical item to track the Spire's power.",
-            "Quests": [ "Schmooze the Eyes", "Use a Relic" ],
-            "IsUnlockedFromStart": false
-        }
+    "A Matter of Magic": {
+      "Name": "A Matter of Magic",
+      "Description": "The divine text is in another, indecipherable language. It could be meaningless, given for the sake of a test. But, it seems unlikely Gaius would fabricate scripture from the Book. If you want to learn what it means, you could take it to the College. It might help their research, and they'd appreciate the show of support regardless. Then again, the Corporeal may not be happy with that decision.",
+      "Quests": [ "Give it to the College", "Return it" ],
+      "IsUnlockedFromStart": false
     },
+
+    "Forbidden Actions": {
+      "Name": "Forbidden Actions",
+      "Description": "After gaining the Coporeal's trust, Gaius has another dilemma- to follow the path given to the Corporeal by the Pantheon or use a magical item to track the Spire's power.",
+      "Quests": [ "Schmooze the Eyes", "Use a Relic" ],
+      "IsUnlockedFromStart": false
+    }
+  },
 
 
   "Jim": {
 
-        "The Commotion": {
-            "Name": "The Commotion",
-            "Description": "That earth-shattering commotion from earlier was very worrying- it'd probably be in your best interests, simply as a citizen of Kastonia, to figure out what happened. Unfortunately, you can't just go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
-            "Quests": [ "Locate the Source" ],
-            "IsUnlockedFromStart": true
-        },
+    "The Commotion": {
+      "Name": "The Commotion",
+      "Description": "That earth-shattering commotion from earlier was very worrying- it'd probably be in your best interests, simply as a citizen of Kastonia, to figure out what happened. Unfortunately, you can't just go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
+      "Quests": [ "Locate the Source" ],
+      "IsUnlockedFromStart": true
+    },
 
-        "Your Civic Duty": {
-            "Name": "Your Civic Duty",
-            "Description": "The Spire's on the brink of collapsing, and the Corporeal has yet to issue any kind of response. It's only been a day, but the citizens have grown restless over the lack of transparency, and are currently protesting in front of City Hall. At this rate, they may even manage to push past the line of guards who are keeping them at bay.",
-            "Quests": [ "Stir the Crowds!", "Hold the Line!" ],
-            "IsUnlockedFromStart": true
-        }
-
+    "Your Civic Duty": {
+      "Name": "Your Civic Duty",
+      "Description": "The Spire's on the brink of collapsing, and the Corporeal has yet to issue any kind of response. It's only been a day, but the citizens have grown restless over the lack of transparency, and are currently protesting in front of City Hall. At this rate, they may even manage to push past the line of guards who are keeping them at bay.",
+      "Quests": [ "Stir the Crowds!", "Hold the Line!" ],
+      "IsUnlockedFromStart": true
     }
+
+  }
 
 }

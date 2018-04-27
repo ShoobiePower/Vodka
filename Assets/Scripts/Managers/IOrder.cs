@@ -82,7 +82,7 @@ public class OrderByIngredent : IOrder
     public string describeOrder()
     {
        // string preloadedString = string.Format(" a drink that has <color=red>{0}</color> ", ingredentToInclude);
-        return System.String.Format("<color={0}>{1}</color>", ingredentToInclude.ThisIngredentsColor ,ingredentToInclude.sayName()); 
+        return System.String.Format(ingredentToInclude.sayName()); 
     }
 
     public JsonDialogueLoader.responceType getKindOfOrder()
@@ -107,7 +107,7 @@ public class OrderByLackOfIngredient : IOrder
 
     public string describeOrder()
     {
-        return System.String.Format("<color={0}>{1}</color>", ingredentToAvoid.ThisIngredentsColor, ingredentToAvoid.sayName());
+        return System.String.Format(ingredentToAvoid.sayName());
     }
 
     public JsonDialogueLoader.responceType getKindOfOrder()

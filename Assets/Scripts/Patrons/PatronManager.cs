@@ -35,7 +35,7 @@ public class PatronManager : Colleague {
         unlockNewPatronAndAdd("Old Man Horace");
         unlockNewPatronAndAdd("Nell"); 
         unlockNewPatronAndAdd("Artie");
-        unlockNewPatronAndAdd("Deirdre Downton");
+        unlockNewPatronAndAdd("Deidre Downton");
     }
 
     public Patron drawAPatron()
@@ -101,6 +101,7 @@ public class PatronManager : Colleague {
 
     public void putAPatronBack(Patron returningPatron)
     {
+        Debug.Log(returningPatron.Name + " Is Unlocked: " + returningPatron.IsUnlocked);
         if (returningPatron.IsUnlocked)
         {
             if (returningPatron.currentActivity != Patron.whatDoTheyWantToDo.TURNIN)

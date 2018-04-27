@@ -88,26 +88,6 @@ public class OrderManager : MonoBehaviour {
         }
     }
 
-    //private void loadDrinkNames() 
-    //{
-    //    for( int i = 0; i < allLockedDrinksInGame.Count; i++)
-    //    {
-    //        drinkNames[i] = allLockedDrinksInGame[i].DrinkName;
-    //        allQuestionMarkBlocks[i].gameObject.SetActive(true);
-    //    }
-    //}
-
-    //private void hideQuestionMarkOnDrinkChart(string drinkUnlocked)
-    //{
-    //  for (int i = 0; i < drinkNames.Length; i++)
-    //    {
-    //        if (drinkUnlocked == drinkNames[i])
-    //        {
-    //            allQuestionMarkBlocks[i].gameObject.SetActive(false);
-    //        }
-    //    }
-    //}
-
     public orderAccuracy determineDrinkPrice(IOrder PatronOrder , Drink drinkMade)
     {
         if (PatronOrder.checkAccuracy(drinkMade))
@@ -123,7 +103,6 @@ public class OrderManager : MonoBehaviour {
         }
     }
 
-    //Originally called: DoesDrinkExistAndIsUnlocked(Drink drinkTocheck)
     public Patron.SkillTypes GetDrinkBuffIfDrinkExistsAndIsUnlocked(Drink drinkTocheck)
     {
 
@@ -142,68 +121,6 @@ public class OrderManager : MonoBehaviour {
 
         return Patron.SkillTypes.NONE;
     }
-
-
-    //public orderAccuracy determineDrinkPrice(IOrder PatronOrder, Drink drinkMade)
-    //{
-    //    Drink drinkFromDatabase = findDrinkInDataBase(drinkMade);
-
-    //    if (drinkFromDatabase == null)
-    //    {
-    //        Debug.Log("This drink dosen't even exist");
-    //        SoundManager.Instance.AddCommand("No");
-    //        return orderAccuracy.NONE;
-    //    }
-
-    //    if (PatronOrder.checkAccuracy(drinkFromDatabase))
-    //    {
-    //        Debug.Log("Correct Drink");
-    //        SoundManager.Instance.AddCommand("Pay");
-    //        drinkMade.CorrectPrice = drinkFromDatabase.CorrectPrice;
-    //        return orderAccuracy.CORRECT;
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Mix up");
-    //        SoundManager.Instance.AddCommand("Mix Up");
-    //        drinkMade.MixUpPrice = drinkFromDatabase.MixUpPrice;
-    //        return orderAccuracy.MIXUP;
-    //    }
-
-    //}
-
-    //private Drink findDrinkInDataBase (Drink drinkToFind)
-    //{
-
-    //    bool canDrinkBeReturned;
-    //    foreach (Drink d in allDrinksTheBartenderKnows)
-    //    {
-    //       canDrinkBeReturned = true;
-    //        if (d.NumberOfIngredentsInDrink != drinkToFind.NumberOfIngredentsInDrink)
-    //        {
-    //            continue;
-    //        }
-
-    //        else
-    //        {
-    //            for (int i = 0; i < d.DrinkIngredents.Length; i++)
-    //            {
-    //                if (d.DrinkIngredents[i] != drinkToFind.DrinkIngredents[i])
-    //                {
-    //                    canDrinkBeReturned = false;
-    //                    break;
-    //                }
-    //            }
-    //            if (canDrinkBeReturned)
-    //            {
-    //                 return d;
-    //            }
-    //        }
-    //    }
-
-    //    return null;
-
-    //}
 
     public IOrder makeARandomOrder()
     {
@@ -234,8 +151,7 @@ public class OrderManager : MonoBehaviour {
 
             case OrderOptions.BYWITHOUTCOLOR:
                 {
-                    return new OrderByLackOfIngredient();
-                   
+                    return new OrderByLackOfIngredient();  
                 }
 
             default:

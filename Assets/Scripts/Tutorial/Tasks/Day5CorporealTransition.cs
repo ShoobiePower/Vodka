@@ -69,7 +69,7 @@ public class Day5CorporealTransition : TutorialTask
         //patronToReturn = tutorial.GetPatron("Deirdre Downton");
         //return patronToReturn;
 
-        return tutorial.GetPatron("Deirdre Downton");
+        return tutorial.GetPatron("Deidre Downton");
 
     }
 }

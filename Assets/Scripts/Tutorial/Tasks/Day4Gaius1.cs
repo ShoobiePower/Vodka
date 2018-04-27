@@ -86,7 +86,7 @@ public class Day4Gaius1 : TutorialTask
     void EnterDeidre()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Deirdre Downton", 1);
+        tutorial.forcePatronIntoBarToSitAt("Deidre Downton", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EndDay);
     }
