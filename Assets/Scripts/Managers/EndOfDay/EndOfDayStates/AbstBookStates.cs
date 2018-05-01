@@ -46,10 +46,13 @@ public abstract class AbstBookStates : MonoBehaviour, IEndOfDayStates
     public void decideOnHowManyButtonsToShow(int sizeOfList)
     {
         setAllButtonsInactive();
-        numberOfActiveButtons = (byte)menuButtons.Length;
         if (sizeOfList < menuButtons.Length)
         {
             numberOfActiveButtons = (byte)sizeOfList;
+        }
+        else
+        {
+            numberOfActiveButtons = (byte)menuButtons.Length;
         }
 
         for (int i = 0; i < numberOfActiveButtons; i++)
@@ -60,7 +63,7 @@ public abstract class AbstBookStates : MonoBehaviour, IEndOfDayStates
 
     public virtual void formatButtonsForThisPage()
     {
-        for (int i = 0; i < menuButtons.Length; i++)
+        for (int i = 0; i < numberOfActiveButtons; i++)
         {
             menuButtons[i].GetComponentInChildren<Text>().text = endOfDayManager.AllPatronsTheBartenderKnows[i + currentTopOfPage].Name;
             menuTokens[i].GetComponent<Image>().sprite = ApperanceManager.instance.ThisPatronsToken(endOfDayManager.AllPatronsTheBartenderKnows[i + currentTopOfPage].ID);
@@ -76,7 +79,6 @@ public abstract class AbstBookStates : MonoBehaviour, IEndOfDayStates
     // could pass in a number, rather than having this be a virtual overriden by just one class.
     public virtual void ScrollDown()
     {
-
 
         if (currentBottomOfPage < endOfDayManager.AllPatronsTheBartenderKnows.Count)
         {

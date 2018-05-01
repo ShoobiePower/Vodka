@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class ManagerDirector : MonoBehaviour, IDirector
 {
-    // TODO, initilize all of these with their mediatiors. 
+
     [SerializeField] MapManager mapManager;
     [SerializeField] TimeOfDayManager timeManager;
     [SerializeField] EndOfDayManager endOfDayManager;
@@ -39,7 +39,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
         pauseManager.SetDirector(this);
         // musicManager.SendMessage(this);
 
-        // HACK: Requird so the end of day manager dosen't display unknown for the first day. 
+        //// HACK: Requird so the end of day manager dosen't display unknown for the first day. 
         endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();
 
     }
@@ -129,6 +129,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
         endOfDaySummaryManager.QuestChosenTransaction(barManager.SelectedSeat.patron.Name, rumorBoard.getRumorName(), questToAdd.QuestName);   //HACK
         mapManager.setQuestAtItsRegion(questToAdd);
         endOfDayManager.addToQuestArchive(questToAdd);
+        barManager.SelectedSeat.TalkWithPatron();// HACK
     }
 
     public void OpenRumorBoard()
@@ -262,7 +263,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     public void PullUpExitMenu()
     {
-        pauseManager.OpenExitGamePopUp(); // barManager.BarManagerState
+        pauseManager.OpenExitGamePopUp(); 
         pauseManager.StoreBarState(barManager.BarManagerState);
         barManager.setBarState(barManager.barIsPaused());
     }
@@ -276,8 +277,8 @@ public class ManagerDirector : MonoBehaviour, IDirector
             barManager.setBarState(barManager.noOneInteractedWith());
         }
         else
-            barManager.setBarState(pauseManager.getStoredBarState());   // barManager.noOneInteractedWith()
-        //barManager.setBarState(pauseManager.getStoredBarState());
+            barManager.setBarState(pauseManager.getStoredBarState()); 
+
     }
 
     // EndOfDay Summary Section

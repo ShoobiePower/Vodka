@@ -37,7 +37,6 @@ public class PauseManager : Colleague
 
         else
             pauseScrollDown.MoveMenuUp();
-
     }
 
     public void OpenExitGamePopUp()

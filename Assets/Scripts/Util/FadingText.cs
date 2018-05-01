@@ -23,6 +23,7 @@ public class FadingText : MonoBehaviour
 
     private bool isShouldFade;
     private bool isTextAnimating;
+    public bool IsTextAnimating { get { return isTextAnimating; } }
     private float speedOfTextCountdown;
     private string dioToSpellOut;
     private int currentCharacterIndex;
@@ -70,8 +71,6 @@ public class FadingText : MonoBehaviour
 
     }
 
-
-
     public void ConversationMarkerOn()
     {
         conversationMarker.gameObject.SetActive(true);
@@ -96,6 +95,12 @@ public class FadingText : MonoBehaviour
             reloadTimer();
         }
         
+    }
+
+    public void AutoFillTextBox()
+    {
+        dioToFade.text = dioToSpellOut;
+        isTextAnimating = false; 
     }
 
 
@@ -128,6 +133,7 @@ public class FadingText : MonoBehaviour
         {
             isTextAnimating = false;
         }
+
     }
 
     private int GetNextClosingAngleBracketIndex(int currentIndex)

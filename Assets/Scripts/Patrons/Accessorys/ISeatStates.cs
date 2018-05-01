@@ -41,12 +41,12 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
 
     public void TalkWithPatron()
     {
-        // Ghosts can't order... yet!
+
     }
 
     public void PatronSharesARumor()
     {
-        // Napstablook isn't feeling up to gossip. 
+
     }
 
     public void PatronWantsToGoOnAdventure()
@@ -84,22 +84,22 @@ public class PatronSeated : ISeatStates
 
     public void TalkWithPatron()
     {
-
         if (seatToKeepTrackOf.patron.CurrentConversation == null || seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
         {
-            StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder() ,seatToKeepTrackOf.patron.ID));
+            StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder(), seatToKeepTrackOf.patron.ID));
             sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
-            seatToKeepTrackOf.patronSays(sb.ToString()); 
+            seatToKeepTrackOf.patronSays(sb.ToString());
             seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.orderHasBeenTaken());
+            seatToKeepTrackOf.FadingText.SignalEndOfConversation();
         }
 
         else
         {
-            if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
-                SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+        if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
+         SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
 
-            seatToKeepTrackOf.patronSays(seatToKeepTrackOf.patron.CurrentConversation.dioOut());
-            
+         seatToKeepTrackOf.patronSays(seatToKeepTrackOf.patron.CurrentConversation.dioOut());
+
         }
 
     }
@@ -129,11 +129,13 @@ public class PatronOrdered : ISeatStates
         seatToKeepTrackOf = SeatToKeepTrackOf;
     }
 
-    public void ConsumeBeverage()  //Drink drinkToConsume
+    public void ConsumeBeverage()  
     {
         seatToKeepTrackOf.CanDrink = false;
-        seatToKeepTrackOf.patronsMug.showMug(); 
-          
+        seatToKeepTrackOf.patronsMug.showMug();
+
+        seatToKeepTrackOf.FadingText.SignalEndOfConversation();
+
         if (seatToKeepTrackOf.patron.currentActivity == Patron.whatDoTheyWantToDo.ADVENTURE)
         {
             seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.GOQUEST, seatToKeepTrackOf.patron.ID));
@@ -142,8 +144,7 @@ public class PatronOrdered : ISeatStates
         {
             seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.RUMOR, seatToKeepTrackOf.patron.ID));
         }                                                                  
-        
-        seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.patronIsdrinking()); // forces it to a plane of existance that it can't return from untill it's timer runs out. 
+
     }
 
 
@@ -154,9 +155,9 @@ public class PatronOrdered : ISeatStates
 
     public void TalkWithPatron()
     {
-        StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder(), seatToKeepTrackOf.patron.ID));
-        sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
-        seatToKeepTrackOf.patronSays(sb.ToString());  // JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder().responceType.DRINK, seatToKeepTrackOf.patron.ID) +
+        seatToKeepTrackOf.FadingText.SignalEndOfConversation();
+        seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.TALK, seatToKeepTrackOf.patron.ID));
+
     }
 
     public void PatronSharesARumor()
@@ -198,7 +199,7 @@ public class PatronIsDrinking : ISeatStates
     public void TalkWithPatron()
     {
        
-        seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.TALK, seatToKeepTrackOf.patron.ID));
+       
     }
 
     public void PatronSharesARumor()
@@ -209,47 +210,6 @@ public class PatronIsDrinking : ISeatStates
     public void PatronWantsToGoOnAdventure()
     {
        
-    }
-
-    public void PatronReturnsFromQuest()
-    {
-        throw new NotImplementedException();
-    }
-}
-
-public class PatronIsDrunk : ISeatStates    // IGNORE THIS FOR NOW
-{
-    Seat seatToKeepTrackOf;
-
-    public PatronIsDrunk (Seat SeatToKeepTrackOf)
-    {
-        seatToKeepTrackOf = SeatToKeepTrackOf;
-    }
-
-    public void ConsumeBeverage()
-    {
-        // patron is already drinking
-    }
-
-
-    public void FillSeat(Patron patronToSit)
-    {
-        // no one can take this patrons spot yet
-    }
-
-    public void TalkWithPatron()
-    {
-        // May change to talk 
-    }
-
-    public void PatronSharesARumor()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void PatronWantsToGoOnAdventure()
-    {
-        throw new NotImplementedException();
     }
 
     public void PatronReturnsFromQuest()
@@ -325,10 +285,7 @@ public class PatronWantsAdventure : ISeatStates
 
         public void TalkWithPatron()
         {
-        //if (seatToKeepTrackOf.patron.WasQuestSucessful)
-        //seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.TRIUMPH, seatToKeepTrackOf.patron.thisPatronsDisposition));
-        //else
-        //    seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.FAIL, seatToKeepTrackOf.patron.thisPatronsDisposition));
+
         seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.QUESTRETURN, seatToKeepTrackOf.patron.ID));
         seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.SeatIsFilled()); // here 
         }

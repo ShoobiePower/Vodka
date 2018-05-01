@@ -242,8 +242,11 @@ public class Tutorial : MonoBehaviour, IObserver
     }
 
     public void invokeJimAtSeatNumber(byte seatToInvokeJimAt)  // use this whenever you want to call on Jim.
-    {                                                           // If you want to change Jim's Drink order text, please go to Diolouge and scroll all the way to the bottom,
-        forcePatronIntoBarToSitAt("Jim", seatToInvokeJimAt);    // find Jim and switch out the text in Drink Request Line
+    {
+        Patron p = barManager.PatronManager.getPatronOfNameFromLoader("Jim"); // draw patron by name is special, it looks for a patron in it's regular 
+        barManager.Seats[seatToInvokeJimAt].FillSeat(p);                     // if the patron cannot be found in regulars, it pulls it from the json.
+        SoundManager.Instance.AddCommand("EnterBarSound");                                                     // If you want to change Jim's Drink order text, please go to Diolouge and scroll all the way to the bottom,
+        //forcePatronIntoBarToSitAt("Jim", seatToInvokeJimAt);    // find Jim and switch out the text in Drink Request Line
     }
     // If you want to change Jim's diolouge, please go to Conversations and scroll all the way to the bottom
     public void endTutorial()                                  // If this new diologue is for the Rumor Jim hands out, make sure the rumor's name ("Name": "Jim FPO"   ln 113)

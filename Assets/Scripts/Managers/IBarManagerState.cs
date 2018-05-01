@@ -114,7 +114,7 @@ public class PatronConversing : IBarManagerState
         {
             barManager.UnlockContent(barManager.SelectedSeat.patron.CurrentConversation.ThingsThisConversationUnlocks);
             barManager.setBarState(barManager.prepareDrinkForPatron());
-            barManager.ClickPatron();
+            barManager.ClickPatron(); 
         }
     }
 
@@ -156,8 +156,8 @@ public class MakePatronDrink : IBarManagerState
         else
         {
             barManager.setBarState(barManager.patronPerformingAction());
-            barManager.SelectedSeat.TalkWithPatron();
-            barManager.ClickPatron();
+            //barManager.SelectedSeat.TalkWithPatron();
+            barManager.ClickPatron();     
         }
     }
 
@@ -229,9 +229,9 @@ public class DismissPatron : IBarManagerState
         Debug.Log("Patron prepares to leave has been called");
         if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.RUMOR || barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.GOHOME)
         {
-
           barManager.PatronManager.putAPatronBack(barManager.SelectedSeat.patron);      
         }
+
 
         barManager.SelectedSeat.patronPreparesToLeave();
         barManager.setBarState(barManager.noOneInteractedWith());

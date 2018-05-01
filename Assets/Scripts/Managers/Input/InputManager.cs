@@ -18,6 +18,7 @@ public class InputManager : Colleague {
         command = null;
         scanForMouseDown();
         scanForMouseUp();
+        scanForKeyboardInput();
 
         #if UNITY_IOS 
         CheckForMobileGestures();
@@ -115,6 +116,14 @@ public class InputManager : Colleague {
         command = new ScanForPatron();
         Director.ActivateBarManagerCommand(command);
            
+    }
+
+    public void scanForKeyboardInput()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            PullUpQuitGameMenu();
+        }
     }
 
    

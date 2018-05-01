@@ -56,7 +56,6 @@ public class Seat : ABSTFadableObject, ISubject
     ISeatStates noOneSeated;
     ISeatStates patronSeated;
     ISeatStates patronOrdered;
-    ISeatStates patronIsDrinking;
     ISeatStates patronWantsAdventure;
     ISeatStates patronReturningFromAdventure;
 
@@ -71,7 +70,6 @@ public class Seat : ABSTFadableObject, ISubject
         noOneSeated = new NoOneSeated(this);
         patronSeated= new PatronSeated(this);
         patronOrdered = new PatronOrdered(this);
-        patronIsDrinking = new PatronIsDrinking(this);
         patronWantsAdventure = new PatronWantsAdventure(this);
         patronReturningFromAdventure = new PatronReturningFromAdventure(this);
    
@@ -107,10 +105,6 @@ public class Seat : ABSTFadableObject, ISubject
             startSeatCoolDown();
         }
 
-        if (seatState == patronIsDrinking)
-        {
-            drinkCountdown();
-        }
         else
             respawnCountdown();
     }
@@ -187,14 +181,7 @@ public class Seat : ABSTFadableObject, ISubject
 
     public ISeatStates orderHasBeenTaken()
     {
-   
         return patronOrdered;
-    }
-
-    public ISeatStates patronIsdrinking()
-    {
-        
-        return patronIsDrinking;
     }
 
     public ISeatStates patronWouldLikeToGoOnAdventure()
@@ -213,18 +200,6 @@ public class Seat : ABSTFadableObject, ISubject
     public void setSeatTimer(float timeToSet)
     {
         waitTimer = timeToSet;
-    }
-
-    public void drinkCountdown() // This might be antiquated by what we are doing now. 
-    {
-        if (!isTimerPaused)
-        {
-            drinkTimer -= Time.deltaTime;
-            if (drinkTimer <= 0)
-            {
-               // patronPreparesToLeave();
-            }
-        }
     }
 
     public void respawnCountdown()
@@ -266,7 +241,6 @@ public class Seat : ABSTFadableObject, ISubject
         activateConversationMarkerOnStartConversation();
         seatState.TalkWithPatron();
         textTimerHasBeenCutOff = false;
-        checkIfConversationContinues();
     }
 
     public void patronSays(string thingToSay)
@@ -282,15 +256,6 @@ public class Seat : ABSTFadableObject, ISubject
    private void activateConversationMarkerOnStartConversation()
     {
         fadingText.ConversationMarkerOn();
-    }
-
-    private void checkIfConversationContinues()
-    {
-        if (patron.CurrentConversation.IsConversationOver)
-        {
-            fadingText.SignalEndOfConversation();
-        }
-
     }
 
     public void cutOffPatronsSentence()

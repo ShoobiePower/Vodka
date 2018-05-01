@@ -32,10 +32,10 @@ public class PatronManager : Colleague {
 
     private void loadRegulars()
     {
-        unlockNewPatronAndAdd("Old Man Horace");
-        unlockNewPatronAndAdd("Nell"); 
-        unlockNewPatronAndAdd("Artie");
-        unlockNewPatronAndAdd("Deidre Downton");
+        //unlockNewPatronAndAdd("Old Man Horace");
+        //unlockNewPatronAndAdd("Nell"); 
+        //unlockNewPatronAndAdd("Artie");
+        //unlockNewPatronAndAdd("Deidre Downton");
     }
 
     public Patron drawAPatron()
@@ -156,16 +156,20 @@ public class PatronManager : Colleague {
 
     public Patron drawAPatronByName(string name)
     {
+        Patron patronToReturn;
         for (int i = 0; i < Regulars.Count; i++)
         {
             if (Regulars[i].Name == name)
             {
-                Patron patronToReturn = Regulars[i];
+                patronToReturn = Regulars[i];
                 Regulars.RemoveAt(i);
                 return patronToReturn;
             }
         }
-        return getPatronOfNameFromLoader(name);
+        patronToReturn = getPatronOfNameFromLoader(name);
+        patronToReturn.confirmUnlock();
+        AllKnownPatrons.Add(patronToReturn);
+        return patronToReturn;
     }
 
     #endregion

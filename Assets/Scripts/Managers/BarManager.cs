@@ -157,6 +157,11 @@ public class BarManager : Colleague , ISubject
     {
         if (selectedSeat.patron != null)
         {
+            if (SelectedSeat.FadingText.IsTextAnimating)
+            {
+                SelectedSeat.FadingText.AutoFillTextBox();
+            }
+            else
             barManagerState.ClickPatron();
         }
     }

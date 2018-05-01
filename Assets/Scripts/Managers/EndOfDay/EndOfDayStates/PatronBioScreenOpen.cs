@@ -35,6 +35,15 @@ public class PatronBioScreenOpen : AbstBookStates
             PatronBioText.text = patronToInquireAbout.Bio;
             CurrentSelection = index;
         }
+        else
+        {
+            foreach (Transform child in allPropsForBioScreen.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            patronName.gameObject.SetActive(true);
+            patronName.text = "You do not know any patrons. Come back once you talked to a few.";
+        }
 
         //TODO, unlock more as patron levelsUp;
     }

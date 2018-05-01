@@ -45,6 +45,15 @@ public class PatronStatScreen : AbstBookStates {
             writeOutPatronSkills(patronToInquireAbout);
             CurrentSelection = index;
         }
+        else
+        {
+            foreach (Transform child in AllPropsForPatronStatScreen.transform)
+            {
+                child.gameObject.SetActive(false);
+            }
+            patronName.gameObject.SetActive(true);
+            patronName.text = "You do not know any patrons. Come back once you talked to a few.";
+        }
     }
 
     private void writeOutPatronSkills(Patron patronToInquireAbout)
