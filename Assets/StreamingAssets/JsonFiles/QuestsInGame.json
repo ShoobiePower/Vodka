@@ -15,14 +15,14 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Deidre]",
-        "Thank goodness Artie managed to secure your certification- you never know when a city-mandated inspection will come through!",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Horace]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Nell]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Mavis]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Gaius]"
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Deidre]",
+      "Thank goodness Artie managed to secure your certification- you never know when a city-mandated inspection will come through!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Gaius]"
     ],
-        "BanList": []
+    "BanList": []
   },
 
   "Locate the Source": {
@@ -41,269 +41,428 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-        "It didn't take Deidre very long to figure out what had gone awry. The Spire, a citadel of magical essence that has loomed over Kastonia since its inception, has broken. A large shard unexpectedly snapped from hundreds of feet in the air, and shattered against the earth, causing catastrophic damage.",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Artie]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Horace]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Nell]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Mavis]",
-        "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Gaius]"
+      "It didn't take Deidre very long to figure out what had gone awry. The Spire, a citadel of magical essence that has loomed over Kastonia since its inception, has broken. A large shard unexpectedly snapped from hundreds of feet in the air, and shattered against the earth, causing catastrophic damage.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Locate the Source- Gaius]"
     ],
-        "BanList": []
+    "BanList": []
   },
 
-"Stir the Crowds!": {
-        "Name": "Stir the Crowds!",
-        "Description": "A successful protest is always enkindled by bold chants and a steely resolve. If the citizens want the information they deserve, they'll need all the encouragement they can get!",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
-            [ "both", "Gaius", "Introduction" ]
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "Holding near-celebrity status across Kastonia, protesters were quick to follow Deidre's lead once she arrived, and managed to push past the guards to confront government officials!",
-            "Although not one for long-winded speeches and persuasive words, Artie managed to rally the crowds by simply raising their hammer in the air, and spouting incoherent war cries. It worked out well enough!",
-            "A natural wordsmith, Horace immediately took to his role as a soapbox orator, leading the crowd in a string of politically-charged tunes! Eventually, they managed to push past the guards and confront government officials.",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Nell]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+  "Stir the Crowds!": {
+    "Name": "Stir the Crowds!",
+    "Description": "A successful protest is always enkindled by bold chants and a steely resolve. If the citizens want the information they deserve, they'll need all the encouragement they can get!",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [ [ "both", "Mavis", "Shaken, not Deterred" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Deidre Downton", "Day4College" ],
+      [ "both", "Nell", "Day4College" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "Holding near-celebrity status across Kastonia, protesters were quick to follow Deidre's lead once she arrived, and managed to push past the guards to confront government officials!",
+      "Although not one for long-winded speeches and persuasive words, Artie managed to rally the crowds by simply raising their hammer in the air, and spouting incoherent war cries. It worked out well enough!",
+      "A natural wordsmith, Horace immediately took to his role as a soapbox orator, leading the crowd in a string of politically-charged tunes! Eventually, they managed to push past the guards and confront government officials.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Stir the Crowds- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Hold the Line!": {
-        "Name": "Hold the Line!",
-        "Description": "The guards have been holding protesters back for hours now, without relief- they could surely use some extra muscle! After all, if the city gives in to anarchy, then all may be lost.",
-        "Checks": [ "Strong" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ [ "both", "Gaius", "A Matter of Magic" ] ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
-            [ "both", "Deidre Downton", "Day4Corporeal" ],
-            [ "both", "Artie", "Day4Corporeal" ],
-            [ "both", "Old Man Horace", "Day4Corporeal" ],
-            [ "both", "Nell", "Day4Corporeal" ]
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "Sure, Deidre may not have been the most physically fit patron for the job, but no one could bring themselves to get in Ol' Deidre's way. After all, she's one of Kastonia's most beloved celebrities!",
-            "Upon realizing Artie was there to aid them, looks of relief washed over the faces of the City Hall guards. The protesters didn't manage to budge another inch after they arrived, and civility was maintained!",
-            "Horace isn't a particularly strong noble, but he gave this task his all. He even managed to turn a few protesters away, with his kindly and genuine smile. Who could hit a man with a smile like that?",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Nell]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+  "Hold the Line!": {
+    "Name": "Hold the Line!",
+    "Description": "The guards have been holding protesters back for hours now, without relief- they could surely use some extra muscle! After all, if the city gives in to anarchy, then all may be lost.",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [ [ "both", "Gaius", "A Matter of Magic" ] ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Deidre Downton", "Day4Corporeal" ],
+      [ "both", "Artie", "Day4Corporeal" ],
+      [ "both", "Old Man Horace", "Day4Corporeal" ],
+      [ "both", "Nell", "Day4Corporeal" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "Sure, Deidre may not have been the most physically fit patron for the job, but no one could bring themselves to get in Ol' Deidre's way. After all, she's one of Kastonia's most beloved celebrities!",
+      "Upon realizing Artie was there to aid them, looks of relief washed over the faces of the City Hall guards. The protesters didn't manage to budge another inch after they arrived, and civility was maintained!",
+      "Horace isn't a particularly strong noble, but he gave this task his all. He even managed to turn a few protesters away, with his kindly and genuine smile. Who could hit a man with a smile like that?",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Hold the Line- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Give it to the College": {
-        "Name": "Give it to the College",
-        "Description": "The College exists to understand, educate, and distribute magic. Although some members have taken advantage of their authoritative and bureaucratic nature, they exist to protect the people from things they don't understand... and to understand the things people don't know exist. Gaius' text might be a valuable clue to the College's research on the Spire",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [  ],
-        "QuestChains": [ [ "both", "Artie", "Unemployment" ], [ "both", "Mavis", "A Lack of Info" ] ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
-            [ "both", "Nell", "Day5CorporealRouteCollege" ],
-            [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ]
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "After much waiting, Deidre was able to hand the scroll to an intern, who took great interest in it. After Deidre explained the situation, the intern said she would notify her authorities immediately, and she gave Deidre her business card. Perhaps this is something you can pursue further...",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+  "Give it to the College": {
+    "Name": "Give it to the College",
+    "Description": "The College exists to understand, educate, and distribute magic. Although some members have taken advantage of their authoritative and bureaucratic nature, they exist to protect the people from things they don't understand... and to understand the things people don't know exist. Gaius' text might be a valuable clue to the College's research on the Spire",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [
+      [ "both", "Artie", "Unemployment" ],
+      [ "both", "Mavis", "A Lack of Info" ]
+    ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Nell", "Day5CorporealRouteCollege" ],
+      [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "After much waiting, Deidre was able to hand the scroll to an intern, who took great interest in it. After Deidre explained the situation, the intern said she would notify her authorities immediately, and she gave Deidre her business card. Perhaps this is something you can pursue further...",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Return it": {
-        "Name": "Return it",
-        "Description": "The Corporeal strive to protect Kastonia and the world from supernatural threats. They worship the Pantheon and see magic as divine, something only the gods should use. As such, they’ve sworn off magic themselves, but excel at combat well enough to fight off dark magic with only sword, shield, and a prayer to the divines. They are a formidable bulwark against magical catastrophes, such as the Spire’s collapse, so it’s best to trust their judgement. The Codex is only safe in their hands.",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ [ "both", "Artie", "Unemployment" ], [ "both", "Gaius", "Forbidden Actions" ] ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
-            [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ],
-            [ "both", "Nell", "Day5CorporealRouteCorporeal" ]
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "Gaius was there to welcome Deidre when she arrived, almost as if he expected her. She explained your decision, and he took the Codex with gratitude and relief. You should be prepared for another visit from him soon.",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+  "Return it": {
+    "Name": "Return it",
+    "Description": "The Corporeal strive to protect Kastonia and the world from supernatural threats. They worship the Pantheon and see magic as divine, something only the gods should use. As such, they've sworn off magic themselves, but excel at combat well enough to fight off dark magic with only sword, shield, and a prayer to the divines. They are a formidable bulwark against magical catastrophes, such as the Spire's collapse, so it's best to trust their judgement. The Codex is only safe in their hands.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [
+      [ "both", "Artie", "Unemployment" ],
+      [ "both", "Gaius", "Forbidden Actions" ]
+    ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ],
+      [ "both", "Nell", "Day5CorporealRouteCorporeal" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "Gaius was there to welcome Deidre when she arrived, almost as if he expected her. She explained your decision, and he took the Codex with gratitude and relief. You should be prepared for another visit from him soon.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Schmooze the Eyes": {
-        "Name": "Schmooze the Eyes",
-        "Description": "The Eyes are a mysterious faction that few know about, but it's clear Gaius dislikes them. The Corporeal believe they're having a social gathering soon. Perhaps you can pretend to be one of their own and overhear what they know.",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
+  "Schmooze the Eyes": {
+    "Name": "Schmooze the Eyes",
+    "Description": "The Eyes are a mysterious faction that few know about, but it's clear Gaius dislikes them. The Corporeal believe they're having a social gathering soon. Perhaps you can pretend to be one of their own and overhear what they know.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "The Eyes didn't recognize Artie, but they knocked some sense into the guards. That changed things quickly.",
-            "The Eyes are the ritzy type, so Horace was able to blend right in.",
-            "Nell's accustomed to being in places she shouldn't be. And, she learned a lot of other interesting tidbits.",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "The Eyes didn't recognize Artie, but they knocked some sense into the guards. That changed things quickly.",
+      "The Eyes are the ritzy type, so Horace was able to blend right in.",
+      "Nell's accustomed to being in places she shouldn't be. And, she learned a lot of other interesting tidbits.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Use a Relic": {
-        "Name": "Use a Relic",
-        "Description": "Gaius has a relic that grows more powerful when it's near a magical source. The Corporeal don't believe in using magic, but Gaius is willing to go behind his faction's back to get information as quickly as possible.",
-        "Checks": [ "Sneak" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
+  "Use a Relic": {
+    "Name": "Use a Relic",
+    "Description": "Gaius has a relic that grows more powerful when it's near a magical source. The Corporeal don't believe in using magic, but Gaius is willing to go behind his faction's back to get information as quickly as possible.",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "PLACEHOLDER TEXT- HORACE",
-            "PLACEHOLDER TEXT- NELL",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Conduct an Experiment": {
-        "Name": "Conduct an Experiment",
-        "Description": "The College have a device from the Artificer's Alliance that can read magical energies. Unfortunately, the Corporeal don't want the College anywhere near the Spire. However, one of your patrons might be able to slip by unrecognized.",
-        "Checks": [ "Sneak" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
+  "Conduct an Experiment": {
+    "Name": "Conduct an Experiment",
+    "Description": "The College have a device from the Artificer's Alliance that can read magical energies. Unfortunately, the Corporeal don't want the College anywhere near the Spire. However, one of your patrons might be able to slip by unrecognized.",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "Horace was able to slip by the guards without a problem. The hardest part was reading the instructions in the dark without his reading glasses.",
-            "Nell, able to fly undetected in the darkness of night, had no trouble securing the Flux device to the side of the Spire.",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "Horace was able to slip by the guards without a problem. The hardest part was reading the instructions in the dark without his reading glasses.",
+      "Nell, able to fly undetected in the darkness of night, had no trouble securing the Flux device to the side of the Spire.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Ask the Corporeal": {
-        "Name": "Ask the Corporeal",
-        "Description": "The College have a device from the Artificer's Alliance that can read magical energies. Unfortunately, the Corporeal don't want the College anywhere near the Spire. However, one of your patrons might be able to slip by unrecognized.",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
+  "Ask the Corporeal": {
+    "Name": "Ask the Corporeal",
+    "Description": "The College have a device from the Artificer's Alliance that can read magical energies. Unfortunately, the Corporeal don't want the College anywhere near the Spire. However, one of your patrons might be able to slip by unrecognized.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "The Corporeal were happy to share their origin, beliefs, and knowledge with Horace. He found that the Spire doesn't just transmit the magic from its source; it amplifies it.",
-            "The Corporeal were happy to share their origin, beliefs, and knowledge with Nell. She found that the Spire doesn't just transmit the magic from its source; it amplifies it.",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "The Corporeal were happy to share their origin, beliefs, and knowledge with Horace. He found that the Spire doesn't just transmit the magic from its source; it amplifies it.",
+      "The Corporeal were happy to share their origin, beliefs, and knowledge with Nell. She found that the Spire doesn't just transmit the magic from its source; it amplifies it.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
 
-    "Give a Gift": {
-        "Name": "Give a Gift",
-        "Description": "Ask a patron to deliver an envelope with some money inside. It should be more than enough to keep Artie afloat until they find a job that really matters to them.",
-        "Checks": [ "Sway" ],
-        "PatronReward": [ ],
-        "RumorOnReturn": [ ],
-        "QuestChains": [ ],
-        "TownEvents": [ ],
-        "locationsUnlocked": [ ],
-        "conversationsUnlocked": [
+  "Give a Gift": {
+    "Name": "Give a Gift",
+    "Description": "Ask a patron to deliver an envelope with some money inside. It should be more than enough to keep Artie afloat until they find a job that really matters to them.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "When Horace found out what you were doing, he pitched in. Now, Artie should be alright for a very long time.",
-            "PLACEHOLDER TEXT- NELL",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-        "BanList": [ ]
-    },
-        "Contract Artie": {
-        "Name": "Contract Artie",
-        "Description": "You're already busy running the tavern and organizing aid throughout the city. Artie doesn't necessarily have the steady hands for serving drinks or the charisma for interacting with patrons, but maybe they could run an errand for you whenever they need a bit of money.",
-        "Checks": [ "Sway" ],
-        "PatronReward": [],
-        "RumorOnReturn": [],
-        "QuestChains": [],
-        "TownEvents": [],
-        "locationsUnlocked": [],
-        "conversationsUnlocked": [
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "When Horace found out what you were doing, he pitched in. Now, Artie should be alright for a very long time.",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Contract Artie": {
+    "Name": "Contract Artie",
+    "Description": "You're already busy running the tavern and organizing aid throughout the city. Artie doesn't necessarily have the steady hands for serving drinks or the charisma for interacting with patrons, but maybe they could run an errand for you whenever they need a bit of money.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
 
-        ],
-        "Location": "HOME",
-        "DaysToCompleteQuest": 5,
-        "Responces": [
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-            "PLACEHOLDER TEXT- HORACE",
-            "PLACEHOLDER TEXT- NELL",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-            "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
-        ],
-            "BanList": []
-      }
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Eavesdrop on the Meeting": {
+    "Name": "Eavesdrop on the Meeting",
+    "Description": "There's definitely something fishy going on with the Spire, and it's time to find out what. It's time to send someone in to spy on the City Council- someone who can be trusted to keep out of the line of sight.",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [
+      [ "both", "Mavis", "Playing Politics" ]
+    ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Mavis", "Day5CollegeRouteCollege" ],
+      [ "both", "Old Man Horace", "Day5CollegeRouteCollege" ],
+      [ "both", "Nell", "Day5CollegeRouteCollege" ],
+      [ "both", "Artie", "Day5CollegeRouteCollege" ]
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "Deidre won't tell how she broke into City Hall undetected, but one would imagine that a witch her age would be keen on certain secret passageways...",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Horace]",
+      "Nell stuck to the shadows and kept her beak shut. Her aptitude for stealth probably helps in her particular field!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Disclose the College's Request": {
+    "Name": "Disclose the College's Request",
+    "Description": "The Corporeal's kept the Spire stable and safe for the past few centuries, so it might make sense to give them the benefit of the doubt on this one. At the very least, they should be told that the College is conspiring against them. You'll still have to have someone sneak past the City Guards to get the information to them, of course.",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [
+      [ "both", "Gaius", "Honor Before Glory" ]
+    ],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "Deidre had no need to sneak past the guards. Her massive influence easily allowed her to persuade them to let her through, and get the job done.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Disclose the College's Request- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Disclose the College's Request- Horace]",
+      "With an impressive display of dexterity and stealth, Nell managed to get a message to the council, without being caught by guards. She may just be useful yet!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Disclose the College's Request- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Disclose the College's Request- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Knock Out the Guard": {
+    "Name": "Knock Out the Guard",
+    "Description": "It may not be the most savory option, but hey, it's not as if we have a lot of time! A solid knock to the head should have them out for enough time to get in and get out.",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Bypass the Fence": {
+    "Name": "Bypass the Fence",
+    "Description": "The barrier around the Spire may be solid, but it’s certainly not unscalable. If they stay out of sight, someone could feasibly climb over the fence, grab a chunk, and get out before anyone notices!",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Send Additional Troops": {
+    "Name": "Send Additional Troops",
+    "Description": "If nothing else, you can definitely ask one of your patrons to aid the guards in their defense tonight. Gaius gave them proper notice, so they should welcome whoever you send with open arms.",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Lay a Trap": {
+    "Name": "Lay a Trap",
+    "Description": "While we can’t have guards covering every section of the fence that lies around the Spire, we can certainly predict where the College may try to enter. If someone could set a series of traps along the interior, we could catch that crook red-handed!",
+    "Checks": [ "Smart" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
+      "PLACEHOLDER TEXT- HORACE",
+      "PLACEHOLDER TEXT- NELL",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  }
 
 }
 

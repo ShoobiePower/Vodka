@@ -34,15 +34,29 @@
   },
 
   "Mavis": {
+
     "A Lack of Info": {
       "Name": "A Lack of Info",
       "Description": "The Codex gave the College an interesting lead, but now they need to take one more step. Unfortunately, that step might be on the Corporeal's toes.",
       "Quests": [ "Conduct an Experiment", "Ask the Corporeal" ],
-      "IsUnlockedFromStart": true
+      "IsUnlockedFromStart": false
+    },
+    "Shaken, not Deterred": {
+      "Name": "Shaken, not Deterred",
+      "Description": "To spy on a private meeting of the City Council is forbidden- perhaps even treasonous! However, Mavis staunchly claims that this is for the greater good. Perhaps it'd be best to think carefully about how to handle this- it's hard not to shake the feeling that this could be important.",
+      "Quests": [ "Eavesdrop on the Meeting", "Disclose the College's Request" ],
+      "IsUnlockedFromStart": false
+    },
+    "Playing Politics": {
+      "Name": "Playing Politics",
+      "Description": "Nobody- not even the mayor- has been allowed to approach the Spire, save for the Corporeal. However, Mavis says that time is of the essence, and if the city is to be saved, you're left with very little choice. One way or another, you'll need to get her a piece of the Spire.",
+      "Quests": [ "Knock Out the Guard", "Bypass the Fence" ],
+      "IsUnlockedFromStart": false
     }
   },
 
   "Gaius": {
+
     "A Matter of Magic": {
       "Name": "A Matter of Magic",
       "Description": "The divine text is in another, indecipherable language. It could be meaningless, given for the sake of a test. But, it seems unlikely Gaius would fabricate scripture from the Book. If you want to learn what it means, you could take it to the College. It might help their research, and they'd appreciate the show of support regardless. Then again, the Corporeal may not be happy with that decision.",
@@ -55,6 +69,14 @@
       "Description": "After gaining the Coporeal's trust, Gaius has another dilemma- to follow the path given to the Corporeal by the Pantheon or use a magical item to track the Spire's power.",
       "Quests": [ "Schmooze the Eyes", "Use a Relic" ],
       "IsUnlockedFromStart": false
+    },
+
+    "Honor Before Glory": {
+      "Name": "Honor Before Glory",
+      "Description": "The sanctity of the Spire is at risk of being tainted, and with the state that it's currently in, the Corporeal can't take any chances. The College should not be allowed to break into such holy grounds, and it very well may come down to you to help them.",
+      "Quests": [ "Send Additional Troops", "Lay a Trap" ],
+      "IsUnlockedFromStart": false
+
     }
   },
 

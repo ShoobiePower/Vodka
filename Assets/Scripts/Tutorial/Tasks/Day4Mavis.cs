@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Day4Mavis1 : TutorialTask {
 
@@ -7,51 +8,93 @@ public class Day4Mavis1 : TutorialTask {
 
     public Day4Mavis1(Tutorial _tutorial) : base(_tutorial)
     {
+        EnterMavis();
     }
 
-    void MavisOrGaius()
+    private void EnterMavis()
     {
-        //if you chose the quest that favored the Corporeal, have Mavis come in
-        //if you chose the quest that favored the College, have Gaius come in
         TutorialReactions.Clear();
-        seatIndex = (byte)tutorial.getCurrentTargetedSeatNumber();
+        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forceSeatToHaveSpecificConversation(1, "Shaken, not Deterred");
+        tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.RUMOR);
 
-        tutorial.forcePatronIntoBarToSitAt("Mavis", seatIndex);
-
-        tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.ADVENTURE);
-        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, NellAndDeidreToEnter);
     }
 
-    void SendPatronHome()
+    private void NellAndDeidreToEnter()
     {
         TutorialReactions.Clear();
-        tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.GOHOME);
-        tutorial.ResetBarState();
-        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, JimTeases);
+        tutorial.forcePatronIntoBarToSitAt("Deidre Downton", 0);
+        tutorial.forceSeatToHaveSpecificJob(0, Patron.whatDoTheyWantToDo.ADVENTURE);
+
+        tutorial.forcePatronIntoBarToSitAt("Nell", 2);
+        tutorial.forceSeatToHaveSpecificJob(2, Patron.whatDoTheyWantToDo.ADVENTURE);
+
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, BothPatronsLeftCheck);
     }
 
-    void JimTeases()
+    byte numPatronsLeft;
+    void BothPatronsLeftCheck()
     {
-        TutorialReactions.Clear();
-        tutorial.invokeJimAtSeatNumber(1);
-        tutorial.forceSeatToHaveSpecificConversation(1, "GDC Tutorial End");
-        TutorialReactions.Add(Mediator.ActionIdentifiers.DRINK_SERVED, EndDay);
+        numPatronsLeft++;
+        if (numPatronsLeft >= 2)
+        {
+            EndDay();
+        }
     }
 
     void EndDay()
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        TutorialReactions.Add(Mediator.ActionIdentifiers.END_DAY_FADE_OUT, EndThatTutorial);
-
-        ////do whatever
-        //tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.GOHOME);
-        //tutorial.ResetBarState();
-        //Debug.Log("END... THAT... TUTORIAL");
+        tutorial.SetCurrentTask(new Day5CollegeTransition(tutorial));
     }
 
-    void EndThatTutorial()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-    }
+    #region GDC CODE ARCHIVE
+    //void MavisOrGaius()
+    //{
+    //    //if you chose the quest that favored the Corporeal, have Mavis come in
+    //    //if you chose the quest that favored the College, have Gaius come in
+    //    TutorialReactions.Clear();
+    //    seatIndex = (byte)tutorial.getCurrentTargetedSeatNumber();
+
+    //    tutorial.forcePatronIntoBarToSitAt("Mavis", seatIndex);
+
+    //    tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.ADVENTURE);
+    //    TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
+    //}
+
+    //void SendPatronHome()
+    //{
+    //    TutorialReactions.Clear();
+    //    tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.GOHOME);
+    //    tutorial.ResetBarState();
+    //    TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, JimTeases);
+    //}
+
+    //void JimTeases()
+    //{
+    //    TutorialReactions.Clear();
+    //    tutorial.invokeJimAtSeatNumber(1);
+    //    tutorial.forceSeatToHaveSpecificConversation(1, "GDC Tutorial End");
+    //    TutorialReactions.Add(Mediator.ActionIdentifiers.DRINK_SERVED, EndDay);
+    //}
+
+    //void EndDay()
+    //{
+    //    TutorialReactions.Clear();
+    //    tutorial.forceEndOfDay();
+    //    TutorialReactions.Add(Mediator.ActionIdentifiers.END_DAY_FADE_OUT, EndThatTutorial);
+
+    //    ////do whatever
+    //    //tutorial.forceSeatToHaveSpecificJob(seatIndex, Patron.whatDoTheyWantToDo.GOHOME);
+    //    //tutorial.ResetBarState();
+    //    //Debug.Log("END... THAT... TUTORIAL");
+    //}
+
+    //void EndThatTutorial()
+    //{
+    //    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    //}
+    #endregion
 }
