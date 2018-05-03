@@ -353,7 +353,8 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Artie", "Day5CollegeRouteCorporeal" ],
+      [ "both", "Deidre Downton", "Day5CollegeRouteCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
