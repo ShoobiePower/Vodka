@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Day5CollegeTransition : TutorialTask
-{
+public class Day6CollegeTransition : TutorialTask {
+
+
     Patron targetPatron;
-    public Day5CollegeTransition(Tutorial _tutorial) : base(_tutorial)
+    public Day6CollegeTransition(Tutorial _tutorial) : base(_tutorial)
     {
         TutorialReactions.Add(Mediator.ActionIdentifiers.DAY_STARTED, OnDayStart);
     }
@@ -25,7 +26,7 @@ public class Day5CollegeTransition : TutorialTask
 
         else
         {
-            if (targetPatron.QuestToCompleete.QuestName == "Disclose the College's Request")
+            if (targetPatron.QuestToCompleete.QuestName == "Send Additional Troops" || targetPatron.QuestToCompleete.QuestName == "Lay a Trap")
             {
                 routeToGo = CorporealRoute;
             }
@@ -43,12 +44,12 @@ public class Day5CollegeTransition : TutorialTask
 
     void CorporealRoute()
     {
-        tutorial.SetCurrentTask(new Day5CollegeRouteCorp(tutorial));
+        tutorial.SetCurrentTask(new Day6CollegeRouteCorporeal(tutorial));
     }
 
     void CollegeRoute()
     {
-        tutorial.SetCurrentTask(new Day5CollegeRouteCollege(tutorial));
+        tutorial.SetCurrentTask(new Day6CollegeRouteCollege(tutorial));
     }
 
     Patron findReturningPatron()
@@ -59,6 +60,9 @@ public class Day5CollegeTransition : TutorialTask
         if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
 
         patronToReturn = tutorial.GetPatron("Nell");
+        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
+
+        patronToReturn = tutorial.GetPatron("Artie");
         if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
         return patronToReturn;
 

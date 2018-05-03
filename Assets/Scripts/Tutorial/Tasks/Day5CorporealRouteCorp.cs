@@ -5,8 +5,7 @@ public class Day5CorporealRouteCorp : TutorialTask
 {
     public Day5CorporealRouteCorp(Tutorial _tutorial) : base(_tutorial)
     {
-        TutorialReactions.Clear();
-        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterGaius);
+        EnterGaius();
     }
 
     void EnterGaius()

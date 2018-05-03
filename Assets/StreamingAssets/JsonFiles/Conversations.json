@@ -342,6 +342,73 @@
       "locationsUnlocked": [],
       "conversationsUnlocked": [
       ]
+    },
+
+    "Day6CollegeRouteCollege": {
+      "Name": "Day6CollegeRouteCollege",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Guards are in quite the hustle this morning. You wouldn't have had anything to do with that, would you, dearie?",
+          "NONE"
+        ],
+        [
+          "I should certainly hope not- it's not wise to make a foe out of the Corporeal, ehehehe!",
+          "NONE"
+        ],
+        [
+          "But if you DID happen to do something foolish, don't fret, your Auntie Deidre's always here to make things better.",
+          "NONE"
+        ],
+        [
+          "All you need to do is ask...",
+          "NONE"
+        ],
+        [
+          "...and keep those drinks coming!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+    "Day6CollegeRouteCorporeal": {
+      "Name": "Day6CollegeRouteCorporeal",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Goodness, those two sure left in a huff, didn't they? You aren't playing with fire again, are you dearie?",
+          "NONE"
+        ],
+        [
+          "The College isn't on great terms with the Coproreal, especially since one of their own got snatched up last night!",
+          "NONE"
+        ],
+        [
+          "...how do I know that? Come now dearie, you should know by now that rumors scarcely pass me by... oohoohoo!",
+          "NONE"
+        ],
+        [
+          "I don't mean to brag, but I'm quite the formidable ally. *wink*",
+          "NONE"
+        ],
+        [
+          "...an ally who's feeling particularly parched right now!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
     }
 
   },
@@ -887,6 +954,73 @@
       "locationsUnlocked": [],
       "conversationsUnlocked": [
       ]
+    },
+
+    "Day6CollegeRouteCollege": {
+      "Name": "Day6CollegeRouteCollege",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "My my, what's with all the hustle and bustle this morning?",
+          "NONE"
+        ],
+        [
+          "These whippersnappers aren't becoming a bellyache for you, are they? If so, I may just have to meet them at fisticuffs!",
+          "NONE"
+        ],
+        [
+          "Ho ho! I jest... although I do consider myself something of a wordsmith. If someone is in need of a stern talking to, point me in their direction.",
+          "NONE"
+        ],
+        [
+          "I won't have my favorite barkeep harassed over such paltry matters.",
+          "NONE"
+        ],
+        [
+          "Especially since you serve such... *ahem* ...delightful drinks...?",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+    "Day6CollegeRouteCorporeal": {
+      "Name": "Day6CollegeRouteCorporeal",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "My my, what's with all the hustle and bustle this morning?",
+          "NONE"
+        ],
+        [
+          "These whippersnappers aren't becoming a bellyache for you, are they? If so, I may just have to meet them at fisticuffs!",
+          "NONE"
+        ],
+        [
+          "Ho ho! I jest... although I do consider myself something of a wordsmith. If someone is in need of a stern talking to, point me in their direction.",
+          "NONE"
+        ],
+        [
+          "I won't have my favorite barkeep harassed over such paltry matters.",
+          "NONE"
+        ],
+        [
+          "Especially since you serve such... *ahem* ...delightful drinks...?",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
     }
   },
 
@@ -1039,6 +1173,73 @@
         ],
         [
           "Not that it'll change what I do.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6CollegeRouteCollege": {
+      "Name": "Day6CollegeRouteCollege",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "*furious scribbling*",
+          "NONE"
+        ],
+        [
+          "...oh, barkeep! Sorry, recent events have got me in a whirlwind of ideas for articles. Have you been following what's going on??",
+          "NONE"
+        ],
+        [
+          "...don't tell me you had a HAND in all this...?! Barkeep, you've GOTTA put me in. I need first-hand accounts of this!",
+          "NONE"
+        ],
+        [
+          "Promise me that if you hear anything else, you'll let me know. You promise, right?",
+          "NONE"
+        ],
+        [
+          "Oh, and a drink. But make it quick! I've got plenty more to write.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+    "Day6CollegeRouteCorporeal": {
+      "Name": "Day6CollegeRouteCorporeal",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "*furious scribbling*",
+          "NONE"
+        ],
+        [
+          "...oh, barkeep! Sorry, recent events have got me in a whirlwind of ideas for articles. Have you been following what's going on??",
+          "NONE"
+        ],
+        [
+          "...don't tell me you had a HAND in all this...?! Barkeep, you've GOTTA put me in. I need first-hand accounts of this!",
+          "NONE"
+        ],
+        [
+          "Promise me that if you hear anything else, you'll let me know. You promise, right?",
+          "NONE"
+        ],
+        [
+          "Oh, and a drink. But make it quick! I've got plenty more to write.",
           "NONE"
         ]
       ],
@@ -1399,6 +1600,114 @@
         ],
         [
           "Um, here, take my business card. You can contact me any time (hopefully not soon. I have way too much to do). I'm <color=#D19F7E>Mavis</color>, by the way.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6CollegeStrong": {
+      "Name": "Day6CollegeStrong",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "*huff* *huff* ...g-good morning, barkeep! I ran over as soon as I could... I hope you have good news for me?",
+          "NONE"
+        ],
+        [
+          "...Oh my goodness... That’s a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+          "NONE"
+        ],
+        [
+          "I-I don't mean to insinuate that I find you incapable... it's just, this is an impressive feat for a barkeep!",
+          "NONE"
+        ],
+        [
+          "(That didn't come off any better, did it?)",
+          "NONE"
+        ],
+        [
+          "*ahem* Um, a-anyways, I'm appreciative that you were able to acquire this for me- do you mind if I ask how you managed to do so...?",
+          "NONE"
+        ],
+        [
+          "...You had them do WHAT? Ooh dear... if it's all the same with you, I think I might withhold that particular detail when giving the College my report.",
+          "NONE"
+        ],
+        [
+          "I don't quite think my superiors would enjoy knowing that they inadvertently assaulted a Corporeal member, heh...",
+          "NONE"
+        ],
+        [
+          "Regardless, I'm going to have this taken back to be studied. Time is of the essence in this matter, however.",
+          "NONE"
+        ],
+        [
+          "An extra pair of hands would be greatly appreciated, if you find someone willing to help!",
+          "NONE"
+        ],
+        [
+          "Anyways, that's it for me. Maybe a quick drink to keep my energy up?",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6CollegeSneak": {
+      "Name": "Day6CollegeSneak",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "*huff* *huff* ...g-good morning, barkeep! I ran over as soon as I could... I hope you have good news for me?",
+          "NONE"
+        ],
+        [
+          "...Oh my goodness... That’s a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+          "NONE"
+        ],
+        [
+          "I-I don't mean to insinuate that I find you incapable... it's just, this is an impressive feat for a barkeep!",
+          "NONE"
+        ],
+        [
+          "(That didn't come off any better, did it?)",
+          "NONE"
+        ],
+        [
+          "*ahem* Um, a-anyways, I'm appreciative that you were able to acquire this for me- do you mind if I ask how you managed to do so...?",
+          "NONE"
+        ],
+        [
+          "...like, the WHOLE fence? How'd they manage to make their way up there, much less without being caught?!",
+          "NONE"
+        ],
+        [
+          "Goodness, that's an incredible tale! I sure hope your patron didn't hurt themselves getting down!",
+          "NONE"
+        ],
+        [
+          "Regardless, I'm going to have this taken back to be studied. Time is of the essence in this matter, however.",
+          "NONE"
+        ],
+        [
+          "An extra pair of hands would be greatly appreciated, if you find someone willing to help!",
+          "NONE"
+        ],
+        [
+          "Anyways, that's it for me. Maybe a quick drink to keep my energy up?",
           "NONE"
         ]
       ],
@@ -1807,6 +2116,127 @@
         ],
         [
           "Perhaps it would be better to keep the details of our search quiet.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+    "Between Two Barstools College Strong": {
+      "Name": "Between Two Barstools College Strong",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "...",
+          "NONE"
+        ],
+        [
+          "Barkeep",
+          "NONE"
+        ],
+        [
+          "I am Gaius, knight to the Corporeal. I believe we need to speak.",
+          "NONE"
+        ],
+        [
+          "Your actions last night have put us in a difficult spot. It is our duty to remain a stalwart defender of the Spire, and as of last night, we've failed in our task.",
+          "NONE"
+        ],
+        [
+          "One of your acquaintances made off with a fragment of the Spire, and assaulted one of our finest guards.",
+          "NONE"
+        ],
+        [
+          "Let me be clear- the only reason you’re not in chains right now, is because I have yet to relay this information to my superiors.",
+          "NONE"
+        ],
+        [
+          "And my negligence in this matter is not due to pity, nor is it due to a change of faith.",
+          "NONE"
+        ],
+        [
+          "I believe that people deserve the chance to prove themselves, and, if anything, all you stand guilty of is being misinformed.",
+          "NONE"
+        ],
+        [
+          "The College means to make information about the Spire public- information that we cannot allow to fall into the hands of the wrong people.",
+          "NONE"
+        ],
+        [
+          "For this reason, I need your help. Please send one of your connections to stop them, by any means necessary.",
+          "NONE"
+        ],
+        [
+          "If this information about the Spire becomes publicized, then Kastonia- and perhaps, the world- is doomed.",
+          "NONE"
+        ],
+        [
+          "I will leave you to dwell on this now. I do hope that you make the right decision- your patrons' lives may very well depend on it.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Between Two Barstools College Sneak": {
+      "Name": "Between Two Barstools College Sneak",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "...",
+          "NONE"
+        ],
+        [
+          "Barkeep",
+          "NONE"
+        ],
+        [
+          "I am Gaius, knight to the Corporeal. I believe we need to speak.",
+          "NONE"
+        ],
+        [
+          "Your actions last night have put us in a difficult spot. It is our duty to remain a stalwart defender of the Spire, and as of last night, we've failed in our task.",
+          "NONE"
+        ],
+        [
+          "One of your acquaintances made off with a fragment of the Spire, despite our best efforts at defense.",
+          "NONE"
+        ],
+        [
+          "Let me be clear- the only reason you’re not in chains right now, is because I have yet to relay this information to my superiors.",
+          "NONE"
+        ],
+        [
+          "And my negligence in this matter is not due to pity, nor is it due to a change of faith.",
+          "NONE"
+        ],
+        [
+          "I believe that people deserve the chance to prove themselves, and, if anything, all you stand guilty of is being misinformed.",
+          "NONE"
+        ],
+        [
+          "The College means to make information about the Spire public- information that we cannot allow to fall into the hands of the wrong people.",
+          "NONE"
+        ],
+        [
+          "For this reason, I need your help. Please send one of your connections to stop them, by any means necessary.",
+          "NONE"
+        ],
+        [
+          "If this information about the Spire becomes publicized, then Kastonia- and perhaps, the world- is doomed.",
+          "NONE"
+        ],
+        [
+          "I will leave you to dwell on this now. I do hope that you make the right decision- your patrons' lives may very well depend on it.",
           "NONE"
         ]
       ],

@@ -169,7 +169,7 @@
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [ [ "both", "Gaius", "The Path Ahead" ] ],
+    "QuestChains": [ [ "both", "Mavis", "The Path Ahead" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
@@ -195,7 +195,7 @@
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [ [ "both", "Gaius", "The Path Ahead" ] ],
+    "QuestChains": [ [ "both", "Mavis", "The Path Ahead" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
@@ -381,11 +381,15 @@
     "Checks": [ "Strong" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [
+      [ "both", "Gaius", "Between Two Barstools" ]
+    ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Deidre Downton", "Day6CollegeRouteCollege" ],
+      [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
+      [ "both", "Nell", "Day6CollegeRouteCollege" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -405,11 +409,15 @@
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [
+      [ "both", "Gaius", "Between Two Barstools" ]
+    ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Deidre Downton", "Day6CollegeRouteCollege" ],
+      [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
+      [ "both", "Nell", "Day6CollegeRouteCollege" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -429,11 +437,15 @@
     "Checks": [ "Strong" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [
+      [ "both", "Mavis", "Between Two Barstools" ]
+    ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Deidre Downton", "Day6CollegeRouteCorporeal" ],
+      [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
+      [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -453,11 +465,15 @@
     "Checks": [ "Smart" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [
+      [ "both", "Mavis", "Between Two Barstools" ]
+    ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Deidre Downton", "Day6CollegeRouteCorporeal" ],
+      [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
+      [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -474,7 +490,7 @@
 
   "Emphasize Caution": {
     "Name": "Emphasize Caution",
-    "Description": "Magic is growing increasingly unstable. One wrong experiment, could devestate the Spire and all of Kastonia. This crisis can be solved through lore, divination, and aquired knowledge, not just magic. Ancient writings can explain such an ancient structure.",
+    "Description": "Magic is growing increasingly unstable. One wrong experiment could devestate the Spire and all of Kastonia. This crisis can be solved through lore, divination, and aquired knowledge, not just magic. Ancient writings can explain such an ancient structure.",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -498,7 +514,7 @@
   },
 
   "Emphasize Potential": {
-    "Name": "Emphasize Caution",
+    "Name": "Emphasize Potential",
     "Description": "Though magic is growing increasingly unstable, the College could experiment safely enough if they act quickly. Their experience matches the dangers and the potential outweighs the risk. Besides, new data is more relevant than old rituals.",
     "Checks": [ "Sway" ],
     "PatronReward": [],

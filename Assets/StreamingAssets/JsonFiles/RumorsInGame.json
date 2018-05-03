@@ -62,18 +62,28 @@
     },
 
     "Your Better Judgement": {
-      "Name": "The Path Before",
+      "Name": "Your Better Judgement",
       "Description": "As the Spire grows more powerful, the College needs more space to research. However, their magical methods of research might cause unforeseen problems. Whoever gains access to the Spire now, gains the political upper hand.",
       "Quests": [ "Emphasize Caution", "Emphasize Potential" ],
       "IsUnlockedFromStart": false
     },
 
     "The Path Ahead": {
-      "Name": "The Path Before",
+      "Name": "The Path Ahead",
       "Description": "As the Spire grows more powerful, the College needs more space to research. However, their magical methods of research might cause unforeseen problems. Whoever gains access to the Spire now, gains the political upper hand.",
       "Quests": [ "Emphasize Caution", "Emphasize Potential" ],
       "IsUnlockedFromStart": false
+    },
+
+    "Between Two Barstools": {
+      "Name": "Between Two Barstools",
+      "Description": "An imprisoned member of the College has created ",
+      "Quests": [ "Aid the Corporeal", "Aid the College" ],
+      "IsUnlockedFromStart": false
+
     }
+
+
   },
 
   "Gaius": {
@@ -98,7 +108,16 @@
       "Quests": [ "Send Additional Troops", "Lay a Trap" ],
       "IsUnlockedFromStart": false
 
+    },
+
+    "Between Two Barstools": {
+      "Name": "Between Two Barstools",
+      "Description": "The college is on the verge of acquiring what may very well be dangerous information, according to the Corporeal, and they're willing to do anything to stop it. Is their plight just? Or is the public deserving of this unknown information? Tread carefully now- this decision may have lasting repercussions.",
+      "Quests": [ "Support the Corporeal", "Support the College" ],
+      "IsUnlockedFromStart": false
+
     }
+
   },
 
 
