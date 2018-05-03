@@ -203,6 +203,9 @@
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day4Gaius1.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day4Mavis.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day4Task1.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CollegeRouteCollege.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CollegeRouteCorp.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CollegeTransition.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CorporealRouteCollege.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CorporealRouteCorp.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day5CorporealTransition.cs" />
