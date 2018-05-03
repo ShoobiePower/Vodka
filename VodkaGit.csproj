@@ -85,16 +85,11 @@
     <Compile Include="Assets\Scripts\Drink\Dispencer.cs" />
     <Compile Include="Assets\Scripts\Drink\Drink.cs" />
     <Compile Include="Assets\Scripts\Drink\FillableMug.cs" />
+    <Compile Include="Assets\Scripts\Drink\Shutter.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\EndOfDayBook.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\EndOfDayMap.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\IEndOfDayStates.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\States\Patron\StatDescriptorLoader.cs" />
-    <Compile Include="Assets\Scripts\Items\GoldCounter.cs" />
-    <Compile Include="Assets\Scripts\Items\IPurchaseable.cs" />
-    <Compile Include="Assets\Scripts\Items\Invintory\InventoryManager.cs" />
-    <Compile Include="Assets\Scripts\Items\Item\Currency.cs" />
-    <Compile Include="Assets\Scripts\Items\Item\Ingredent.cs" />
-    <Compile Include="Assets\Scripts\Items\Item\StoreableItem.cs" />
     <Compile Include="Assets\Scripts\JSON\JSONObject.cs" />
     <Compile Include="Assets\Scripts\JSON\JSONTemplates.cs" />
     <Compile Include="Assets\Scripts\JSON\VectorTemplates.cs" />
@@ -220,6 +215,12 @@
     <Compile Include="Assets\Scripts\Util\Toast.cs" />
     <Compile Include="Assets\Scripts\Util\ToastPool.cs" />
     <Compile Include="Assets\Scripts\Util\UnlockerLoader.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\GoldCounter.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\IPurchaseable.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\Invintory\InventoryManager.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\Item\Currency.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\Item\Ingredent.cs" />
+    <Compile Include="Assets\Scripts\_ARCHIVED\Items\Item\StoreableItem.cs" />
     <Compile Include="Assets\TitleScreenPackage\Scripts\ButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>

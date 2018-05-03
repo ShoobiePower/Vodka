@@ -24,6 +24,13 @@ public abstract class AbstractDropDownObject : MonoBehaviour
     {
         positionToMoveTo = transformToMoveTo.position;
     }
+
+    // used for scroll ups, our start position is down and our end position is up
+    protected void invertLocationToDropTo()
+    {
+        positionToMoveTo = this.transform.position;
+        offscreenStartPosition = transformToMoveTo.position;
+    }
     
 
     // Update is called once per frame
@@ -33,6 +40,7 @@ public abstract class AbstractDropDownObject : MonoBehaviour
         {
             case animationStates.MOVEDOWN:
                 {
+
                     repositionDropDown(positionToMoveTo);
                     checkIfWeReachedBottomPosition(positionToMoveTo);
                     break;
@@ -40,6 +48,7 @@ public abstract class AbstractDropDownObject : MonoBehaviour
 
                  case animationStates.MOVEUP:
                 {
+                   
                     repositionDropDown(offscreenStartPosition);
                     checkIfWeReachedStartPosition(offscreenStartPosition);
                     break;
@@ -70,6 +79,7 @@ public abstract class AbstractDropDownObject : MonoBehaviour
 
     protected void changeAnimationState(animationStates newAnimationState)
     {
+        Debug.Log(currentAnimationState);
         currentAnimationState = newAnimationState;
     }
 

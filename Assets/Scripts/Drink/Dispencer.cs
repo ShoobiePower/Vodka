@@ -12,9 +12,6 @@ public class Dispencer : MonoBehaviour, IPurchaseable
     [SerializeField]
     private Ingredient.ingredientColor ingredientToDispence;
 
-    //[SerializeField] DispencerSlot slot;
-
-    //[SerializeField] InputManager inputManager; //HAAAACCCKKKKK
 
     [SerializeField]
     Sprite activeTapArt;
@@ -26,31 +23,6 @@ public class Dispencer : MonoBehaviour, IPurchaseable
     {
         return ingredientToDispence;
     }
-
-    
-    //public void ClickDispenserButton()
-    //{
-    //    if(slot.drinkInSlot != null)
-    //    {
-    //        inputManager.DispencerButtonPressed((byte)ingredientToDispence, slot.drinkInSlot.DrinkInMug);
-    //    }
-    //}
-
-    //public void purchaseItem()
-    //{
-    //    this.gameObject.SetActive(true);
-    //}
-
-
-    //public void setPrice(int newPrice)
-    //{
-    //    throw new NotImplementedException();
-    //}
-
-    //public int getPrice()
-    //{
-    //   return priceForNewDispencer;
-    //}
 
     public Ingredient.ingredientColor getThisDispencersColor()
     {

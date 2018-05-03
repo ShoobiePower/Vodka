@@ -95,8 +95,11 @@ public class PatronSeated : ISeatStates
 
         else
         {
-        if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
-         SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+            if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
+            {
+                SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+                Debug.Log(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+            }
 
          seatToKeepTrackOf.patronSays(seatToKeepTrackOf.patron.CurrentConversation.dioOut());
 

@@ -8,7 +8,7 @@
       "Stanzas": [
         [
           "So, you're the squirt that runs this place now?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "Ehehehe, little young I'd say, but I suppose we'll see in time.",
@@ -16,7 +16,7 @@
         ],
         [
           "I'm <color=#CC18C9>Deidre Downton</color>- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "But don't get too starstruck dearie- so long as you keep my lips wet, you and I will be square!",
@@ -28,7 +28,7 @@
         ],
         [
           "Don't get me wrong- I'll still be ordering something. Just figured you might want to rectify that quickly, ehehehe~",
-          "NONE"
+          "special"
         ]
       ],
       "PatronReward": [],
@@ -157,7 +157,7 @@
       "Stanzas": [
         [
           "What's up, barkeep? By the way, I should probably introduce myself- you'll be seeing a lot of me!",
-          "NONE"
+          "special"
         ],
         [
           "Name's <color=#00FF7F>Artemis Cagosh</color>, but that's such a mouthful. You should just call me <color=#00FF7F>Artie</color>.",
@@ -169,7 +169,7 @@
         ],
         [
           "It's mainly for gettin' rid of some of the more hefty chunks of rock down in the mines... heh, you know what I mean?",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Er, sorry- didn't mean to talk your ear off.",
@@ -177,7 +177,7 @@
         ],
         [
           "What, you need me to pick something up from City Hall? Well sure, pal! A quick drink might be appreciated though.",
-          "NONE"
+          "inquisitive"
         ]
       ],
       "PatronReward": [],
@@ -351,11 +351,11 @@
       "Stanzas": [
         [
           "Greetings and salutations, friend!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "The name's <color=yellow>Horace R. Schuster</color> and, I assure you, the pleasure's all mine.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "This is such a quaint little pub you have here- much more modest than the ritzy establishments I'd frequent in my youth!",
@@ -363,7 +363,7 @@
         ],
         [
           "Those places were so lifeless and ostentatious though, I much more greatly appreciate the modest decor you have here!",
-          "NONE"
+          "special"
         ],
         [
           "But I shan't waste any more of your precious time, and will get straight to the point.",

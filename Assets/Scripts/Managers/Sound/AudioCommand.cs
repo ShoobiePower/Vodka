@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public enum PlayMode { playSingle, PlayOneShot, Loop }
 
@@ -12,6 +13,7 @@ public class AudioCommand : MonoBehaviour
     public AudioClip Clip;
     public AudioSource source;
     public string CommandText;
+    public AudioMixerGroup audioMixerGroup;
 
     public PlayMode PlayMode;
     public Priority Priority;
@@ -27,6 +29,7 @@ public class AudioCommand : MonoBehaviour
     private void Awake()
     {
         this.source = this.gameObject.AddComponent<AudioSource>();
+        source.outputAudioMixerGroup = audioMixerGroup;
         if (this.Priority == Priority.High)
         {
             this.source.priority = 1;

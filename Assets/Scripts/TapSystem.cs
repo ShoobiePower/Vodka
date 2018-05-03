@@ -11,6 +11,9 @@ public class TapSystem : MonoBehaviour {
     [SerializeField]
     Dispencer[] dispencersWeHaveEquipped = new Dispencer[4];
 
+    [SerializeField]
+    Shutter tapShutter;
+
     // This button tells the bar manager to serve whatever is in the mug and then clean it. 
     [SerializeField]
     Button ServeDrinkButton;
@@ -48,6 +51,7 @@ public class TapSystem : MonoBehaviour {
         lockTapPulls();
         ServeDrinkButton.interactable = false;
         RecycleDrinkButton.interactable = false;
+        tapShutter.MoveShutterDown();
     }
 
     public void lockTapPulls()
@@ -64,7 +68,7 @@ public class TapSystem : MonoBehaviour {
         {
             dispencersWeHaveEquipped[i].swapToEnabled();
         }
-       
+        tapShutter.MoveShutterUp();
     }
 
     public void unlockServeAndRecycleButtons()

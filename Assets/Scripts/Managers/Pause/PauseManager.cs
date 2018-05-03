@@ -8,17 +8,10 @@ public class PauseManager : Colleague
     IBarManagerState storedBarState;
 
     [SerializeField]
-    Button journalButton;
-
-    [SerializeField]
     Button optionsButton;
 
     [SerializeField]
     Button quitButton;
-
-
-   // [SerializeField]
-   // Button openTavernKeeperJournal;
 
     [SerializeField]
     Image pausePanel;
