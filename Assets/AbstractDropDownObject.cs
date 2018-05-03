@@ -79,7 +79,6 @@ public abstract class AbstractDropDownObject : MonoBehaviour
 
     protected void changeAnimationState(animationStates newAnimationState)
     {
-        Debug.Log(currentAnimationState);
         currentAnimationState = newAnimationState;
     }
 
