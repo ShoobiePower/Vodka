@@ -52,6 +52,27 @@
       "Description": "Nobody- not even the mayor- has been allowed to approach the Spire, save for the Corporeal. However, Mavis says that time is of the essence, and if the city is to be saved, you're left with very little choice. One way or another, you'll need to get her a piece of the Spire.",
       "Quests": [ "Knock Out the Guard", "Bypass the Fence" ],
       "IsUnlockedFromStart": false
+    },
+
+    "The Path Before": {
+      "Name": "The Path Before",
+      "Description": "As the Spire grows more powerful, the College needs more space to research. However, their magical methods of research might cause unforeseen problems. Whoever gains access to the Spire now, gains the political upper hand.",
+      "Quests": [ "Emphasize Caution", "Emphasize Potential" ],
+      "IsUnlockedFromStart": false
+    },
+
+    "Your Better Judgement": {
+      "Name": "The Path Before",
+      "Description": "As the Spire grows more powerful, the College needs more space to research. However, their magical methods of research might cause unforeseen problems. Whoever gains access to the Spire now, gains the political upper hand.",
+      "Quests": [ "Emphasize Caution", "Emphasize Potential" ],
+      "IsUnlockedFromStart": false
+    },
+
+    "The Path Ahead": {
+      "Name": "The Path Before",
+      "Description": "As the Spire grows more powerful, the College needs more space to research. However, their magical methods of research might cause unforeseen problems. Whoever gains access to the Spire now, gains the political upper hand.",
+      "Quests": [ "Emphasize Caution", "Emphasize Potential" ],
+      "IsUnlockedFromStart": false
     }
   },
 

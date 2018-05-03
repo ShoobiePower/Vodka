@@ -169,11 +169,12 @@
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [ [ "both", "Gaius", "The Path Ahead" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Deidre Downton", "Day6Eyes" ],
+      [ "both", "Gaius", "Day6CorporealRouteCollege-Eyes" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -194,10 +195,12 @@
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [ [ "both", "Gaius", "The Path Ahead" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Deidre Downton", "Day6Relic" ],
+      [ "both", "Gaius", "Day6CorporealRouteCollege-Relic" ]
 
     ],
     "Location": "HOME",
@@ -219,10 +222,12 @@
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [ [ "both", "Mavis", "The Path Before" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Deidre Downton", "Day6Experiment-Ask" ],
+      [ "both", "Gaius", "Day6CorporealRouteCollege-Experiment" ]
 
     ],
     "Location": "HOME",
@@ -244,10 +249,12 @@
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
-    "QuestChains": [],
+    "QuestChains": [ [ "both", "Mavis", "Your Better Judgement" ] ],
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Deidre Downton", "Day6Experiment-Ask" ],
+      [ "both", "Gaius", "Day6CorporealRouteCollege-Ask" ]
 
     ],
     "Location": "HOME",
@@ -273,7 +280,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Artie", "Day6GiveGift" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -297,7 +304,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+      [ "both", "Artie", "Day6ContractArtie" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -432,9 +439,9 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],
@@ -442,7 +449,7 @@
   },
   "Lay a Trap": {
     "Name": "Lay a Trap",
-    "Description": "While we can’t have guards covering every section of the fence that lies around the Spire, we can certainly predict where the College may try to enter. If someone could set a series of traps along the interior, we could catch that crook red-handed!",
+    "Description": "While we can't have guards covering every section of the fence that lies around the Spire, we can certainly predict where the College may try to enter. If someone could set a series of traps along the interior, we could catch that crook red-handed!",
     "Checks": [ "Smart" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -456,9 +463,59 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+
+  "Emphasize Caution": {
+    "Name": "Emphasize Caution",
+    "Description": "Magic is growing increasingly unstable. One wrong experiment, could devestate the Spire and all of Kastonia. This crisis can be solved through lore, divination, and aquired knowledge, not just magic. Ancient writings can explain such an ancient structure.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+    ],
+    "BanList": []
+  },
+
+  "Emphasize Potential": {
+    "Name": "Emphasize Caution",
+    "Description": "Though magic is growing increasingly unstable, the College could experiment safely enough if they act quickly. Their experience matches the dangers and the potential outweighs the risk. Besides, new data is more relevant than old rituals.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],

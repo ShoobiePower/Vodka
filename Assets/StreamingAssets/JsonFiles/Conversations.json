@@ -204,6 +204,144 @@
       "locationsUnlocked": [],
       "conversationsUnlocked": [
       ]
+    },
+
+    "Day6Experiment-Ask": {
+      "Name": "Day6Experiment-Ask",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "I got a riddle for you, Squirt... if you can wrap your little head around it.",
+          "NONE"
+        ],
+        [
+          "What's unstable, can be drunk, and now the people think is junk?",
+          "NONE"
+        ],
+        [
+          "My potions! Ech! Last night, a whole batch of them exploded for no reason!",
+          "NONE"
+        ],
+        [
+          "I haven't made a failed potion in years! What if sold one to a patron? They could have blown up in my face!",
+          "NONE"
+        ],
+        [
+          "Then I'd have to go and clean their guts from my walls!",
+          "NONE"
+        ],
+        [
+          "Ech! Though I am in a terrible gut shortage at the moment... Ehehe!",
+          "NONE"
+        ],
+        [
+          "Strange thing is, just the other day, a patron returned those SAME potions complaining they had no effect! Same ingredients, same recipe.",
+          "NONE"
+        ],
+        [
+          "The sooner these squirts fix the <color=yellow>Spire</color>, the sooner I can go back to makig safe potions.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6Relic": {
+      "Name": "Day6Relic",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Ech! Can't an old woman walk around without a chunk of stone crushing her?",
+          "NONE"
+        ],
+        [
+          "Another piece fell last night! Right by my shop!",
+          "NONE"
+        ],
+        [
+          "And, to make matters worse, there was a tin man running along with a glowing scepter by the Spire!",
+          "NONE"
+        ],
+        [
+          "I think the tin man had something to do with it. Him, and the little figure running beside him.",
+          "NONE"
+        ],
+        [
+          "You know what else I think? I think they were both heading here... to see YOU!",
+          "NONE"
+        ],
+        [
+          "So, Squirt. You want to know what I think about you?",
+          "NONE"
+        ],
+        [
+          "...",
+          "NONE"
+        ],
+        [
+          "You and me? We both enjoy being up to no good! Ehehehe~",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6Eyes": {
+      "Name": "Day6Eyes",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Squirt, what did you do last night?",
+          "NONE"
+        ],
+        [
+          "Strange people knocked on my door asking for you. They wanted to have a, ehehe, a 'nice little chat.'",
+          "NONE"
+        ],
+        [
+          "I don't know why they came to me. Maybe because I helped you deliver the piece of the Codex.",
+          "NONE"
+        ],
+        [
+          "See what you got me into, Squirt? These people weren't tin men or mousey scientists. They were... CLASSY!",
+          "NONE"
+        ],
+        [
+          "They said something about a new age and a fresh start and that, apparently, you're prying into it all.",
+          "NONE"
+        ],
+        [
+          "I told them they pried me out of my bed, and if they didn't leave soon, they'd never live past the current age.",
+          "NONE"
+        ],
+        [
+          "You should've been there to see them scurry off. Ehehehe~",
+          "NONE"
+        ],
+        [
+          "I just thought you should know. Don't get yourself into too much trouble now, dearie!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
     }
 
   },
@@ -458,8 +596,71 @@
       "locationsUnlocked": [],
       "conversationsUnlocked": [
       ]
-    }
+    },
 
+    "Day6ContractArtie": {
+      "Name": "Day6ContractArtie",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Hey, Barkeep! I don't- I don't know what to say.",
+          "NONE"
+        ],
+        [
+          "I guess just 'thanks for offering me a job!'",
+          "NONE"
+        ],
+        [
+          "I don't know how much of a help I'll be, but I'll do the best I can!",
+          "NONE"
+        ],
+        [
+          "Gimme a task, anything at all, and I'll be on my way!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6GiveGift": {
+      "Name": "Day6GiveGift",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Hey, uh, Barkeep.",
+          "NONE"
+        ],
+        [
+          "I don't know how to say this, but, well, thanks. Thanks a bunch.",
+          "NONE"
+        ],
+        [
+          "I don't know why youd help me out like that. It ain't like I did anything for ya.",
+          "NONE"
+        ],
+        [
+          "But I'll tell you what! When I get on my feet, I'll be sure'n return the favor!",
+          "NONE"
+        ],
+        [
+          "Or, if ya got somethin' for me now, I'll be happy to help!",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    }
   },
 
   "Old Man Horace": {
@@ -1065,6 +1266,148 @@
       "locationsUnlocked": [],
       "conversationsUnlocked": [
       ]
+    },
+
+    "The Path Before": {
+      "Name": "The Path Before - Experiment",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "So, um, the results are back from the experiment already.",
+          "NONE"
+        ],
+        [
+          "Surprised? You should see the stack of papers they give me each day.",
+          "NONE"
+        ],
+        [
+          "We analyzed the measurements from the Flux device, and we found that the magic in the Spire... well, it isn't exactly fading.",
+          "NONE"
+        ],
+        [
+          "It's growing.",
+          "NONE"
+        ],
+        [
+          "The amplitude of the waves is steadily increasing, meaning that the magical power transmitted from the spire fluctuates more and more.",
+          "NONE"
+        ],
+        [
+          "One day, we might get enough magic to power Kastonia for weeks. The next, we might get nothing at all.",
+          "NONE"
+        ],
+        [
+          "We need to study this more. The Spire might be collapsing because it's bursting with energy, not because it's actually falling apart.",
+          "NONE"
+        ],
+        [
+          "Our only problem is that we still can't get into the Spire without the city's approval (why is there always paperwork?).",
+          "NONE"
+        ],
+        [
+          "So, er, if there's anything you can say or do to, uh, persuade the leaders- to let the College have control over the Spire- that would... help... a lot.",
+          "NONE"
+        ],
+        [
+          "*ahem*",
+          "NONE"
+        ],
+        [
+          "Sorry for taking you away from your work. I'll get something to go, and let you get back to it.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Your Better Judgement": {
+      "Name": "The Path Before - Ask",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "...um, hello again.",
+          "NONE"
+        ],
+        [
+          "Thank you for gathering what information you could from the Corporeal, but, uh, it wasn't... well, it wasn't much to go off of.",
+          "NONE"
+        ],
+        [
+          "I just saw one of the Corporeal members walk out of here. Did he- did he say something to you? Something we don’t know?",
+          "NONE"
+        ],
+        [
+          "Because if he did, telling us would only, er, speed up our research (and maybe I'll have time to go home early)",
+          "NONE"
+        ],
+        [
+          "We're incredibly close to figuring out what's wrong. If we just had a little more jurisdiction, we might be able to fix the problem before it becomes worse!",
+          "NONE"
+        ],
+        [
+          "My itinerary says there's another town hall meeting tonight. If you have anything important to share, it would be a, ah, convenient time to do so.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "The Path Ahead": {
+      "Name": "The Path Before - Eyes/Relic",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "...um, excuse me?",
+          "NONE"
+        ],
+        [
+          "I don't mean to, er, interrupt- I imagine you're probably busy! And believe me, I know what it's like to be busy.",
+          "NONE"
+        ],
+        [
+          "But, um... well, I represent the College of Magical Research and Recovery, and, er... I was kind of hoping I could speak to you, regarding your work with the Corporeal.",
+          "NONE"
+        ],
+        [
+          "It's not that we think you're trying to prevent our research or anything!",
+          "NONE"
+        ],
+        [
+          "But, uh... we're afraid that somebody as influential as you might, er, unintentionally stall our progress.",
+          "NONE"
+        ],
+        [
+          "We have a lot of theories that could be proven if we could just get into the Spire, but the Corporeal retains full control of it.",
+          "NONE"
+        ],
+        [
+          "If you know of anything that might sway the public in our favor, we might be able to persuade Kastonia’s leaders to let us research there.",
+          "NONE"
+        ],
+        [
+          "Um, here, take my business card. You can contact me any time (hopefully not soon. I have way too much to do). I'm <color=#D19F7E>Mavis</color>, by the way.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
     }
 
 
@@ -1260,6 +1603,210 @@
         ],
         [
           "I leave the choice to you, as you are the one with the resources to act.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Day6CorporealRouteCollege-Experiment": {
+      "Name": "Day6CorporealRouteCollege-Experiment",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Barkeep.",
+          "NONE"
+        ],
+        [
+          "It seems the <color=#64B5F6>College</color> has made a recent discovery.",
+          "NONE"
+        ],
+        [
+          "I would ask how they could obtained such knowledge so quickly, but I believe we already know the answer to that question.",
+          "NONE"
+        ],
+        [
+          "Truly, I am glad they have made progress. This is a catastrophe we must work through together.",
+          "NONE"
+        ],
+        [
+          "But, last night, there was another magical imbalance, and I suspect it is a result of your actions.",
+          "NONE"
+        ],
+        [
+          "You must see that, as magic becomes more unstable, the use of a simple, magical flame might engulf the city. Or, a spell to restore a person to health may have no effect at all.",
+          "NONE"
+        ],
+        [
+          "Those who use magic must be wary. The <color=#64B5F6>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
+          "NONE"
+        ],
+        [
+          "...they have none.",
+          "NONE"
+        ],
+        [
+          "There are other ways to solve this crisis. You must have faith that, together, we can solve this using the path laid before us.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Day6CorporealRouteCollege-Ask": {
+      "Name": "Day6CorporealRouteCollege-Ask",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Barkeep.",
+          "NONE"
+        ],
+        [
+          "I am pleased that we can work together once more.",
+          "NONE"
+        ],
+        [
+          "Your friend came to us, seeking information about our ways. I have come to tell you more.",
+          "NONE"
+        ],
+        [
+          "In light of recent events, I was chosen to seek help from the <color=yellow>Seven Stones</color>.",
+          "NONE"
+        ],
+        [
+          "They said, 'In a pool of water, a ripple can only peak as high as its troughs fall. So, too, does the Spire's strength.'",
+          "NONE"
+        ],
+        [
+          "Barkeep, the <color=yellow>Spire</color>'s magic isn't fading...",
+          "NONE"
+        ],
+        [
+          "It's growing.",
+          "NONE"
+        ],
+        [
+          "But, not steadily. It is fluctuating chaotically- rising and falling in strength, more like a tital wave than a ripple.",
+          "NONE"
+        ],
+        [
+          "As it does, the result of magic becomes unpredictable, its use, more dangerous. Imagine a tiny flame engulfing the city, or a life-saving spell having no effect.",
+          "NONE"
+        ],
+        [
+          "I understand your favor with the College, but using magic to discover what's wrong with magic is reckless, despite the caster's intelligence.",
+          "NONE"
+        ],
+        [
+          "I trust you will use your better judgement in times such as these.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Day6CorporealRouteCollege-Eyes": {
+      "Name": "Day6CorporealRouteCollege-Eyes",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Barkeep.",
+          "NONE"
+        ],
+        [
+          "Your friend did well last night. It appears the Eyes know things we do not.",
+          "NONE"
+        ],
+        [
+          "They seem to be harnessing magic from the <color=yellow>Spire</color>, no doubt to resurrect their elder god, the <color=red>Titan</color>.",
+          "NONE"
+        ],
+        [
+          "The <color=red>Titan</color>, however, cannot be resurrected by simple magic. No, it can only be revived with Chaos.",
+          "NONE"
+        ],
+        [
+          "If they've been harnessing this power, then the Spire's magic isn't fading...",
+          "NONE"
+        ],
+        [
+          "It's growing.",
+          "NONE"
+        ],
+        [
+          "But, not steadily. It is fluctuating chaotically- rising and falling in strength.",
+          "NONE"
+        ],
+        [
+          "As it does, the result of magic becomes unpredictable, its use, more dangerous. Imagine a tiny flame engulfing the city, or a life-saving spell having no effect.",
+          "NONE"
+        ],
+        [
+          "Those who use magic must be wary. The <color=#64B5F6>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
+          "NONE"
+        ],
+        [
+          "...they have none.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": []
+    },
+
+    "Day6CorporealRouteCollege-Relic": {
+      "Name": "Day6CorporealRouteCollege-Eyes",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Barkeep.",
+          "NONE"
+        ],
+        [
+          "Our disovery last night was... eye-opening... to say the least.",
+          "NONE"
+        ],
+        [
+          "The relic didn't strengthen or weaken within the <color=yellow>Spire</color>",
+          "NONE"
+        ],
+        [
+          "It pulsed.",
+          "NONE"
+        ],
+        [
+          "Over time, the pulses grew, its peaks growing stronger, its depths growing weaker.",
+          "NONE"
+        ],
+        [
+          "It is like a pool of water, whose waves grow in size as its troughs fall deeper.",
+          "NONE"
+        ],
+        [
+          "I fear, as well, that our search was not unnoticed. As a result, I have heard false whispers that the Corporeal are divided.",
+          "NONE"
+        ],
+        [
+          "Perhaps it would be better to keep the details of our search quiet.",
           "NONE"
         ]
       ],
