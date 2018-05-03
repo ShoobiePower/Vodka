@@ -17,6 +17,10 @@ public class AudioCommand : MonoBehaviour
 
     public PlayMode PlayMode;
     public Priority Priority;
+
+    [SerializeField]
+    private float volumeOfCue;
+
     private bool isPaused;
 
     // Use this for initialization
@@ -30,6 +34,7 @@ public class AudioCommand : MonoBehaviour
     {
         this.source = this.gameObject.AddComponent<AudioSource>();
         source.outputAudioMixerGroup = audioMixerGroup;
+        
         if (this.Priority == Priority.High)
         {
             this.source.priority = 1;
@@ -45,6 +50,9 @@ public class AudioCommand : MonoBehaviour
 
     public void Play()
     {
+        if (audioMixerGroup != null)
+        audioMixerGroup.audioMixer.SetFloat("CharacterVol", volumeOfCue);
+
         switch (PlayMode)
         {
             case PlayMode.PlayOneShot:

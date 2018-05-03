@@ -98,7 +98,6 @@ public class OrderManager : MonoBehaviour {
         }
         else
         {
-            SoundManager.Instance.AddCommand("No");
             return orderAccuracy.MIXUP;
         }
     }

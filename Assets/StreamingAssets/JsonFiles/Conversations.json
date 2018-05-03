@@ -1060,7 +1060,7 @@
       "Stanzas": [
         [
           "...um, excuse me?",
-          "NONE"
+          "special"
         ],
         [
           "I don't mean to, er, interrupt- I imagine you're probably busy! And believe me, I know what it's like to be busy.",
@@ -1080,7 +1080,7 @@
         ],
         [
           "U-um, ahem- I'm just going to make the safe assumption that I am. In which case, we at the College would like to thank you for your assistance!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "We may not have been able to glean much information from the Corporeal, but they're certainly starting to feel the heat.",
@@ -1088,7 +1088,7 @@
         ],
         [
           "As you may (or may not) know, the Corporeal has been more or less in charge of maintaining the Spire, and kept their activities secretive for 'the good of humanity'.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "We at the College find this to be hogwash, especially in light of recent events. Ever since the Spire fractured, they've been oddly quiet, holding private meetings at City Hall.",
@@ -1217,7 +1217,7 @@
       "Stanzas": [
         [
           "...um, excuse me?",
-          "NONE"
+          "special"
         ],
         [
           "I'm <color=#D19F7E>Mavis</color>. I represent the <color=00FA9A>College of Magical Research and Recovery</color>.",
@@ -1229,7 +1229,7 @@
         ],
         [
           "If we're correct, and we normally are, then the Spire isn't its own source of magic; it somehow gets its magic from somewhere else.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "The issue is that our readings of the Spire vary dramatically, so it's hard to gather any good data.",
@@ -1237,7 +1237,7 @@
         ],
         [
           "We could set up an experiment with a device we purchased from the Artifer's Alliance, but, well, we'd need to be near the Spire for it to work.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "And, uh, the Corporeal wouldn't be happy to see us tinkering around there.",
@@ -1422,7 +1422,7 @@
       "Stanzas": [
         [
           "...",
-          "NONE"
+          "inquisitive"
         ],
         [
           ".......",
@@ -1430,7 +1430,7 @@
         ],
         [
           "Bartender.",
-          "NONE"
+          "special"
         ],
         [
           "I greet you in the name of the <color=yellow>Pantheon</color> and their servants, the <color=#64B5F6>Corporeal</color>.",
@@ -1446,7 +1446,7 @@
         ],
         [
           "As you may know, the <color=yellow>Spire</color> is the source of magic for Kastonia.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Our order has warned against using it for millennia, since magic is reserved for the <color=yellow>Pantheon</color> alone.",
