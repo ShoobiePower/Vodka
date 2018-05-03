@@ -51,7 +51,7 @@ public class Day5CorporealRouteCorp : TutorialTask
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        //tutorial.SetCurrentTask(new Day6Task1(tutorial));
+        tutorial.SetCurrentTask(new Day6Corporeal(tutorial));
     }
 
 
