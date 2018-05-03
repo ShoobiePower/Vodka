@@ -14,6 +14,9 @@ public class MusicManager : MonoBehaviour
     MusicStates currentMusicState;
     private float maxAmbiance;
 
+    [SerializeField]
+    private float maxMusicVolume;
+
     public void init()
     {
         maxAmbiance = ambianceSource.volume;

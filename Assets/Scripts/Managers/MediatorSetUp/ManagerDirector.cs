@@ -49,14 +49,14 @@ public class ManagerDirector : MonoBehaviour, IDirector
         if (sender == barManager)
         {
             timeManager.FadeToEndDay();
+            musicManager.changeMusicState(MusicManager.MusicStates.INMENU);
         }
 
         else if (sender == timeManager) // When the end of day manager has finsihed playing the fade out animation.
         {
             endOfDaySummaryManager.setEndOfDaySummaryBoardActive();
             barManager.JumpToStarterSeat();
-            endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();
-            musicManager.changeMusicState(MusicManager.MusicStates.INMENU);
+            endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();          
         }
 
         else if (sender == endOfDaySummaryManager)

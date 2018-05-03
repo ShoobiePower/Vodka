@@ -1016,7 +1016,7 @@
       "Stanzas": [
         [
           "...um, excuse me?",
-          "NONE"
+          "special"
         ],
         [
           "I'm <color=#D19F7E>Mavis</color>. I represent the <color=00FA9A>College of Magical Research and Recovery</color>.",
@@ -1028,7 +1028,7 @@
         ],
         [
           "If we're correct, and we normally are, then the Spire isn't its own source of magic; it somehow gets its magic from somewhere else.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "The issue is that our readings of the Spire vary dramatically, so it's hard to gather any good data.",
@@ -1036,7 +1036,7 @@
         ],
         [
           "We could set up an experiment with a device we purchased from the Artifer's Alliance, but, well, we'd need to be near the Spire for it to work.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "And, uh, the Corporeal wouldn't be happy to see us tinkering around there.",
