@@ -21,7 +21,7 @@ public class Day5CollegeRouteCorp : TutorialTask {
     private void EnterDeidreAndArtie()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Deidre", 0);
+        tutorial.forcePatronIntoBarToSitAt("Deidre Downton", 0);
         tutorial.forceSeatToHaveSpecificJob(0, Patron.whatDoTheyWantToDo.ADVENTURE);
 
         tutorial.forcePatronIntoBarToSitAt("Artie", 1);
