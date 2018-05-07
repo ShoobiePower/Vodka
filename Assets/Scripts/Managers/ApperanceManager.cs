@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ApperanceManager : MonoBehaviour {
 
@@ -13,8 +14,7 @@ public class ApperanceManager : MonoBehaviour {
     public Sprite GREEN;
     public Sprite BLUE;
 
-    public Sprite[] allCurrenciesApperances = new Sprite[5];
-    public Sprite Gold;
+    public Sprite[] allCurrenciesApperances = new Sprite[4];
     public Sprite AApts;
     public Sprite EvilOrderPts;
     public Sprite CollegePts;
@@ -36,10 +36,24 @@ public class ApperanceManager : MonoBehaviour {
     [SerializeField]
     Sprite UnHilightedBarSeatToken;
 
+    Dictionary<string, Sprite> patronArt = new Dictionary<string, Sprite>();
+
+
+    
+    
+    [System.Serializable]
+    public struct NamedImages
+    {
+        public string name;
+        public Sprite sprite;
+    }
+    public NamedImages[] patronArtToLoad;
+
+
     public Sprite[] allFactionArt = new Sprite[4];
 
 
-    public Sprite[] PatronArtInGame = new Sprite[7];
+   // public Sprite[] PatronArtInGame = new Sprite[12];
 
     public Sprite[] PatronTokens = new Sprite[7];
 
@@ -59,11 +73,11 @@ public class ApperanceManager : MonoBehaviour {
         ingredentApperance[2] = GREEN;
         ingredentApperance[3] = BLUE;
 
-        allCurrenciesApperances[0] = Gold;
-        allCurrenciesApperances[1] = AApts;
-        allCurrenciesApperances[2] = EvilOrderPts;
-        allCurrenciesApperances[3] = CollegePts;
-        allCurrenciesApperances[4] = CorporealPts;
+
+        allCurrenciesApperances[0] = AApts;
+        allCurrenciesApperances[1] = EvilOrderPts;
+        allCurrenciesApperances[2] = CollegePts;
+        allCurrenciesApperances[3] = CorporealPts;
 
        
         allFactionArt[0] = CollegePts;
@@ -78,6 +92,8 @@ public class ApperanceManager : MonoBehaviour {
         allIngredientApperances[3] = BlueIngBox;
         allIngredientApperances[4] = BlankIngBox;
 
+
+        initCharacterArtDictionary();
     }
 
     public Sprite whatDoesTheIngredentLookLike(Ingredient.ingredientColor theColorOfTheIngredent)
@@ -85,9 +101,17 @@ public class ApperanceManager : MonoBehaviour {
         return ingredentApperance[(int)theColorOfTheIngredent];
     }
 
-    public Sprite HowThisPatronLooks(byte patronsId)
+    public Sprite HowThisPatronLooks(string spriteToLookFor)
     {
-        return PatronArtInGame[patronsId];
+        Sprite test;
+        Debug.Log(spriteToLookFor);
+        if (patronArt.TryGetValue(spriteToLookFor, out test)) 
+        {
+            return test;
+        }
+        string[] parts = spriteToLookFor.Split('_');
+
+        return patronArt[parts[0]];
     }
 
     public Sprite ThisPatronsToken(byte patronsId)
@@ -151,5 +175,13 @@ public class ApperanceManager : MonoBehaviour {
     public Sprite getBlankIngredientColor()
     {
         return allIngredientApperances[allIngredientApperances.Length -1];
+    }
+
+    private void initCharacterArtDictionary()
+    {
+        for (int i  = 0; i < patronArtToLoad.Length; i++)
+        {
+            patronArt.Add(patronArtToLoad[i].name, patronArtToLoad[i].sprite);
+        }
     }
 }

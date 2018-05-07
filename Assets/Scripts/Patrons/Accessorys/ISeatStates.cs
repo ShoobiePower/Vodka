@@ -32,7 +32,7 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
     public void FillSeat(Patron patronToSit)
     {
         seatToKeepTrackOf.patron = patronToSit;
-        seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(patronToSit.ID);
+        seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(patronToSit.Name); //patronToSit.ID
         seatToKeepTrackOf.barToken.sprite = ApperanceManager.instance.ThisPatronsBarToken(patronToSit.ID);
         seatToKeepTrackOf.GetComponent<BoxCollider2D>().enabled = true;
         seatToKeepTrackOf.makeTextBoxClickable();
@@ -86,6 +86,7 @@ public class PatronSeated : ISeatStates
     {
         if (seatToKeepTrackOf.patron.CurrentConversation == null || seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
         {
+            seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(seatToKeepTrackOf.patron.Name);
             StringBuilder sb = new StringBuilder(JsonDialogueLoader.Instance.dioOut(seatToKeepTrackOf.patron.OrderThePatronWants.getKindOfOrder(), seatToKeepTrackOf.patron.ID));
             sb.Replace("{DRINK}", seatToKeepTrackOf.patron.OrderThePatronWants.describeOrder());
             seatToKeepTrackOf.patronSays(sb.ToString());
@@ -95,9 +96,12 @@ public class PatronSeated : ISeatStates
 
         else
         {
+            seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(seatToKeepTrackOf.patron.Name);
+
             if (seatToKeepTrackOf.patron.CurrentConversation.emoteOut() != string.Empty)
             {
                 SoundManager.Instance.AddCommand(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
+                seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(seatToKeepTrackOf.patron.Name+ '_'  +seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
                 Debug.Log(seatToKeepTrackOf.patron.Name + seatToKeepTrackOf.patron.CurrentConversation.emoteOut());
             }
 

@@ -39,7 +39,7 @@ public class PatronStatScreen : AbstBookStates {
             patronName.text = patronToInquireAbout.Name;
             PatronLvlBondText.text = "Bond Level: " + patronToInquireAbout.Level + "\n";
             PatronLvlBondText.text += "Points till next level " + (patronToInquireAbout.ThresholdToNextBondLevel - patronToInquireAbout.BondPoints);
-            patronImage.sprite = ApperanceManager.instance.HowThisPatronLooks(patronToInquireAbout.ID);
+            patronImage.sprite = ApperanceManager.instance.HowThisPatronLooks(patronToInquireAbout.Name);  //patronToInquireAbout.ID
             PatronBondMeter.maxValue = patronToInquireAbout.ThresholdToNextBondLevel;
             PatronBondMeter.value = patronToInquireAbout.BondPoints;
             writeOutPatronSkills(patronToInquireAbout);

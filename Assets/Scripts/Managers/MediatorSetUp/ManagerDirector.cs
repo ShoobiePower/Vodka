@@ -25,7 +25,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
     private void Start()
     {
         mapManager.DEBUGUnlockAllLocations();
-        musicManager.init();
+        musicManager.initMusicManager();
         //registerSelfToMediator();
 
         mapManager.SetDirector(this);
@@ -49,7 +49,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
         if (sender == barManager)
         {
             timeManager.FadeToEndDay();
-            musicManager.changeMusicState(MusicManager.MusicStates.INMENU);
+            musicManager.setCurrentMusicState(musicManager.GetBarFading());
         }
 
         else if (sender == timeManager) // When the end of day manager has finsihed playing the fade out animation.
@@ -65,7 +65,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
             barManager.DisableAllUi();
             endOfDayManager.pullUpEndOfDayScreen();
             timeManager.fadeInText();
-            musicManager.changeMusicState(MusicManager.MusicStates.INBAR);
+            musicManager.setCurrentMusicState(musicManager.GetMenuSetting());
         }
 
         else if (sender == endOfDayManager)

@@ -10,83 +10,70 @@ public class MusicManager : MonoBehaviour
     public AudioClip barMusicLayered;
     public AudioClip barMusicStatic;
     public AudioClip menuMusicStatic;
-    public enum MusicStates { INBAR, INBARGAIN, INMENU, INMENUGAIN, NONE };
-    MusicStates currentMusicState;
+
+    private IMusicState barRising;
+    private IMusicState barFading;
+    private IMusicState menuRising;
+    private IMusicState menuSetting;
+    private IMusicState playOn;
+    private IMusicState currentMusicState;
+
     private float maxAmbiance;
 
-    [SerializeField]
-    private float maxMusicVolume;
+    public float maxMusicVolume;
 
-    public void init()
+    public void initMusicManager()
     {
-        maxAmbiance = ambianceSource.volume;
+        barRising = new BarMusicRising(this);
+        barFading = new BarMusicFading(this);
+        menuRising = new MenuMusicRise(this);
+        menuSetting = new MenuMusicFade(this);
+        playOn = new MusicPlays();
+
+        currentMusicState = GetBarRising();
+        currentMusicState.StartPart();
+}
+
+    public void setCurrentMusicState(IMusicState musicStateToSwapTo)
+    {
+        currentMusicState = musicStateToSwapTo;
+        StartCurrentSong();
+    }
+
+    public IMusicState GetBarRising()
+    {
+        return barRising;
+    }
+
+    public IMusicState GetBarFading()
+    {
+        return barFading;
+    }
+
+    public IMusicState GetMenuRising()
+    {
+        return menuRising;
+    }
+
+    public IMusicState GetMenuSetting()
+    {
+        return menuSetting;
+    }
+
+    public IMusicState GetPlayThrough()
+    {
+        return playOn;
+    }
+
+    public void StartCurrentSong()
+    {
+        currentMusicState.StartPart();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-        if (currentMusicState == MusicStates.INBAR)
-        {
-            runMapManagerFadeOut();
-            startPatronSounds();
-
-        }
-
-        if (currentMusicState == MusicStates.INBARGAIN)
-        {
-            runFadeIn();
-
-        }
-
-        if (currentMusicState == MusicStates.INMENU)
-        {
-            runInBarFadeOut();
-            exitPatronSound();
-        }
-
-    }
-
-
-    public void runFadeIn()
-    {
-        gameMusicSource.volume += ammountTochangeBy * Time.deltaTime;
-        if (gameMusicSource.volume >= .5 && .6f >= gameMusicSource.volume)  // for saftety 
-        {
-            currentMusicState = MusicStates.NONE;
-        }
-    }
-
-    public void runInBarFadeOut()
-    {
-        gameMusicSource.volume -= ammountTochangeBy * Time.deltaTime;
-        if (0 >= gameMusicSource.volume)
-        {
-            gameMusicSource.Stop();
-            gameMusicSource.clip = menuMusicStatic;
-            gameMusicSource.Play();
-            changeMusicState(MusicStates.INBARGAIN);
-        }
-    }
-
-
-    public void runMapManagerFadeOut()
-    {
-        gameMusicSource.volume -= ammountTochangeBy * Time.deltaTime;
-        if (0 >= gameMusicSource.volume)
-        {
-            gameMusicSource.Stop();
-            gameMusicSource.clip = barMusicLayered;
-            Invoke("startBarStaticTheme", barMusicLayered.length);
-            gameMusicSource.Play();
-            changeMusicState(MusicStates.INBARGAIN);
-        }
-    }
-
-    public void changeMusicState(MusicStates stateToChangeTo)
-    {
-        currentMusicState = stateToChangeTo;
+        currentMusicState.ChangeVolume();
     }
 
     public void startPatronSounds()
@@ -114,3 +101,164 @@ public class MusicManager : MonoBehaviour
 
 
 }
+
+public interface IMusicState
+{
+    void StartPart();
+    void ChangeVolume();
+    void OnEnd();
+}
+
+public class BarMusicRising : IMusicState
+{
+    private MusicManager musicManager;
+    float musicLoopCountDown;
+
+    public BarMusicRising(MusicManager musicManager)
+    {
+        this.musicManager = musicManager;
+    }
+
+    public void ChangeVolume()
+    {
+        
+        if (musicManager.gameMusicSource.volume < musicManager.maxMusicVolume) 
+        {
+            musicManager.gameMusicSource.volume += musicManager.ammountTochangeBy * Time.deltaTime;
+        }
+        tickTimeDown();
+
+    }
+
+    public void OnEnd()
+    {
+    }
+
+    public void StartPart()
+    {
+        musicManager.gameMusicSource.Stop();
+        musicManager.gameMusicSource.clip = musicManager.barMusicLayered;
+        musicManager.gameMusicSource.Play();
+        musicLoopCountDown = musicManager.gameMusicSource.clip.length;
+    }
+
+    private void tickTimeDown()
+    {
+        musicLoopCountDown -= Time.deltaTime;
+        if (musicLoopCountDown <= 0)
+        {
+            musicManager.gameMusicSource.Stop();
+            musicManager.gameMusicSource.clip = musicManager.barMusicStatic;
+            musicManager.gameMusicSource.Play();
+            musicManager.setCurrentMusicState(musicManager.GetPlayThrough());
+        }
+    }
+}
+
+public class BarMusicFading : IMusicState
+{
+
+    private MusicManager musicManager;
+    public BarMusicFading(MusicManager musicManager)
+    {
+        this.musicManager = musicManager;
+    }
+
+    public void ChangeVolume()
+    {
+        musicManager.gameMusicSource.volume -= musicManager.ammountTochangeBy * Time.deltaTime;
+        if (0 >= musicManager.gameMusicSource.volume)
+        {
+            OnEnd();
+        }
+    }
+
+    public void OnEnd()
+    {
+        musicManager.setCurrentMusicState(musicManager.GetMenuRising());
+    }
+
+    public void StartPart()
+    {
+        
+    }
+}
+
+
+public class MenuMusicRise : IMusicState
+{
+
+    private MusicManager musicManager;
+    public MenuMusicRise(MusicManager musicManager)
+    {
+        this.musicManager = musicManager;
+    }
+
+    public void ChangeVolume()
+    {
+        musicManager.gameMusicSource.volume += musicManager.ammountTochangeBy * Time.deltaTime;
+        if (musicManager.gameMusicSource.volume > musicManager.maxMusicVolume)
+        {
+            OnEnd();
+        }
+    }
+
+    public void OnEnd()
+    {
+        musicManager.setCurrentMusicState(musicManager.GetPlayThrough());
+    }
+
+    public void StartPart()
+    {
+        musicManager.gameMusicSource.Stop();
+        musicManager.gameMusicSource.clip = musicManager.menuMusicStatic;
+        musicManager.gameMusicSource.Play();
+    }
+}
+
+
+public class MenuMusicFade : IMusicState
+{
+
+    private MusicManager musicManager;
+    public MenuMusicFade(MusicManager musicManager)
+    {
+        this.musicManager = musicManager;
+    }
+
+    public void ChangeVolume()
+    {
+        musicManager.gameMusicSource.volume -= musicManager.ammountTochangeBy * Time.deltaTime;
+        if (0 >= musicManager.gameMusicSource.volume)
+        {
+            OnEnd();
+        }
+    }
+
+    public void OnEnd()
+    {
+        musicManager.setCurrentMusicState(musicManager.GetBarRising());
+    }
+
+    public void StartPart()
+    {
+    }
+}
+
+public class MusicPlays : IMusicState
+{
+    public void ChangeVolume()
+    {
+
+    }
+
+    public void OnEnd()
+    {
+
+    }
+
+    public void StartPart()
+    {
+    }
+}
+
