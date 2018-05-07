@@ -56,7 +56,7 @@ public class Day6Corporeal : TutorialTask
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        //tutorial.SetCurrentTask(new Day7Corporeal(tutorial));
+        tutorial.SetCurrentTask(new Day7CorporealTransition(tutorial));
     }
 
 
