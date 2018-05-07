@@ -1666,48 +1666,188 @@
     },
 
     "Day6CollegeSneak": {
-      "Name": "Day6CollegeSneak",
+        "Name": "Day6CollegeSneak",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "*huff* *huff* ...g-good morning, barkeep! I ran over as soon as I could... I hope you have good news for me?",
+                "NONE"
+            ],
+            [
+                "...Oh my goodness... That’s a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+                "NONE"
+            ],
+            [
+                "I-I don't mean to insinuate that I find you incapable... it's just, this is an impressive feat for a barkeep!",
+                "NONE"
+            ],
+            [
+                "(That didn't come off any better, did it?)",
+                "NONE"
+            ],
+            [
+                "*ahem* Um, a-anyways, I'm appreciative that you were able to acquire this for me- do you mind if I ask how you managed to do so...?",
+                "NONE"
+            ],
+            [
+                "...like, the WHOLE fence? How'd they manage to make their way up there, much less without being caught?!",
+                "NONE"
+            ],
+            [
+                "Goodness, that's an incredible tale! I sure hope your patron didn't hurt themselves getting down!",
+                "NONE"
+            ],
+            [
+                "Regardless, I'm going to have this taken back to be studied. Time is of the essence in this matter, however.",
+                "NONE"
+            ],
+            [
+                "An extra pair of hands would be greatly appreciated, if you find someone willing to help!",
+                "NONE"
+            ],
+            [
+                "Anyways, that's it for me. Maybe a quick drink to keep my energy up?",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [
+        ]
+    },
+
+    "Day7CorporealSidedWithCorporeal": {
+        "Name": "Day7CorporealSidedWithCorporeal",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "Um...",
+                "NONE"
+            ],
+            [
+                "Hello, I...",
+                "NONE"
+            ],
+            [
+                "I-I have a lot more paperwork to do now.",
+                "NONE"
+            ],
+            [
+                "The government is set on giving the Corporeal full control over the <color=yellow>Spire</color>",
+                "NONE"
+            ],
+            [
+                "I'm trying to find a way in, but there aren't many options left for us at the College",
+                "NONE"
+            ],
+            [
+                "To make matters worse, I've combined data gathered from the <color=yellow>Spire</color> with what knowledge we've gained from the Corporeal.",
+                "NONE"
+            ],
+            [
+                "By my estimation, the <color=yellow>Spire</color> will grow so unstable that it will either crumble or explode. Either way, you won't want to be anywhere near here when that happens.",
+                "NONE"
+            ],
+            [
+                "The truth is, we don't have long.",
+                "NONE"
+            ],
+            [
+                "If I'm correct, and I usually am, then we have roughly...",
+                "NONE"
+            ],
+            [
+                "Eight days.",
+                "NONE"
+            ],
+            [
+                "Eight days until the city is leveled.",
+                "NONE"
+            ],
+            [
+                "Hmph.",
+                "NONE"
+            ],
+            [
+                "If I'm not allowed near that <color=yellow>Spire</color> until I have the proper certification, I'll be finished with that paperwork before you can bat an eye.",
+                "NONE"
+            ],
+            [
+                "If I have one superior talent, it's getting things done quickly. Watch. I'll be there alongside the Corporeal before you thought it was possible.",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [
+        ]
+    },
+
+    "Day7CorporealSidedWithCollege": {
+      "Name": "Day7CorporealSidedWithCollege",
       "IsConversationOneShot": true,
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "*huff* *huff* ...g-good morning, barkeep! I ran over as soon as I could... I hope you have good news for me?",
+          "Hey!",
           "NONE"
         ],
         [
-          "...Oh my goodness... That’s a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+          "Um, I have good news and bad news.",
           "NONE"
         ],
         [
-          "I-I don't mean to insinuate that I find you incapable... it's just, this is an impressive feat for a barkeep!",
+          "Good news! Thanks to you, we have complete access to the <color=yellow>Spire</color>!",
           "NONE"
         ],
         [
-          "(That didn't come off any better, did it?)",
+          "Bad news...",
           "NONE"
         ],
         [
-          "*ahem* Um, a-anyways, I'm appreciative that you were able to acquire this for me- do you mind if I ask how you managed to do so...?",
+          "I was able to collect enough data to find a trend in the fluctuations.",
           "NONE"
         ],
         [
-          "...like, the WHOLE fence? How'd they manage to make their way up there, much less without being caught?!",
+          "If I'm correct, and I usually am, the <color=yellow>Spire</color> will grow so unstable that it will either crumble or explode.",
           "NONE"
         ],
         [
-          "Goodness, that's an incredible tale! I sure hope your patron didn't hurt themselves getting down!",
+          "Either way, you won't want to be anywhere near here when that happens.",
           "NONE"
         ],
         [
-          "Regardless, I'm going to have this taken back to be studied. Time is of the essence in this matter, however.",
+          "And, according to the numbers, we only have...",
           "NONE"
         ],
         [
-          "An extra pair of hands would be greatly appreciated, if you find someone willing to help!",
+          "Eight days.",
           "NONE"
         ],
         [
-          "Anyways, that's it for me. Maybe a quick drink to keep my energy up?",
+            "Eight days until the <color=yellow>Spire</color> destroys the city.",
+            "NONE"
+        ],
+        [
+            "We have so much to research, and we barely understand how the <color=yellow>Spire</color> even works!",
+            "NONE"
+        ],
+        [
+            "We'll need to know where the <color=yellow>Spire</color> gets its magic from, what's causing the fluctuations, explore the <color=yellow>Spire</color> itself...",
+            "NONE"
+        ],
+        [
+            "I need to whip up a plan. Until then, sit tight! We have a lot to do in just, um, eight days.",
+            "NONE"
+        ],
+        [
+          "(Breathe, Mavis, you can do this. You have help now.)",
           "NONE"
         ]
       ],
@@ -2245,6 +2385,94 @@
       "TownEvents": [],
       "locationsUnlocked": [],
       "conversationsUnlocked": []
+    },
+
+    "Day7CorporealSidedWithCorporeal": {
+        "Name": "Day7CorporealSidedWithCorporeal",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "Barkeep.",
+                "NONE"
+            ],
+            [
+                "We cannot thank you enough for your influence on the city council.",
+                "NONE"
+            ],
+            [
+                "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire's</color> collapse.",
+                "NONE"
+            ],
+            [
+                "Know, Barkeep, that our story is only beginning.",
+                "NONE"
+            ],
+            [
+                "There is much to learn of the <color=yellow>Spire's</color> history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
+                "NONE"
+            ],
+            [
+                "We must seek aid from our ancestors, the stars, ancient ruins, and the Spire itself.",
+                "NONE"
+            ],
+            [
+                "We will work closely in the days to come. I pray we can work the others as well.",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [
+        ]
+    },
+
+    "Day7CorporealSidedWithCollege": {
+        "Name": "Day7CorporealSidedWithCollege",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "Barkeep.",
+                "NONE"
+            ],
+            [
+                "I do not doubt your intentions. I understand them to be good.",
+                "NONE"
+            ],
+            [
+                "However, the College recently gained access to the <color=yellow>Spire</color> because of your influence.",
+                "NONE"
+            ],
+            [
+                "If they are not careful, they may hasten the <color=yellow>Spire's</color> ruin.",
+                "NONE"
+            ],
+            [
+                "As always, we shall be dutiful, ensuring the <color=yellow>Spire</color> remains intact.",
+                "NONE"
+            ],
+            [
+                "But I believe it is time for me to act of my own accord- to take action where I see none.",
+                "NONE"
+            ],
+            [
+                "I shall journey beyond <color=yellow>Seven Stones</color> to seek aid from the <color=yellow>Pantheon</color> itself.",
+                "NONE"
+            ],
+            [
+                "Be sure that the <color=yellow>Spire</color> remains intact while I am away.",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [
+        ]
     }
   },
 
@@ -2451,32 +2679,98 @@
     },
 
     "Your Civic Duty": {
-      "Name": "Your Civic Duty",
+        "Name": "Your Civic Duty",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "So I take it you've heard the news by now, hmm? After all, it's not like you can't see it from here, ho ho!",
+                "NONE"
+            ],
+            [
+                "Of course, I don't mean to make light of this situation. The <color=yellow>Spire</color> has been our benefactor of magical power for as long as anyone can remember.",
+                "NONE"
+            ],
+            [
+                "After all, that's why Kastonia was built around that looming tower!",
+                "NONE"
+            ],
+            [
+                "But I digress... there's not much that can be done about the <color=yellow>Spire</color> now, but the devastation caused by yesterday's event is still very present.",
+                "NONE"
+            ],
+            [
+                "I know this isn't quite what you signed up for, kid, but maybe you could see about sending another patron off to provide aid? The city could use it.",
+                "NONE"
+            ],
+            [
+                "Here, I'll hand this off to you while you think it over.",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [ ]
+    },
+
+    "Day7TeaserCorporeal": {
+        "Name": "Day7TeaserCorporeal",
+        "IsConversationOneShot": true,
+        "IsConversationUnlockedFromStart": false,
+        "Stanzas": [
+            [
+                "Who was that, kid? Someone from the Corporeal?",
+                "NONE"
+            ],
+            [
+                "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the Spire crisis... and it's only been a week!",
+                "NONE"
+            ],
+            [
+                "I can only imagine what'll happen in these next several days!",
+                "NONE"
+            ],
+            [
+                "Until then, you'd better rest up. You've got a lot to do!",
+                "NONE"
+            ],
+            [
+                "I'm lookin' forward to seeing what you accomplish.",
+                "NONE"
+            ]
+        ],
+        "PatronReward": [ ],
+        "QuestChains": [ ],
+        "TownEvents": [ ],
+        "locationsUnlocked": [ ],
+        "conversationsUnlocked": [ ]
+    },
+
+    "Day7TeaserCollege": {
+      "Name": "Day7TeaserCollege",
       "IsConversationOneShot": true,
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "So I take it you've heard the news by now, hmm? After all, it's not like you can't see it from here, ho ho!",
+          "Who was that, kid? Someone from the College?",
           "NONE"
         ],
         [
-          "Of course, I don't mean to make light of this situation. The <color=yellow>Spire</color> has been our benefactor of magical power for as long as anyone can remember.",
+          "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the Spire crisis... and it's only been a week!",
           "NONE"
         ],
         [
-          "After all, that's why Kastonia was built around that looming tower!",
+          "I can only imagine what'll happen in these next several days!",
           "NONE"
         ],
         [
-          "But I digress... there's not much that can be done about the <color=yellow>Spire</color> now, but the devastation caused by yesterday's event is still very present.",
+          "Until then, you'd better rest up. You've got a lot to do!",
           "NONE"
         ],
         [
-          "I know this isn't quite what you signed up for, kid, but maybe you could see about sending another patron off to provide aid? The city could use it.",
-          "NONE"
-        ],
-        [
-          "Here, I'll hand this off to you while you think it over.",
+          "I'm lookin' forward to seeing what you accomplish.",
           "NONE"
         ]
       ],

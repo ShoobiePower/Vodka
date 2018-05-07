@@ -498,17 +498,18 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+        [ "both", "Gaius", "Day7CorporealSidedWithCorporeal" ],
+        [ "both", "Mavis", "Day7CorporealSidedWithCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Deidre]",
       "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Gaius]"
     ],
     "BanList": []
   },
@@ -523,17 +524,18 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-
+        [ "both", "Gaius", "Day7CorporealSidedWithCollege" ],
+        [ "both", "Mavis", "Day7CorporealSidedWithCollege" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
       "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
     ],
     "BanList": []
   }
