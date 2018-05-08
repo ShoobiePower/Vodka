@@ -29,7 +29,7 @@ public class Day6CollegeRouteCollege : TutorialTask {
         TutorialReactions.Clear();
         tutorial.forcePatronIntoBarToSitAt("Gaius", 2);
         tutorial.forceSeatToHaveSpecificJob(2, Patron.whatDoTheyWantToDo.RUMOR);
-        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterGaius);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterTheGang);
     }
 
     private void EnterTheGang()

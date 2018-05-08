@@ -17,11 +17,11 @@
         [
 
           "I'm <color=#CC18C9>Deidre Downton</color>- but you probably knew that. After all, my brewing prowess is unrivaled across all of Kastonia!",
-          "Cheerful"
+          "NONE"
         ],
         [
           "But don't get too starstruck dearie- so long as you keep my lips wet, you and I will be square!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "By the way... I don't see your bartending certification hung up anywhere. That might prove to be an issue.",
@@ -29,7 +29,7 @@
         ],
         [
           "Don't get me wrong- I'll still be ordering something. Just figured you might want to rectify that quickly, ehehehe~",
-          "special"
+          "NONE"
         ]
       ],
       "PatronReward": [],
@@ -50,7 +50,7 @@
         ],
         [
           "Ehehe! Then again, you always look funny.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "You're concerned about the quake from earlier, hmm? Don't fret, why don't you let Auntie Deidre go figure it out?",
@@ -83,7 +83,7 @@
         ],
         [
           "Ehehehe... for future notice, the quicker you serve me a drink, the quicker I'll quit teasing you!",
-          "NONE"
+          "Cheerful"
         ]
       ],
       "PatronReward": [],
@@ -100,7 +100,7 @@
       "Stanzas": [
         [
           "I could've sworn that mousey little girl who just left bore a sigil of the <color=#01B117>College</color>. You aren't getting yourself into trouble now, are you dearie?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "I don't mean it to sound as if I'm speaking ill of the <color=#01B117>College</color>. It's just that earning political favor is a balance- and you'll want to know who's at the other end of that scale, ehehehe...",
@@ -133,8 +133,8 @@
           "NONE"
         ],
         [
-          "Squirt, do I look like a diplomat? I'd probably bite their ears off! Ehehe~",
-          "NONE"
+          "Sweetheart, do I look like a diplomat? I'd probably bite their ears off! Ehehehe~",
+          "special"
         ],
         [
           "But Ol' Auntie Deidre has a few tricks up her really baggy sleeves.",
@@ -183,11 +183,11 @@
         ],
         [
           "Ehehehe, I'm only teasing dearie- don't get your feathers in a ruffle!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "...why is that journalist giving me a dirty look...?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "You do what you think is right my dear, and just remember that you can always lean on auntie Deidre for help!",
@@ -212,7 +212,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "I got a riddle for you, Squirt... if you can wrap your little head around it.",
+          "I got a riddle for you, dearie... if you can wrap your little head around it.",
           "NONE"
         ],
         [
@@ -221,10 +221,10 @@
         ],
         [
           "My potions! Ech! Last night, a whole batch of them exploded for no reason!",
-          "NONE"
+          "special"
         ],
         [
-          "I haven't made a failed potion in years! What if sold one to a patron? They could have blown up in my face!",
+          "I haven't made a failed potion in years! What if I'd sold one to a patron? They could have blown up in my face!",
           "NONE"
         ],
         [
@@ -232,15 +232,15 @@
           "NONE"
         ],
         [
-          "Ech! Though I am in a terrible gut shortage at the moment... Ehehe!",
-          "NONE"
+          "Ech! Though I am in a terrible gut shortage at the moment... Ehehehe!",
+          "Cheerful"
         ],
         [
           "Strange thing is, just the other day, a patron returned those SAME potions complaining they had no effect! Same ingredients, same recipe.",
           "NONE"
         ],
         [
-          "The sooner these squirts fix the <color=yellow>Spire</color>, the sooner I can go back to makig safe potions.",
+          "The sooner they fix the <color=yellow>Spire</color>, the sooner I can go back to making safe potions.",
           "NONE"
         ]
       ],
@@ -263,7 +263,7 @@
         ],
         [
           "Another piece fell last night! Right by my shop!",
-          "NONE"
+          "special"
         ],
         [
           "And, to make matters worse, there was a tin man running along with a glowing scepter by the Spire!",
@@ -2341,7 +2341,7 @@
           "NONE"
         ],
         [
-          "We cannot thank you enough for your influence on the city council.",
+          "Your actions last night may seem trivial to you, but let me assure you that your efforts will not go unnoticed.",
           "NONE"
         ],
         [
@@ -2349,7 +2349,7 @@
           "NONE"
         ],
         [
-          "Know, Barkeep, that our story is only beginning.",
+          "A trial will be held for her this evening, in which we will publicly denounce the College and their schemes.",
           "NONE"
         ],
         [
@@ -2358,6 +2358,48 @@
         ],
         [
           "We must seek aid from our ancestors, the stars, ancient ruins, and the <color=yellow>Spire</color> itself.",
+          "NONE"
+        ],
+        [
+          "We will work closely in the days to come. I pray we can work the others as well.",
+          "NONE"
+        ]
+      ],
+      "PatronReward": [],
+      "QuestChains": [],
+      "TownEvents": [],
+      "locationsUnlocked": [],
+      "conversationsUnlocked": [
+      ]
+    },
+
+    "Day6CorporealSmart": {
+      "Name": "Day6CorporealSmart",
+      "IsConversationOneShot": true,
+      "IsConversationUnlockedFromStart": false,
+      "Stanzas": [
+        [
+          "Barkeep.",
+          "NONE"
+        ],
+        [
+          "Your actions last night may seem trivial to you, but let me assure you that your efforts will not go unnoticed.",
+          "NONE"
+        ],
+        [
+          "We managed to capture the thief who sought to put our city's security at risk, and it's all thanks to you.",
+          "NONE"
+        ],
+        [
+          "A trial will be held for her this evening, in which we will publicly denounce the College and their schemes.",
+          "NONE"
+        ],
+        [
+          "I know that asking more from you is unfair, but these are dire times, I'm afraid. We at the Corporeal would appreciate your testimony in the matter",
+          "NONE"
+        ],
+        [
+          "We must seek aid from our ancestors, the stars, ancient ruins, and the Spire itself.",
           "NONE"
         ],
         [
@@ -2867,3 +2909,4 @@
 
     }
   }
+}
