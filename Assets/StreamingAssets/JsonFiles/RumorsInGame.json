@@ -125,7 +125,7 @@
 
     "The Commotion": {
       "Name": "The Commotion",
-      "Description": "That earth-shattering commotion from earlier was very worrying. It'd probably be in your best interests to figure out what happened. Unfortunately, you can't go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
+      "Description": "That earth-shattering commotion from earlier was very worrying. It'd be in your best interest to figure out what happened, but unfortunately, you can't run around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
       "Quests": [ "Locate the Source" ],
       "IsUnlockedFromStart": true
     },

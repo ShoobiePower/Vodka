@@ -99,11 +99,11 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "I could've sworn that mousey little girl who just left bore a sigil of the College. You aren't getting yourself into trouble now, are you dearie?",
+          "I could've sworn that mousey little girl who just left bore a sigil of the <color=#01B117>College</color>. You aren't getting yourself into trouble now, are you dearie?",
           "NONE"
         ],
         [
-          "I don't mean it to sound as if I'm speaking ill of the College. It's just that earning political favor is a balance- and you'll want to know who's at the other end of that scale, ehehehe...",
+          "I don't mean it to sound as if I'm speaking ill of the <color=#01B117>College</color>. It's just that earning political favor is a balance- and you'll want to know who's at the other end of that scale, ehehehe...",
           "NONE"
         ],
         [
@@ -354,7 +354,7 @@
           "NONE"
         ],
         [
-          "I should certainly hope not- it's not wise to make a foe out of the Corporeal, ehehehe!",
+          "I should certainly hope not- it's not wise to make a foe out of the <color=#64B5F6>Corporeal</color>, ehehehe!",
           "NONE"
         ],
         [
@@ -387,7 +387,7 @@
           "NONE"
         ],
         [
-          "The College isn't on great terms with the Coproreal, especially since one of their own got snatched up last night!",
+          "The <color=#01B117>College</color> isn't on great terms with the Coproreal, especially since one of their own got snatched up last night!",
           "NONE"
         ],
         [
@@ -563,7 +563,7 @@
           "NONE"
         ],
         [
-          "I'm not the religious type or anything, but the <color=#64B5F6>Corporeal're</color> a wise bunch- about as wise as the College is smart.",
+          "I'm not the religious type or anything, but the <color=#64B5F6>Corporeal</color> are a wise bunch- about as wise as the <color=#01B117>College</color> is smart.",
           "NONE"
         ],
         [
@@ -842,7 +842,7 @@
           "NONE"
         ],
         [
-          "Have you been hearing about the protests up in the Borough? I imagine the Corporeal doesn't appreciate the civil unrest at their doorstep one bit!",
+          "Have you been hearing about the protests up in the Borough? I imagine the <color=#64B5F6>Corporeal</color> doesn't appreciate the civil unrest at their doorstep one bit!",
           "NONE"
         ],
         [
@@ -880,19 +880,19 @@
           "NONE"
         ],
         [
-          "The people are in good hands between the <color=#64B5F6>Corporeal's</color> aid and the College's research on the matter.",
+          "The people are in good hands between the <color=#64B5F6>Corporeal</color>'s aid and the <color=#01B117>College</color>'s research on the matter.",
           "NONE"
         ],
         [
-          "I'm not one for gossip or debate, but I've heard that the College and <color=#64B5F6>Corporeal</color> are bickering of late.",
+          "I'm not one for gossip or debate, but I've heard that the <color=#01B117>College</color> and <color=#64B5F6>Corporeal</color> are bickering of late.",
           "NONE"
         ],
         [
-          "It seems the <color=#64B5F6>Corporeal</color> are restricting particular magics from the College, who claim it impedes their research.",
+          "It seems the <color=#64B5F6>Corporeal</color> are restricting particular magics from the <color=#01B117>College</color>, who claim it impedes their research.",
           "NONE"
         ],
         [
-          "Nevertheless, those College youngesters are smart, and I'm certain they'll get all the information they need before long!",
+          "Nevertheless, those <color=#01B117>College</color> youngesters are smart, and I'm certain they'll get all the information they need before long!",
           "NONE"
         ]
       ],
@@ -1032,7 +1032,7 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "So you're the altruistic bartender who helped the city guard and the Corporeal last night.",
+          "So you're the altruistic bartender who helped the city guard and the <color=#64B5F6>Corporeal</color> last night.",
           "NONE"
         ],
         [
@@ -1074,7 +1074,7 @@
           "NONE"
         ],
         [
-          "Sorry, kind of rude for me not to introduce myself. I'm Nell, an investigative journalist from the outer city.",
+          "Sorry, kind of rude for me not to introduce myself. I'm <color=#B71434>Nell</color>, an investigative journalist from the outer city.",
           "NONE"
         ],
         [
@@ -1130,11 +1130,11 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "My, my. We're the Corporeal's favorite now, aren't we?",
+          "My, my. We're the <color=#64B5F6>Corporeal</color>'s favorite now, aren't we?",
           "NONE"
         ],
         [
-          "It's no bother to me, but the College might start whining.",
+          "It's no bother to me, but the <color=#01B117>College</color> might start whining.",
           "NONE"
         ],
         [
@@ -1164,11 +1164,11 @@
       "IsConversationUnlockedFromStart": false,
       "Stanzas": [
         [
-          "Well, well. It seems the College is excited about their new discovery, aren't they? I wonder how they got that information?",
+          "Well, well. It seems the <color=#01B117>College</color> is excited about their new discovery, aren't they? I wonder how they got that information?",
           "NONE"
         ],
         [
-          "It's a good thing the Corporeal are understanding. I've been shown forgiveness for many, should I say intrusions? on their privacy.",
+          "It's a good thing the <color=#64B5F6>Corporeal</color> are understanding. I've been shown forgiveness for many, should I say intrusions? on their privacy.",
           "NONE"
         ],
         [
@@ -1268,7 +1268,7 @@
           "NONE"
         ],
         [
-          "But, um... well, my name is <color=#D19F7E>Mavis</color>, and I represent the College of Magical Research and Recovery, and, er... I was kind of hoping I could speak to you, regarding the recent protests at City Hall?",
+          "But, um... well, my name is <color=#D19F7E>Mavis</color>, and I represent the <color=#01B117>College of Magical Research and Recovery</color>, and, er... I was kind of hoping I could speak to you, regarding the recent protests at City Hall?",
           "NONE"
         ],
         [
@@ -1280,19 +1280,19 @@
           "NONE"
         ],
         [
-          "U-um, ahem- I'm just going to make the safe assumption that I am. In which case, we at the College would like to thank you for your assistance!",
+          "U-um, ahem- I'm just going to make the safe assumption that I am. In which case, we at the <color=#01B117>College</color> would like to thank you for your assistance!",
           "Cheerful"
         ],
         [
-          "We may not have been able to glean much information from the Corporeal, but they're certainly starting to feel the heat.",
+          "We may not have been able to glean much information from the <color=#64B5F6>Corporeal</color>, but they're certainly starting to feel the heat.",
           "NONE"
         ],
         [
-          "As you may (or may not) know, the Corporeal has been more or less in charge of maintaining the Spire, and kept their activities secretive for 'the good of humanity'.",
+          "As you may (or may not) know, the <color=#64B5F6>Corporeal</color> has been more or less in charge of maintaining the <color=yellow>Spire</color>, and kept their activities secretive for 'the good of humanity'.",
           "inquisitive"
         ],
         [
-          "We at the College find this to be hogwash, especially in light of recent events. Ever since the Spire fractured, they've been oddly quiet, holding private meetings at City Hall.",
+          "We at the <color=#01B117>College</color> find this to be hogwash, especially in light of recent events. Ever since the <color=yellow>Spire</color> fractured, they've been oddly quiet, holding private meetings at City Hall.",
           "NONE"
         ],
         [
@@ -1300,7 +1300,7 @@
           "NONE"
         ],
         [
-          "The City Council will be holding a series of meetings this week, presumably to be advised by the Corporeal on what to do about the Spire.",
+          "The City Council will be holding a series of meetings this week, presumably to be advised by the <color=#64B5F6>Corporeal</color> on what to do about the <color=yellow>Spire</color>.",
           "NONE"
         ],
         [
@@ -1367,11 +1367,11 @@
           "NONE"
         ],
         [
-          "That is to say: the spire is crumbling.",
+          "That is to say: the <color=yellow>Spire</color> is crumbling.",
           "NONE"
         ],
         [
-          "This is troubling, to say the least. Although I'm sure that goes without saying. For the past three and a half centuries, the Spire has granted us with magical prowess.",
+          "This is troubling, to say the least. Although I'm sure that goes without saying. For the past three and a half centuries, the <color=yellow>Spire</color> has granted us with magical prowess.",
           "NONE"
         ],
         [
@@ -1379,11 +1379,11 @@
           "NONE"
         ],
         [
-          "The Corporeal, of course, was founded as a means to protect the Spire from any harm. To 'stay the hand of man's greed' as they say.",
+          "The <color=#64B5F6>Corporeal</color>, of course, was founded as a means to protect the <color=yellow>Spire</color> from any harm. To 'stay the hand of man's greed' as they say.",
           "NONE"
         ],
         [
-          "But their unwarranted protection comes at a price- nobody except for representatives from the Corporeal are allowed anywhere near the Spire.",
+          "But their unwarranted protection comes at a price- nobody except for representatives from the <color=#64B5F6>Corporeal</color> are allowed anywhere near the <color=yellow>Spire</color>.",
           "NONE"
         ],
         [
@@ -1391,11 +1391,11 @@
           "NONE"
         ],
         [
-          "And so it comes to this: we need someone to aid the college in our attempts for transparency. I need you to send someone to the Spire, and bring me back a chunk of the broken shard.",
+          "And so it comes to this: we need someone to aid the <color=#01B117>College</color> in our attempts for transparency. I need you to send someone to the <color=yellow>Spire</color>, and bring me back a chunk of the broken shard.",
           "NONE"
         ],
         [
-          "I'll leave your methods up to your discretion, but just know that your efforts will be forever appreciated by the College.",
+          "I'll leave your methods up to your discretion, but just know that your efforts will be forever appreciated by the <color=#01B117>College</color>.",
           "NONE"
         ],
         [
@@ -1421,7 +1421,7 @@
           "special"
         ],
         [
-          "I'm <color=#D19F7E>Mavis</color>. I represent the <color=00FA9A>College of Magical Research and Recovery</color>.",
+          "I'm <color=#D19F7E>Mavis</color>. I represent the <color=#01B117>College of Magical Research and Recovery</color>.",
           "NONE"
         ],
         [
@@ -1429,23 +1429,23 @@
           "NONE"
         ],
         [
-          "If we're correct, and we normally are, then the Spire isn't its own source of magic; it somehow gets its magic from somewhere else.",
+          "If we're correct, and we normally are, then the <color=yellow>Spire</color> isn't its own source of magic; it somehow gets its magic from somewhere else.",
           "Cheerful"
         ],
         [
-          "The issue is that our readings of the Spire vary dramatically, so it's hard to gather any good data.",
+          "The issue is that our readings of the <color=yellow>Spire</color> vary dramatically, so it's hard to gather any good data.",
           "NONE"
         ],
         [
-          "We could set up an experiment with a device we purchased from the Artifer's Alliance, but, well, we'd need to be near the Spire for it to work.",
+          "We could set up an experiment with a device we purchased from the <color=orange>Artificer's Alliance</color>, but, well, we'd need to be near the <color=yellow>Spire</color> for it to work.",
           "inquisitive"
         ],
         [
-          "And, uh, the Corporeal wouldn't be happy to see us tinkering around there.",
+          "And, uh, the <color=#64B5F6>Corporeal</color> wouldn't be happy to see us tinkering around there.",
           "NONE"
         ],
         [
-          "I even considered scheduling an information exchange between the College and Corporeal leaders, but that would take weeks to set up with our current relations.",
+          "I even considered scheduling an information exchange between the <color=#01B117>College</color> and <color=#64B5F6>Corporeal</color> leaders, but that would take weeks to set up with our current relations.",
           "NONE"
         ],
         [
@@ -1483,7 +1483,7 @@
           "NONE"
         ],
         [
-          "We analyzed the measurements from the Flux device, and we found that the magic in the Spire... well, it isn't exactly fading.",
+          "We analyzed the measurements from the Flux device, and we found that the magic in the <color=yellow>Spire</color>... well, it isn't exactly fading.",
           "NONE"
         ],
         [
@@ -1491,7 +1491,7 @@
           "NONE"
         ],
         [
-          "The amplitude of the waves is steadily increasing, meaning that the magical power transmitted from the spire fluctuates more and more.",
+          "The amplitude of the waves is steadily increasing, meaning that the magical power transmitted from the <color=yellow>Spire</color> fluctuates more and more.",
           "NONE"
         ],
         [
@@ -1499,15 +1499,15 @@
           "NONE"
         ],
         [
-          "We need to study this more. The Spire might be collapsing because it's bursting with energy, not because it's actually falling apart.",
+          "We need to study this more. The <color=yellow>Spire</color> might be collapsing because it's bursting with energy, not because it's actually falling apart.",
           "NONE"
         ],
         [
-          "Our only problem is that we still can't get into the Spire without the city's approval (why is there always paperwork?).",
+          "Our only problem is that we still can't get into the <color=yellow>Spire</color> without the city's approval (why is there always paperwork?).",
           "NONE"
         ],
         [
-          "So, er, if there's anything you can say or do to, uh, persuade the leaders- to let the College have control over the Spire- that would... help... a lot.",
+          "So, er, if there's anything you can say or do to, uh, persuade the leaders- to let the <color=#01B117>College</color> have control over the <color=yellow>Spire</color>- that would... help... a lot.",
           "NONE"
         ],
         [
@@ -1537,11 +1537,11 @@
           "NONE"
         ],
         [
-          "Thank you for gathering what information you could from the Corporeal, but, uh, it wasn't... well, it wasn't much to go off of.",
+          "Thank you for gathering what information you could from the <color=#64B5F6>Corporeal</color>, but, uh, it wasn't... well, it wasn't much to go off of.",
           "NONE"
         ],
         [
-          "I just saw one of the Corporeal members walk out of here. Did he- did he say something to you? Something we don't know?",
+          "I just saw one of the <color=#64B5F6>Corporeal</color> members walk out of here. Did he- did he say something to you? Something we don't know?",
           "NONE"
         ],
         [
@@ -1579,7 +1579,7 @@
           "NONE"
         ],
         [
-          "But, um... well, I represent the College of Magical Research and Recovery, and, er... I was kind of hoping I could speak to you, regarding your work with the Corporeal.",
+          "But, um... well, I represent the <color=#01B117>College of Magical Research and Recovery</color>, and, er... I was kind of hoping I could speak to you, regarding your work with the <color=#64B5F6>Corporeal</color>.",
           "NONE"
         ],
         [
@@ -1591,7 +1591,7 @@
           "NONE"
         ],
         [
-          "We have a lot of theories that could be proven if we could just get into the Spire, but the Corporeal retains full control of it.",
+          "We have a lot of theories that could be proven if we could just get into the <color=yellow>Spire</color>, but the <color=#64B5F6>Corporeal</color> retains full control of it.",
           "NONE"
         ],
         [
@@ -1621,7 +1621,7 @@
           "NONE"
         ],
         [
-          "...Oh my goodness... That's a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+          "...Oh my goodness... That's a genuine fragment of the <color=yellow>Spire</color> you have there, isn't it?! I can't believe you actually pulled it off!",
           "NONE"
         ],
         [
@@ -1637,11 +1637,11 @@
           "NONE"
         ],
         [
-          "...You had them do WHAT? Ooh dear... if it's all the same with you, I think I might withhold that particular detail when giving the College my report.",
+          "...You had them do WHAT? Ooh dear... if it's all the same with you, I think I might withhold that particular detail when giving the <color=#01B117>College</color> my report.",
           "NONE"
         ],
         [
-          "I don't quite think my superiors would enjoy knowing that they inadvertently assaulted a Corporeal member, heh...",
+          "I don't quite think my superiors would enjoy knowing that they inadvertently assaulted a <color=#64B5F6>Corporeal</color> member, heh...",
           "NONE"
         ],
         [
@@ -1675,7 +1675,7 @@
           "NONE"
         ],
         [
-          "...Oh my goodness... That's a genuine fragment of the Spire you have there, isn't it?! I can't believe you actually pulled it off!",
+          "...Oh my goodness... That's a genuine fragment of the <color=yellow>Spire</color> you have there, isn't it?! I can't believe you actually pulled it off!",
           "NONE"
         ],
         [
@@ -1737,15 +1737,15 @@
           "NONE"
         ],
         [
-          "The government is set on giving the Corporeal full control over the <color=yellow>Spire</color>",
+          "The government is set on giving the <color=#64B5F6>Corporeal</color> full control over the <color=yellow>Spire</color>",
           "NONE"
         ],
         [
-          "I'm trying to find a way in, but there aren't many options left for us at the College",
+          "I'm trying to find a way in, but there aren't many options left for us at the <color=#01B117>College</color>",
           "NONE"
         ],
         [
-          "To make matters worse, I've combined data gathered from the <color=yellow>Spire</color> with what knowledge we've gained from the Corporeal.",
+          "To make matters worse, I've combined data gathered from the <color=yellow>Spire</color> with what knowledge we've gained from the <color=#64B5F6>Corporeal</color>.",
           "NONE"
         ],
         [
@@ -1777,7 +1777,7 @@
           "NONE"
         ],
         [
-          "If I have one superior talent, it's getting things done quickly. Watch. I'll be there alongside the Corporeal before you thought it was possible.",
+          "If I have one superior talent, it's getting things done quickly. Watch. I'll be there alongside the <color=#64B5F6>Corporeal</color> before you thought it was possible.",
           "NONE"
         ]
       ],
@@ -1807,7 +1807,7 @@
           "NONE"
         ],
         [
-          "I'm not wrong in assuming that it was you who tipped off the Corporeal, am I?",
+          "I'm not wrong in assuming that it was you who tipped off the <color=#64B5F6>Corporeal</color>, am I?",
           "NONE"
         ],
         [
@@ -1819,7 +1819,7 @@
           "NONE"
         ],
         [
-          "I'm... upset, but I understand. I can't just expect you to trust someone who asked you to go behind the back of the Corporeal.",
+          "I'm... upset, but I understand. I can't just expect you to trust someone who asked you to go behind the back of the <color=#64B5F6>Corporeal</color>.",
           "NONE"
         ],
         [
@@ -1827,7 +1827,7 @@
           "NONE"
         ],
         [
-          "That woman that was captured last night? She was a beloved member of the College- someone that we can't afford to lose to the prisons.",
+          "That woman that was captured last night? She was a beloved member of the <color=#01B117>College</color>- someone that we can't afford to lose to the prisons.",
           "NONE"
         ],
         [
@@ -1951,7 +1951,7 @@
           "NONE"
         ],
         [
-          "I am <color=yellow>Gaius</color>, the <color=#64B5F6>Corporeal's</color> former flag-bearer and current liaison.",
+          "I am <color=#5A9399>Gaius</color>, the <color=#64B5F6>Corporeal's</color> former flag-bearer and current liaison.",
           "NONE"
         ],
         [
@@ -2034,7 +2034,7 @@
           "NONE"
         ],
         [
-          "My name is Gaius, and I am sworn to the Corporeal- Kastonia's venerable defender.",
+          "My name is <color=#5A9399>Gaius</color>, and I am sworn to the <color=#64B5F6>Corporeal</color>- Kastonia's venerable defender.",
           "NONE"
         ],
         [
@@ -2042,7 +2042,7 @@
           "NONE"
         ],
         [
-          "This belief is strengthened by the fact that you trusted your better judgement, and told us about the College's schemes.",
+          "This belief is strengthened by the fact that you trusted your better judgement, and told us about the <color=#01B117>College</color>'s schemes.",
           "NONE"
         ],
         [
@@ -2050,15 +2050,15 @@
           "NONE"
         ],
         [
-          "I''l do what I can to ease the minds of my older colleagues in the matter, and perhaps, in return, you could provide some much-needed assistance?",
+          "I'll do what I can to ease the minds of my older colleagues in the matter, and perhaps, in return, you could provide some much-needed assistance?",
           "NONE"
         ],
         [
-          "I've heard whispers that the College plans to break into the Spire tonight- presumably to steal a fragment of the shard that broke off.",
+          "I've heard whispers that the <color=#01B117>College</color> plans to break into the <color=yellow>Spire</color> tonight- presumably to steal a fragment of the shard that broke off.",
           "NONE"
         ],
         [
-          "Unfortunately, we don't know where they'll strike... and bear in mind, the Spire has a breathtaking circumference. We can't guard it all by ourselves.",
+          "Unfortunately, we don't know where they'll strike... and bear in mind, the <color=yellow>Spire</color> has a breathtaking circumference. We can't guard it all by ourselves.",
           "NONE"
         ],
         [
@@ -2096,15 +2096,15 @@
           "NONE"
         ],
         [
-          "The Spire's collapse is a mystery, one foretold in the ancient texts I gave you, but no reason or cure was ever prescribed.",
+          "The <color=yellow>Spire</color>'s collapse is a mystery, one foretold in the ancient texts I gave you, but no reason or cure was ever prescribed.",
           "NONE"
         ],
         [
-          "I'm afraid that our last option requires gathering information from another faction, one we have fought for centuries, called the Eyes.",
+          "I'm afraid that our last option requires gathering information from another faction, one we have fought for centuries, called the <color=#B70000>Eyes</color>.",
           "NONE"
         ],
         [
-          "I personally wish to avoid them at all costs and have considered another option, one the Corporeal would not favor.",
+          "I personally wish to avoid them at all costs and have considered another option, one the <color=#64B5F6>Corporeal</color> would not favor.",
           "NONE"
         ],
         [
@@ -2112,7 +2112,7 @@
           "NONE"
         ],
         [
-          "I can stand watch over the Spire tonight, give the relic to your friend, and gather more information on the Spire.",
+          "I can stand watch over the <color=yellow>Spire</color> tonight, give the relic to your friend, and gather more information on the <color=yellow>Spire</color>.",
           "NONE"
         ],
         [
@@ -2137,7 +2137,7 @@
           "NONE"
         ],
         [
-          "It seems the <color=#64B5F6>College</color> has made a recent discovery.",
+          "It seems the <color=#01B117>College</color> has made a recent discovery.",
           "NONE"
         ],
         [
@@ -2157,7 +2157,7 @@
           "NONE"
         ],
         [
-          "Those who use magic must be wary. The <color=#64B5F6>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
+          "Those who use magic must be wary. The <color=#01B117>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
           "NONE"
         ],
         [
@@ -2198,7 +2198,7 @@
           "NONE"
         ],
         [
-          "They said, 'In a pool of water, a ripple can only peak as high as its troughs fall. So, too, does the Spire's strength.'",
+          "They said, 'In a pool of water, a ripple can only peak as high as its troughs fall. So, too, does the <color=yellow>Spire</color>'s strength.'",
           "NONE"
         ],
         [
@@ -2218,7 +2218,7 @@
           "NONE"
         ],
         [
-          "I understand your favor with the College, but using magic to discover what's wrong with magic is reckless, despite the caster's intelligence.",
+          "I understand your favor with the <color=#01B117>College</color>, but using magic to discover what's wrong with magic is reckless, despite the caster's intelligence.",
           "NONE"
         ],
         [
@@ -2243,7 +2243,7 @@
           "NONE"
         ],
         [
-          "Your friend did well last night. It appears the Eyes know things we do not.",
+          "Your friend did well last night. It appears the <color=#B70000>Eyes</color> know things we do not.",
           "NONE"
         ],
         [
@@ -2255,7 +2255,7 @@
           "NONE"
         ],
         [
-          "If they've been harnessing this power, then the Spire's magic isn't fading...",
+          "If they've been harnessing this power, then the <color=yellow>Spire</color>'s magic isn't fading...",
           "NONE"
         ],
         [
@@ -2271,7 +2271,7 @@
           "NONE"
         ],
         [
-          "Those who use magic must be wary. The <color=#64B5F6>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
+          "Those who use magic must be wary. The <color=#01B117>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
           "NONE"
         ],
         [
@@ -2316,7 +2316,7 @@
           "NONE"
         ],
         [
-          "I fear, as well, that our search was not unnoticed. As a result, I have heard false whispers that the Corporeal are divided.",
+          "I fear, as well, that our search was not unnoticed. As a result, I have heard false whispers that the <color=#64B5F6>Corporeal</color> are divided.",
           "NONE"
         ],
         [
@@ -2345,7 +2345,7 @@
           "NONE"
         ],
         [
-          "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire's</color> collapse.",
+          "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire</color>'s collapse.",
           "NONE"
         ],
         [
@@ -2353,11 +2353,11 @@
           "NONE"
         ],
         [
-          "There is much to learn of the <color=yellow>Spire's</color> history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
+          "There is much to learn of the <color=yellow>Spire</color>'s history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
           "NONE"
         ],
         [
-          "We must seek aid from our ancestors, the stars, ancient ruins, and the Spire itself.",
+          "We must seek aid from our ancestors, the stars, ancient ruins, and the <color=yellow>Spire</color> itself.",
           "NONE"
         ],
         [
@@ -2370,7 +2370,8 @@
       "TownEvents": [],
       "locationsUnlocked": [],
       "conversationsUnlocked": [
-      ],
+      ]
+    },
 
       "Between Two Barstools": {
         "Name": "Between Two Barstools",
@@ -2382,23 +2383,23 @@
             "NONE"
           ],
           [
-            "Barkeep",
+            "Barkeep.",
             "NONE"
           ],
           [
-            "I am Gaius, knight to the Corporeal. I believe we need to speak.",
+            "I am <color=#5A9399>Gaius</color>, knight of the <color=#64B5F6>Corporeal</color>. I believe we need to speak.",
             "NONE"
           ],
           [
-            "Your actions last night have put us in a difficult spot. It is our duty to remain a stalwart defender of the Spire, and as of last night, we've failed in our task.",
+            "Your actions last night have put us in a difficult spot. It is our duty to remain a stalwart defender of the <color=yellow>Spire</color>, and as of last night, we've failed in our task.",
             "NONE"
           ],
           [
-            "One of your acquaintances made off with a fragment of the Spire, despite our best efforts at defense.",
+            "One of your acquaintances made off with a fragment of the <color=yellow>Spire</color>, despite our best efforts at defense.",
             "NONE"
           ],
           [
-            "Let me be clear- the only reason you're not in chains right now, is because I have yet to relay this information to my superiors.",
+            "Let me be clear- the only reason you're not in chains right now is because I have yet to relay this information to my superiors.",
             "NONE"
           ],
           [
@@ -2410,7 +2411,7 @@
             "NONE"
           ],
           [
-            "The College means to make information about the Spire public- information that we cannot allow to fall into the hands of the wrong people.",
+            "The <color=#01B117>College</color> means to make information about the <color=yellow>Spire</color> public- information that we cannot allow to fall into the hands of the wrong people.",
             "NONE"
           ],
           [
@@ -2418,7 +2419,7 @@
             "NONE"
           ],
           [
-            "If this information about the Spire becomes publicized, then Kastonia- and perhaps, the world- is doomed.",
+            "If this information about the <color=yellow>Spire</color> becomes publicized, then Kastonia- and perhaps, the world- is doomed.",
             "NONE"
           ],
           [
@@ -2447,7 +2448,7 @@
             "NONE"
           ],
           [
-            "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire's</color> collapse.",
+            "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire</color>'s collapse.",
             "NONE"
           ],
           [
@@ -2455,11 +2456,11 @@
             "NONE"
           ],
           [
-            "There is much to learn of the <color=yellow>Spire's</color> history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
+            "There is much to learn of the <color=yellow>Spire</color>'s history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
             "NONE"
           ],
           [
-            "We must seek aid from our ancestors, the stars, ancient ruins, and the Spire itself.",
+            "We must seek aid from our ancestors, the stars, ancient ruins, and the <color=yellow>Spire</color> itself.",
             "NONE"
           ],
           [
@@ -2489,11 +2490,11 @@
             "NONE"
           ],
           [
-            "However, the College recently gained access to the <color=yellow>Spire</color> because of your influence.",
+            "However, the <color=#01B117>College</color> recently gained access to the <color=yellow>Spire</color> because of your influence.",
             "NONE"
           ],
           [
-            "If they are not careful, they may hasten the <color=yellow>Spire's</color> ruin.",
+            "If they are not careful, they may hasten the <color=yellow>Spire</color>'s ruin.",
             "NONE"
           ],
           [
@@ -2697,7 +2698,7 @@
         "IsConversationUnlockedFromStart": false,
         "Stanzas": [
           [
-            "And now we wait! Ol' <color=purple>Deidre</color> may be a little... eccentric, but I can speak to her reliability.",
+            "And now we wait! Ol' Deidre may be a little... eccentric, but I can speak to her reliability.",
             "NONE"
           ],
           [
@@ -2767,11 +2768,11 @@
         "IsConversationUnlockedFromStart": false,
         "Stanzas": [
           [
-            "Who was that, kid? Someone from the Corporeal?",
+            "Who was that, kid? Someone from the <color=#64B5F6>Corporeal</color>?",
             "NONE"
           ],
           [
-            "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the Spire crisis... and it's only been a week!",
+            "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the <color=yellow>Spire</color> crisis... and it's only been a week!",
             "NONE"
           ],
           [
@@ -2800,11 +2801,11 @@
         "IsConversationUnlockedFromStart": false,
         "Stanzas": [
           [
-            "Who was that, kid? Someone from the College?",
+            "Who was that, kid? Someone from the <color=#01B117>College</color>?",
             "NONE"
           ],
           [
-            "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the Spire crisis... and it's only been a week!",
+            "Seems like you got a lot on your plate- serving drinks, wading through factions, coordinating the <color=yellow>Spire</color> crisis... and it's only been a week!",
             "NONE"
           ],
           [
