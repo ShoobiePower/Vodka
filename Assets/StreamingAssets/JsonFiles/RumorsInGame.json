@@ -90,7 +90,7 @@
 
     "A Matter of Magic": {
       "Name": "A Matter of Magic",
-      "Description": "The divine text is in another, indecipherable language. It could be meaningless, given for the sake of a test. But, it seems unlikely Gaius would fabricate scripture from the Book. If you want to learn what it means, you could take it to the College. It might help their research, and they'd appreciate the show of support regardless. Then again, the Corporeal may not be happy with that decision.",
+      "Description": "The divine text is in another, indecipherable language. If you want to learn what it means, you could take it to the College. It might help their research, and they'd appreciate the show of support regardless. Then again, the Corporeal may not be happy with that decision.",
       "Quests": [ "Give it to the College", "Return it" ],
       "IsUnlockedFromStart": false
     },
@@ -112,7 +112,7 @@
 
     "Between Two Barstools": {
       "Name": "Between Two Barstools",
-      "Description": "The college is on the verge of acquiring what may very well be dangerous information, according to the Corporeal, and they're willing to do anything to stop it. Is their plight just? Or is the public deserving of this unknown information? Tread carefully now- this decision may have lasting repercussions.",
+      "Description": "The College is on the verge of acquiring what may very well be dangerous information, according to the Corporeal, and they're willing to do anything to stop it. Is their plight just? Or is the public deserving of this unknown information? Tread carefully now- this decision may have lasting repercussions.",
       "Quests": [ "Support the Corporeal", "Support the College" ],
       "IsUnlockedFromStart": false
 
@@ -125,14 +125,14 @@
 
     "The Commotion": {
       "Name": "The Commotion",
-      "Description": "That earth-shattering commotion from earlier was very worrying- it'd probably be in your best interests, simply as a citizen of Kastonia, to figure out what happened. Unfortunately, you can't just go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
+      "Description": "That earth-shattering commotion from earlier was very worrying. It'd probably be in your best interests to figure out what happened. Unfortunately, you can't go running around and leave your parents' bar unattended. Perhaps you could get someone to go and let you know what happened?",
       "Quests": [ "Locate the Source" ],
       "IsUnlockedFromStart": true
     },
 
     "Your Civic Duty": {
       "Name": "Your Civic Duty",
-      "Description": "The Spire's on the brink of collapsing, and the Corporeal has yet to issue any kind of response. It's only been a day, but the citizens have grown restless over the lack of transparency, and are currently protesting in front of City Hall. At this rate, they may even manage to push past the line of guards who are keeping them at bay.",
+      "Description": "The Spire's on the brink of collapse and the Corporeal has yet to issue any kind of response. It's only been a day, but the citizens have grown restless, protesting in front of City Hall. At this rate, they may even manage to push past the line of guards who are keeping them at bay.",
       "Quests": [ "Stir the Crowds!", "Hold the Line!" ],
       "IsUnlockedFromStart": true
     }

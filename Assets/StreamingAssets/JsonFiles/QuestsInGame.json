@@ -107,7 +107,7 @@
 
   "Give it to the College": {
     "Name": "Give it to the College",
-    "Description": "The College exists to understand, educate, and distribute magic. Although some members have taken advantage of their authoritative and bureaucratic nature, they exist to protect the people from things they don't understand... and to understand the things people don't know exist. Gaius' text might be a valuable clue to the College's research on the Spire",
+    "Description": "The College exists to understand, educate, and distribute magic. They desire to protect the people from things they don't understand... and to understand things people don't know exist. Gaius' text would be a valuable clue to the College's research on the Spire",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -136,7 +136,7 @@
 
   "Return it": {
     "Name": "Return it",
-    "Description": "The Corporeal strive to protect Kastonia and the world from supernatural threats. They worship the Pantheon and see magic as divine, something only the gods should use. As such, they've sworn off magic themselves, but excel at combat well enough to fight off dark magic with only sword, shield, and a prayer to the divines. They are a formidable bulwark against magical catastrophes, such as the Spire's collapse, so it's best to trust their judgement. The Codex is only safe in their hands.",
+    "Description": "The Corporeal have protected Kastonia and the world from supernatural threats for centuries. They believe only the divines can use magic properly, but are a formidable bulwark against magical catastrophes themselves, such as the Spire's collapse. It's best to trust their judgement. The Codex is only safe in their hands.",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -296,7 +296,7 @@
   },
   "Contract Artie": {
     "Name": "Contract Artie",
-    "Description": "You're already busy running the tavern and organizing aid throughout the city. Artie doesn't necessarily have the steady hands for serving drinks or the charisma for interacting with patrons, but maybe they could run an errand for you whenever they need a bit of money.",
+    "Description": "You're already busy running the tavern and organizing aid throughout the city. A little help couldn't hurt... even though Artie doesn't have the steady hands for serving drinks. Maybe they could run an errand for you whenever they need a bit of money.",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -350,7 +350,7 @@
   },
   "Disclose the College's Request": {
     "Name": "Disclose the College's Request",
-    "Description": "The Corporeal's kept the Spire stable and safe for the past few centuries, so it might make sense to give them the benefit of the doubt on this one. At the very least, they should be told that the College is conspiring against them. You'll still have to have someone sneak past the City Guards to get the information to them, of course.",
+    "Description": "The Corporeal's kept the Spire stable and safe for centuries, so it makes sense to give them the benefit of the doubt. At the very least, they should be told that the College is conspiring against them. You'll still have to have someone sneak past the City Guards to get the information to them, of course.",
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -490,7 +490,7 @@
 
   "Emphasize Caution": {
     "Name": "Emphasize Caution",
-    "Description": "Magic is growing increasingly unstable. One wrong experiment could devestate the Spire and all of Kastonia. This crisis can be solved through lore, divination, and aquired knowledge, not just magic. Ancient writings can explain such an ancient structure.",
+    "Description": "Magic is growing increasingly unstable. One wrong experiment could devestate the Spire and all of Kastonia. This crisis can be solved through lore, divination, and aquired knowledge. To truly understand the Spire, we must know its origin.",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
