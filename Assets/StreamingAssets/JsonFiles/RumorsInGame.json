@@ -77,7 +77,7 @@
 
     "Between Two Barstools": {
       "Name": "Between Two Barstools",
-      "Description": "An imprisoned member of the College has created ",
+      "Description": "An imprisoned member of the College has further divided the two factions, and will stand trial this evening. It appears there's only one of two ways this can end. The real question is, who stands on the right side of history?",
       "Quests": [ "Aid the Corporeal", "Aid the College" ],
       "IsUnlockedFromStart": false
 

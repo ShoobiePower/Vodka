@@ -387,6 +387,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Mavis", "Day6CollegeStrong" ],
       [ "both", "Deidre Downton", "Day6CollegeRouteCollege" ],
       [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
       [ "both", "Nell", "Day6CollegeRouteCollege" ]
@@ -405,7 +406,7 @@
   },
   "Bypass the Fence": {
     "Name": "Bypass the Fence",
-    "Description": "The barrier around the Spire may be solid, but it’s certainly not unscalable. If they stay out of sight, someone could feasibly climb over the fence, grab a chunk, and get out before anyone notices!",
+    "Description": "The barrier around the Spire may be solid, but it's certainly not unscalable. If they stay out of sight, someone could feasibly climb over the fence, grab a chunk, and get out before anyone notices!",
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
@@ -415,6 +416,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Mavis", "Day6CollegeSneak" ],
       [ "both", "Deidre Downton", "Day6CollegeRouteCollege" ],
       [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
       [ "both", "Nell", "Day6CollegeRouteCollege" ]
@@ -443,6 +445,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Gaius", "Day6CorporealStrong" ],
       [ "both", "Deidre Downton", "Day6CollegeRouteCorporeal" ],
       [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
       [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
@@ -471,6 +474,7 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
+      [ "both", "Gaius", "Day6CorporealSmart" ],
       [ "both", "Deidre Downton", "Day6CollegeRouteCorporeal" ],
       [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
       [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
@@ -498,8 +502,8 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-        [ "both", "Gaius", "Day7CorporealSidedWithCorporeal" ],
-        [ "both", "Mavis", "Day7CorporealSidedWithCorporeal" ]
+      [ "both", "Gaius", "Day7CorporealSidedWithCorporeal" ],
+      [ "both", "Mavis", "Day7CorporealSidedWithCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -524,8 +528,107 @@
     "TownEvents": [],
     "locationsUnlocked": [],
     "conversationsUnlocked": [
-        [ "both", "Gaius", "Day7CorporealSidedWithCollege" ],
-        [ "both", "Mavis", "Day7CorporealSidedWithCollege" ]
+      [ "both", "Gaius", "Day7CorporealSidedWithCollege" ],
+      [ "both", "Mavis", "Day7CorporealSidedWithCollege" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
+    ],
+    "BanList": []
+  },
+  "Support the College": {
+    "Name": "Support the College",
+    "Description": "Knowledge is indeed power, as the Corporeal tends to suggest. A power that should be openly available to the people of Kastonia. Make haste- send someone to help decipher the Spire fragment's secrets, before the Corporeal manages to take it back!",
+    "Checks": [ "Smart" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Mavis", "Day7SupportCollege" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
+    ],
+    "BanList": []
+  },
+
+  "Support the Corporeal": {
+    "Name": "Support the Corporeal",
+    "Description": "Countless generations of Coproreal knights didn't devote their lives to keep the Spire safe, just to be undone by the College's naivete. They may believe their efforts to be just, but the road to Hell is paved with good intentions. Someone will need to infiltrate and steal back the fragment as soon as possible.",
+    "Checks": [ "Sneak" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Gaius", "Day7SupportCorporeal" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
+    ],
+    "BanList": []
+  },
+
+  "Aid the College": {
+    "Name": "Aid the College",
+    "Description": "It's highly unlikely that this trial will result in a not guilty verdict, especially with the Corporeal in such an upset. Someone will have to be sent to break the prisoner out, regardless of how treasonous this act will be.",
+    "Checks": [ "Strong" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Mavis", "Day7AidCollege" ]
+    ],
+    "Location": "HOME",
+    "DaysToCompleteQuest": 5,
+    "Responces": [
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
+      "PLACEHOLDER TEXT- ARTIE",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
+    ],
+    "BanList": []
+  },
+
+  "Aid the Corporeal": {
+    "Name": "Aid the Corporeal",
+    "Description": "The College has gone too far this time, and it's time to make a stand. Send someone to testify in your stead about the College's actions, to make sure the prisoner remains behind bars.",
+    "Checks": [ "Sway" ],
+    "PatronReward": [],
+    "RumorOnReturn": [],
+    "QuestChains": [],
+    "TownEvents": [],
+    "locationsUnlocked": [],
+    "conversationsUnlocked": [
+      [ "both", "Gaius", "Day7AidCorporeal" ]
     ],
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
@@ -539,6 +642,7 @@
     ],
     "BanList": []
   }
+
 
 }
 
