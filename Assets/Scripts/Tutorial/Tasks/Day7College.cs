@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Day7College : TutorialTask {
 
     Patron targetPatron;
+
     public Day7College(Tutorial _tutorial) : base(_tutorial)
     {
         TutorialReactions.Clear();
@@ -26,7 +28,7 @@ public class Day7College : TutorialTask {
 
         else
         {
-            if (targetPatron.QuestToCompleete.QuestName == "Send Additional Troops" || targetPatron.QuestToCompleete.QuestName == "Lay a Trap")
+            if (targetPatron.QuestToCompleete.QuestName == "Support the Corporeal" || targetPatron.QuestToCompleete.QuestName == "Aid the Corporeal")
             {
                 routeToGo = CorporealRoute;
             }
@@ -44,12 +46,41 @@ public class Day7College : TutorialTask {
 
     void CorporealRoute()
     {
-
+        TutorialReactions.Clear();
+        tutorial.forcePatronIntoBarToSitAt("Gaius", 1);
+        tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
     }
 
     void CollegeRoute()
     {
+        TutorialReactions.Clear();
+        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
+    }
 
+    private void EnterJim()
+    {
+        TutorialReactions.Clear();
+        tutorial.invokeJimAtSeatNumber(1);
+        if (routeToGo == CorporealRoute)
+        {
+            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCorporeal");
+        }
+        else
+        {
+            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCollege");
+        }
+
+        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, EndDay);
+    }
+
+    void EndDay()
+    {
+        TutorialReactions.Clear();
+        tutorial.forceEndOfDay();
+        tutorial.endTutorial();
     }
 
     Patron findReturningPatron()
