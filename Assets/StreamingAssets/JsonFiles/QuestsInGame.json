@@ -208,8 +208,8 @@
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "Horace let out a cheery 'Hoho!', forgetting to be quiet. Thankfully, no one seemed to notice. Otherwise, things went smoothly... except for the tremors that Horace felt on his way out.",
+      "Gaius slipped the relic to Nell, unnoticed. The light within it began to glow, and Nell took notes in her journal. As she left, however, she felt a tremor.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],
@@ -288,7 +288,7 @@
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
       "When Horace found out what you were doing, he pitched in. Now, Artie should be alright for a very long time.",
-      "PLACEHOLDER TEXT- NELL",
+      "Nell passed the money to Artie and took off immediately, saying there was some rumor about a large, hairy creatures pretending to be human. Regardless, she's sure Artie recognized her from the tavern.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],
@@ -311,8 +311,8 @@
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "Horace couldn't help but also offer Artie a side gig. Choices and a boost of confidence is exactly what that orc needed.",
+      "Nell runs into quite a few people daily, so she was able to give Artie several resources to find a job. Until then, Artie seemed very intent on coming back to your tavern as soon as possible.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],
@@ -509,7 +509,7 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
+      "Artie told Kastonia's leaders the story of the mines, Artie's narrow escape, and the devestating aftereffects. The story confirmed the leaders' feelings, and they soon announced their decision.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Horace]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Mavis]",
@@ -535,7 +535,7 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
+      "Artie narrated their story of the mines and its devestating effects, emphasizing that this is only the beginning. If Kastonia doesn't start researching what's happening, it could mean the collapse of the entire city.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
