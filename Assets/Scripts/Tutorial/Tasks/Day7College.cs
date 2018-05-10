@@ -66,7 +66,7 @@ public class Day7College : TutorialTask {
         tutorial.invokeJimAtSeatNumber(1);
         if (routeToGo == CorporealRoute)
         {
-            tutorial.forceSeatToHaveSpecificConversation(1, "Day7CorporealCollege");
+            tutorial.forceSeatToHaveSpecificConversation(1, "Day7CollegeCorporeal");
         }
         else
         {
