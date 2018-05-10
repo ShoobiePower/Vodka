@@ -98,7 +98,7 @@ public class Day7CorporealTransition : TutorialTask
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        tutorial.endTutorial();
+        TutorialReactions.Add(Mediator.ActionIdentifiers.END_DAY_FADE_OUT, ExitTutorial);
     }
 
 
@@ -106,5 +106,10 @@ public class Day7CorporealTransition : TutorialTask
     void SendPatronHome()
     {
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.GOHOME);
+    }
+
+    void ExitTutorial()
+    {
+        tutorial.endTutorial();
     }
 }

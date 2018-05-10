@@ -47,10 +47,7 @@ public class PatronStatScreen : AbstBookStates {
         }
         else
         {
-            foreach (Transform child in AllPropsForPatronStatScreen.transform)
-            {
-                child.gameObject.SetActive(false);
-            }
+            AllPropsForPatronStatScreen.SetActive(false);
             patronName.gameObject.SetActive(true);
             patronName.text = "You do not know any patrons. Come back once you talked to a few.";
         }
@@ -76,6 +73,7 @@ public class PatronStatScreen : AbstBookStates {
 
     public override void HidePresetAssets()
     {
+        patronName.gameObject.SetActive(false);
         base.HidePresetAssets(AllPropsForPatronStatScreen);
     }
 

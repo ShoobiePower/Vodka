@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class QuestMenu : MonoBehaviour{  // monobehaviour
+public class QuestMenu : MonoBehaviour{ 
 
     [SerializeField]
     Button[] menuChoices;

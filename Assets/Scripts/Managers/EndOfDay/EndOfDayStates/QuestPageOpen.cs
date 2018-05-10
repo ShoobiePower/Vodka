@@ -64,7 +64,6 @@ public class QuestPageOpen : AbstBookStates
     public override void ScrollDown()
     {
         Debug.Log("Press down");
-        Debug.Log(endOfDayManager.QuestArchive.Count);
         if (CurrentBottomOfPage < endOfDayManager.QuestArchive.Count)
         {
             CurrentTopOfPage++;
@@ -90,11 +89,11 @@ public class QuestPageOpen : AbstBookStates
         if (NumberOfActiveButtons > 0)
         {
             // Also to do, note if quest is taken and if so by whom. 
-            RumorStoryText.text = endOfDayManager.QuestArchive[index].RumorStory;
+            RumorStoryText.text = endOfDayManager.QuestArchive[index + CurrentTopOfPage].RumorStory;
 
-            QuestOptionText.text = endOfDayManager.QuestArchive[index].QuestDescription;
+            QuestOptionText.text = endOfDayManager.QuestArchive[index + CurrentTopOfPage].QuestDescription;
 
-            switch (endOfDayManager.QuestArchive[index].getQuestStatus())
+            switch (endOfDayManager.QuestArchive[index + CurrentTopOfPage].getQuestStatus())
             {
                 case Quest.questStatus.TAKEN:
                     {
@@ -111,7 +110,7 @@ public class QuestPageOpen : AbstBookStates
 
                 case Quest.questStatus.PASS:
                     {
-                        ResolutionText.text = endOfDayManager.QuestArchive[index].Resolution;
+                        ResolutionText.text = endOfDayManager.QuestArchive[index + CurrentTopOfPage].Resolution;
                         break;
                     }
             }

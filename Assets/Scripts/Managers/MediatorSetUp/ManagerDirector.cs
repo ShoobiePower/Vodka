@@ -21,12 +21,14 @@ public class ManagerDirector : MonoBehaviour, IDirector
     [SerializeField]
     InputManager inputManager;
 
+    [SerializeField] Tutorial tutorial;
+
 
     private void Start()
     {
         mapManager.DEBUGUnlockAllLocations();
         musicManager.initMusicManager();
-        //registerSelfToMediator();
+        
 
         mapManager.SetDirector(this);
         timeManager.SetDirector(this);
@@ -37,7 +39,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
         rumorBoard.SetDirector(this);
         inputManager.SetDirector(this);
         pauseManager.SetDirector(this);
-        // musicManager.SendMessage(this);
 
         //// HACK: Requird so the end of day manager dosen't display unknown for the first day. 
         endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();
@@ -54,9 +55,12 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
         else if (sender == timeManager) // When the end of day manager has finsihed playing the fade out animation.
         {
-            endOfDaySummaryManager.setEndOfDaySummaryBoardActive();
-            barManager.JumpToStarterSeat();
-            endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();          
+            if (!tutorial.IsTutorialOver)
+            {
+                endOfDaySummaryManager.setEndOfDaySummaryBoardActive();
+                barManager.JumpToStarterSeat();
+                endOfDayManager.AllPatronsTheBartenderKnows = barManager.AquirepatronManagerInformationForEndOfDayManager();
+            }
         }
 
         else if (sender == endOfDaySummaryManager)

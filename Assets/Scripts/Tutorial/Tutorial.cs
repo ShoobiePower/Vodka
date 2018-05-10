@@ -113,9 +113,14 @@ public class Tutorial : MonoBehaviour, IObserver
     [SerializeField]
     TalkingHead talkingHead;
 
+    [SerializeField]
+    GameObject endOfTutorialPage;
+
     TutorialTask currentTask;
 
-    public bool IsTutorialOver { get; private set; } // The location of this is inside of bar manager about line number 286 
+    public bool IsTutorialOver { get; private set; } 
+
+
 
     public void Start()
     {
@@ -209,17 +214,6 @@ public class Tutorial : MonoBehaviour, IObserver
 
     public void forceSeatToHaveSpecificJob(byte seatNumber, Patron.whatDoTheyWantToDo forcedJob)
     {
-        // Command list, Conversation, force the patron to converse which will then lead to them ordering a drink
-        // If no conversation is specified, the patron will draw a random, unlocked conversation. 
-
-        // Rumor. Force the patron to share a rumor from their unlocked list of rumors (I didn't program specification of rumor, it just draws a random rumor from that patron's pile)
-        // If this is something we need, please ask
-
-        // Adventure. Forces the patron to want to have an adventure.
-
-        // Never use turn In, a patron returning from a quest will do that for you.
-
-        // Please use Converse rather than drink.
 
         if (barManager.Seats[seatNumber].patron != null)
             barManager.Seats[seatNumber].patron.currentActivity = forcedJob;
@@ -229,7 +223,6 @@ public class Tutorial : MonoBehaviour, IObserver
     {                                                                                         // use the name of the tag, not the thing labled conversation name.
         if (barManager.Seats[seatNumber].patron != null)
         {
-            //barManager.setBarState(barManager.patronIsConversing());
             forceSeatToHaveSpecificJob(seatNumber, Patron.whatDoTheyWantToDo.CONVERSE);
             barManager.Seats[seatNumber].patron.CurrentConversation = barManager.ConversationWarehouse.getSpecificConversationFromLoader(barManager.Seats[seatNumber].patron.ID, ConversationTag);
         }
@@ -250,8 +243,11 @@ public class Tutorial : MonoBehaviour, IObserver
     }
     // If you want to change Jim's diolouge, please go to Conversations and scroll all the way to the bottom
     public void endTutorial()                                  // If this new diologue is for the Rumor Jim hands out, make sure the rumor's name ("Name": "Jim FPO"   ln 113)
-    {                                                           // and the Diolouge's tag (   "Jim FPO": {  ln 454) 
+    {
+                                                       // and the Diolouge's tag (   "Jim FPO": {  ln 454) 
         IsTutorialOver = true;
+        endOfTutorialPage.SetActive(true);
+
     }
 
 
@@ -261,11 +257,6 @@ public class Tutorial : MonoBehaviour, IObserver
         string nameOfPatron = barManager.Seats[seatNumber].patron.Name;
         forceReactionFromSpecificPatron(type, nameOfPatron);
     }
-
-    //public void forcePatronOutOfBarAtSeat(byte seatNumber)
-    //{
-    //    barManager.Seats[seatNumber].patronPreparesToLeave();
-    //}
 
     public void forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType type, byte indexOfReaction, string patronName)
     {
@@ -294,7 +285,6 @@ public class Tutorial : MonoBehaviour, IObserver
 
     public void forceEndOfDay()
     {
-        //barManager.endTheDay(); 
         barManager.EndPhase();
     }
 
@@ -347,6 +337,11 @@ public class Tutorial : MonoBehaviour, IObserver
         }
 
         return null;
+    }
+
+    public void closeGame()
+    {
+        Application.Quit();
     }
     #endregion
 }
