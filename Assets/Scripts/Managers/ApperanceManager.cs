@@ -62,8 +62,6 @@ public class ApperanceManager : MonoBehaviour {
     [SerializeField]
     Sprite emptySeatToken; 
 
-    public Sprite soldOut;
-
 
     private void Awake()
     {
@@ -145,12 +143,6 @@ public class ApperanceManager : MonoBehaviour {
     {
         return flagSprite;
     }
-
-    public Sprite getSoldOut()
-    {
-        return soldOut;
-    }
-
 
     public Sprite getHilightedBarSeatToken()
     {

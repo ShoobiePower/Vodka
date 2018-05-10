@@ -27,7 +27,7 @@ public class EndOfDaySummaryManager : Colleague {
     public void QuestChosenTransaction(string patronWhoGaveQuest, string rumorGiven, string questChosen)
     {
         string recordToAdd;
-        recordToAdd = string.Format("{0} told you about {1}. You chose to {2}", patronWhoGaveQuest, rumorGiven, questChosen );
+        recordToAdd = string.Format("{0} told you about {1}. You chose to {2} \n", patronWhoGaveQuest, rumorGiven, questChosen );
         addTransactionToList(recordToAdd);
     }
 
@@ -38,7 +38,7 @@ public class EndOfDaySummaryManager : Colleague {
         addTransactionToList(recordToAdd);
     }
 
-    public void RecordPatronReturnTransaction(Patron returningPatron)  // clear
+    public void RecordPatronReturnTransaction(Patron returningPatron)  
     {
         string recordToAdd;
         recordToAdd = string.Format("{0} returned from their quest {1}!", returningPatron.Name, returningPatron.QuestToCompleete.QuestName);
@@ -48,7 +48,7 @@ public class EndOfDaySummaryManager : Colleague {
     public void RecordPatronLevelUp(Patron patronThatLeveledUp)
     {
         string recordToAdd;
-        recordToAdd = string.Format("Your bond with {0} grew! Your bond is now level {1}", patronThatLeveledUp.Name, patronThatLeveledUp.Level);
+        recordToAdd = string.Format("Your bond with {0} grew! Your bond is now level {1} \n", patronThatLeveledUp.Name, patronThatLeveledUp.Level);
         addTransactionToList(recordToAdd);
     }
    

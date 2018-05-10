@@ -213,6 +213,7 @@
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day6CollegeRouteCorporeal.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day6CollegeTransition.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day6Corporeal.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tasks\Day7College.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\Day7Task1.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\MapTask.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tasks\TutorialTask.cs" />
