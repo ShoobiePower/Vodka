@@ -61,6 +61,6 @@ public class Day6CollegeRouteCollege : TutorialTask {
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        //tutorial.SetCurrentTask(new Day6CollegeTransition(tutorial));
+        tutorial.SetCurrentTask(new Day7College(tutorial));
     }
 }

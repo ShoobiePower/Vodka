@@ -95,6 +95,9 @@ public class Day7College : TutorialTask {
 
         patronToReturn = tutorial.GetPatron("Artie");
         if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
+
+        patronToReturn = tutorial.GetPatron("Horace");
+        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
         return patronToReturn;
 
 

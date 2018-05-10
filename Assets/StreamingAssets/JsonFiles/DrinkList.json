@@ -1,44 +1,17 @@
 {
 
 
-"Dragonbite":
-   {
-          "Name": "Dragonbite",
-        "Red": 2,
-		"Yellow": 0,
-		"Blue":0,
-		"Green": 0,
-       "Flavor": "Bitter",  
-	   "Correct Price": 5,
-	   "Mix Up Price": 2,
-    "Buff": "Strong",
-    "Description": "Desc FPO"
-   },
-
-  "Goldfire": {
-    "Name": "Goldfire",
+  "Dragonbite": {
+    "Name": "Dragonbite",
     "Red": 2,
-    "Yellow": 1,
+    "Yellow": 0,
     "Blue": 0,
     "Green": 0,
-    "Flavor": "Strong",
-    "Correct Price": 10,
-    "Mix Up Price": 5,
-    "Buff": "Smart",
-    "Description": "Desc FPO"
-  },
-
-  "Flare": {
-    "Name": "Flare",
-    "Red": 1,
-    "Yellow": 2,
-    "Blue": 0,
-    "Green": 0,
-    "Flavor": "Classic",
-    "Correct Price": 10,
-    "Mix Up Price": 5,
-    "Buff": "Sneak",
-    "Description": "Desc FPO"
+    "Flavor": "Bitter",
+    "Correct Price": 5,
+    "Mix Up Price": 2,
+    "Buff": "Strong",
+    "Description": "What? Dragon's got your tongue?"
   },
 
   "Solarburst": {
@@ -51,12 +24,76 @@
     "Correct Price": 5,
     "Mix Up Price": 2,
     "Buff": "Sway",
-    "Description": "Desc FPO"
+    "Description": "Aptly named after its burst of sweet, sunny flavor."
+  },
+
+  "Big Mamba": {
+    "Name": "Big Mamba",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 0,
+    "Green": 2,
+    "Flavor": "Bitter",
+    "Correct Price": 5,
+    "Mix Up Price": 3,
+    "Buff": "Sneak",
+    "Description": "Despite its size, it goes down faster than you think. That snake's a sneaky one."
   },
 
 
+  "Grizzle Guzzle": {
+    "Name": "Grizzle Guzzle",
+    "Red": 0,
+    "Yellow": 0,
+    "Blue": 2,
+    "Green": 0,
+    "Flavor": "Sweet",
+    "Correct Price": 5,
+    "Mix Up Price": 3,
+    "Buff": "Smart",
+    "Description": "It's said that those who drink this and venture into Grizzlewood will see a strange creature lurking about."
+  },
 
-  "Dewfire": {
+  "Deathwish": {
+    "Name": "Deathwish",
+    "Red": 2,
+    "Yellow": 1,
+    "Blue": 0,
+    "Green": 1,
+    "Flavor": "Strong",
+    "Correct Price": 15,
+    "Mix Up Price": 10,
+    "Buff": "Strong",
+    "Description": "Please don't kill me... and thank you."
+  },
+
+  "Goldfire": {
+    "Name": "Goldfire",
+    "Red": 2,
+    "Yellow": 1,
+    "Blue": 0,
+    "Green": 0,
+    "Flavor": "Strong",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Strong",
+    "Description": "The drink's warmth invigorates the drinker."
+  },
+
+  "Flare": {
+    "Name": "Flare",
+    "Red": 1,
+    "Yellow": 2,
+    "Blue": 0,
+    "Green": 0,
+    "Flavor": "Classic",
+    "Correct Price": 10,
+    "Mix Up Price": 5,
+    "Buff": "Sway",
+    "Description": "A drink that's sure to awake your inner, sociable self."
+  },
+
+    "Dewfire": {
     "Name": "Dewfire",
     "Red": 2,
     "Yellow": 0,
@@ -65,25 +102,12 @@
     "Flavor": "Bitter",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Smart",
-    "Description": "Desc FPO"
+    "Buff": "Strength",
+    "Description": "If a burning drink isn't enough for you, try throwing in some bitter herbs."
   },
-
+    
   "Boomshine": {
     "Name": "Boomshine",
-    "Red": 2,
-    "Yellow": 1,
-    "Blue": 0,
-    "Green": 1,
-    "Flavor": "Strong",
-    "Correct Price": 15,
-    "Mix Up Price": 10,
-    "Buff": "Sneak",
-    "Description": "Desc FPO"
-  },
-
-  "Faded Glory": {
-    "Name": "Faded Glory",
     "Red": 1,
     "Yellow": 2,
     "Blue": 1,
@@ -92,11 +116,11 @@
     "Correct Price": 15,
     "Mix Up Price": 10,
     "Buff": "Sway",
-    "Description": "Desc FPO"
+    "Description": "Not a drink for the faint of heart... because it'll probably destroy the heart in the process."
   },
 
-  "Sun Special": {
-    "Name": "Sun Special",
+  "Faded Glory": {
+    "Name": "Faded Glory",
     "Red": 0,
     "Yellow": 2,
     "Blue": 1,
@@ -104,8 +128,8 @@
     "Flavor": "Sweet",
     "Correct Price": 5,
     "Mix Up Price": 2,
-    "Buff": "Strong",
-    "Description": "Desc FPO"
+    "Buff": "Sway",
+    "Description": "Back in the old days..."
   },
 
   "Father Thyme": {
@@ -117,8 +141,8 @@
     "Flavor": "Bitter",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Smart",
-    "Description": "Desc FPO"
+    "Buff": "Sneak",
+    "Description": "It's simple, herbal flavors bring you back to the olden days."
   },
 
   "Morning Dew": {
@@ -131,7 +155,7 @@
     "Correct Price": 15,
     "Mix Up Price": 10,
     "Buff": "Sneak",
-    "Description": "Desc FPO"
+    "Description": "It has that fresh, spring taste to it."
   },
 
   "Twicler's Greed": {
@@ -143,8 +167,8 @@
     "Flavor": "Classic",
     "Correct Price": 15,
     "Mix Up Price": 10,
-    "Buff": "Sway",
-    "Description": "Desc FPO"
+    "Buff": "Smart",
+    "Description": "How bad could it possibly be?"
   },
 
   "Twilight": {
@@ -156,24 +180,11 @@
     "Flavor": "Sweet",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Strong",
-    "Description": "Desc FPO"
-  },
-
-  "Brinewater": {
-    "Name": "Brinewater",
-    "Red": 0,
-    "Yellow": 0,
-    "Blue": 0,
-    "Green": 2,
-    "Flavor": "Bitter",
-    "Correct Price": 5,
-    "Mix Up Price": 3,
     "Buff": "Smart",
-    "Description": "Desc FPO"
+    "Description": "Its soft, peaceful flavor tends to open the mind to new possibilities."
   },
 
-  "Mint to Be": {
+    "Mint to Be": {
     "Name": "Mint to Be",
     "Red": 0,
     "Yellow": 0,
@@ -183,7 +194,7 @@
     "Correct Price": 10,
     "Mix Up Price": 5,
     "Buff": "Sneak",
-    "Description": "Desc FPO"
+    "Description": "There's no better way to make it than this."
   },
 
   "Water": {
@@ -195,21 +206,8 @@
     "Flavor": "Classic",
     "Correct Price": 10,
     "Mix Up Price": 5,
-    "Buff": "Sway",
-    "Description": "Desc FPO"
-  },
-
-  "Sweetwater": {
-    "Name": "Sweetwater",
-    "Red": 0,
-    "Yellow": 0,
-    "Blue": 2,
-    "Green": 0,
-    "Flavor": "Sweet",
-    "Correct Price": 5,
-    "Mix Up Price": 3,
-    "Buff": "Sway",
-    "Description": "Desc FPO"
+    "Buff": "Smart",
+    "Description": "But if you pay us, you could have it BOTTLED!"
   }
 
 }
