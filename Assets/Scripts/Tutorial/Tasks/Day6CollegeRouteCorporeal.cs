@@ -13,7 +13,7 @@ public class Day6CollegeRouteCorporeal : TutorialTask {
     private void EnterGaius()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Gaius", 1); // Mavis
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Add(Mediator.ActionIdentifiers.DRINK_SERVED, TellPatronToGo);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterMavis);
@@ -24,7 +24,7 @@ public class Day6CollegeRouteCorporeal : TutorialTask {
         TutorialReactions.Clear();
         tutorial.forcePatronIntoBarToSitAt("Mavis", 2);
         tutorial.forceSeatToHaveSpecificJob(2, Patron.whatDoTheyWantToDo.RUMOR);
-        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterGaius);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterTheGang);
     }
 
     private void EnterTheGang()

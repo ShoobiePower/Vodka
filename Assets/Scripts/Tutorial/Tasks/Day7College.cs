@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Day7College : TutorialTask {
 
-    Patron targetPatron;
+    Quest targetQuest;
 
     public Day7College(Tutorial _tutorial) : base(_tutorial)
     {
@@ -18,8 +18,8 @@ public class Day7College : TutorialTask {
     void OnDayStart()
     {
         TutorialReactions.Clear();
-        targetPatron = findReturningPatron();
-        if (targetPatron.QuestToCompleete == null)
+        targetQuest = FindQuest();
+        if (targetQuest == null)
         {
             tutorial.SetTimer(3f);
             TutorialReactions.Add(Mediator.ActionIdentifiers.COUNTDOWN_ENDED, CorporealRoute);
@@ -28,7 +28,7 @@ public class Day7College : TutorialTask {
 
         else
         {
-            if (targetPatron.QuestToCompleete.QuestName == "Support the Corporeal" || targetPatron.QuestToCompleete.QuestName == "Aid the Corporeal")
+            if (targetQuest.QuestName == "Support the Corporeal" || targetQuest.QuestName == "Aid the Corporeal")
             {
                 routeToGo = CorporealRoute;
             }
@@ -80,26 +80,35 @@ public class Day7College : TutorialTask {
     {
         TutorialReactions.Clear();
         tutorial.forceEndOfDay();
-        tutorial.endTutorial();
+        TutorialReactions.Add(Mediator.ActionIdentifiers.END_DAY_FADE_OUT, ExitTutorial);
+        
     }
 
-    Patron findReturningPatron()
+   
+    Quest FindQuest() 
+    { 
+        Quest questToReturn;
+
+        questToReturn = tutorial.GetPatron("Deidre Downton").QuestToCompleete;
+        if (questToReturn != null) { return questToReturn; }
+
+        questToReturn = tutorial.GetPatron("Nell").QuestToCompleete;
+        if (questToReturn != null) { return questToReturn; }
+
+        questToReturn = tutorial.GetPatron("Artie").QuestToCompleete;
+        if (questToReturn != null) { return questToReturn; }
+
+        questToReturn = tutorial.GetPatron("Old Man Horace").QuestToCompleete; // CHECK
+        if (questToReturn != null) { return questToReturn; }
+
+        Debug.Log("Fallthrough on quest to return");
+        return null;
+
+
+    }
+
+    void ExitTutorial()
     {
-        Patron patronToReturn;
-
-        patronToReturn = tutorial.GetPatron("Deidre Downton");
-        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-
-        patronToReturn = tutorial.GetPatron("Nell");
-        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-
-        patronToReturn = tutorial.GetPatron("Artie");
-        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-
-        patronToReturn = tutorial.GetPatron("Horace");
-        if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-        return patronToReturn;
-
-
+        tutorial.endTutorial();
     }
 }
