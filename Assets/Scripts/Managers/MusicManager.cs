@@ -1,10 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class MusicManager : MonoBehaviour
 {
-
+    [Tooltip("The amount the music changes by")]
     public float ammountTochangeBy;
+
+    [Tooltip("The amount the chatter changes by")]
+    [SerializeField]
+    float ammountToChangeChatterBy;
+    public float AmmountToChangeChatterBy { get { return ammountToChangeChatterBy; } }
+
     public AudioSource gameMusicSource;
     public AudioSource ambianceSource;
     public AudioClip barMusicLayered;
@@ -18,11 +25,22 @@ public class MusicManager : MonoBehaviour
     private IMusicState playOn;
     private IMusicState currentMusicState;
 
-    private float maxAmbiance;
+    [SerializeField]
+    float maxAmbiance;
+    public float MaxAmbiance { get { return maxAmbiance; } }
+
+    public AudioMixerGroup AmbianceMixerGroup;
 
     [SerializeField]
     float maxMusicVolume;
     public float MaxMusicVolume { get { return maxMusicVolume; } }
+
+    [HideInInspector]
+    public float chatterGainIsAt;
+    // public float GainIsAt { get { return gainIsAt; } set { gainIsAt = value; }  }
+
+    private const float minimumChatterVolume = -80f;
+    public float MinimumChatterVolume { get { return minimumChatterVolume; } }
 
     public void initMusicManager()
     {
@@ -31,6 +49,10 @@ public class MusicManager : MonoBehaviour
         menuRising = new MenuMusicRise(this);
         menuSetting = new MenuMusicFade(this);
         playOn = new MusicPlays();
+
+        chatterGainIsAt = minimumChatterVolume;
+
+        ambianceSource.outputAudioMixerGroup = AmbianceMixerGroup;
 
         currentMusicState = GetBarRising();
         currentMusicState.StartPart();
@@ -78,16 +100,6 @@ public class MusicManager : MonoBehaviour
         currentMusicState.ChangeVolume();
     }
 
-    //public void startPatronSounds()
-    //{
-    //    ambianceSource.volume += .1f * Time.deltaTime;
-    //}
-
-    //public void exitPatronSound()
-    //{
-    //    ambianceSource.volume -= .2f * Time.deltaTime;
-    //}
-
     public void startBarStaticTheme()
     {
         gameMusicSource.clip = barMusicStatic;
@@ -121,7 +133,7 @@ public class BarMusicRising : IMusicState
 
     public void ChangeVolume()
     {
-        
+        checkOnAmbiance();
         if (musicManager.gameMusicSource.volume < musicManager.MaxMusicVolume) 
         {
             musicManager.gameMusicSource.volume += musicManager.ammountTochangeBy * Time.deltaTime;
@@ -153,6 +165,15 @@ public class BarMusicRising : IMusicState
             musicManager.setCurrentMusicState(musicManager.GetPlayThrough());
         }
     }
+
+    private void checkOnAmbiance() // It acts the same as a music, but I think this should go somwhere else as it is classified as an sfx;
+    {     
+        if ( musicManager.chatterGainIsAt < musicManager.MaxAmbiance)
+        {
+            musicManager.AmbianceMixerGroup.audioMixer.GetFloat("Chatter", out musicManager.chatterGainIsAt);
+            musicManager.AmbianceMixerGroup.audioMixer.SetFloat("Chatter", (musicManager.chatterGainIsAt += (musicManager.AmmountToChangeChatterBy * Time.deltaTime)));
+        }
+    }
 }
 
 public class BarMusicFading : IMusicState
@@ -167,7 +188,9 @@ public class BarMusicFading : IMusicState
     public void ChangeVolume()
     {
         musicManager.gameMusicSource.volume -= musicManager.ammountTochangeBy * Time.deltaTime;
-        if (0 >= musicManager.gameMusicSource.volume)
+        checkOnAmbiance();
+
+        if (0 >= musicManager.gameMusicSource.volume && musicManager.chatterGainIsAt <= musicManager.MinimumChatterVolume)
         {
             OnEnd();
         }
@@ -181,6 +204,12 @@ public class BarMusicFading : IMusicState
     public void StartPart()
     {
         
+    }
+
+    private void checkOnAmbiance() // It acts the same as a music, but I think this should go somwhere else as it is classified as an sfx;
+    {
+        musicManager.AmbianceMixerGroup.audioMixer.GetFloat("Chatter", out musicManager.chatterGainIsAt);
+        musicManager.AmbianceMixerGroup.audioMixer.SetFloat("Chatter", (musicManager.chatterGainIsAt -= (musicManager.AmmountToChangeChatterBy * Time.deltaTime)));
     }
 }
 
