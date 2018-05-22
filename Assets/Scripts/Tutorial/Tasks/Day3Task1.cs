@@ -38,22 +38,17 @@ public class Day3Task1 : TutorialTask
     }
 
     byte numPatronsLeft;
-    void BothPatronsLeftCheck()
+    void BothPatronsLeftCheck() 
     {
         numPatronsLeft++;
         if(numPatronsLeft >= 2)
         {
             EndDay();
         }
-        else
-        {
-            tutorial.hideDismissButton();
-        }
     }
 
     void EndDay()
     {
-
         tutorial.forceEndOfDay();
         tutorial.SetCurrentTask(new Day4Task1(tutorial));
     }

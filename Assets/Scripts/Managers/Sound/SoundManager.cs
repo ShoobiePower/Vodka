@@ -14,9 +14,13 @@ public class SoundManager : MonoBehaviour
 
     static Queue<string> AudioCommandQueue;
 
+    private float modifiedVolume;
+
     // Use this for initialization
     void Awake()
     {
+        modifiedVolume = 1f; // HACK
+
         sounds = new Dictionary<string, MonoBehaviour>();
         AudioCommandQueue = new Queue<string>();
 
@@ -58,5 +62,6 @@ public class SoundManager : MonoBehaviour
     {
         AudioCommandQueue.Enqueue(command);
     }
+
 }
 

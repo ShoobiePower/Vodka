@@ -13,10 +13,6 @@ public class Seat : ABSTFadableObject, ISubject
     public Transform seatsCameraTarget;
 
     [SerializeField]
-    Transform toastStartPoint;
-    public Transform ToastStartPoint {get { return toastStartPoint; }}
-
-    [SerializeField]
      FadingText fadingText;
     public FadingText FadingText { get { return fadingText; } }
     
@@ -169,6 +165,7 @@ public class Seat : ABSTFadableObject, ISubject
         Debug.Log( patron.Name + "Seat Should be clear");
         barToken.sprite = ApperanceManager.instance.GetEmptySeatToken();
         patron = null;
+        makeTextBoxClickable();
         thisSeatsRespawnState = seatRespawnState.NEEDSCLEAR;
         return noOneSeated;
     }

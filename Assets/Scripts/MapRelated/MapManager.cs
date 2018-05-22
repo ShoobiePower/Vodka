@@ -34,6 +34,11 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
     private List<Patron> questingPatrons = new List<Patron>();
     public List<Patron> QuestingPatrons { get { return questingPatrons; } }
 
+    byte numberOfPatronsInTheBar; // HACK, This is needed to tell the deploy state wether or not to display the cancel deployment button... 
+    // Currently in an argumnt with myself on wether this responcibility should belong to the map manager or the tutorial. I arrived at this decision because
+    // I want to be plug and play with no need to remeber small numbers. 
+    public byte NumberOfPatronsInTheBar { get { return numberOfPatronsInTheBar; } }
+
     [System.Serializable]
     struct RegionAndKey
     {
@@ -59,13 +64,14 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         mapMode.openMapProps();
     }
 
-    public void mapOpenFromBar(Patron inPatronOnAdventure)   
+    public void mapOpenFromBar(Patron inPatronOnAdventure, byte numberOfPatronsLeftInBar)   
     {
         if (deployState == null)
         {
             initDeployState();
         }
         mapMode = deployState;
+        numberOfPatronsInTheBar = numberOfPatronsLeftInBar;
         patronToGoOnAdventure = inPatronOnAdventure;
         MapImage.gameObject.SetActive(true);
         mapMode.openMapProps();
@@ -73,7 +79,7 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         notifyObserver(Mediator.ActionIdentifiers.MAP_OPEN);
     }
 
-    public void closeMapProps()                           // HERE
+    public void closeMapProps()
     {
         MapImage.gameObject.SetActive(false);
         mapMode.closeMapProps();
@@ -115,23 +121,8 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         findRegionFromDictionary(targetQuest).removeQuestFromLocation(targetQuest);
     }
 
-   
 
-    public void DEBUGlockAllLocations()
-    {
-        foreach  (RegionAndKey LAK in allLocations)
-        {
-            LAK.region.lockLocation();
-        }
-    }
 
-    public void DEBUGUnlockAllLocations()
-    {
-        foreach (RegionAndKey LAK in allLocations)
-        {
-            LAK.region.unlockLocation();
-        }
-    }
 
     public void TimeProgressesForQuests()
     {
@@ -193,6 +184,30 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         return false;
     }
 
+    public int CountHowManyQuestsAreAvailable()
+    {
+        int intToReturn = 0;
+        foreach (RegionAndKey LAK in allLocations)
+        {
+            if (LAK.region.QuestCountAtLocation > 0)
+            {
+               foreach(Quest q in LAK.region.QuestsAtLocation)
+                {
+                    if (q.getQuestStatus() == Quest.questStatus.PENDING)
+                    {
+                        intToReturn++;
+                    }
+                }
+            }
+            else
+            {
+                continue;
+            }
+        }
+
+        return intToReturn;
+    }
+
     private void patronAttemptsQuestTrials(Patron patronToAtemptTrials)
     {
         for (int i = 0; i < patronToAtemptTrials.QuestToCompleete.TrialsOfTheQuest.Count; i++)
@@ -200,13 +215,12 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
             patronToAtemptTrials.QuestToCompleete.TrialsOfTheQuest[i].IsTrialPassed = patronToAtemptTrials.checkForSkill(patronToAtemptTrials.QuestToCompleete.TrialsOfTheQuest[i].skillToCheckFor);
         }
 
-        patronToAtemptTrials.QuestToCompleete.ChangeQuestStatusToPass(); // hack remove quest status soon.
+        patronToAtemptTrials.QuestToCompleete.ChangeQuestStatusToPass(); 
         removeQuestFromRegion(patronToAtemptTrials.QuestToCompleete);
     }
 
     public void sendPatronOnQuest(Patron patronToAdd)
     {
-        //notifyObserver(Mediator.ActionIdentifiers.SEND_ON_QUEST_CLICKED);
         Director.ReportOnPatronSentOnQuest(patronToAdd);
         questingPatrons.Add(patronToAdd);
         findRegionFromDictionary(patronToAdd.QuestToCompleete).addPatronsToLocation(patronToAdd);
@@ -216,14 +230,6 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
     {
         findRegionFromDictionary(p.QuestToCompleete).removePatronFromLocation(p);
         questingPatrons.Remove(p);
-    }
-
-    public void listAllLeftInAdventurers()
-    {
-        foreach (Patron p in questingPatrons)
-        {
-            Debug.Log(p.Name);
-        }
     }
 
     public override void EndPhase()

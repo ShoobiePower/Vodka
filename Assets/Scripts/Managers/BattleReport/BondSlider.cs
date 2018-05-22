@@ -44,8 +44,6 @@ public class BondSlider : MonoBehaviour
     // And how much bond is needed to level up
     public void SetSliderDefautValue(float currentBond, float bondNeededToNextLevel)
     {
-        Debug.Log(currentBond);
-        Debug.Log(bondNeededToNextLevel);
         if (BondAmountSlider == null) { initBondAmountSlider(); }
 
         shouldSliderMove = false;
@@ -58,7 +56,6 @@ public class BondSlider : MonoBehaviour
     {
         if (checksToRedeemForBond.Count != 0)
         {
-            Debug.Log("Hello");
             determineIfPassOrFail(checksToRedeemForBond[0]);
             checksToRedeemForBond.RemoveAt(0);
         }

@@ -37,78 +37,11 @@ using UnityEngine.UI;
  * Some thoughts on how to go about this:
  *      - This'll be somewhat messy, but should the Tutorial class have references to, say, the BarManager? Or at least have access to a whole lot of stuff.         
  *          
- * Here are the detailed steps to the tutorial:
- * 
- * #####  DAY 1  #####
- * 1) Calandar thing (stretch goal, don't worry about for now)
- * 2) Play conversation ("Well now, I didn’t expect you to pick up the reins so quickly!") to the dialogue
- * 3) Place Jim in the center window
- * 4) Play Jim's conversation
- * 5) Force Jim to order "Dragonbite" (have the drink making station appear as normal)
- * 6) An arrow points to recipe book / drink chart / drink guide thing, text appears above it saying "Click on the (RECIPE BOOK?!) to learn the ingredients"
- *      * Wait for player to click on book
- * 7) Page opens to Dragonbite (this is by default, since it's the first one in the book)
- * 8) Arrow appears pointing to ingredients with text reading: "These are the ingredients you’ll need. Each ingredient corresponds to a color on the taps."
- *          (NOTE: This step can possibly be removed with good UI, also these text bubbles can also be "floating heads," functionality-wise)
- * 9) Andrew has: a NEW (hooray) arrow points to the tap, with text above reading “Click on the tap twice to add two red ingredients to the drink.”
- *      For simplicity sake, I'm thinking to remove #9 and do this:
- *      * Wait for player to add ingredients
- *              -> if red, add +1 to "red counter"
- *              -> if not red (or red is greater than 2), Force a Jim dialogue: something about "the chart has two red ingredients. If you need to reset your drink, just throw it out" (indicate the sink / garbage / recycle button)
- * 10) After adding two red ingredients ("red counter" = 2): Force Jim dialogue: "That looks dandy! Why don’t you pass that on over so I can wet my lips."
- * 11) Highlight "serve drink" button, lever, spring, whatever it is
- *      * Wait for "Serve Drink" action
- * 12) Play Jim Conversation:   Jim: *sluuurp*
- *                              Jim: Not bad for your first drink!
- *                              Jim: (One more line for transition)
- * 13) Horace enters the bar, sits in the middle, and orders a Solarburst
- *      * Wait for Correct or Incorrect / Mixup actions
- *          -> if correct: serve drink and continue
- *          -> if incorrect: Force Horace to give a line: "Hmm… not quite what I ordered, but I couldn’t possibly be upset at such a fresh young face! Why don’t you give it another go?"
- * 14) Deidre enters the bar, sits in the middle, and orders a Goldfire
- *      * Wait for Correct or Incorrect / Mixup actions
- *          -> if correct: serve drink and continue
- *          -> if incorrect: Force Horace to give a line: "Do you think it's funny to play jokes on an woman like me? ... Hehehe! I do too. How about you try that order again, though?"
- *      * Wait for Correct or Incorrect / Mixup actions
- * 15) Artie enters the bar, sits on right right, and orders a Flare
- *          -> if correct: serve drink and continue
- *          -> if incorrect: Force Horace to give a line: "Hmm… not quite what I ordered, but I couldn’t possibly be upset at such a fresh young face! Why don’t you give it another go?"
- * 16) Day should have ended! After the last patron leaves, Play Jim conversation: "Looks like you had a fairly successful first day! I’m not sure if I’ll have time to stop in tomorrow, but I’m sure I’ll see you soon. Just keep doing what you’re doing!"
- * 17) Andrew wrote in to skip the "End of Day" screen, which I don't think is a bad idea. However, if it takes a bit of extra time to do this, we can skip it for now.
- *
- * #####  DAY 2  #####
- * 1) Jim enters bar, sits in middle seat, begin converstion
- * 2) Serve drinks like normal (these drinks can be failed). No rumors or anything yet.
- *      NOTE: This is the first time you'll be serving patrons random orders like usual and listening to conversations / introduction comments.
- * 3) Day ends: Jim has gives another conversation
- * 4) End of day Manager appears like normal (I don't know how much we need to explain this. It's mostly a "look around and figure it out yourself." So long as players know to click "Begin next day" (which they always do).
- *      NOTE: The only thing unlocked at this point is: "Patrons"
- *      
- * #####  DAY 3  #####
- * 1) Play another Jim conversation
- * 2) Jim gives you your first rumor
- * 3) Some time this day (doesn't have to be immediate), Horace will be given a conversation (and the conversation could prompt him to ask for an adventure)
- * 4) The first time the map is opened / first time you give a quest, Jim's floating head appears. Click through this converastion.
- *      * Wait for player to select the quest (just before hitting "send on quest")
- * 5) After all patrons are served like normal, day ends.
- * 6) The End of Day Manager now has the "map" on it
- * 
- * #####  DAY 4  #####
- * 1) Day begins like normal
- * 2) Horace returns like normal, complete quest
- * 3) The first time a player opens a quest summary page, Jim's head will appear yet again, explaining leveling and such
- * 4) The only other floating head here is recieving your first quest choice. BUT! WE might be able to avoid it by writing a better quest summary or dialogue (about how your choices will impact the future).
- *
- * #####  DAY 5  #####  NOTHING TO SEE (DO) HERE!
- * I BUG TO DIFFER AND THOSE BUG IS ANTZ!!! 
- */
+*/
 
 public class Tutorial : MonoBehaviour, IObserver
 {
-    BarManager barManager;  //NOTE: I'm not sure if I like this because, technically, I should only be able to access a LITTLE from the BarManager... not everything.
-
-    [SerializeField]
-    GameObject DismissButton;
+    BarManager barManager;  //NOTE: I'm not sure if I like this because, technically, I should only be able to access a LITTLE from the BarManager... not everything
 
     [SerializeField]
     TalkingHead talkingHead;
@@ -301,11 +234,6 @@ public class Tutorial : MonoBehaviour, IObserver
     public void SwapToBarPaused()
     {
         barManager.setBarState(barManager.barIsPaused());
-    }
-
-    public void hideDismissButton()
-    {
-        DismissButton.SetActive(false);
     }
 
     // Sends a conversation that belongs to a patron to the talking head, this also activates it. 

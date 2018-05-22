@@ -40,30 +40,30 @@ public class OrderByName : IOrder
     }
 }
 
-public class OrderByFlavor : IOrder
-{
-    Drink.flavor desiredFlavor;
+//public class OrderByFlavor : IOrder
+//{
+//    Drink.flavor desiredFlavor;
     
-    public OrderByFlavor(Drink.flavor DesiredFlavor)
-    {
-        desiredFlavor = DesiredFlavor;
-    }
+//    public OrderByFlavor(Drink.flavor DesiredFlavor)
+//    {
+//        desiredFlavor = DesiredFlavor;
+//    }
 
-    public bool checkAccuracy(Drink drinkToCheck)
-    {
-        return (drinkToCheck.ThisDrinksFlavor == desiredFlavor);
-    }
+//    public bool checkAccuracy(Drink drinkToCheck)
+//    {
+//        return (drinkToCheck.ThisDrinksFlavor == desiredFlavor);
+//    }
 
-    public string describeOrder()
-    {
-        return " a " + desiredFlavor.ToString() + " drink";
-    }
+//    public string describeOrder()
+//    {
+//        return " a " + desiredFlavor.ToString() + " drink";
+//    }
 
-    public JsonDialogueLoader.responceType getKindOfOrder()
-    {
-        throw new NotImplementedException();
-    }
-}
+//    public JsonDialogueLoader.responceType getKindOfOrder()
+//    {
+//        throw new NotImplementedException();
+//    }
+//}
 
 public class OrderByIngredent : IOrder
 {

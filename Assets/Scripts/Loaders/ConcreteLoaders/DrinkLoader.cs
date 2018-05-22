@@ -36,9 +36,6 @@ public class DrinkLoader : Loader  {
         drinkToCreate.DrinkIngredents[1] = (byte)jsonObject[drinkIndexer][(int)drinkjsonHelper.YELLOW].i;
         drinkToCreate.DrinkIngredents[2] = (byte)jsonObject[drinkIndexer][(int)drinkjsonHelper.GREEN].i;
         drinkToCreate.DrinkIngredents[3] = (byte)jsonObject[drinkIndexer][(int)drinkjsonHelper.BLUE].i;
-        drinkToCreate.CorrectPrice = (byte)jsonObject[drinkIndexer][(int)drinkjsonHelper.CORRECT].i;
-        drinkToCreate.MixUpPrice = (byte)jsonObject[drinkIndexer][(int)drinkjsonHelper.MIXUP].i;
-        drinkToCreate.ThisDrinksFlavor = drinkFlavorParser(jsonObject[drinkIndexer][(int)drinkjsonHelper.FLAVOR].str);
         drinkToCreate.NumberOfIngredentsInDrink = addAllIngredents(drinkToCreate);
         drinkToCreate.Buff = drinkBuffParser(jsonObject[drinkIndexer][(int)drinkjsonHelper.BUFF].str);
         drinkToCreate.DrinkDescription = jsonObject[drinkIndexer][(int)drinkjsonHelper.DESCRIPTION].str;
@@ -74,40 +71,6 @@ public class DrinkLoader : Loader  {
         return runningTotalToReturn;
     }
 
-
-    private Drink.flavor drinkFlavorParser(string flavorToParse)
-    {
-        switch (flavorToParse.ToLower())
-        {
-
-            case "sweet":
-                {
-                    return Drink.flavor.SWEET;
-                }
-            case "bitter":
-                {
-                    return Drink.flavor.BITTER;
-                }
-            case "strong":
-                {
-                    return Drink.flavor.STRONG;
-                }
-            case "classic":
-                {
-                    return Drink.flavor.CLASSIC;
-                }
-            default:
-                {
-                    Debug.Log("Flavor Fall through:" + FallThroughHelper);
-                    return Drink.flavor.STRONG;
-                }
-
-        }
-
-
-    }
-
-
     private Patron.SkillTypes drinkBuffParser(string buffToParse)
     {
         switch (buffToParse.ToLower())
@@ -129,10 +92,15 @@ public class DrinkLoader : Loader  {
                 {
                     return Patron.SkillTypes.SWAY;
                 }
+            case "none":
+                {
+                    return Patron.SkillTypes.NONE;
+                }
             default:
                 {
                     Debug.Log("Buff Fall through:" + FallThroughHelper);
-                    return Patron.SkillTypes.STRONG;
+                    // return Patron.SkillTypes.STRONG;
+                    return Patron.SkillTypes.NONE;
                 }
 
         }

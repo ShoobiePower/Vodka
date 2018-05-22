@@ -29,13 +29,13 @@ public class BarManager : Colleague , ISubject
     public RumorManager RumorManager { get { return rumorManager; } }
 
     [SerializeField]
-    DropDownToast DropDownToast; //Toast Pool
+    DropDownToast DropDownToast; 
+
+    [SerializeField] Tutorial tutorial;
     #endregion
 
     //A master switch for our ui, used for the purpose of the end of day manager rework.
     public GameObject UILayout;
-
-    [SerializeField] Tutorial tutorial;
 
 
     // these need to go somewhere else;
@@ -178,10 +178,9 @@ public class BarManager : Colleague , ISubject
 
     public void OpenMapFromBar(Patron patronToSend)
     {
-        Director.OpenMapFromBar(patronToSend);
+        byte patronsLeft = countHowManyPatronsAreLeft();
+        Director.OpenMapFromBar(patronToSend, patronsLeft);
     }
-
-
     #region AdventureMapRelated
 
 
@@ -199,7 +198,6 @@ public class BarManager : Colleague , ISubject
 
     public void SendAdventurerHome(Patron patronsToSendBack)
     {
-        Debug.Log("Hit");
        patronManager.putAPatronBack(patronsToSendBack);
        Director.ReportOnPatronReturning(patronsToSendBack);
     }
@@ -281,6 +279,19 @@ public class BarManager : Colleague , ISubject
             EndPhase();
         }
 
+    }
+
+    private byte countHowManyPatronsAreLeft()
+    {
+        byte numberOfPatronsLeft = 0;
+        for (int i = 0; i < Seats.Length; i++)
+        {
+            if (Seats[i].patron != null)
+            {
+                numberOfPatronsLeft++;
+            }
+        }
+        return numberOfPatronsLeft;
     }
 
     public override void EndPhase()

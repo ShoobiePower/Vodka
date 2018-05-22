@@ -8,8 +8,8 @@ public class FillableMug : MonoBehaviour
  
     Drink drinkInMug = new Drink();
 
-    private const int maxSizeOfMug = 4;
-    public int MaxSizeOfMug { get { return maxSizeOfMug; } } // Placeholder
+    private const int maxSizeOfMug = 2;
+    public int MaxSizeOfMug { get { return maxSizeOfMug; } } 
 
     [SerializeField]
     Image[] ingredientSquares;

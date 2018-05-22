@@ -8,7 +8,7 @@ public interface IDirector {
 
     // Stuff I would Like to refactor;
     void OpenRumorBoard();
-    void OpenMapFromBar(Patron patronToSend);
+    void OpenMapFromBar(Patron patronToSend, byte numberOfPatronsInTheBar);
     void SendRumorToBoard(Rumor rumor);
     void GetQuestFromBoard(Quest questToAdd);
     void BarManagerOpensBattleReport();
@@ -23,6 +23,8 @@ public interface IDirector {
     void ActivateRumorBoardUICommand(Command comandToActivate);
     void ActivateBattleReportCommand(Command commandToActivate);
     void ActivatePauseManagerCommand(Command commandToActivate);
+    void PullUpOptionsMenu();
+    void LeaveOptionsMenu();
     void PullUpExitMenu();
     void LeaveExitMenu();
     void OpenTavernKeeperJournalFromBar(); // HACK

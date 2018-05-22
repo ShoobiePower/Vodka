@@ -26,7 +26,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     private void Start()
     {
-        mapManager.DEBUGUnlockAllLocations();
+        //mapManager.DEBUGUnlockAllLocations();
         musicManager.initMusicManager();
         
 
@@ -154,9 +154,10 @@ public class ManagerDirector : MonoBehaviour, IDirector
     }
 
 
-    public void OpenMapFromBar(Patron patronToSend)
+    public void OpenMapFromBar(Patron patronToSend, byte numberOfPatronsLeftInBar)
     {
-        mapManager.mapOpenFromBar(patronToSend);
+        Debug.Log("Number of patrons in the bar" + numberOfPatronsLeftInBar);
+        mapManager.mapOpenFromBar(patronToSend, numberOfPatronsLeftInBar);
     }
 
      public void OpenTavernKeeperJournalFromBar()
@@ -300,6 +301,25 @@ public class ManagerDirector : MonoBehaviour, IDirector
     public void RecordPatronLevelUp(Patron patronThatLeveledUp)
     {
         endOfDaySummaryManager.RecordPatronLevelUp(patronThatLeveledUp);
+    }
+
+    public void PullUpOptionsMenu()
+    {
+        pauseManager.OpenOptionsMenu();
+        pauseManager.StoreBarState(barManager.BarManagerState);
+        barManager.setBarState(barManager.barIsPaused());
+    }
+
+    public void LeaveOptionsMenu()
+    {
+        pauseManager.CloseOptionsMenu();
+
+        if (pauseManager.getStoredBarState() is BarPaused)  // DUPE CODE please refactor;
+        {
+            barManager.setBarState(barManager.noOneInteractedWith());
+        }
+        else
+            barManager.setBarState(pauseManager.getStoredBarState());
     }
 
     // concludes end of day summary ducttape;

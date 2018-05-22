@@ -13,8 +13,6 @@ public class Day1Task4 : TutorialTask
 
     void ServeCorrectDrink()
     {
-        //tutorial.unPauseSeatAtIndex(1);
-
         TutorialReactions.Clear();
         tutorial.forceSeatToHaveSpecificJob(2, Patron.whatDoTheyWantToDo.GOHOME);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, JimAgain);

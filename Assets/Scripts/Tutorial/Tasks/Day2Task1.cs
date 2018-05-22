@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Day2Task1 : TutorialTask
 {
-    //byte correctDrinksServed = 0;
 
     public Day2Task1(Tutorial tutorial) : base(tutorial)
     {
@@ -43,7 +42,6 @@ public class Day2Task1 : TutorialTask
         tutorial.stopShakingCamera();
         tutorial.ResetBarState();
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.RUMOR);    //When the earthquake finishes, force Jim to give out your first rumor "The Commotion"
-        //tutorial.resetOrderAtSpecificSeat(1);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, ByeJim); //This should be after you accept a rumor
     }
 
@@ -51,7 +49,6 @@ public class Day2Task1 : TutorialTask
     {
         TutorialReactions.Clear();
         //NOTE: I'm using the dialogue for this instead
-        //tutorial.forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType.ABOUTTOLEAVE, 3, "Jim");   //Have Jim say, "Why don’t you hand that quest out to the next patron that steps into the bar? I’m sure they’d be just as interested in investigating all that ruckus as we are."
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.GOHOME);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, ByeJim);
     }

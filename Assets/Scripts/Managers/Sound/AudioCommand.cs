@@ -23,6 +23,7 @@ public class AudioCommand : MonoBehaviour
 
     private bool isPaused;
 
+
     // Use this for initialization
     void Start()
     {
@@ -51,7 +52,7 @@ public class AudioCommand : MonoBehaviour
     public void Play()
     {
         if (audioMixerGroup != null)
-        audioMixerGroup.audioMixer.SetFloat("CharacterVol", volumeOfCue);
+        audioMixerGroup.audioMixer.SetFloat("CharacterVol", volumeOfCue); 
 
         switch (PlayMode)
         {

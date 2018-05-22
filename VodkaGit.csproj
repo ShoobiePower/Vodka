@@ -164,7 +164,7 @@
     <Compile Include="Assets\Scripts\Managers\MediatorSetUp\ManagerDirector.cs" />
     <Compile Include="Assets\Scripts\Managers\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Managers\OrderManager.cs" />
-    <Compile Include="Assets\Scripts\Managers\Pause\OptionsMenu.cs" />
+    <Compile Include="Assets\Scripts\Managers\Pause\Options\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Pause\PauseManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Pause\PauseScrollDownComponent.cs" />
     <Compile Include="Assets\Scripts\Managers\Sound\AudioCommand.cs" />

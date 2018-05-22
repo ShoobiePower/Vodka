@@ -14,7 +14,6 @@ public class Day2Task2 : TutorialTask
 
     void OpenMap()
     {
-        tutorial.hideDismissButton();
         TutorialReactions.Clear();
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, JimExplainsQuests);
     }

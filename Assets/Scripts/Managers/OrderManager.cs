@@ -14,8 +14,6 @@ public class OrderManager : MonoBehaviour {
     private List<Ingredient.ingredientColor> allUnlockedIngredentColors = new List<Ingredient.ingredientColor>();
     public enum OrderOptions {  BYCOLOR, BYWITHOUTCOLOR, LENGTH }
 
-   // private string[] drinkNames = new string[16];
-
     public enum orderAccuracy {NONE,MIXUP, CORRECT};
 
     [SerializeField]
@@ -25,7 +23,6 @@ public class OrderManager : MonoBehaviour {
     {
         dLoader.init();
         allLockedDrinksInGame = dLoader.populateDrinkCollection();
-       // loadDrinkNames();
     }
 
 
@@ -79,9 +76,7 @@ public class OrderManager : MonoBehaviour {
             }
             if (isDrinkAddable)
             {
-                //Debug.Log("FoundDrinkOfName" + allLockedDrinksInGame[j].DrinkName);
                 allDrinksTheBartenderKnows.Add(allLockedDrinksInGame[j]);
-               // hideQuestionMarkOnDrinkChart(allLockedDrinksInGame[j].DrinkName);
                 allLockedDrinksInGame.RemoveAt(j);
                 j--;
             }

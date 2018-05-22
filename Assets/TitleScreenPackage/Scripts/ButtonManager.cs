@@ -21,6 +21,9 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private float speedOfFade;
 
+    [SerializeField]
+    private Image creditPanel;
+
     private const float fadeOffeset = 0.1f;
 
     private enum AnimationStates { OPEN, FADING, CLOSED}
@@ -87,6 +90,7 @@ public class ButtonManager : MonoBehaviour
         {
             button.GetComponent<Animator>().SetTrigger("FadeOut");
         }
+        creditPanel.gameObject.SetActive(true);
 
         BackButton.GetComponent<Animator>().SetTrigger("FadeIn");
 
@@ -95,6 +99,9 @@ public class ButtonManager : MonoBehaviour
 
     public void FadeInMainMenuButtonsAndCloseCredits()
     {
+
+        creditPanel.gameObject.SetActive(false);
+
         StartCoroutine(PlayAndWaitForAnimation(NamesInCredits, "FadeOut"));
         StartCoroutine(PlayAndWaitForAnimation(BackButton.gameObject, "FadeOut"));
 
@@ -121,11 +128,5 @@ public class ButtonManager : MonoBehaviour
             yield return null;
         }
     }
-
-    //public void ResetCreditAnimation(string animationName)
-    //{
-    //    //Animation.Play lets me reset the animation to the first frame ("State", layer, normalizedTime)
-    //    CreditsButton.GetComponent<Animator>().Play(animationName, -1, 0f);
-    //}
 
 }

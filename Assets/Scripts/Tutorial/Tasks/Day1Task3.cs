@@ -38,7 +38,6 @@ public class Day1Task3 : TutorialTask
 
     void OpenMap()
     {
-        tutorial.hideDismissButton();
         TutorialReactions.Clear();
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, GoHome);
     }

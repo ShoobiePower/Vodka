@@ -102,7 +102,6 @@ public class ApperanceManager : MonoBehaviour {
     public Sprite HowThisPatronLooks(string spriteToLookFor)
     {
         Sprite test;
-        Debug.Log(spriteToLookFor);
         if (patronArt.TryGetValue(spriteToLookFor, out test)) 
         {
             return test;

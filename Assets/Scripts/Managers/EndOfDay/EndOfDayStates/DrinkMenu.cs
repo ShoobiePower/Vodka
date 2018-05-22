@@ -71,8 +71,7 @@ public class DrinkMenu : AbstBookStates
 
     public override void ScrollDown()
     {
-        Debug.Log("Press down");
-       
+     
         if (CurrentBottomOfPage < allDrinksInGame.Count)
         {
             CurrentTopOfPage++;
@@ -84,7 +83,6 @@ public class DrinkMenu : AbstBookStates
 
     public override void ScrollUp()
     {
-        Debug.Log("Press up");
         if (CurrentTopOfPage > 0)
         {
             CurrentTopOfPage--;

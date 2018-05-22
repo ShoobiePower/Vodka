@@ -327,6 +327,7 @@ public class InputManager : Colleague {
     #endregion
 
     #region pauseMenuCommands
+
     public void TogglePauseMenu()
     {
         command = new TogglePauseGame();
@@ -348,6 +349,16 @@ public class InputManager : Colleague {
     {
         Director.PullUpExitMenu();
         
+    }
+
+    public void PullUpOptionsMenu()
+    {
+        Director.PullUpOptionsMenu();
+    }
+
+    public void CloseOptionsMenu()
+    {
+        Director.LeaveOptionsMenu();
     }
     #endregion
 

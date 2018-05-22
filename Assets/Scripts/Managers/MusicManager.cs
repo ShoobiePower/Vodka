@@ -20,7 +20,9 @@ public class MusicManager : MonoBehaviour
 
     private float maxAmbiance;
 
-    public float maxMusicVolume;
+    [SerializeField]
+    float maxMusicVolume;
+    public float MaxMusicVolume { get { return maxMusicVolume; } }
 
     public void initMusicManager()
     {
@@ -76,15 +78,15 @@ public class MusicManager : MonoBehaviour
         currentMusicState.ChangeVolume();
     }
 
-    public void startPatronSounds()
-    {
-        ambianceSource.volume += .1f * Time.deltaTime;
-    }
+    //public void startPatronSounds()
+    //{
+    //    ambianceSource.volume += .1f * Time.deltaTime;
+    //}
 
-    public void exitPatronSound()
-    {
-        ambianceSource.volume -= .2f * Time.deltaTime;
-    }
+    //public void exitPatronSound()
+    //{
+    //    ambianceSource.volume -= .2f * Time.deltaTime;
+    //}
 
     public void startBarStaticTheme()
     {
@@ -92,13 +94,11 @@ public class MusicManager : MonoBehaviour
         gameMusicSource.Play();
     }
 
-    //FOCUS FOR AFTER GDC
-    //public void startMenuStaticTheme()
-    //{
-    //    gameMusicSource.clip = menuMusicStatic;
-    //    gameMusicSource.Play();
-    //}
-
+    public void setMusicVolume(float newMaxVolume)
+    {
+        maxMusicVolume = newMaxVolume;
+        gameMusicSource.volume = newMaxVolume;
+    }
 
 }
 
@@ -122,7 +122,7 @@ public class BarMusicRising : IMusicState
     public void ChangeVolume()
     {
         
-        if (musicManager.gameMusicSource.volume < musicManager.maxMusicVolume) 
+        if (musicManager.gameMusicSource.volume < musicManager.MaxMusicVolume) 
         {
             musicManager.gameMusicSource.volume += musicManager.ammountTochangeBy * Time.deltaTime;
         }
@@ -197,7 +197,7 @@ public class MenuMusicRise : IMusicState
     public void ChangeVolume()
     {
         musicManager.gameMusicSource.volume += musicManager.ammountTochangeBy * Time.deltaTime;
-        if (musicManager.gameMusicSource.volume > musicManager.maxMusicVolume)
+        if (musicManager.gameMusicSource.volume > musicManager.MaxMusicVolume)
         {
             OnEnd();
         }
