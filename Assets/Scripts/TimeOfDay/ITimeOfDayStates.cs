@@ -65,6 +65,7 @@ public class TransitionToDay : ITimeOfDayStates
     {
         timeOfDayManager.StopAnimations();
         timeOfDayManager.DisablePanel();
+        timeOfDayManager.SignalEndOfFadeInAnimation();
     }
 
 }

@@ -23,13 +23,14 @@ public interface IDirector {
     void ActivateRumorBoardUICommand(Command comandToActivate);
     void ActivateBattleReportCommand(Command commandToActivate);
     void ActivatePauseManagerCommand(Command commandToActivate);
+
     void PullUpOptionsMenu();
     void LeaveOptionsMenu();
     void PullUpExitMenu();
     void LeaveExitMenu();
     void OpenTavernKeeperJournalFromBar(); // HACK
     void CloseTavernKeeperJournalFromBar(); // HACK
-
+    void ActivateBODProps();
 
     // I need to fix my ducttape at some point
 

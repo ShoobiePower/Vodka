@@ -67,14 +67,13 @@ public class ManagerDirector : MonoBehaviour, IDirector
         {
             barManager.setBarState(barManager.barManagement());
             barManager.DisableAllUi();
-            endOfDayManager.pullUpEndOfDayScreen();
+            // Pull up end of day screen was here
             timeManager.fadeInText();
             musicManager.setCurrentMusicState(musicManager.GetMenuSetting());
         }
 
         else if (sender == endOfDayManager)
         {
-            Debug.Log("End of day manager should end phase");
             barManager.EnableAllUI();
             barManager.setBarState(barManager.noOneInteractedWith());
             mapManager.TimeProgressesForQuests();
@@ -124,6 +123,13 @@ public class ManagerDirector : MonoBehaviour, IDirector
            
         }
 
+    }
+
+    // A lot like the above but I needed a separate way to call EndPhase() but from the end of the "Start next day" fade, this is to ensure the player cannot click through the image
+    // and interact with the props. 
+    public void ActivateBODProps()
+    {
+        endOfDayManager.pullUpEndOfDayScreen();
     }
 
     #region things I would like to RE Re factor
@@ -322,9 +328,10 @@ public class ManagerDirector : MonoBehaviour, IDirector
             barManager.setBarState(pauseManager.getStoredBarState());
     }
 
+   
+
     // concludes end of day summary ducttape;
 
     #endregion
-
 
 }

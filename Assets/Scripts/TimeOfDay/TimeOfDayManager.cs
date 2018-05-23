@@ -101,6 +101,11 @@ public class TimeOfDayManager : Colleague, ISubject
         Director.EndPhase(this);
     }
 
+    public void SignalEndOfFadeInAnimation()
+    {
+        Director.ActivateBODProps();
+    }
+
     #region Observer Pattern
 
     List<IObserver> observers = new List<IObserver>();
