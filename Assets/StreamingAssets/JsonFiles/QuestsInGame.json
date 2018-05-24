@@ -318,8 +318,8 @@
     ],
     "BanList": []
   },
-  "Eavesdrop on the Meeting": {
-    "Name": "Eavesdrop on the Meeting",
+  "Spy on the Meeting": {
+    "Name": "Spy on the Meeting",
     "Description": "There's definitely something fishy going on with the Spire, and it's time to find out what. It's time to send someone in to spy on the City Council- someone who can be trusted to keep out of the line of sight.",
     "Checks": [ "Sneak" ],
     "PatronReward": [],
@@ -340,11 +340,11 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre won't tell how she broke into City Hall undetected, but one would imagine that a witch her age would be keen on certain secret passageways...",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Artie]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Horace]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Spy on the Meeting- Artie]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Spy on the Meeting- Horace]",
       "Nell stuck to the shadows and kept her beak shut. Her aptitude for stealth probably helps in her particular field!",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Mavis]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Eavesdrop on the Meeting- Gaius]"
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Spy on the Meeting- Mavis]",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Spy on the Meeting- Gaius]"
     ],
     "BanList": []
   },

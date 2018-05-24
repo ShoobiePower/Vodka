@@ -44,7 +44,7 @@
     "Shaken, not Deterred": {
       "Name": "Shaken, not Deterred",
       "Description": "To spy on a private meeting of the City Council is forbidden- perhaps even treasonous! However, Mavis staunchly claims that this is for the greater good. Perhaps it'd be best to think carefully about how to handle this- it's hard not to shake the feeling that this could be important.",
-      "Quests": [ "Eavesdrop on the Meeting", "Disclose the College's Request" ],
+      "Quests": [ "Spy on the Meeting", "Disclose the College's Request" ],
       "IsUnlockedFromStart": false
     },
     "Playing Politics": {
