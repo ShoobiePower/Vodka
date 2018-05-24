@@ -136,7 +136,7 @@
 
   "Return it": {
     "Name": "Return it",
-    "Description": "The Corporeal have protected Kastonia and the world from supernatural threats for centuries. They believe only the divines can use magic properly, but are a formidable bulwark against magical catastrophes themselves, such as the Spire's collapse. It's best to trust their judgement. The Codex is only safe in their hands.",
+    "Description": "The Corporeal has protected Kastonia and the world from supernatural threats for centuries. They believe only the divines can use magic properly, but are a formidable bulwark against magical catastrophes themselves. It's best to trust their judgement.",
     "Checks": [ "Sway" ],
     "PatronReward": [],
     "RumorOnReturn": [],
