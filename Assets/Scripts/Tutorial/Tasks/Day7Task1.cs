@@ -57,7 +57,7 @@ public class Day7CorporealTransition : TutorialTask
         }
         else
         {
-            TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EndDay);
+            TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
         }
     }
 
@@ -74,7 +74,7 @@ public class Day7CorporealTransition : TutorialTask
         }
         else
         {
-            TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EndDay);
+            TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
         }
     }
 
@@ -84,14 +84,15 @@ public class Day7CorporealTransition : TutorialTask
         tutorial.invokeJimAtSeatNumber(1);
         if (firstPatron == EnterGaius)
         {
-            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCorporeal");
+            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCollege");
         }
         else
         {
-            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCollege");
+            tutorial.forceSeatToHaveSpecificConversation(1, "Day7TeaserCorporeal");
         }
 
-        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, EndDay);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EndDay);
     }
 
     void EndDay()
