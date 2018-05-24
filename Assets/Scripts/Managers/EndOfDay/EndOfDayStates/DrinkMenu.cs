@@ -111,6 +111,10 @@ public class DrinkMenu : AbstBookStates
 
     private string addBuffToDescription(Drink drinkToInquireAbout)
     {
+        if (drinkToInquireAbout.Buff == Patron.SkillTypes.NONE)
+        {
+            return " \n  \n This drink does not grant a buff.";
+        }
         return " \n  \n This drink grants the " + drinkToInquireAbout.Buff.ToString().ToLower() + " buff";
     }
 
