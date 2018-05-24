@@ -350,7 +350,7 @@
   },
   "Disclose the College's Request": {
     "Name": "Disclose the College's Request",
-    "Description": "The Corporeal's kept the Spire stable and safe for centuries, so it makes sense to give them the benefit of the doubt. At the very least, they should be told that the College is conspiring against them. You'll still have to have someone sneak past the City Guards to get the information to them, of course.",
+    "Description": "The Corporeal's kept the Spire stable and safe for centuries, so it makes sense to give them the benefit of the doubt. They should be told that the College is conspiring against them. You'll still have to have someone sneak past the City Guards to tell them.",
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
