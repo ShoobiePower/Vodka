@@ -49,6 +49,7 @@ public class Day7College : TutorialTask {
         TutorialReactions.Clear();
         tutorial.forcePatronIntoBarToSitAt("Gaius", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
     }
 
@@ -57,7 +58,9 @@ public class Day7College : TutorialTask {
         TutorialReactions.Clear();
         tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
+
     }
 
     private void EnterJim()
@@ -84,7 +87,12 @@ public class Day7College : TutorialTask {
         
     }
 
-   
+    void SendPatronHome()
+    {
+        tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.GOHOME);
+    }
+
+
     Quest FindQuest() 
     { 
         Quest questToReturn;
