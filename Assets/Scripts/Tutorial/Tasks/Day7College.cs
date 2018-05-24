@@ -76,7 +76,8 @@ public class Day7College : TutorialTask {
             tutorial.forceSeatToHaveSpecificConversation(1, "Day7CollegeCollege");
         }
 
-        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, EndDay);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
+        TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EndDay);
     }
 
     void EndDay()
