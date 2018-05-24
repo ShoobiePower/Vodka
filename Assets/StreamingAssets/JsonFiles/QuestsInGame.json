@@ -570,7 +570,7 @@
 
   "Support the Corporeal": {
     "Name": "Support the Corporeal",
-    "Description": "Countless generations of Coproreal knights didn't devote their lives to keep the Spire safe, just to be undone by the College's naivete. They may believe their efforts to be just, but the road to Hell is paved with good intentions. Someone will need to infiltrate and steal back the fragment as soon as possible.",
+    "Description": "Countless generations of Coproreal knights didn't devote their lives to keep the Spire safe, just to be undone by the College's naivete. Someone will need to infiltrate and steal back the fragment as soon as possible.",
     "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
