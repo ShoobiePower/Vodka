@@ -396,9 +396,9 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Deidre]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "An effortless tap from Artie was all that was needed here. With the guard out cold, they had no problem securing the spire fragment!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Horace]",
+      "Although not entirely graceful, Nell was able to sneak around the guard and give them a good ol' love tap, and escape with the fragment undetected.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Gaius]"
     ],
@@ -425,9 +425,9 @@
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Artie]",
-      "PLACEHOLDER TEXT- HORACE",
-      "PLACEHOLDER TEXT- NELL",
+      "Well Artie clearly wasn't getting in through the front, so they managed to rip a hole in the fence and secure the fragment. Someone'll probably notice that soon...",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Horace]",
+      "Scaling the fence was no problem for your feathered friend. She was in and out in a matter of minutes, completing the task with effortless grace.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Gaius]"
     ],
@@ -453,8 +453,8 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
+      "Deidre managed to whip up a few potions for the guards, giving them hightened sensitivity and reaction time. This made catching the thief a cinch!",
+      "With Artie on patrol, the Corporeal was well-staffed enough to capture a thief, sent by the College. She won't be making off with anything tonight!",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
@@ -482,8 +482,8 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
+      "According to Deidre, her trap was 'too complex for a simple mind like yours', but she certainly put her money where her mouth is. That College thief isn't going anywhere tonight!",
+      "Artie's idea for a trap was a bit primitive, but at least it worked! Who knew a wooden box and a roll of twine was all they'd need?",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Horace]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Nell]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Mavis]",
@@ -558,10 +558,10 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "Deidre's prowess for magical objects proved useful in the investigation of the Spire fragment, and inevitably helped the College turn up something interesting...",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Artie]",
+      "Horace may have not been a huge help in studying the fragment, but he DID keep peoples' spirits high with an encouraging attitude!",
+      "Nell was able to recall a couple factoids from articles written by her colleagues, but that's about all the help she was able to give. Still, the job got done.",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
     ],
@@ -583,10 +583,10 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "Deidre was certainly not the most appropriate patron for the mission, but at least her sizable cloak made for a good spot to stash the fragment!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Artie]",
+      "Sending Horace in probably wasn't the wisest idea here, despite his surprising success. A clumsy entrance and clumsier exit left him bruised and winded.",
+      "Having done a piece on the College's libraries before, Nell had a solid layout of the building already, and managed to retrieve the fragment with ease!",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
     ],
@@ -596,7 +596,7 @@
   "Aid the College": {
     "Name": "Aid the College",
     "Description": "It's highly unlikely that this trial will result in a not guilty verdict, especially with the Corporeal in such an upset. Someone will have to be sent to break the prisoner out, regardless of how treasonous this act will be.",
-    "Checks": [ "Strong" ],
+    "Checks": [ "Sneak" ],
     "PatronReward": [],
     "RumorOnReturn": [],
     "QuestChains": [],
@@ -608,10 +608,10 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "Deidre managed to get the prisoner out by the skin of her teeth, using a vanishing potion to mask her identity. That could have gone much, much worse.",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Artie]",
+      "Horace's attempt at a prison-break was certainly clumsy, but successful. Hopefully no one was able to make out his face...",
+      "Nell's surprising ability to pick a lock made for a swift and silent escape with the prisoner... I guess these types of skills are useful for a field journalist...?",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
     ],
@@ -633,10 +633,10 @@
     "Location": "HOME",
     "DaysToCompleteQuest": 5,
     "Responces": [
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
-      "PLACEHOLDER TEXT- ARTIE",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Horace]",
-      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Nell]",
+      "Deidre may be snarky and, well, a bit terse when she speaks, but her city-wide popularity managed to sway the jury in her favor. Inevitably, the Corporeal won the trial, and the hearts of the city!",
+      "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Artie]",
+      "Horace wrote up what served to be the most persuasive case the jury had heard in years, against the College. Inevitably, the Corporeal won the trial, and the hearts of the city!",
+      "Nell's not a great public speaker, as it turns out. However, with a plethora of articles and op-eds at her disposal, she certainly seemed learned in the topic. Inevitably, the Corporeal won the trial, and the hearts of the city!",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Mavis]",
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Gaius]"
     ],

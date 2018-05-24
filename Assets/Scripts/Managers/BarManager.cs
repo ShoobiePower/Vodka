@@ -249,6 +249,7 @@ public class BarManager : Colleague , ISubject
 
     public IBarManagerState dismissPatron()
     {
+        areControlsActive(false);
         return dismissingPatrons;
     }
 

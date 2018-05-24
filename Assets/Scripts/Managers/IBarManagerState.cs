@@ -29,10 +29,9 @@ public class PatronHighlighted : IBarManagerState
             case Patron.whatDoTheyWantToDo.TURNIN:
                 {
                     barManager.OpenBattleReport();
-                   // barManager.endOfDaySummaryBoard.RecordPatronReturnTransaction(barManager.SelectedSeat.patron);
                     barManager.SelectedSeat.patron.currentActivity = Patron.whatDoTheyWantToDo.GOHOME;
                     barManager.SelectedSeat.patron.QuestToCompleete = null;
-                    barManager.setBarState(barManager.barIsPaused()); // This
+                    barManager.setBarState(barManager.barIsPaused()); 
                     barManager.SelectedSeat.TalkWithPatron();
                     break;
                 }
@@ -156,7 +155,6 @@ public class MakePatronDrink : IBarManagerState
         else
         {
             barManager.setBarState(barManager.patronPerformingAction());
-            //barManager.SelectedSeat.TalkWithPatron();
             barManager.ClickPatron();     
         }
     }

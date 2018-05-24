@@ -26,7 +26,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     private void Start()
     {
-        //mapManager.DEBUGUnlockAllLocations();
         musicManager.initMusicManager();
         
 
@@ -103,9 +102,10 @@ public class ManagerDirector : MonoBehaviour, IDirector
         else if (sender == battleReportManager)
         {
             UnlockContent(battleReportManager.UnlockersToRedeem);
-            barManager.setBarState(barManager.noOneInteractedWith());
+            //barManager.setBarState(barManager.noOneInteractedWith());
+            barManager.setBarState(barManager.dismissPatron());
             battleReportManager.clearUnlockLists();
-            barManager.ClickPatron();
+           // barManager.ClickPatron();
         }
 
         else if (sender == mapManager)
