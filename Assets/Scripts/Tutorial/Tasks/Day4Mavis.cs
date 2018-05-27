@@ -14,7 +14,7 @@ public class Day4Mavis1 : TutorialTask {
     private void EnterMavis()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 1);
         tutorial.forceSeatToHaveSpecificConversation(1, "Shaken, not Deterred");
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.RUMOR);
 

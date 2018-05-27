@@ -58,17 +58,6 @@ public class Day5CorporealTransition : TutorialTask
 
     Patron findReturningPatron()
     {
-        //Patron patronToReturn;
-
-        //patronToReturn = tutorial.GetPatron("Artie");
-        //if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-
-        //patronToReturn = tutorial.GetPatron("Old Man Horace");
-        //if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
-
-        //patronToReturn = tutorial.GetPatron("Deirdre Downton");
-        //return patronToReturn;
-
         return tutorial.GetPatron("Deidre Downton");
 
     }

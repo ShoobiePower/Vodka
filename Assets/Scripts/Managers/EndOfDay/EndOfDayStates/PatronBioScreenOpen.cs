@@ -30,6 +30,7 @@ public class PatronBioScreenOpen : AbstBookStates
     {
         if (NumberOfActiveButtons > 0)
         {
+            areAllPropsActiveForCurrentPage(allPropsForBioScreen.transform,true);
             Patron patronToInquireAbout = endOfDayManager.AllPatronsTheBartenderKnows[index + CurrentTopOfPage];
             patronName.text = patronToInquireAbout.Name;
             PatronBioText.text = patronToInquireAbout.Bio;
@@ -37,10 +38,7 @@ public class PatronBioScreenOpen : AbstBookStates
         }
         else
         {
-            foreach (Transform child in allPropsForBioScreen.transform)
-            {
-                child.gameObject.SetActive(false);
-            }
+            areAllPropsActiveForCurrentPage(allPropsForBioScreen.transform, false);
             patronName.gameObject.SetActive(true);
             patronName.text = "You do not know any patrons. Come back once you talked to a few.";
         }
@@ -52,4 +50,5 @@ public class PatronBioScreenOpen : AbstBookStates
     {
         base.HidePresetAssets(allPropsForBioScreen);
     }
+
 }

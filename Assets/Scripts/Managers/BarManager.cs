@@ -219,20 +219,20 @@ public class BarManager : Colleague , ISubject
     public IBarManagerState noOneInteractedWith()
     {
         areControlsActive(true);
-        isTimePaused(false);
+        IsTimePaused(false);
         return patronHighlighted;
     }
 
     public IBarManagerState barIsPaused()
     {
-        isTimePaused(true);
+        IsTimePaused(true);
         return barPaused;
     }
 
     public IBarManagerState patronIsConversing()
     {
         areControlsActive(false);
-        isTimePaused(true);
+        IsTimePaused(true);
         return patronConversing;
     }
 
@@ -321,7 +321,7 @@ public class BarManager : Colleague , ISubject
         moveCameraToNewLocation(selectedSeat.seatsCameraTarget.transform.position);
     }
 
-    public void isTimePaused(bool yesNo)
+    public void IsTimePaused(bool yesNo)
     {
         foreach (Seat s in Seats)
         {
@@ -329,7 +329,7 @@ public class BarManager : Colleague , ISubject
         }
     }
 
-    public void panBarLeft()
+    public void panBarLeft()   
     {
         if (Seats[0].barToken.GetComponent<Button>().enabled) //HACK
         {
@@ -341,7 +341,6 @@ public class BarManager : Colleague , ISubject
             }
             selectedSeat.cutOffPatronsSentence();
             changeSelectedSeat();
-            SoundManager.Instance.AddCommand("Move");
         }
     }
 
@@ -357,7 +356,6 @@ public class BarManager : Colleague , ISubject
             }
             selectedSeat.cutOffPatronsSentence();
             changeSelectedSeat();
-            SoundManager.Instance.AddCommand("Move");
         }
     }
 
@@ -372,6 +370,10 @@ public class BarManager : Colleague , ISubject
 
     public void JumpToStarterSeat()
     {
+        for (int i = 0; i < Seats.Length; i++)
+        {
+            Seats[i].unHilightBarToken();
+        }
         seatIndexer = 1;
         changeSelectedSeat();
     }
@@ -392,19 +394,20 @@ public class BarManager : Colleague , ISubject
         barManagerState.MakeDrink(itemSlotToUse, bartendersMug);
         playRandomDrinkSound();
         theBarsTaps.unlockServeAndRecycleButtons();
-        checkIfMugIsFull();
-    }
-
-    private void checkIfMugIsFull() // PlaceHolder; pleae remove after Thursday
-    {
-        if (bartendersMug.DrinkInMug.countIngredentsInDrink() >= bartendersMug.MaxSizeOfMug)
+        if (IsMugFull())
         {
             theBarsTaps.lockTapPulls();
         }
-        else
-        {
-            theBarsTaps.unlockTapSystem();
-        }
+    }
+
+    public bool IsMugFull()  // could also be a check within bartenders mug as both originate from there... when I am cleaning Hit this first. 
+    {
+        return (bartendersMug.DrinkInMug.countIngredentsInDrink() >= bartendersMug.MaxSizeOfMug);
+    }
+
+    public bool IsMugEmpty()
+    {
+        return (bartendersMug.DrinkInMug.countIngredentsInDrink() <= 0);
     }
 
     public void serveDrink()
@@ -420,18 +423,15 @@ public class BarManager : Colleague , ISubject
     {
       OrderManager.orderAccuracy Accuracy = orderManager.determineDrinkPrice(selectedSeat.patron.OrderThePatronWants, bartendersMug.DrinkInMug);
 
-        if (Accuracy == OrderManager.orderAccuracy.CORRECT)
+        if (Accuracy == OrderManager.orderAccuracy.CORRECT) // Not really the right place for xp, move this to drink, if correct give ammount of xp from drink. 
         {
-            string toastToShow;
-            selectedSeat.patron.BondGainedOnThisQuest = 1;
-            toastToShow = "Correct drink: Bond +" + selectedSeat.patron.BondGainedOnThisQuest;
+            selectedSeat.patron.BondGainedOnThisQuest = 2;
+            DropDownToast.AddMessageToQueue("Correct drink: Bond +" + selectedSeat.patron.BondGainedOnThisQuest);
             selectedSeat.patron.convertGainedBondToTotalBond();
             if (selectedSeat.patron.HasLeveledUp)
             {
-                toastToShow = "Bond level up! \n Skill learned " + selectedSeat.patron.PatronSkills[selectedSeat.patron.Level -1].ToString();
+                DropDownToast.AddMessageToQueue("Bond level up!");
             }
-
-            DropDownToast.AddMessageToQueue(toastToShow);
         }
 
         tutorial.notifyObserver(Mediator.ActionIdentifiers.DRINK_SERVED);
@@ -452,7 +452,7 @@ public class BarManager : Colleague , ISubject
     public void recycleDrink()
     {
         bartendersMug.ClearIngredientInMug();
-        checkIfMugIsFull(); // Placeholder, unlocks taps on ing clear;
+        theBarsTaps.UnlockTapSystem();
     }
 
     private void playRandomDrinkSound()

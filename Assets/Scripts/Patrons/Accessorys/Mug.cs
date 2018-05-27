@@ -42,7 +42,6 @@ public class Mug : ABSTFadableObject
         setMugForSlide();
         showFullAlphaValueArt();
         this.gameObject.SetActive(true);
-       // fadeMug(drinksDesity);
     }
 
     private void setMugForSlide()

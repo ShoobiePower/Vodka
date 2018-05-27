@@ -45,7 +45,8 @@ public class PauseManager : Colleague
 
     public void quitToMainMenu()
     {
-        Application.Quit();
+        Mediator.GetRidOfObservers();
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void ResumeGame()

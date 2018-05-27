@@ -122,11 +122,11 @@ public class Seat : ABSTFadableObject, ISubject
           {
             case Patron.whatDoTheyWantToDo.RUMOR:
                 {
-                    patronWantsIcons.patronWantsToTellYouSomething(); //shows an icon for I have a rumor, the rumory bits are actually handled in bar manager because it knows what a quest manager is.
+                    patronWantsIcons.patronWantsToTellYouSomething(); 
                     break;
                 }
 
-            case Patron.whatDoTheyWantToDo.TURNIN:
+            case Patron.whatDoTheyWantToDo.TURNIN: // We can probably get rid of this. 
                 {
                     seatState.PatronReturnsFromQuest();
                     patronWantsIcons.patronIsReturningFromQuest();
@@ -135,7 +135,7 @@ public class Seat : ABSTFadableObject, ISubject
 
             case Patron.whatDoTheyWantToDo.ADVENTURE:
                 {
-                    patronWantsIcons.PatronWantsToGoOnAnAdventure(); // displays icon for I want to adventure. 
+                    patronWantsIcons.PatronWantsToGoOnAnAdventure(); 
                     break;
                 }
           }
@@ -144,7 +144,6 @@ public class Seat : ABSTFadableObject, ISubject
     public void ConsumeBeverage()
     {
         seatState.ConsumeBeverage();
-
     }
 
     public void GrantPatronBuff(Patron.SkillTypes buff)
@@ -162,7 +161,6 @@ public class Seat : ABSTFadableObject, ISubject
 
     public ISeatStates ClearSeat()
     {
-        Debug.Log( patron.Name + "Seat Should be clear");
         barToken.sprite = ApperanceManager.instance.GetEmptySeatToken();
         patron = null;
         makeTextBoxClickable();
@@ -226,8 +224,6 @@ public class Seat : ABSTFadableObject, ISubject
     {
         this.isTimerPaused = yesNo;
         this.pauseAnimation(yesNo);
-        this.patronsMug.pauseAnimation(yesNo);
-        this.patronWantsIcons.pauseAnimation(yesNo);
     }
     #endregion
 
@@ -259,6 +255,7 @@ public class Seat : ABSTFadableObject, ISubject
     {
         fadingText.cutOff(0);
         textTimerHasBeenCutOff = true;
+        fadingText.makeButtonClickable(); // here 
     }
 
 

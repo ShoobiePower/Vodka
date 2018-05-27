@@ -45,12 +45,17 @@ public class TapSystem : MonoBehaviour {
         checkIfDrinkAnimationIsDone();
     }
 
+    public void UnlockTapSystem()
+    {
+        tapShutter.MoveShutterUp();
+        UnlockTapPulls();
+        LockServeAndRecycleButtons();
+    }
 
     public void lockTapSystem()
     {
         lockTapPulls();
-        ServeDrinkButton.interactable = false;
-        RecycleDrinkButton.interactable = false;
+        LockServeAndRecycleButtons();
         tapShutter.MoveShutterDown();
     }
 
@@ -62,19 +67,24 @@ public class TapSystem : MonoBehaviour {
         }
     }
 
-    public void unlockTapSystem()
+    private void UnlockTapPulls()
     {
         for (int i = 0; i < dispencersWeHaveEquipped.Length; i++)
         {
             dispencersWeHaveEquipped[i].swapToEnabled();
         }
-        tapShutter.MoveShutterUp();
     }
 
     public void unlockServeAndRecycleButtons()
     {
         ServeDrinkButton.interactable = true;
         RecycleDrinkButton.interactable = true;
+    }
+
+    private void LockServeAndRecycleButtons()
+    {
+        ServeDrinkButton.interactable = false;
+        RecycleDrinkButton.interactable = false;
     }
 
     public Ingredient useIngredent(byte slotToUse)

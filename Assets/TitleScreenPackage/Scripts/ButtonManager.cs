@@ -24,7 +24,10 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private Image creditPanel;
 
-    private const float fadeOffeset = 0.1f;
+    private const float fadeOffeset = 10f;
+    private const float fullAlphaValue = 255;
+
+    private Vector4 fadeToBlackColor = new Vector4(0, 0, 0, fullAlphaValue);
 
     private enum AnimationStates { OPEN, FADING, CLOSED}
     private AnimationStates currentAnimationState;
@@ -44,17 +47,19 @@ public class ButtonManager : MonoBehaviour
     {
         if (currentAnimationState == AnimationStates.FADING)
         {
-            titlePanel.gameObject.GetComponent<Image>().color = Vector4.Lerp(titlePanel.gameObject.GetComponent<Image>().color, new Vector4(0, 0, 0, 255), speedOfFade * Time.deltaTime);
-            titleImage.color = Vector4.Lerp(titleImage.color, new Vector4(0, 0, 0, 255), speedOfFade * Time.deltaTime);
-            checkIfFadeHasEnded(titlePanel.gameObject.GetComponent<Image>().color.r + titlePanel.gameObject.GetComponent<Image>().color.b + titlePanel.gameObject.GetComponent<Image>().color.g);
+            titlePanel.gameObject.GetComponent<Image>().color = Vector4.Lerp(titlePanel.gameObject.GetComponent<Image>().color, fadeToBlackColor, speedOfFade * Time.deltaTime);
+            titleImage.color = Vector4.Lerp(titleImage.color, fadeToBlackColor, speedOfFade * Time.deltaTime);
+            checkIfFadeHasEnded(titleImage.color.a);
         }
     }
 
     private void checkIfFadeHasEnded(float fadeColor)
     {
-        if(fadeColor <= fadeOffeset)
+        if(fadeColor > (fullAlphaValue - fadeOffeset))
         {
-            setAnimationState(AnimationStates.CLOSED);
+            titlePanel.gameObject.GetComponent<Image>().color = fadeToBlackColor;
+            titleImage.color = fadeToBlackColor;
+           setAnimationState(AnimationStates.CLOSED);
             loadingPanel.SetActive(true);
             SceneManager.LoadScene("Scencely");
 

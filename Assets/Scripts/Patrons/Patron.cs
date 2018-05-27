@@ -17,18 +17,10 @@ public class Patron {
     private byte id;
     public byte ID { get { return id; } set { id = value; } }
 
-    public enum Aligence { COLLEGE, CORPOREAL, AA, EYES, NONE };
-    public Aligence thisPatronsAligence;
-
-    public enum drinkLevel { NONE, LOW, MID, HIGH };
-    public drinkLevel thisPatronsTolerance;
-
     public enum SkillTypes { STRONG, SMART, SNEAK, SWAY, NONE, LENGTH }
 
     public enum whatDoTheyWantToDo { RUMOR, ADVENTURE, TURNIN, GOHOME, CONVERSE } 
     public whatDoTheyWantToDo currentActivity; 
-
-   
 
     private string name;
     public string Name { get { return name; } set { name = value; } }
@@ -42,7 +34,7 @@ public class Patron {
     private int bondGainedOnThisQuest;
     public int BondGainedOnThisQuest { get { return bondGainedOnThisQuest; } set { bondGainedOnThisQuest = value; } }
 
-    private int maxLevel; 
+    private const int maxLevel = 3; // Hard number per design's request. I'll ask after rookies as to what we should do. 
 
     private SkillTypes[] patronSkillsToUnlock;
 
@@ -51,7 +43,7 @@ public class Patron {
 
     public SkillTypes SkillGrantedByDrink { get; set; }
 
-    private int thresholdToNextBondLevel = 9; // Placeholder for points needed to level up bond. 
+    private int thresholdToNextBondLevel = 10; // Placeholder for points needed to level up bond. 
     public int ThresholdToNextBondLevel { get { return thresholdToNextBondLevel; } }
 
     private IOrder orderThePatronWants;
@@ -63,13 +55,11 @@ public class Patron {
     private Conversation currentConversation;
     public Conversation CurrentConversation { get; set; }
     
-    public Patron(string newName, SkillTypes[] patronSkillsToUnlock , drinkLevel newDrinkLevel,string bioIn)
+    public Patron(string newName, SkillTypes[] patronSkillsToUnlock ,string bioIn)
     {
         name = newName;
         level = 1;
-        thisPatronsTolerance = newDrinkLevel;
         this.patronSkillsToUnlock = patronSkillsToUnlock;
-        maxLevel = patronSkillsToUnlock.Length;
         bio = bioIn;
         unlockNewSkill();
     }
@@ -88,37 +78,34 @@ public class Patron {
 
     private void unlockNewSkill()
     {
+        if (patronSkillsToUnlock.Length >= level)
         patronSkills.Add(patronSkillsToUnlock[level - 1]);
     }
 
     public bool checkForSkill(SkillTypes skillToCheckFor)
     {
-        Debug.Log("Now checking for skill");
         foreach (SkillTypes skill in patronSkills)
         {
-            Debug.Log(name + " : " + skill.ToString());
             if (skill == skillToCheckFor)
             {
-                Debug.Log("We pass back true");
                 return true;
             }
         }
         if (SkillGrantedByDrink == skillToCheckFor)
         {
-            Debug.Log("We pass back true From drink");
-            Debug.Log("our drink skill" + SkillGrantedByDrink);
             return true;
         }
 
-         Debug.Log("We pass back false");
             return false;
-
     }
 
     public void convertGainedBondToTotalBond() 
     {
-        bondPoints += bondGainedOnThisQuest;
-        checkForLevelUp();
+        if (level < maxLevel) // HERE
+        {
+            bondPoints += bondGainedOnThisQuest;
+            checkForLevelUp();
+        }
         bondGainedOnThisQuest = 0;
     }
 
@@ -133,7 +120,6 @@ public class Patron {
         }
     }
 
-
     public string convertSkillsListToString()
     {
         string stringToReturn = string.Empty;
@@ -147,6 +133,16 @@ public class Patron {
     public void confirmUnlock()
     {
         IsUnlocked = true;
+    }
+
+    public bool IsMaxLevel()
+    {
+        return level == maxLevel;
+    }
+
+    public bool HasAnyMoreSkills()
+    {
+        return level <= patronSkillsToUnlock.Length;
     }
 }
 

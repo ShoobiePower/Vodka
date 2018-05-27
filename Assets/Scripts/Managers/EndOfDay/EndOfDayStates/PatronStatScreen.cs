@@ -35,19 +35,17 @@ public class PatronStatScreen : AbstBookStates {
 
         if (NumberOfActiveButtons > 0)
         {
+            areAllPropsActiveForCurrentPage(AllPropsForPatronStatScreen.transform, true);
             Patron patronToInquireAbout = endOfDayManager.AllPatronsTheBartenderKnows[index + CurrentTopOfPage];
             patronName.text = patronToInquireAbout.Name;
-            PatronLvlBondText.text = "Bond Level: " + patronToInquireAbout.Level + "\n";
-            PatronLvlBondText.text += "Points till next level " + (patronToInquireAbout.ThresholdToNextBondLevel - patronToInquireAbout.BondPoints);
-            patronImage.sprite = ApperanceManager.instance.HowThisPatronLooks(patronToInquireAbout.Name);  //patronToInquireAbout.ID
-            PatronBondMeter.maxValue = patronToInquireAbout.ThresholdToNextBondLevel;
-            PatronBondMeter.value = patronToInquireAbout.BondPoints;
+            checkToDisplayBondLevelInfo(patronToInquireAbout);
+            patronImage.sprite = ApperanceManager.instance.HowThisPatronLooks(patronToInquireAbout.Name); 
             writeOutPatronSkills(patronToInquireAbout);
             CurrentSelection = index;
         }
         else
         {
-            AllPropsForPatronStatScreen.SetActive(false);
+            areAllPropsActiveForCurrentPage(AllPropsForPatronStatScreen.transform, false);
             patronName.gameObject.SetActive(true);
             patronName.text = "You do not know any patrons. Come back once you talked to a few.";
         }
@@ -75,6 +73,23 @@ public class PatronStatScreen : AbstBookStates {
     {
         patronName.gameObject.SetActive(false);
         base.HidePresetAssets(AllPropsForPatronStatScreen);
+    }
+
+    private void checkToDisplayBondLevelInfo(Patron patronToInquireAbout)
+    {
+        if (patronToInquireAbout.IsMaxLevel())
+        {
+            PatronLvlBondText.text = "Bond Level: Max";
+            PatronBondMeter.maxValue = patronToInquireAbout.ThresholdToNextBondLevel;
+            PatronBondMeter.value = patronToInquireAbout.ThresholdToNextBondLevel; ;
+        }
+        else
+        {
+            PatronLvlBondText.text = "Bond Level: " + patronToInquireAbout.Level + "\n";
+            PatronLvlBondText.text += "Points till next level " + (patronToInquireAbout.ThresholdToNextBondLevel - patronToInquireAbout.BondPoints);
+            PatronBondMeter.maxValue = patronToInquireAbout.ThresholdToNextBondLevel;
+            PatronBondMeter.value = patronToInquireAbout.BondPoints;
+        }
     }
 
 }

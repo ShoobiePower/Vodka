@@ -27,14 +27,14 @@ public class EndOfDaySummaryManager : Colleague {
     public void QuestChosenTransaction(string patronWhoGaveQuest, string rumorGiven, string questChosen)
     {
         string recordToAdd;
-        recordToAdd = string.Format("{0} told you about {1}. You chose to {2} \n", patronWhoGaveQuest, rumorGiven, questChosen );
+        recordToAdd = string.Format("{0} told you about {1}. You chose to {2}. \n", patronWhoGaveQuest, rumorGiven, questChosen );
         addTransactionToList(recordToAdd);
     }
 
     public void RecordAdventureTransaction(Patron patronWithQuest) 
     {
         string recordToAdd;
-        recordToAdd = string.Format("{0} left to complete the quest {1} located at {2}", patronWithQuest.Name, patronWithQuest.QuestToCompleete.QuestName, patronWithQuest.QuestToCompleete.QuestLocation.ToString().ToLower());
+        recordToAdd = string.Format("{0} left to complete the quest {1} located in {2}.", patronWithQuest.Name, patronWithQuest.QuestToCompleete.QuestName, capitalizeFirstLetter(patronWithQuest.QuestToCompleete.QuestLocation.ToString()));
         addTransactionToList(recordToAdd);
     }
 
@@ -48,7 +48,7 @@ public class EndOfDaySummaryManager : Colleague {
     public void RecordPatronLevelUp(Patron patronThatLeveledUp)
     {
         string recordToAdd;
-        recordToAdd = string.Format("Your bond with {0} grew! Your bond is now level {1} \n", patronThatLeveledUp.Name, patronThatLeveledUp.Level);
+        recordToAdd = string.Format("Your bond with {0} grew! Your bond is now level {1}! \n", patronThatLeveledUp.Name, patronThatLeveledUp.Level);
         addTransactionToList(recordToAdd);
     }
    
@@ -69,6 +69,16 @@ public class EndOfDaySummaryManager : Colleague {
     private void clearWrittenTransactions()
     {
         writtenTransactions.text = string.Empty;
+    }
+
+    private string capitalizeFirstLetter(string wordToCapitalize)
+    {
+        string stringToReturn = wordToCapitalize[0].ToString();
+        for (int i = 1; i < wordToCapitalize.Length; i++)
+        {
+            stringToReturn += wordToCapitalize[i].ToString().ToLower();
+        }
+        return stringToReturn;
     }
 
     // sort transactions based on kind

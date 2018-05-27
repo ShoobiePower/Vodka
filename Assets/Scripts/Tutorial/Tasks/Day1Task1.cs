@@ -46,40 +46,15 @@ public class Day1Task1 : TutorialTask
     {
         TutorialReactions.Clear();
 
-        //tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.CONVERSE);
-        //tutorial.forceSeatToHaveSpecificConversation(1, "Jim FPO");
-
-        //tutorial.forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType.TALK, 0, "Jim");
-        //TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SecondLine);
-
         tutorial.forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType.ABOUTTOLEAVE, 1, "Jim");
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.GOHOME);
 
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, WaitForJimToLeave);
     }
 
-    //void SecondLine()
-    //{
-    //    tutorial.forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType.ABOUTTOLEAVE, 1, "Jim");
-    //    tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.GOHOME);
-
-    //    TutorialReactions.Add(Mediator.ActionIdentifiers.COUNTDOWN_ENDED, WaitAfterServingDrink);
-    //    tutorial.SetTimer(2.5f);
-    //}
-
     void WaitForJimToLeave()
     {
         TutorialReactions.Clear();
         tutorial.SetCurrentTask(new Day1Task2(tutorial));
     }
-
-    //void notADragonbite()
-    //{
-    //    tutorial.pauseSeatAtIndex(1);
-    //    tutorial.forceSpecificReactionFromSpecificPatron(JsonDialogueLoader.responceType.ABOUTTOLEAVE, 2, "Jim");
-
-    //    tutorial.resetOrderAtSpecificSeat(1);
-    //    tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.DRINK);
-    //    tutorial.forceSeatToHaveSpecificOrderByName(1, "Dragonbite");
-    //}
 }

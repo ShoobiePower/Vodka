@@ -6,7 +6,7 @@ public class ApperanceManager : MonoBehaviour {
 
     public static ApperanceManager instance { get; private set; }
 
-    public Sprite flagSprite;
+    public Sprite questAlert;
 
     Sprite[] ingredentApperance = new Sprite[4];
     public Sprite RED;
@@ -127,20 +127,15 @@ public class ApperanceManager : MonoBehaviour {
         return emptySeatToken;
     }
 
-
+    // pack ratting this for now, design may want to keep the harry potter house idea rather than the choose your own adventure route, we will see. 
     public Sprite whatCurrencyLooksLike(Currency.whosCurrencyIsThis currencyIn)
     {
         return allCurrenciesApperances[(int)currencyIn];
     }
 
-    public Sprite whatFactionIsThis(Patron.Aligence aligenceIn)
+    public Sprite GetQuestAlertToken() 
     {
-        return allFactionArt[(int)aligenceIn];
-    }
-
-    public Sprite getFlag() 
-    {
-        return flagSprite;
+        return questAlert;
     }
 
     public Sprite getHilightedBarSeatToken()

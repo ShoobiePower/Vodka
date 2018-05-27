@@ -62,6 +62,12 @@ public static class Mediator
         }
         subjects.Remove(subjectToUnregister);
     }
+
+    public static void GetRidOfObservers()
+    {
+        subjects.Clear();
+        observers.Clear();
+    }
 }
 
 

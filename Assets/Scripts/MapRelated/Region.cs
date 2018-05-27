@@ -20,7 +20,7 @@ public class Region : MonoBehaviour
     
     public enum LocationIdentifier
     {
-        HOME, WOODLAND, MOUNTAINS, LAKESIDE
+        KASTONIA, WOODLAND, MOUNTAINS, LAKESIDE
         //HOME, GRAND_MARKET, BOROUGH, LOWTOWN, SCHOLARS_PLAZA,
         //CALLOUSED_MOOR, WOODGLADE, GRASSY_PLAINS, KELLS_PLATEAU,
         //HOOTIES_HARBOR, WIPLASH_RAPIDS, THISTLEWOOD, SKYPEAK, FARLANDS
@@ -78,12 +78,12 @@ public class Region : MonoBehaviour
     public void removePotentialQuestFlag()
     {
         removeFlagIfLastQuest();
-        flag.sprite = ApperanceManager.instance.getFlag();
+        flag.sprite = ApperanceManager.instance.GetQuestAlertToken();
     }
 
     public void AddNewQuestToThisLocation(Quest questToAdd)
     {
-        flag.sprite = ApperanceManager.instance.getFlag();
+        flag.sprite = ApperanceManager.instance.GetQuestAlertToken();
         flag.gameObject.SetActive(true);
         questsAtLocation.Add(questToAdd);
     }

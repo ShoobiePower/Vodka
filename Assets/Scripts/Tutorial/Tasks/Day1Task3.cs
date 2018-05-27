@@ -10,13 +10,6 @@ public class Day1Task3 : TutorialTask
         tutorial.forceSeatToHaveSpecificConversation(1, "Jim Explains Rumors");
         tutorial.ResetBarState();
         TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, LeaveJimLeave);
-
-
-
-        //tutorial.forcePatronIntoBarToSitAt("Deirdre Downton", 0);
-        //tutorial.forceSeatToHaveSpecificJob(0, Patron.whatDoTheyWantToDo.ADVENTURE);
-        //TutorialReactions.Clear();
-        //TutorialReactions.Add(Mediator.ActionIdentifiers.DRINK_SERVED, ServeCorrectDrink);
     }
 
     void LeaveJimLeave()

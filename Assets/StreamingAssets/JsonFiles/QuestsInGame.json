@@ -12,7 +12,7 @@
     "conversationsUnlocked": [
 
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Send a Courier- Deidre]",
@@ -38,7 +38,7 @@
       [ "both", "Old Man Horace", "Horace Can Help" ],
       [ "both", "Artie", "Artie Can Help" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "It didn't take Deidre very long to figure out what had gone awry. The Spire, a citadel of magical essence that has loomed over Kastonia since its inception, has broken. A large shard unexpectedly snapped from hundreds of feet in the air, and shattered against the earth, causing catastrophic damage.",
@@ -64,7 +64,7 @@
       [ "both", "Deidre Downton", "Day4College" ],
       [ "both", "Nell", "Day4College" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Holding near-celebrity status across Kastonia, protesters were quick to follow Deidre's lead once she arrived, and managed to push past the guards to confront government officials!",
@@ -92,7 +92,7 @@
       [ "both", "Old Man Horace", "Day4Corporeal" ],
       [ "both", "Nell", "Day4Corporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Sure, Deidre may not have been the most physically fit patron for the job, but no one could bring themselves to get in Ol' Deidre's way. After all, she's one of Kastonia's most beloved celebrities!",
@@ -121,7 +121,7 @@
       [ "both", "Nell", "Day5CorporealRouteCollege" ],
       [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "After much waiting, Deidre was able to hand the scroll to an intern, who took great interest in it. After Deidre explained the situation, the intern said she would notify her authorities immediately, and she gave Deidre her business card. Perhaps this is something you can pursue further...",
@@ -150,7 +150,7 @@
       [ "both", "Old Man Horace", "Day5CorporealRouteCorporeal" ],
       [ "both", "Nell", "Day5CorporealRouteCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Gaius was there to welcome Deidre when she arrived, almost as if he expected her. She explained your decision, and he took the Codex with gratitude and relief. You should be prepared for another visit from him soon.",
@@ -176,7 +176,7 @@
       [ "both", "Deidre Downton", "Day6Eyes" ],
       [ "both", "Gaius", "Day6CorporealRouteCollege-Eyes" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -203,7 +203,7 @@
       [ "both", "Gaius", "Day6CorporealRouteCollege-Relic" ]
 
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -230,7 +230,7 @@
       [ "both", "Gaius", "Day6CorporealRouteCollege-Experiment" ]
 
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -257,7 +257,7 @@
       [ "both", "Gaius", "Day6CorporealRouteCollege-Ask" ]
 
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -282,7 +282,7 @@
     "conversationsUnlocked": [
       [ "both", "Artie", "Day6GiveGift" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -306,7 +306,7 @@
     "conversationsUnlocked": [
       [ "both", "Artie", "Day6ContractArtie" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -336,7 +336,7 @@
       [ "both", "Artie", "Day5CollegeRouteCollege" ]
 
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre won't tell how she broke into City Hall undetected, but one would imagine that a witch her age would be keen on certain secret passageways...",
@@ -363,7 +363,7 @@
       [ "both", "Artie", "Day5CollegeRouteCorporeal" ],
       [ "both", "Deidre Downton", "Day5CollegeRouteCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre had no need to sneak past the guards. Her massive influence easily allowed her to persuade them to let her through, and get the job done.",
@@ -392,7 +392,7 @@
       [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
       [ "both", "Nell", "Day6CollegeRouteCollege" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Knock Out the Guard- Deidre]",
@@ -421,7 +421,7 @@
       [ "both", "Old Man Horace", "Day6CollegeRouteCollege" ],
       [ "both", "Nell", "Day6CollegeRouteCollege" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Give it to the College- Deidre]",
@@ -450,7 +450,7 @@
       [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
       [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre managed to whip up a few potions for the guards, giving them hightened sensitivity and reaction time. This made catching the thief a cinch!",
@@ -479,7 +479,7 @@
       [ "both", "Old Man Horace", "Day6CollegeRouteCorporeal" ],
       [ "both", "Nell", "Day6CollegeRouteCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "According to Deidre, her trap was 'too complex for a simple mind like yours', but she certainly put her money where her mouth is. That College thief isn't going anywhere tonight!",
@@ -505,7 +505,7 @@
       [ "both", "Gaius", "Day7CorporealSidedWithCorporeal" ],
       [ "both", "Mavis", "Day7CorporealSidedWithCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Caution- Deidre]",
@@ -531,7 +531,7 @@
       [ "both", "Gaius", "Day7CorporealSidedWithCollege" ],
       [ "both", "Mavis", "Day7CorporealSidedWithCollege" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "You shouldn't see this. Contact Andrew. [ERROR CODE: Emphasize Potential- Deidre]",
@@ -555,7 +555,7 @@
     "conversationsUnlocked": [
       [ "both", "Mavis", "Day7SupportCollege" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre's prowess for magical objects proved useful in the investigation of the Spire fragment, and inevitably helped the College turn up something interesting...",
@@ -580,7 +580,7 @@
     "conversationsUnlocked": [
       [ "both", "Gaius", "Day7SupportCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre was certainly not the most appropriate patron for the mission, but at least her sizable cloak made for a good spot to stash the fragment!",
@@ -605,7 +605,7 @@
     "conversationsUnlocked": [
       [ "both", "Mavis", "Day7AidCollege" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre managed to get the prisoner out by the skin of her teeth, using a vanishing potion to mask her identity. That could have gone much, much worse.",
@@ -630,7 +630,7 @@
     "conversationsUnlocked": [
       [ "both", "Gaius", "Day7AidCorporeal" ]
     ],
-    "Location": "HOME",
+    "Location": "KASTONIA",
     "DaysToCompleteQuest": 5,
     "Responces": [
       "Deidre may be snarky and, well, a bit terse when she speaks, but her city-wide popularity managed to sway the jury in her favor. Inevitably, the Corporeal won the trial, and the hearts of the city!",

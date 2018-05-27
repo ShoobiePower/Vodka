@@ -117,14 +117,6 @@ public class Tutorial : MonoBehaviour, IObserver
 
     }
 
-    //    - You should never child UI objects to one another unless they all move together(so, when you move the drink making station
-    //    the drink chart background moves. Boo Or, when you stretch the entire drink dispencer, the nozzle stretches with the
-    //    box. Yay!)
-
-    //- Is it possible to have Jim(or another partron) say something after being served a drink?
-    //- Is it possible to force lines of dialogue without a patron present?
-    //- NOTE TO SELF: Replace Jim's 
-
     #region ForceCommands
     //From the desk of NATHAN C DEV: Some tools I built, Game can currently go between tutorial and gameplay, 
     // If any tools need to be built, anything is unclear or if anything catches fire, please contact me via text as I may be buisy. 
@@ -171,13 +163,12 @@ public class Tutorial : MonoBehaviour, IObserver
     {
         Patron p = barManager.PatronManager.getPatronOfNameFromLoader("Jim"); // draw patron by name is special, it looks for a patron in it's regular 
         barManager.Seats[seatToInvokeJimAt].FillSeat(p);                     // if the patron cannot be found in regulars, it pulls it from the json.
-        SoundManager.Instance.AddCommand("EnterBarSound");                                                     // If you want to change Jim's Drink order text, please go to Diolouge and scroll all the way to the bottom,
-        //forcePatronIntoBarToSitAt("Jim", seatToInvokeJimAt);    // find Jim and switch out the text in Drink Request Line
+        SoundManager.Instance.AddCommand("EnterBarSound");                                                     
     }
     // If you want to change Jim's diolouge, please go to Conversations and scroll all the way to the bottom
     public void endTutorial()                                  // If this new diologue is for the Rumor Jim hands out, make sure the rumor's name ("Name": "Jim FPO"   ln 113)
     {
-                                                       // and the Diolouge's tag (   "Jim FPO": {  ln 454) 
+                                                      
         IsTutorialOver = true;
         endOfTutorialPage.SetActive(true);
 
@@ -265,11 +256,6 @@ public class Tutorial : MonoBehaviour, IObserver
         }
 
         return null;
-    }
-
-    public void closeGame()
-    {
-        Application.Quit();
     }
     #endregion
 }

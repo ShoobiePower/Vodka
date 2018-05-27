@@ -18,7 +18,7 @@ public class Day6CollegeRouteCollege : TutorialTask {
     void EnterMavis()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Add(Mediator.ActionIdentifiers.DRINK_SERVED, TellPatronToGo);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterGaius);

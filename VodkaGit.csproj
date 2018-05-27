@@ -88,7 +88,6 @@
     <Compile Include="Assets\Scripts\Drink\Shutter.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\EndOfDayBook.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\EndOfDayMap.cs" />
-    <Compile Include="Assets\Scripts\EndOfDayManager\IEndOfDayStates.cs" />
     <Compile Include="Assets\Scripts\EndOfDayManager\States\Patron\StatDescriptorLoader.cs" />
     <Compile Include="Assets\Scripts\JSON\JSONObject.cs" />
     <Compile Include="Assets\Scripts\JSON\JSONTemplates.cs" />
@@ -111,6 +110,7 @@
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\AbstBookStates.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\DrinkMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\EndOfDayIdle.cs" />
+    <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\IEndOfDayStates.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\MapOpen.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\PatronBioScreenOpen.cs" />
     <Compile Include="Assets\Scripts\Managers\EndOfDay\EndOfDayStates\PatronStatScreen.cs" />
@@ -184,7 +184,6 @@
     <Compile Include="Assets\Scripts\Patrons\Accessorys\Seat.cs" />
     <Compile Include="Assets\Scripts\Patrons\Patron.cs" />
     <Compile Include="Assets\Scripts\Patrons\PatronManager.cs" />
-    <Compile Include="Assets\Scripts\Patrons\SetUp\PatronFactory.cs" />
     <Compile Include="Assets\Scripts\TapSystem.cs" />
     <Compile Include="Assets\Scripts\TimeOfDay\ITimeOfDayStates.cs" />
     <Compile Include="Assets\Scripts\TimeOfDay\TimeOfDayManager.cs" />

@@ -22,7 +22,7 @@ public class Day6CollegeRouteCorporeal : TutorialTask {
     private void EnterMavis()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 2);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 2);
         tutorial.forceSeatToHaveSpecificJob(2, Patron.whatDoTheyWantToDo.RUMOR);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterTheGang);
     }

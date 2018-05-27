@@ -3,7 +3,6 @@
 
     "Deidre Downton": {
       "Name": "Deidre Downton",
-      "patronsTolerance": "HIGH",
       "skills": [ "smart", "strong" ],
       "backStory1": "“Heh heh… Good evening, bartender. Mind if an old crone rests her bones here awhile? And if you could bring me a good, strong brew, maybe I won’t hex you, heh heh heh~”",
       "backStory2": "“Heh heh heh… your brewing may be nothing to sneeze at, but there’s no beating my potions, bartender. People come from all around to get their hands on them, and will pay most any price! Want to sample? Heh heh heh~!”",
@@ -15,7 +14,6 @@
 
     "Artie": {
       "Name": "Artie",
-      "patronsTolerance": "High",
       "skills": [ "strong", "sway" ],
       "backStory1": "[FPO] Artie",
       "backStory2": "[FPO] Artie2 ",
@@ -25,7 +23,6 @@
 
     "Old Man Horace": {
       "Name": "Old Man Horace",
-      "patronsTolerance": "MID",
       "skills": [ "sway", "smart" ],
       "backStory1": " Horace always dreamed of being an adventurer, ever since he was very young. However, his family was in the cobbling business (making shoes and boots) and since this is a town of adventurers, replacement shoes and boots were always in demand Horace didn’t complain, he enjoyed his work and was never low on things to do.",
       "backStory2": "During quieter days, he often daydreamed about adventure, thought of a world beyond the city. Horace took extra care to study those who came into his shop, their mannerisms, how they carried themselves, and especially their fantastical stories of peril and heroism. ",
@@ -35,7 +32,6 @@
 
     "Nell": {
       "Name": "Nell",
-      "patronsTolerance": "NONE",
       "skills": [ "Sneak", "Sway" ],
       "backStory1": "[FPO] nell1",
       "backStory2": "[FPO] nell2",
@@ -43,9 +39,8 @@
       "BIO": "A hard-boiled investigative journalist who specializes in exposing criminals and bringing them to justice. Lately, her main focus has been following the activity of a shadowy criminal, known only as 'Sleazy Pete'."
     },
 
-    "Mavis": {
+    "Mavis Hullbrook": {
       "Name": "Mavis Hullbrook",
-      "patronsTolerance": "NONE",
       "skills": [ "Smart", "sneak" ],
       "backStory1": "[FPO] Mavis 1",
       "backStory2": "[FPO] Mavis 2",
@@ -56,7 +51,6 @@
 
     "Gaius": {
       "Name": "Gaius",
-      "patronsTolerance": "NONE",
       "skills": [ "Strong", "smart" ],
       "backStory1": "[FPO] Gaius 1",
       "backStory2": "[FPO] Gaius 2",
@@ -67,7 +61,6 @@
 
     "Jim": {
       "Name": "Jim",
-      "patronsTolerance": "HIGH",
       "skills": [ "???" ],
       "backStory1": "“Jim jim jim”",
       "backStory2": "“Jimmy jim jim",

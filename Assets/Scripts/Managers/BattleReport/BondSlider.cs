@@ -19,9 +19,10 @@ public class BondSlider : MonoBehaviour
 
     private float ammountToMoveSliderBy;
 
-    private const byte valueForMatchedBond = 15;
-    private const byte valueForMisMatchedBond = 3; //  will need to consult a desiger about these, should be check specific or hard coded like this?
+    private const byte valueForMatchedBond = 5;
 
+    private bool isPatronAtMaxLevel;
+    public bool IsPatronAtMaxLevel { set { isPatronAtMaxLevel = value; } }
 
     [SerializeField]
     float HowLongIsPauseOnLevelUp;
@@ -37,7 +38,12 @@ public class BondSlider : MonoBehaviour
     // load our list of checks to cash
     public void LoadListOfChecks(List<Check> checksToRedeemForBond)
     {
-        this.checksToRedeemForBond = checksToRedeemForBond;
+        //this.checksToRedeemForBond = checksToRedeemForBond;
+        this.checksToRedeemForBond.Clear();
+        foreach(Check c in checksToRedeemForBond)
+        {
+            this.checksToRedeemForBond.Add(c);
+        }
     }
 
     // Set our default value IE how much bound did our patron start with
@@ -72,8 +78,7 @@ public class BondSlider : MonoBehaviour
         }
         else
         {
-            setAmmountToMoveSliderBy(valueForMisMatchedBond);
-            bondGainText.text = valueForMisMatchedBond + " bond gained from " + checkToCash.skillToCheckFor.ToString().ToLower() + " skill mismatch";
+            bondGainText.text = "Adventurer did not have the skill " + checkToCash.skillToCheckFor.ToString().ToLower() + " they did not gain any bond...";
         }
     }
 
@@ -113,14 +118,21 @@ public class BondSlider : MonoBehaviour
     {
         BondAmountSlider.value += (ammountToMoveSliderBy / howLongIsBondGainLerp) * Time.deltaTime;
 
-
         if (BondAmountSlider.value >= BondAmountSlider.maxValue)
         {
-            pauseAnimation();
-            ammountToMoveSliderBy -= (BondAmountSlider.maxValue - initialValue);
-            initialValue = 0;
-            BondAmountSlider.value = 0;
-            bondGainText.text = "Bond Level Up!";
+            if (isPatronAtMaxLevel)  // Here
+            {
+                bondGainText.text = "Bond Has Reached Max Level!";
+                checksToRedeemForBond.Clear();
+            }
+            else
+            {
+                pauseAnimation();
+                ammountToMoveSliderBy -= (BondAmountSlider.maxValue - initialValue);
+                initialValue = 0;
+                BondAmountSlider.value = 0;
+                bondGainText.text = "Bond Level Up!";
+            }
         }
 
         if (BondAmountSlider.value >= initialValue + ammountToMoveSliderBy)
@@ -168,16 +180,5 @@ public class BondSlider : MonoBehaviour
     {
         BondAmountSlider = this.GetComponent<Slider>();
     }
-
-    //private void showBondText()
-    //{
-    //    bondGainText.gameObject.SetActive(true);
-    //}
-
-    //public void hideBondGainText()
-    //{
-    //    bondGainText.gameObject.SetActive(false);
-    //}
-
 
 }

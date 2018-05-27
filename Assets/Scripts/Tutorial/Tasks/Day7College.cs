@@ -56,7 +56,7 @@ public class Day7College : TutorialTask {
     void CollegeRoute()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterJim);
@@ -107,7 +107,7 @@ public class Day7College : TutorialTask {
         questToReturn = tutorial.GetPatron("Artie").QuestToCompleete;
         if (questToReturn != null) { return questToReturn; }
 
-        questToReturn = tutorial.GetPatron("Old Man Horace").QuestToCompleete; // CHECK
+        questToReturn = tutorial.GetPatron("Old Man Horace").QuestToCompleete;
         if (questToReturn != null) { return questToReturn; }
 
         Debug.Log("Fallthrough on quest to return");

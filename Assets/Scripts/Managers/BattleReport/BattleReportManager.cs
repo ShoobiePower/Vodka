@@ -7,8 +7,6 @@ using System.Text;
 public class BattleReportManager : Colleague
 {
 
-    //TODO, the bond bar should be it's own class, it does far too much and is kinda spagetti chef boardee
-
     [Tooltip("The Panel for our battle report page")]
     [SerializeField]
     Image BattleReportPannel;
@@ -57,6 +55,9 @@ public class BattleReportManager : Colleague
     [SerializeField]
     Text DrinkSkill;
 
+    [SerializeField]
+    Text bondGainText;
+
     #endregion
 
     #region Props For Summary
@@ -98,7 +99,7 @@ public class BattleReportManager : Colleague
         patronCarryingReport = patronCarryingPaystub;
         questToReportOn = patronCarryingPaystub.QuestToCompleete;
         checkForUnlockables(patronCarryingPaystub.QuestToCompleete);
-        bondSlider.SetSliderDefautValue(patronCarryingPaystub.BondPoints, patronCarryingReport.ThresholdToNextBondLevel); // HACK
+       // bondSlider.SetSliderDefautValue(patronCarryingPaystub.BondPoints, patronCarryingReport.ThresholdToNextBondLevel); // HACK
         flipPageInBattleReport();
     }
 
@@ -137,17 +138,16 @@ public class BattleReportManager : Colleague
     {
         PropsForReportPage.SetActive(true);
         nextPageToTurnTo = ReportPages.SUMMARY;
-        cashBond(questToReportOn.TrialsOfTheQuest);
+        //cashBond(questToReportOn.TrialsOfTheQuest);
         nextPageButton.gameObject.SetActive(true);
         QuestTitle.text = questToReportOn.QuestName;
         DescriptionOfQuest.gameObject.SetActive(false);
         AdventurerSkillList.text = patronCarryingReport.convertSkillsListToString();
         QuestSkillCheckList.text = questToReportOn.convertChecksToString();
         BattleReportPatronToken.sprite = ApperanceManager.instance.ThisPatronsToken(patronCarryingReport.ID);
-        bondSlider.LoadListOfChecks(questToReportOn.TrialsOfTheQuest);
+        checkIfBondSliderNeedsToMove();
         DrinkSkill.text = patronCarryingReport.SkillGrantedByDrink.ToString();
-        //bondSlider.SetSliderDefautValue(patronCarryingReport.BondPoints, patronCarryingReport.ThresholdToNextBondLevel);
-        showExpGain();
+        
     }
 
     private void FlipToLevelUp()
@@ -155,7 +155,12 @@ public class BattleReportManager : Colleague
         nextPageToTurnTo = ReportPages.SUMMARY;
         DescriptionOfQuest.gameObject.SetActive(true);
         QuestTitle.text = "Level Up";
-        DescriptionOfQuest.text = patronCarryingReport.Name + " has leveled up! They have gained the new attribute " + patronCarryingReport.PatronSkills[patronCarryingReport.Level - 1] + "!";
+        DescriptionOfQuest.text = patronCarryingReport.Name + " has leveled up!";
+        if (patronCarryingReport.HasAnyMoreSkills())
+        {
+            Debug.Log("level up text hit");
+            DescriptionOfQuest.text += " \n They have gained the new attribute " + patronCarryingReport.PatronSkills[patronCarryingReport.Level - 1] + "!";
+        }
         Director.RecordPatronLevelUp(patronCarryingReport);
     }
 
@@ -182,33 +187,36 @@ public class BattleReportManager : Colleague
     // might need to incorporate this with the bar slider. 
     private void cashBond(List<Check> checksToCash)
     {
-        foreach (Check c in checksToCash)
+        if (!patronCarryingReport.IsMaxLevel())
         {
+            foreach (Check c in checksToCash)
+            {
 
-            if (c.IsTrialPassed)
-            {
-                patronCarryingReport.BondGainedOnThisQuest = 15;
+                if (c.IsTrialPassed)
+                {
+                    patronCarryingReport.BondGainedOnThisQuest = 5;
+                }
+                else
+                {
+                    patronCarryingReport.BondGainedOnThisQuest = 0;
+                }
+                patronCarryingReport.convertGainedBondToTotalBond();
+                if (patronCarryingReport.HasLeveledUp)
+                {
+                    nextPageToTurnTo = ReportPages.LEVELUP;
+                    if (patronCarryingReport.IsMaxLevel())
+                    {
+                        bondSlider.IsPatronAtMaxLevel = true;
+                    }
+                }
             }
-            else
-            {
-                patronCarryingReport.BondGainedOnThisQuest = 3;
-            }
-            patronCarryingReport.convertGainedBondToTotalBond();
-            if (patronCarryingReport.HasLeveledUp)
-            {
-                nextPageToTurnTo = ReportPages.LEVELUP;
-            }
-        }
-
+        } 
     }
 
     private void showExpGain()
     {
         bondSlider.cashNextCheck();
     }
-
-
-
 
     private string formatText(string textToFormat)  // TODO give public accessTo designer to change how many characters before cut off. And make this a util Tool;
     {
@@ -286,6 +294,24 @@ public class BattleReportManager : Colleague
     {
         rewardsToRedeem.Clear();
         unlockersToRedeem.Clear();
+    }
+
+    private void checkIfBondSliderNeedsToMove()
+    {
+        bondSlider.LoadListOfChecks(questToReportOn.TrialsOfTheQuest);
+
+        if (!patronCarryingReport.IsMaxLevel())
+        {
+            bondSlider.SetSliderDefautValue(patronCarryingReport.BondPoints, patronCarryingReport.ThresholdToNextBondLevel);
+            cashBond(questToReportOn.TrialsOfTheQuest);
+            showExpGain();
+            //cashBond(questToReportOn.TrialsOfTheQuest);
+        }
+        else
+        {
+            bondSlider.SetSliderDefautValue(patronCarryingReport.ThresholdToNextBondLevel, patronCarryingReport.ThresholdToNextBondLevel);
+            bondGainText.text = "Bond Has Reached Max Level!";
+        }
     }
 
     public override void EndPhase()

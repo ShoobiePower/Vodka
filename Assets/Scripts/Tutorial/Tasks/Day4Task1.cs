@@ -65,7 +65,6 @@ public class Day4Task1 : TutorialTask
         patronToReturn = tutorial.GetPatron("Old Man Horace");
         if (patronToReturn.currentActivity == Patron.whatDoTheyWantToDo.TURNIN) { return patronToReturn; }
 
-        //patronToReturn = tutorial.GetPatron("Deidre Downton"); // NC corrected this one too!
         return patronToReturn;
 
     }

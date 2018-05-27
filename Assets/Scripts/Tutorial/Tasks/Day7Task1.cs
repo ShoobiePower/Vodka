@@ -64,7 +64,7 @@ public class Day7CorporealTransition : TutorialTask
     void EnterMavis()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.ADVENTURE);
         TutorialReactions.Add(Mediator.ActionIdentifiers.CONVERSATION_ENDED, SendPatronHome);
 

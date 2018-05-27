@@ -7,7 +7,7 @@ public class patronLoader : Loader
 {
     private string FallThroughHelper;  // used to help me find JSON typos
 
-   private enum jsonHelper {NAME,TOLERANCE,SKILLS,BS1,BS2,BS3, BIO };      
+   private enum jsonHelper {NAME,SKILLS,BS1,BS2,BS3, BIO };      
 
     private List<byte> indexingNumbers;
     private byte numberOfPatronsInGame;
@@ -45,45 +45,12 @@ public class patronLoader : Loader
         Debug.Log(lockLevel + " : "+ patronIndex);
         string craftedName = randomlyCraftedPatron[(int)jsonHelper.NAME].str;
         FallThroughHelper = craftedName;
-        Patron.SkillTypes[] patronSkills = packageSkills(randomlyCraftedPatron[(int)jsonHelper.SKILLS]);// package(randomlyCraftedPatron[(int)jsonHelper.SKILLS]);
-        Patron.drinkLevel CraftedDrinkLevel = ToleranceParser(randomlyCraftedPatron[(int)jsonHelper.TOLERANCE].str);
+        Patron.SkillTypes[] patronSkills = packageSkills(randomlyCraftedPatron[(int)jsonHelper.SKILLS]);
         string craftedBIO = @randomlyCraftedPatron[(int)jsonHelper.BIO].str;
-        Patron patronToReturn = new Patron(craftedName,patronSkills, CraftedDrinkLevel, craftedBIO);
+        Patron patronToReturn = new Patron(craftedName,patronSkills, craftedBIO);
         patronToReturn.ID = patronID;
         Debug.Log(craftedName + "Has been spawned");
         return patronToReturn;
-    }
-
-
-    private Patron.drinkLevel ToleranceParser(string levelToParse)
-    {
-
-
-        switch (levelToParse.ToLower())
-        {
-
-            case "low":
-                {
-                    return Patron.drinkLevel.LOW;
-                }
-            case "mid":
-                {
-                    return Patron.drinkLevel.MID;
-                }
-            case "high":
-                {
-                    return Patron.drinkLevel.HIGH;
-                }
-            case "none":
-                {
-                    return Patron.drinkLevel.NONE;
-                }
-            default:
-                {
-                    Debug.Log("Drink level Fall through:" + FallThroughHelper);
-                    return Patron.drinkLevel.NONE;
-                }
-        }
     }
 
     private Patron.SkillTypes[] packageSkills(JSONObject statsToPackage)  // don't know if this is confusing, basicly I just wanted to pass all of the stats as an array and not by themselves. 

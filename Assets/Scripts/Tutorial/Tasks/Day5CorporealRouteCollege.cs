@@ -11,7 +11,7 @@ public class Day5CorporealRouteCollege : TutorialTask
     void EnterMavis()
     {
         TutorialReactions.Clear();
-        tutorial.forcePatronIntoBarToSitAt("Mavis", 1);
+        tutorial.forcePatronIntoBarToSitAt("Mavis Hullbrook", 1);
         tutorial.forceSeatToHaveSpecificJob(1, Patron.whatDoTheyWantToDo.RUMOR);
         TutorialReactions.Add(Mediator.ActionIdentifiers.PATRON_LEFT, EnterArtie);
     }

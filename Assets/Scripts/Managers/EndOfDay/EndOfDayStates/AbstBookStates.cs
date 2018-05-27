@@ -126,4 +126,12 @@ public abstract class AbstBookStates : MonoBehaviour, IEndOfDayStates
             menuButtons[i].gameObject.SetActive(false);
         }
     }
+
+    protected virtual void areAllPropsActiveForCurrentPage(Transform props, bool isActive)
+    {
+        foreach (Transform child in props)
+        {
+            child.gameObject.SetActive(isActive);
+        }
+    }
 }

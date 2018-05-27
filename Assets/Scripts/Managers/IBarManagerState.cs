@@ -150,7 +150,8 @@ public class MakePatronDrink : IBarManagerState
                 barManager.SelectedSeat.TalkWithPatron();
             }
 
-            barManager.theBarsTaps.unlockTapSystem();
+            if (barManager.IsMugEmpty()) { barManager.theBarsTaps.UnlockTapSystem(); }
+            
         }
         else
         {

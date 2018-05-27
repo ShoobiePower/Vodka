@@ -32,22 +32,7 @@ public class InventoryManager : MonoBehaviour {
     public void payGold(int goldYouPay)
     {
         gold -= goldYouPay;
-    }
-
-
-    public void addItemToInvintory(StoreableItem lootToAdd) // trying to refactor this to something else too!
-    {
-        if (lootToAdd is Currency)
-        {
-            Currency EquipmentToAdd = (Currency)lootToAdd;
-            if (EquipmentToAdd.HowDoesThisItemLook == Currency.whosCurrencyIsThis.GOLD)
-            {
-                addGold(EquipmentToAdd.NumberLeft);
-            }
-        }
-    }
-
-   
+    }  
 }
 
    

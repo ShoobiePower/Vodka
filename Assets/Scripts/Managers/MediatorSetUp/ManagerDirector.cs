@@ -24,6 +24,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
     [SerializeField] Tutorial tutorial;
 
 
+
     private void Start()
     {
         musicManager.initMusicManager();
@@ -102,10 +103,9 @@ public class ManagerDirector : MonoBehaviour, IDirector
         else if (sender == battleReportManager)
         {
             UnlockContent(battleReportManager.UnlockersToRedeem);
-            //barManager.setBarState(barManager.noOneInteractedWith());
             barManager.setBarState(barManager.dismissPatron());
             battleReportManager.clearUnlockLists();
-           // barManager.ClickPatron();
+
         }
 
         else if (sender == mapManager)
@@ -175,12 +175,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     public void CloseTavernKeeperJournalFromBar()
     {
-        if (pauseManager.getStoredBarState() is BarPaused)
-        {
-            barManager.setBarState(barManager.noOneInteractedWith());
-        }
-        else
-        barManager.setBarState(pauseManager.getStoredBarState());   // barManager.noOneInteractedWith()
+        setBarStateToWhatItWasBeforePause();
     }
 
     // For now, I just want to get this done, but I need to refactor this. 
@@ -196,6 +191,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
                 case Unlocker.WhatUnlocks.PATRON:
                     {
+                        Debug.Log("Hit:" + u.NameOfThingToUnlock);
                         barManager.PatronManager.unlockNewPatronAndAdd(u.NameOfThingToUnlock);
                         break;
                     }
@@ -223,7 +219,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
                         Rumor rumorToLabelBordWith = barManager.RumorManager.unlockRumor(u.NameOfThingToUnlock);
                         rumorBoard.labelPatronRumorBoard(rumorToLabelBordWith);
                         rumorBoard.activatePatronRumorBoard();
-                        Debug.Log("Board should be active");
                         barManager.setBarState(barManager.barIsPaused());
                         break;
                     }
@@ -233,37 +228,37 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     public void ActivateMapManagerCommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate);
+
         commandToActivate.Execute(mapManager);
     }
 
     public void ActivateBarManagerCommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate);
+
         commandToActivate.Execute(barManager);
     }
 
     public void ActivateEndOfDayManagerCommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate);
+
         commandToActivate.Execute(endOfDayManager);
     }
 
     public void ActivateEndOfDaySummaryCommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate);
+
         commandToActivate.Execute(endOfDaySummaryManager);
     }
 
     public void ActivateRumorBoardUICommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate + " From UI Command" );
+
         commandToActivate.Execute(rumorBoard);
     }
 
     public void ActivateBattleReportCommand(Command commandToActivate)
     {
-        Debug.Log(commandToActivate);
+
         commandToActivate.Execute(battleReportManager);
     }
 
@@ -282,14 +277,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
     public void LeaveExitMenu()
     {
         pauseManager.ResumeGame();
-
-        if (pauseManager.getStoredBarState() is BarPaused)  // DUPE CODE please refactor;
-        { 
-            barManager.setBarState(barManager.noOneInteractedWith());
-        }
-        else
-            barManager.setBarState(pauseManager.getStoredBarState()); 
-
+        setBarStateToWhatItWasBeforePause();
     }
 
     // EndOfDay Summary Section
@@ -319,8 +307,13 @@ public class ManagerDirector : MonoBehaviour, IDirector
     public void LeaveOptionsMenu()
     {
         pauseManager.CloseOptionsMenu();
+        setBarStateToWhatItWasBeforePause();
+    }
 
-        if (pauseManager.getStoredBarState() is BarPaused)  // DUPE CODE please refactor;
+    private void setBarStateToWhatItWasBeforePause()
+    {
+
+        if (pauseManager.getStoredBarState() is BarPaused) 
         {
             barManager.setBarState(barManager.noOneInteractedWith());
         }
