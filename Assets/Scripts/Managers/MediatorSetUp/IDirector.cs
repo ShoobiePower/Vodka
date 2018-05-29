@@ -32,6 +32,8 @@ public interface IDirector {
     void CloseTavernKeeperJournalFromBar(); // HACK
     void ActivateBODProps();
 
+    int GetActiveQuestCount();
+
     // I need to fix my ducttape at some point
 
     void ReportOnPatronSentOnQuest(Patron patronSentOnQuest);

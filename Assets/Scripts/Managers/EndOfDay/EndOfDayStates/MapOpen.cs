@@ -14,6 +14,8 @@ public class MapOpen : MonoBehaviour, IMapStates, IEndOfDayStates
     [SerializeField]
     MapManager mapManager;
 
+    private Region selectedRegion;
+
     public void passRefrenceToEndOfDayManager(EndOfDayManager endOfDayManager)
     {
         this.endOfDayManager = endOfDayManager;
@@ -57,6 +59,7 @@ public class MapOpen : MonoBehaviour, IMapStates, IEndOfDayStates
 
     public void regionClicked(Region region)
     {
+        selectedRegion = region;
         ShowQuestInfoPanel();
         //Debug.Log("This is: " + region.name);
         //Debug.Log("Patrons at this location" + region.giveNamesOfPatronsAtThisLocation());
@@ -65,7 +68,8 @@ public class MapOpen : MonoBehaviour, IMapStates, IEndOfDayStates
 
     public void ShowQuestInfoPanel()
     {
-
+        mapManager.getQuestInfoPanel.gameObject.SetActive(true);
+        mapManager.getQuestInfoPanel.ShowQuestInfoForRegion(selectedRegion);
     }
 
     public void HideQuestInfoPanel()

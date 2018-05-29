@@ -5,7 +5,7 @@ using System;
 public interface IBarManagerState  { 
 
     void ClickPatron();
-    void MakeDrink(byte slotToUse, FillableMug targetMug ); //Drink targetDrink
+    void MakeDrink(byte slotToUse, FillableMug targetMug ); 
     void PauseBar();
 }
 
@@ -38,9 +38,19 @@ public class PatronHighlighted : IBarManagerState
 
             case Patron.whatDoTheyWantToDo.ADVENTURE:
                 {
-                    barManager.SelectedSeat.patron.CurrentConversation = barManager.ConversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID);
-                    barManager.setBarState(barManager.patronIsConversing());
-                    barManager.SelectedSeat.TalkWithPatron();
+                    if (barManager.SelectedSeat.patron.CurrentConversation == null)
+                    {
+                        barManager.SelectedSeat.patron.CurrentConversation = barManager.ConversationWarehouse.getRandomConversationBasedOnPatronID(barManager.SelectedSeat.patron.ID);
+                        barManager.setBarState(barManager.patronIsConversing());
+                        barManager.SelectedSeat.TalkWithPatron();
+                    }
+                    else
+                    {
+                        barManager.setBarState(barManager.patronPerformingAction());
+                        barManager.SelectedSeat.PatronWantsToTalkAboutAdventure();
+                    }
+
+                    
                     break;
                 }
 
@@ -93,8 +103,7 @@ public class PatronHighlighted : IBarManagerState
 }
 
 public class PatronConversing : IBarManagerState
-{
-
+{ 
     BarManager barManager;
 
     public PatronConversing(BarManager barsly)
@@ -104,11 +113,15 @@ public class PatronConversing : IBarManagerState
 
     public void ClickPatron()
     {
+        if (barManager.SelectedSeat.patron.CurrentConversation == null)
+        {
+            barManager.setBarState(barManager.patronPerformingAction());
+        }
+
         if (!barManager.SelectedSeat.patron.CurrentConversation.IsConversationOver)
         {
             barManager.SelectedSeat.TalkWithPatron();
         }
-
         else
         {
             barManager.UnlockContent(barManager.SelectedSeat.patron.CurrentConversation.ThingsThisConversationUnlocks);
@@ -182,6 +195,13 @@ public class CompletePatronAction : IBarManagerState
 
     public void ClickPatron()
     {
+
+        if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.GOHOME)
+        {
+            barManager.SelectedSeat.TalkWithPatron();
+            barManager.setBarState(barManager.dismissPatron());
+        }
+
         if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.RUMOR)
         {
             Debug.Log("Let's talk about quests!");
@@ -192,15 +212,24 @@ public class CompletePatronAction : IBarManagerState
         if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.ADVENTURE)
         {
             Debug.Log("Let's go on an adventure");
-            barManager.OpenMapFromBar(barManager.SelectedSeat.patron);
-            barManager.setBarState(barManager.barIsPaused());
+            if (barManager.AreThereAnyActiveQuests())
+            {
+                barManager.OpenMapFromBar(barManager.SelectedSeat.patron);
+                barManager.setBarState(barManager.barIsPaused());
+            }
+            else
+            {
+                barManager.SelectedSeat.patron.currentActivity = Patron.whatDoTheyWantToDo.GOHOME;
+                barManager.SelectedSeat.PatronTalksAboutNoMoreQuests(); // Added
+                barManager.setBarState(barManager.dismissPatron());
+            }
         }
 
-        if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.GOHOME)
-        {
-            barManager.SelectedSeat.TalkWithPatron();
-            barManager.setBarState(barManager.dismissPatron());
-        }
+        //if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.GOHOME)
+        //{
+        //    barManager.SelectedSeat.TalkWithPatron();
+        //    barManager.setBarState(barManager.dismissPatron());
+        //}
     }
 
     public void MakeDrink(byte slotToUse, FillableMug TargetMug)

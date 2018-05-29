@@ -173,9 +173,16 @@ public class InputManager : Colleague {
         Director.ActivateMapManagerCommand(command);
     }
 
-    public void dismissAdventurer()
+    //public void dismissAdventurer()
+    //{
+    //    command = new DismissAdventurer();
+    //    Director.ActivateBarManagerCommand(command);
+    //    closeAdventureMap();
+    //}
+
+    public void backOutOfAdventureMap()
     {
-        command = new DismissAdventurer();
+        command = new BackOutOfAdventureMap();
         Director.ActivateBarManagerCommand(command);
         closeAdventureMap();
     }

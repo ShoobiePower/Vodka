@@ -67,7 +67,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
         {
             barManager.setBarState(barManager.barManagement());
             barManager.DisableAllUi();
-            // Pull up end of day screen was here
             timeManager.fadeInText();
             musicManager.setCurrentMusicState(musicManager.GetMenuSetting());
         }
@@ -91,13 +90,6 @@ public class ManagerDirector : MonoBehaviour, IDirector
             }
             barManager.checkIfAdventurersShouldSpawn(mapManager.areThereAnyAdventuresForPatrons());
             
-
-            //if (tutorial.IsTutorialOver)
-            //{
-            //    patronManager.preparePatronsForDay();
-            //}
-
-           // notifyObserver(Mediator.ActionIdentifiers.DAY_STARTED);
         }
 
         else if (sender == battleReportManager)
@@ -162,8 +154,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     public void OpenMapFromBar(Patron patronToSend, byte numberOfPatronsLeftInBar)
     {
-        Debug.Log("Number of patrons in the bar" + numberOfPatronsLeftInBar);
-        mapManager.mapOpenFromBar(patronToSend, numberOfPatronsLeftInBar);
+        mapManager.mapOpenFromBar(patronToSend);
     }
 
      public void OpenTavernKeeperJournalFromBar()
@@ -321,7 +312,10 @@ public class ManagerDirector : MonoBehaviour, IDirector
             barManager.setBarState(pauseManager.getStoredBarState());
     }
 
-   
+    public int GetActiveQuestCount()
+    {
+       return mapManager.CountHowManyQuestsAreAvailable();
+    }
 
     // concludes end of day summary ducttape;
 

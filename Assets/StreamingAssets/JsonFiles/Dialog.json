@@ -8,7 +8,8 @@
     "Drink without Request Line": [ "I'm not in the mood for {DRINK} right now. How about mixing a drink without it, hmm?" ],
     "Adventure Request Line": [ "Any work for old Deirdre, barkeep?", "Need auntie Deidre to help make your problems go away...?", "Ehehe, I'm in the mood to stretch these old bones. What needs doing?" ],
     "Small Talk Lines": [ "Ehehehe~", "Your brewing's not bad, barkeep, but you ought to stop by my shop at some point if you want to be truly wowed.", "Mind if an old crone rests her bones here awhile?" ],
-    "About To Leave Line": [ "Wrong drink, dearie... but I won't hold it against you. You're just too cute! Ehehehehe~", "Not to pry, dearie, but where's your bartending certification? Shouldn't it be hung up on the wall somewhere?" ]
+    "About To Leave Line": [ "Wrong drink, dearie... but I won't hold it against you. You're just too cute! Ehehehehe~", "Not to pry, dearie, but where's your bartending certification? Shouldn't it be hung up on the wall somewhere?" ],
+    "AllQuestsGone": [ "Seems you have no more quests, no matter I have some toiling to do.", "What! you didn't choose me? Seems you've made a mistake Dearie." ]
   },
 
   "Artie": {
@@ -19,7 +20,8 @@
     "Drink without Request Line": [ "My stomach ain't sittin' well with me. Maybe a drink without {DRINK} would be safe." ],
     "Adventure Request Line": [ "Come on pal, throw me a bone. Whattya need doin'?", "Heard there's work to be done, how can I help?", "Never thought I'd say this, but I think my hammer's gettin' dull. Gimme somethin' to do!" ],
     "Small Talk Lines": [ "That dwarf over there thinks he can beat me at armwrestling. Pft, yeah right.", "Hah! That sure hit the spot... Thanks, as always, pal!" ],
-    "About To Leave Line": [ "What, you need me to pick something up from City Hall? Well sure, pal! Just tell me where to go.", "That's ok, pal! I ain't gonna bash ya over the head for a wrong order! U-um, not that I'd do that anyways!" ]
+    "About To Leave Line": [ "What, you need me to pick something up from City Hall? Well sure, pal! Just tell me where to go.", "That's ok, pal! I ain't gonna bash ya over the head for a wrong order! U-um, not that I'd do that anyways!" ],
+    "AllQuestsGone": [ "Huh, seems you already found someone to fix that. Good!", "Seems you got nothing left for me to do."]
   },
 
   "Old Man Horace": {
@@ -30,7 +32,8 @@
     "Drink without Request Line": [ "My good barkeep! Would you be so kind to serve me a drink without {DRINK}?" ],
     "Adventure Request Line": [ "It's time to give back to the fair citizens of Kastonia!" ],
     "Small Talk Lines": [ "You know, back in my day, monsters were meaner, scarier and had teeth as long as your arms!", "Treasure, drinks and the open road, what more could one want?" ],
-    "About To Leave Line": [ "Not quite what I asked for, but why don't you give it another go! This old man's got nowhere better to be, anyways- ho ho!" ]
+    "About To Leave Line": [ "Not quite what I asked for, but why don't you give it another go! This old man's got nowhere better to be, anyways- ho ho!" ],
+    "AllQuestsGone": [ "OH! So you have already sent someone? Decisive as ever my friend." ]
   },
 
   "nell": {
@@ -41,7 +44,8 @@
     "Drink without Request Line": [ "I'm in a rush. I'll take anything but {DRINK}." ],
     "Adventure Request Line": [ "Ready to go!" ],
     "Small Talk Lines": [ "I'm glad you're out for the people, barkeep." ],
-    "About To Leave Line": [ "Speaking of, someone you might find interesting just walked in. I'll take my drink, and be on my way." ]
+    "About To Leave Line": [ "Speaking of, someone you might find interesting just walked in. I'll take my drink, and be on my way." ],
+    "AllQuestsGone": [ "So you sent someone? Mind telling me where they went? This sounds like headline material." , " Gotta go! Early bird gets ... wait, forget I said that!"]
   },
 
   "Mavis": {
@@ -52,7 +56,8 @@
     "Drink without Request Line": [ "They're expecting me back right about now. Do you have anything without {DRINK}?" ],
     "Adventure Request Line": [ "I guess I can fit another thing into my itinerary" ],
     "Small Talk Lines": [ "I, um, I should get going. Thank you for your time." ],
-    "About To Leave Line": []
+    "About To Leave Line": [],
+    "AllQuestsGone": [ "Whew, I'm glad that's been resolved, I'm busy enough as it is."]
   },
 
   "Gaius": {
@@ -63,7 +68,8 @@
     "Drink without Request Line": [ "Now, A drink without {DRINK}, if you will, Barkeep." ],
     "Adventure Request Line": [ "What am I called to do?" ],
     "Small Talk Lines": [ "May you find peace in the stars." ],
-    "About To Leave Line": []
+    "About To Leave Line": [],
+    "AllQuestsGone": [ "So you have sent someone, An expedient choice in my opinion...", "I trust your discretion, barkeep" ]
   },
 
   "Jim": {
@@ -74,7 +80,8 @@
     "Drink without Request Line": [ "Why don't you go ahead and pour me a drink without {DRINK}?", "I've had a bit too much {DRINK} already today. How about something without it?" ],
     "Adventure Request Line": [ "Gotta keep maintain your youth doing something! Have anything for me?" ],
     "Small Talk Lines": [ "You've got this, kid.", "I'll see ya around, kid!", "Good luck, kid.", "Good luck. I know you'll do your parents proud." ],
-    "About To Leave Line": [ "Well now, I didn't expect you to pick up the reins so quickly!", "Mmm, that hits the spot! Thanks, kid. I'm gonna go find a table to nurse this drink. In the meantime, why don't you serve some other patrons?", "You still there, kid? Click on me if you are..." ]
+    "About To Leave Line": [ "Well now, I didn't expect you to pick up the reins so quickly!", "Mmm, that hits the spot! Thanks, kid. I'm gonna go find a table to nurse this drink. In the meantime, why don't you serve some other patrons?", "You still there, kid? Click on me if you are..." ],
+    "AllQuestsGone": [ "Seems you sent someone" ]
   }
 
 }

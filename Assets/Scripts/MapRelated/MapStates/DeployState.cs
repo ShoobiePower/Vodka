@@ -46,7 +46,8 @@ public class DeployState : MonoBehaviour, IMapStates
         patronCheatSheet.deactivatePatronCheatSheet();
         patronCheatSheet.displayStats(mapManager.PatronToGoOnAdventure);
         patronInfoFrame.gameObject.SetActive(true);
-        CheckIfCancleButtonShouldAppear();
+        ExitMapButton.gameObject.SetActive(true);
+       // CheckIfCancleButtonShouldAppear();
     }
 
     public void ShowQuestInfoPanel()
@@ -82,11 +83,6 @@ public class DeployState : MonoBehaviour, IMapStates
         }
         else
             patronCheatSheet.activatePatronCheatSheet();
-    }
-
-    private void CheckIfCancleButtonShouldAppear()
-    {
-        ExitMapButton.gameObject.SetActive( mapManager.NumberOfPatronsInTheBar > mapManager.CountHowManyQuestsAreAvailable());
     }
 
 }

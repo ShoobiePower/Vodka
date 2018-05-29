@@ -32,37 +32,28 @@ public class QuestInfoPanel : MonoBehaviour
         questMenu.activateQuestMenu();
         questMenu.formatButtonsForThisPage(targetLocation.QuestsAtLocation);
 
-        //if (targetLocation.QuestCountAtLocation > 0)          //If there is at least one quest at this location...
-        //{
-        //    questIndex = 1;
-        //}
-        //else
-        //{
-        //    questIndex = 0;
-        //}
         questIndex = 0;
-        displayQuestInfo(questIndex); // HERE 2/12
-        //UpdateQuestSelectArrows();
+        displayQuestInfo(questIndex); 
 
-        //pull up a panel, showing all the quests at this location
-        //Most of the info about the quest should be displayed in this panel.  Maybe it appears to the right of the screen?
-        //Should display name, rewards, description, tasks, and faction alignment
-        //      /\ AKA: this could be an exact copy of the card used when choosing the quest in the rumor mill /\
+    }
 
-        //When the player clicks on a quest, 'highlightedQuest' is set equal to that quest
-        //When the player clicks 'Add Quest,' the quest is added 
+    public void ShowQuestInfoForRegion(Region _targetRegion) // new 
+    {
+
+        targetLocation = _targetRegion;
+        ChooseQuestButton.gameObject.SetActive(false);
+
+        questMenu.activateQuestMenu();
+        questMenu.formatButtonsForThisPage(targetLocation.QuestsAtLocation);
+
+        questIndex = 0;
+        displayQuestInfo(questIndex);
     }
 
     public Quest GetQuestFromLocation()
     {
-       return targetLocation.findQuestAtThisLocationByIndex(questIndex);   //Index 0 is "no quest", but the list of quests at the location starts counting at 0.  So, subtract one.  There's probably a more intuitive way of doing this
+       return targetLocation.findQuestAtThisLocationByIndex(questIndex);   
     }
-
-    //void UpdateQuestSelectArrows()
-    //{
-    //    QuestInfoLeftArrow.gameObject.SetActive(questIndex - 1 >= 0);                                       //set the left arrow active if there is at least one more element (previous)
-    //    QuestInfoRightArrow.gameObject.SetActive(questIndex + 1 <= targetLocation.QuestCountAtLocation);    //set the right arrow active if there is at least one more elemnt in the list of quests (+1 slot for "no quest")
-    //}
 
     public void displayInfoBasedOnMenuChoice(byte index)
     {
@@ -107,10 +98,10 @@ public class QuestInfoPanel : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    //public void DisplayLocationDescription()
-    //{
+    public void DisplayLocationDescription()
+    {
 
-    //}
+    }
 
 
     private string listSkillsNeededForQuest(Quest q)

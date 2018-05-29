@@ -125,6 +125,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\UndoCommand.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\AcceptAdventure.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\AddIngredentFromInvintory.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\BackOutOfAdventureMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ChooseQuestFromMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseAdventureMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseEndOfDaySummary.cs" />

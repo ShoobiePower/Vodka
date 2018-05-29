@@ -119,13 +119,6 @@ public class BarManager : Colleague , ISubject
     public void clearASeat(Seat seatToClear) 
     {
         seatToClear.ThisSeatsRespawnState = Seat.seatRespawnState.EMPTY;
-        
-        //if (patronManager.PatronsForTheDay.Count == 0 && tutorial.IsTutorialOver)
-        //{
-        //    checkIfBarIsEmpty();
-        //    seatToClear.IsTimerPaused = true;  // HACK
-        //}
-
     }
 
     public BarManager()
@@ -194,6 +187,12 @@ public class BarManager : Colleague , ISubject
         selectedSeat.patron.currentActivity = Patron.whatDoTheyWantToDo.GOHOME;
         setBarState(dismissPatron());
     }
+
+    //public void BackOutOfAdventureMap()
+    //{
+    //    // SeatState, repeat that you want to go on an adventure
+    //    setBarState(noOneInteractedWith());
+    //}
 
 
     public void SendAdventurerHome(Patron patronsToSendBack)
@@ -453,6 +452,11 @@ public class BarManager : Colleague , ISubject
     {
         bartendersMug.ClearIngredientInMug();
         theBarsTaps.UnlockTapSystem();
+    }
+
+    public bool AreThereAnyActiveQuests()
+    {
+        return (Director.GetActiveQuestCount() > 0);
     }
 
     private void playRandomDrinkSound()

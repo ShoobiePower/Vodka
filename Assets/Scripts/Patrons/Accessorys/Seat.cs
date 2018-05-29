@@ -66,7 +66,6 @@ public class Seat : ABSTFadableObject, ISubject
         noOneSeated = new NoOneSeated(this);
         patronSeated= new PatronSeated(this);
         patronOrdered = new PatronOrdered(this);
-        patronWantsAdventure = new PatronWantsAdventure(this);
         patronReturningFromAdventure = new PatronReturningFromAdventure(this);
    
        
@@ -144,6 +143,16 @@ public class Seat : ABSTFadableObject, ISubject
     public void ConsumeBeverage()
     {
         seatState.ConsumeBeverage();
+    }
+
+    public void PatronWantsToTalkAboutAdventure()
+    {
+        seatState.PatronWantsToGoOnAdventure();
+    }
+
+    public void PatronTalksAboutNoMoreQuests()
+    {
+        seatState.NoMoreQuestsAvailable();
     }
 
     public void GrantPatronBuff(Patron.SkillTypes buff)

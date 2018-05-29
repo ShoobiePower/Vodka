@@ -8,7 +8,8 @@ public interface ISeatStates
 
     void FillSeat(Patron patronToSit);
     void TalkWithPatron();
-    void ConsumeBeverage(); 
+    void ConsumeBeverage();
+    void NoMoreQuestsAvailable();
     void PatronWantsToGoOnAdventure(); 
     void PatronSharesARumor();
     void PatronReturnsFromQuest();
@@ -35,7 +36,6 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
         seatToKeepTrackOf.GetComponent<SpriteRenderer>().sprite = ApperanceManager.instance.HowThisPatronLooks(patronToSit.Name); //patronToSit.ID
         seatToKeepTrackOf.barToken.sprite = ApperanceManager.instance.ThisPatronsBarToken(patronToSit.ID);
         seatToKeepTrackOf.GetComponent<BoxCollider2D>().enabled = true;
-        //seatToKeepTrackOf.makeTextBoxClickable();
         seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.SeatIsFilled());
     }
 
@@ -55,6 +55,11 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
     }
 
     public void PatronReturnsFromQuest()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void NoMoreQuestsAvailable()
     {
         throw new NotImplementedException();
     }
@@ -125,6 +130,11 @@ public class PatronSeated : ISeatStates
     {
         seatToKeepTrackOf.setSeatState(seatToKeepTrackOf.patronIsReturningFromAdventure());
     }
+
+    public void NoMoreQuestsAvailable()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class PatronOrdered : ISeatStates
@@ -164,7 +174,6 @@ public class PatronOrdered : ISeatStates
     {
         seatToKeepTrackOf.FadingText.SignalEndOfConversation();
         seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.TALK, seatToKeepTrackOf.patron.ID));
-
     }
 
     public void PatronSharesARumor()
@@ -174,99 +183,18 @@ public class PatronOrdered : ISeatStates
 
     public void PatronWantsToGoOnAdventure()
     {
-        throw new NotImplementedException();
+        seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.GOQUEST, seatToKeepTrackOf.patron.ID));
     }
 
     public void PatronReturnsFromQuest()
     {
         throw new NotImplementedException();
     }
-}
 
-public class PatronIsDrinking : ISeatStates
-{
-    Seat seatToKeepTrackOf;
-
-    public PatronIsDrinking(Seat SeatToKeepTrackOf)
+    public void NoMoreQuestsAvailable()
     {
-        seatToKeepTrackOf = SeatToKeepTrackOf;
-    }
+    seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.NOMOREQUEST, seatToKeepTrackOf.patron.ID));
 
-    public void ConsumeBeverage()
-    {
-        // patron is already drinking
-    }
-
-
-    public void FillSeat(Patron patronToSit)
-    {
-        // no one can take this patrons spot yet
-    }
-
-    public void TalkWithPatron()
-    {
-       
-       
-    }
-
-    public void PatronSharesARumor()
-    {
-        
-    }
-
-    public void PatronWantsToGoOnAdventure()
-    {
-       
-    }
-
-    public void PatronReturnsFromQuest()
-    {
-        throw new NotImplementedException();
-    }
-}
-
-public class PatronWantsAdventure : ISeatStates
-{
-
-    Seat seatToKeepTrackOf;
-
-    public PatronWantsAdventure(Seat SeatToKeepTrackOf)
-    {
-        seatToKeepTrackOf = SeatToKeepTrackOf;
-        // this seat, display icon. 
-    }
-
-    public void ConsumeBeverage()
-    {
-        // may introduce a lower price of quest???
-    }
-
-
-    public void FillSeat(Patron patronToSit)
-    {
-        // cannot fill seat if patron is already sitting here
-    }
-
-    public void TalkWithPatron()
-    {
-        if (!seatToKeepTrackOf.patron.CurrentConversation.IsConversationOver)
-       seatToKeepTrackOf.patronSays(seatToKeepTrackOf.patron.CurrentConversation.dioOut());
-    }
-
-
-    public void PatronSharesARumor()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void PatronWantsToGoOnAdventure()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void PatronReturnsFromQuest()
-    {
-        throw new NotImplementedException();
     }
 }
 
@@ -308,6 +236,11 @@ public class PatronWantsAdventure : ISeatStates
         }
 
     public void PatronReturnsFromQuest()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void NoMoreQuestsAvailable()
     {
         throw new NotImplementedException();
     }

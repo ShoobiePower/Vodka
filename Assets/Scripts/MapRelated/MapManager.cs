@@ -34,11 +34,6 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
     private List<Patron> questingPatrons = new List<Patron>();
     public List<Patron> QuestingPatrons { get { return questingPatrons; } }
 
-    byte numberOfPatronsInTheBar; // HACK, This is needed to tell the deploy state wether or not to display the cancel deployment button... 
-    // Currently in an argumnt with myself on wether this responcibility should belong to the map manager or the tutorial. I arrived at this decision because
-    // I want to be plug and play with no need to remeber small numbers. 
-    public byte NumberOfPatronsInTheBar { get { return numberOfPatronsInTheBar; } }
-
     [System.Serializable]
     struct RegionAndKey
     {
@@ -64,14 +59,13 @@ public class MapManager : Colleague, ISubject //This doesn't have to be a Monobe
         mapMode.openMapProps();
     }
 
-    public void mapOpenFromBar(Patron inPatronOnAdventure, byte numberOfPatronsLeftInBar)   
+    public void mapOpenFromBar(Patron inPatronOnAdventure)   
     {
         if (deployState == null)
         {
             initDeployState();
         }
         mapMode = deployState;
-        numberOfPatronsInTheBar = numberOfPatronsLeftInBar;
         patronToGoOnAdventure = inPatronOnAdventure;
         MapImage.gameObject.SetActive(true);
         mapMode.openMapProps();
