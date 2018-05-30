@@ -102,6 +102,8 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
         else if (sender == mapManager)
         {
+
+            barManager.SelectedSeat.IsPatronGoesOnQuestDeciderActive(false);
             barManager.SelectedSeat.TalkWithPatron(); // hacky, tells our patron to deliver text after being sent out, I would rather see this in IbarStateManager, but it has to go here, because map obstructs text box. 
             barManager.SelectedSeat.patron.IsOnQuest = true;
             Debug.Log("The adventure map is closed");
@@ -260,6 +262,7 @@ public class ManagerDirector : MonoBehaviour, IDirector
 
     public void PullUpExitMenu()
     {
+        Debug.Log("HIT");
         pauseManager.OpenExitGamePopUp(); 
         pauseManager.StoreBarState(barManager.BarManagerState);
         barManager.setBarState(barManager.barIsPaused());

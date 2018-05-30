@@ -195,7 +195,6 @@ public class CompletePatronAction : IBarManagerState
 
     public void ClickPatron()
     {
-
         if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.GOHOME)
         {
             barManager.SelectedSeat.TalkWithPatron();
@@ -214,7 +213,8 @@ public class CompletePatronAction : IBarManagerState
             Debug.Log("Let's go on an adventure");
             if (barManager.AreThereAnyActiveQuests())
             {
-                barManager.OpenMapFromBar(barManager.SelectedSeat.patron);
+                barManager.SelectedSeat.IsPatronGoesOnQuestDeciderActive(true);
+                //barManager.OpenMapFromBar(barManager.SelectedSeat.patron);
                 barManager.setBarState(barManager.barIsPaused());
             }
             else
@@ -260,6 +260,10 @@ public class DismissPatron : IBarManagerState
           barManager.PatronManager.putAPatronBack(barManager.SelectedSeat.patron);      
         }
 
+        if (barManager.SelectedSeat.patron.currentActivity == Patron.whatDoTheyWantToDo.ADVENTURE)
+        {
+            barManager.DropDownToast.AddMessageToQueue(barManager.SelectedSeat.patron.Name + " has left for a quest!");
+        }
 
         barManager.SelectedSeat.patronPreparesToLeave();
         barManager.setBarState(barManager.noOneInteractedWith());
@@ -276,6 +280,42 @@ public class DismissPatron : IBarManagerState
     }
 }
 
+//// New Hack Class for the pause for the no adventure pause.
+//public class NoAdventurePause : IBarManagerState
+//{
+
+//    BarManager barManager;
+
+
+//    public NoAdventurePause(BarManager barsly)
+//    {
+//        barManager = barsly;
+
+//    }
+
+//    public void ClearPatronHighlight()
+//    {
+
+//    }
+
+//    public void ClickPatron()
+//    {
+//        barManager.SelectedSeat.FadingText.cutOff(0);
+//        //barManager.SelectedSeat.cutOffPatronsSentence();
+//        barManager.setBarState(barManager.noOneInteractedWith());
+//    }
+
+//    public void MakeDrink(byte slotToUse, FillableMug targetMug)
+//    {
+
+//    }
+
+//    public void PauseBar()
+//    {
+
+//    }
+
+//}
 
 
 

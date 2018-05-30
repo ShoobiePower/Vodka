@@ -29,7 +29,7 @@ public class BarManager : Colleague , ISubject
     public RumorManager RumorManager { get { return rumorManager; } }
 
     [SerializeField]
-    DropDownToast DropDownToast; 
+    public DropDownToast DropDownToast; 
 
     [SerializeField] Tutorial tutorial;
     #endregion
@@ -63,6 +63,8 @@ public class BarManager : Colleague , ISubject
     IBarManagerState makingPatronADrink;
     IBarManagerState dismissingPatrons;
     IBarManagerState endOfDayBar;
+
+   // IBarManagerState cancelAdventurePause; // This
 
     IBarManagerState barManagerState;
     public IBarManagerState BarManagerState { get { return barManagerState; } }
@@ -130,6 +132,8 @@ public class BarManager : Colleague , ISubject
         makingPatronADrink = new MakePatronDrink(this);
         dismissingPatrons = new DismissPatron(this);
         endOfDayBar = new EndOfDayBar(this);
+
+        //cancelAdventurePause = new NoAdventurePause(this); // This
 
         barManagerState = patronHighlighted;
     }
@@ -257,6 +261,12 @@ public class BarManager : Colleague , ISubject
         return endOfDayBar;
     }
 
+    //public IBarManagerState pauseAtTheEndOfCancelAdventure() // This
+    //{
+    //    Debug.Log("Switched to pause state");
+    //    return cancelAdventurePause;
+    //}
+
 
     #endregion
 
@@ -382,7 +392,16 @@ public class BarManager : Colleague , ISubject
         for (int i = 0; i < Seats.Length; i++)
         {
             Seats[i].barToken.GetComponent<Button>().enabled = yesNo;
+            if (!yesNo)
+            {
+                Seats[i].setBarTokensToPauseGrey();
+            }
+            else
+            {
+                Seats[i].setBarTokensToUnPauseColor();
+            }
         }
+        SelectedSeat.setBarTokensToUnPauseColor();
     }
     #endregion
 

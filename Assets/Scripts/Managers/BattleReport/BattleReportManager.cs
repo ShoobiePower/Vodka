@@ -173,7 +173,7 @@ public class BattleReportManager : Colleague
         PatronNameOnBattleReport.text = patronCarryingReport.Name;
         QuestTitle.text = questToReportOn.QuestName;
         DescriptionOfQuest.text = questToReportOn.getPersonalResponceForQuest(patronCarryingReport.ID);
-        PatronBondLevelOnBattleReport.text = patronCarryingReport.Level.ToString();
+        PatronBondLevelOnBattleReport.text = "Bond Level: " + patronCarryingReport.Level.ToString();
         BattleReportRewardsList.text = listUnlockables();
         BattleReportPatronTokenSummaryPage.sprite = ApperanceManager.instance.ThisPatronsToken(patronCarryingReport.ID);
     }

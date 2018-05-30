@@ -8,7 +8,7 @@ public class JsonDialogueLoader : Loader
     private static JsonDialogueLoader instance = null;
     private static readonly object padloc = new object();
 
-    public enum responceType { RUMOR, QUESTRETURN, CHAINRETURN, DRINKWITH,DRINKWITHOUT, GOQUEST, TALK, ABOUTTOLEAVE, NOMOREQUEST }; 
+    public enum responceType { RUMOR, QUESTRETURN, CHAINRETURN, DRINKWITH,DRINKWITHOUT, GOQUEST, TALK, ABOUTTOLEAVE, NOMOREQUEST, WAITINBAR }; 
    
 
 

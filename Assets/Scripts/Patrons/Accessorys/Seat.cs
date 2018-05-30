@@ -25,6 +25,8 @@ public class Seat : ABSTFadableObject, ISubject
 
     public Image barToken;
 
+    public Image barRingForToken;
+
     private SpriteRenderer patronArt;
     private float waitTimer;
     private bool textTimerHasBeenCutOff;
@@ -148,6 +150,11 @@ public class Seat : ABSTFadableObject, ISubject
     public void PatronWantsToTalkAboutAdventure()
     {
         seatState.PatronWantsToGoOnAdventure();
+    }
+
+    public void PatronWantsToTalkAboutWaitingInABar()
+    {
+        seatState.PatronTalksAboutWaitingInBar();
     }
 
     public void PatronTalksAboutNoMoreQuests()
@@ -277,7 +284,7 @@ public class Seat : ABSTFadableObject, ISubject
         makeTextBoxUnclickable();
         patronWantsIcons.startExitAnimation();
         patronsMug.fadeMug(timeToFadeInOut);
-        if (!textTimerHasBeenCutOff)
+       // if (!textTimerHasBeenCutOff)
             fadingText.cutOff(timeToFadeInOut);
     }
 
@@ -331,6 +338,30 @@ public class Seat : ABSTFadableObject, ISubject
     public void unregisterSelfToMediator()
     {
         Mediator.Unregister(this);
+    }
+
+    public void IsPatronGoesOnQuestDeciderActive(bool yesNo)
+    {
+        if (yesNo == true)
+        {
+            fadingText.cutOff(0);
+            textTimerHasBeenCutOff = true;
+            fadingText.LableDioHeader("Send " + patron.Name + " on a quest?");
+        }
+
+        this.GetComponent<BoxCollider2D>().enabled = !yesNo;
+        fadingText.ActivateQuestingOptions(yesNo);
+    }
+
+    public void setBarTokensToPauseGrey()
+    {
+        barToken.color = barToken.GetComponent<Button>().colors.disabledColor;
+        barRingForToken.color = barToken.GetComponent<Button>().colors.disabledColor;
+    }
+    public void setBarTokensToUnPauseColor()
+    {
+        barToken.color = barToken.GetComponent<Button>().colors.normalColor;
+        barRingForToken.color = barToken.GetComponent<Button>().colors.normalColor;
     }
     #endregion
 }

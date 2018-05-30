@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BackOutOfAdventureMap : CommandWithUndo
+public class OpenAdventureMap : CommandWithUndo
 {
 
     public override void Execute(Colleague Bar)
@@ -9,10 +9,8 @@ public class BackOutOfAdventureMap : CommandWithUndo
         var target = Bar.GetComponent<BarManager>();
         if (target is BarManager)
         {
-            target.setBarState(target.noOneInteractedWith());
-           // target.BackOutOfAdventureMap();
+            target.OpenMapFromBar(target.SelectedSeat.patron);
         }
         base.Execute(Bar);
     }
-
 }

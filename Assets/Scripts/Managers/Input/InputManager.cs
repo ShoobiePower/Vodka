@@ -120,7 +120,7 @@ public class InputManager : Colleague {
 
     public void scanForKeyboardInput()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PullUpQuitGameMenu();
         }
@@ -180,10 +180,21 @@ public class InputManager : Colleague {
     //    closeAdventureMap();
     //}
 
+    public void closeOutOfPatronDeployChoice()
+    {
+        command = new BackOutOfDeployChoice();
+        Director.ActivateBarManagerCommand(command);
+    }
+
+    public void openAdventureMap()
+    {
+        command = new OpenAdventureMap();
+        Director.ActivateBarManagerCommand(command);
+    }
+
     public void backOutOfAdventureMap()
     {
-        command = new BackOutOfAdventureMap();
-        Director.ActivateBarManagerCommand(command);
+        closeOutOfPatronDeployChoice();
         closeAdventureMap();
     }
 

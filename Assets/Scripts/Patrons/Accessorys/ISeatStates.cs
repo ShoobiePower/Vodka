@@ -12,6 +12,7 @@ public interface ISeatStates
     void NoMoreQuestsAvailable();
     void PatronWantsToGoOnAdventure(); 
     void PatronSharesARumor();
+    void PatronTalksAboutWaitingInBar();
     void PatronReturnsFromQuest();
    
 }
@@ -60,6 +61,11 @@ public NoOneSeated(Seat SeatToKeepTrackOf)
     }
 
     public void NoMoreQuestsAvailable()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void PatronTalksAboutWaitingInBar()
     {
         throw new NotImplementedException();
     }
@@ -135,6 +141,11 @@ public class PatronSeated : ISeatStates
     {
         throw new NotImplementedException();
     }
+
+    public void PatronTalksAboutWaitingInBar()
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class PatronOrdered : ISeatStates
@@ -196,6 +207,11 @@ public class PatronOrdered : ISeatStates
     seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.NOMOREQUEST, seatToKeepTrackOf.patron.ID));
 
     }
+
+    public void PatronTalksAboutWaitingInBar()
+    {
+        seatToKeepTrackOf.patronSays(JsonDialogueLoader.Instance.dioOut(JsonDialogueLoader.responceType.WAITINBAR, seatToKeepTrackOf.patron.ID));
+    }
 }
 
 
@@ -241,6 +257,11 @@ public class PatronOrdered : ISeatStates
     }
 
     public void NoMoreQuestsAvailable()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void PatronTalksAboutWaitingInBar()
     {
         throw new NotImplementedException();
     }

@@ -21,6 +21,15 @@ public class FadingText : MonoBehaviour
     [SerializeField]
     Image conversationMarker;
 
+    [SerializeField]
+    Button ConfirmPatronQuestingButton;
+
+    [SerializeField]
+    Button RejectPatronQuestingButton;
+
+    [SerializeField]
+    Text questQustionText;
+
     private bool isShouldFade;
     private bool isTextAnimating;
     public bool IsTextAnimating { get { return isTextAnimating; } }
@@ -55,6 +64,12 @@ public class FadingText : MonoBehaviour
         fadeCountdown = howLongIsThisFade;
         isShouldFade = false;
         hypertextClose = string.Empty;
+    }
+
+    //HERE
+    public void LableDioHeader(string headerToChangeTo)
+    {
+        questQustionText.text = headerToChangeTo;
     }
 
     public void cutOff(float speedOfSeatFade)
@@ -154,6 +169,24 @@ public class FadingText : MonoBehaviour
     public void makeButtonUnCkickable()
     {
         AdvanceTextButton.enabled = false;
+    }
+
+
+    public void ActivateQuestingOptions(bool yesNo)
+    {
+        if (yesNo == true)
+        {
+            makeButtonUnCkickable();
+        }
+        else
+        {
+            makeButtonClickable();
+            
+        }
+
+        questQustionText.gameObject.SetActive(yesNo);
+        ConfirmPatronQuestingButton.gameObject.SetActive(yesNo);
+        RejectPatronQuestingButton.gameObject.SetActive(yesNo);
     }
 
 }

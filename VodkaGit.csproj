@@ -125,7 +125,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\CommandPatternSetUp\UndoCommand.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\AcceptAdventure.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\AddIngredentFromInvintory.cs" />
-    <Compile Include="Assets\Scripts\Managers\Input\Commands\BackOutOfAdventureMap.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\BackOutOfDeployChoice.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\ChooseQuestFromMenu.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseAdventureMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\CloseEndOfDaySummary.cs" />
@@ -136,6 +136,7 @@
     <Compile Include="Assets\Scripts\Managers\Input\Commands\InteractWithBookOfPatrons.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\InteractWithEndOfDayMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\JumpToSeat.cs" />
+    <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenAdventureMap.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenAndClosePatronInfoSheet.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenBar.cs" />
     <Compile Include="Assets\Scripts\Managers\Input\Commands\OpenEndOfDayMap.cs" />
