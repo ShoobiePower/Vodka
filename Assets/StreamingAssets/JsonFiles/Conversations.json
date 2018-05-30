@@ -12,7 +12,7 @@
         ],
         [
           "Ehehehe, little young I'd say, but I suppose we'll see in time.",
-          "NONE"
+          "Cheerful"
         ],
         [
 
@@ -21,11 +21,11 @@
         ],
         [
           "But don't get too starstruck dearie- so long as you keep my lips wet, you and I will be square!",
-          "Cheerful"
+          "NONE"
         ],
         [
           "By the way... I don't see your bartending certification hung up anywhere. That might prove to be an issue.",
-          "NONE"
+          "special"
         ],
         [
           "Don't get me wrong- I'll still be ordering something. Just figured you might want to rectify that quickly, ehehehe~",
@@ -126,7 +126,7 @@
       "Stanzas": [
         [
           "Hmm? You want me to go on a quest? Again? Let me take a look.",
-          "NONE"
+          "inquisitive"
         ],
         [
           ".......",
@@ -162,7 +162,7 @@
         ],
         [
           "Hehe, the little things you learn while brewing.",
-          "NONE"
+          "Cheerful"
         ]
       ],
       "PatronReward": [],
@@ -287,7 +287,7 @@
         ],
         [
           "You and me? We both enjoy being up to no good! Ehehehe~",
-          "NONE"
+          "Cheerful"
         ]
       ],
       "PatronReward": [],
@@ -305,7 +305,7 @@
       "Stanzas": [
         [
           "Squirt, what did you do last night?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "Strange people knocked on my door asking for you. They wanted to have a, ehehe, a 'nice little chat.'",
@@ -325,7 +325,7 @@
         ],
         [
           "I told them they pried me out of my bed, and if they didn't leave soon, they'd never live past the current age.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "You should've been there to see them scurry off. Ehehehe~",
@@ -351,7 +351,7 @@
       "Stanzas": [
         [
           "Guards are in quite the hustle this morning. You wouldn't have had anything to do with that, would you, dearie?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "I should certainly hope not- it's not wise to make a foe out of the <color=#64B5F6>Corporeal</color>, ehehehe!",
@@ -556,11 +556,11 @@
         ],
         [
           "People want answers, and they want 'em now. And it ain't like the <color=#64B5F6>Corporeal</color> are being exactly transparent.",
-          "NONE"
+          "special"
         ],
         [
           "But if ya ask me Barkeep, I don't think anyone knows what's goin' on, and we oughta just help each other through all this.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "I'm not the religious type or anything, but the <color=#64B5F6>Corporeal</color> are a wise bunch- about as wise as the <color=#01B117>College</color> is smart.",
@@ -650,7 +650,7 @@
         ],
         [
           "Money's running shorter each day, and I'm not sure how much longer I can go.",
-          "NONE"
+          "special"
         ],
         [
           "You'll have to put this one on my tab.",
@@ -676,7 +676,7 @@
         ],
         [
           "I guess just 'thanks for offering me a job!'",
-          "NONE"
+          "Cheerful"
         ],
         [
           "I don't know how much of a help I'll be, but I'll do the best I can!",
@@ -684,7 +684,7 @@
         ],
         [
           "Gimme a task, anything at all, and I'll be on my way!",
-          "NONE"
+          "inquisitive"
         ]
       ],
       "PatronReward": [],
@@ -714,7 +714,7 @@
         ],
         [
           "But I'll tell you what! When I get on my feet, I'll be sure'n return the favor!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Or, if ya got somethin' for me now, I'll be happy to help!",
@@ -772,7 +772,7 @@
       "Stanzas": [
         [
           "My goodness! Did you hear that?",
-          "NONE"
+          "inquisitive"
         ],
         [
           "'Twas enough to ruin an old man's already poor hearing.",
@@ -813,7 +813,7 @@
         ],
         [
           "Well, fortunately for you, I have, not one, but two hands right here!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "I may not have the strength of my youth, but I've found how to wield words over the years.",
@@ -869,11 +869,11 @@
       "Stanzas": [
         [
           "Why, if it isn't my favorite bartender! Although it's not as if I frequent any other establishment, ha ha!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "My, my, are you well? Your thoughts seem a journey and a half away!",
-          "NONE"
+          "inquisitive"
         ],
         [
           "Pah, the collapse of an old building, magical or not, ought not be cause for alarm.",
@@ -885,7 +885,7 @@
         ],
         [
           "I'm not one for gossip or debate, but I've heard that the <color=#01B117>College</color> and <color=#64B5F6>Corporeal</color> are bickering of late.",
-          "NONE"
+          "special"
         ],
         [
           "It seems the <color=#64B5F6>Corporeal</color> are restricting particular magics from the <color=#01B117>College</color>, who claim it impedes their research.",
@@ -1418,7 +1418,7 @@
       "Stanzas": [
         [
           "...um, excuse me?",
-          "special"
+          "inquisitive"
         ],
         [
           "I'm <color=#D19F7E>Mavis</color>. I represent the <color=#01B117>College of Magical Research and Recovery</color>.",
@@ -1430,7 +1430,7 @@
         ],
         [
           "If we're correct, and we normally are, then the <color=yellow>Spire</color> isn't its own source of magic; it somehow gets its magic from somewhere else.",
-          "Cheerful"
+          "NONE"
         ],
         [
           "The issue is that our readings of the <color=yellow>Spire</color> vary dramatically, so it's hard to gather any good data.",
@@ -1438,7 +1438,7 @@
         ],
         [
           "We could set up an experiment with a device we purchased from the <color=orange>Artificer's Alliance</color>, but, well, we'd need to be near the <color=yellow>Spire</color> for it to work.",
-          "inquisitive"
+          "special"
         ],
         [
           "And, uh, the <color=#64B5F6>Corporeal</color> wouldn't be happy to see us tinkering around there.",
@@ -1480,7 +1480,7 @@
         ],
         [
           "Surprised? You should see the stack of papers they give me each day.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "We analyzed the measurements from the Flux device, and we found that the magic in the <color=yellow>Spire</color>... well, it isn't exactly fading.",
@@ -1504,10 +1504,10 @@
         ],
         [
           "Our only problem is that we still can't get into the <color=yellow>Spire</color> without the city's approval (why is there always paperwork?).",
-          "NONE"
+          "special"
         ],
         [
-          "So, er, if there's anything you can say or do to, uh, persuade the leaders- to let the <color=#01B117>College</color> have control over the <color=yellow>Spire</color>- that would... help... a lot.",
+          "So, er, if there's anything you can say or do to, uh, persuade the leaders- to let the <color=#01B117>College</color> have control over the <color=yellow>Spire</color>- that would help... a lot.",
           "NONE"
         ],
         [
@@ -1538,7 +1538,7 @@
         ],
         [
           "Thank you for gathering what information you could from the <color=#64B5F6>Corporeal</color>, but, uh, it wasn't... well, it wasn't much to go off of.",
-          "NONE"
+          "special"
         ],
         [
           "I just saw one of the <color=#64B5F6>Corporeal</color> members walk out of here. Did he- did he say something to you? Something we don't know?",
@@ -1584,7 +1584,7 @@
         ],
         [
           "It's not that we think you're trying to prevent our research or anything!",
-          "NONE"
+          "inquisitive"
         ],
         [
           "But, uh... we're afraid that somebody as influential as you might, er, unintentionally stall our progress.",
@@ -1865,15 +1865,15 @@
         ],
         [
           "Um, I have good news and bad news.",
-          "NONE"
+          "special"
         ],
         [
           "Good news! Thanks to you, we have complete access to the <color=yellow>Spire</color>!",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Bad news...",
-          "NONE"
+          "inquisitive"
         ],
         [
           "I was able to collect enough data to find a trend in the fluctuations.",
@@ -2057,7 +2057,7 @@
         ],
         [
           "As you may know, the <color=yellow>Spire</color> is the source of magic for Kastonia.",
-          "Cheerful"
+          "NONE"
         ],
         [
           "Our order has warned against using it for millennia, since magic is reserved for the <color=yellow>Pantheon</color> alone.",
@@ -2069,7 +2069,7 @@
         ],
         [
           "Now that the <color=yellow>Spire</color> is unstable, the use of magic grows more threatening.",
-          "NONE"
+          "special"
         ],
         [
           "Please help us prevent the further use of magic, to preserve the <color=yellow>Spire</color>. We wish to trust you in this matter.",
@@ -2178,7 +2178,7 @@
       "Stanzas": [
         [
           "Greetings to you, Barkeep. We are fortunate you stand by us.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "We were concerned your influence might disturb the path laid before our order, but it is clear we can trust you.",
@@ -2190,7 +2190,7 @@
         ],
         [
           "But, we have none.",
-          "NONE"
+          "special"
         ],
         [
           "The <color=yellow>Spire</color>'s collapse is a mystery, one foretold in the ancient texts I gave you, but no reason or cure was ever prescribed.",
@@ -2231,7 +2231,7 @@
       "Stanzas": [
         [
           "Barkeep.",
-          "NONE"
+          "special"
         ],
         [
           "It seems the <color=#01B117>College</color> has made a recent discovery.",
@@ -2247,7 +2247,7 @@
         ],
         [
           "But, last night, there was another magical imbalance, and I suspect it is a result of your actions.",
-          "NONE"
+          "special"
         ],
         [
           "You must see that, as magic becomes more unstable, the use of a simple, magical flame might engulf the city. Or, a spell to restore a person to health may have no effect at all.",
@@ -2263,7 +2263,7 @@
         ],
         [
           "There are other ways to solve this crisis. You must have faith that, together, we can solve this using the path laid before us.",
-          "NONE"
+          "inquisitive"
         ]
       ],
       "PatronReward": [],
@@ -2284,7 +2284,7 @@
         ],
         [
           "I am pleased that we can work together once more.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Your friend came to us, seeking information about our ways. I have come to tell you more.",
@@ -2341,7 +2341,7 @@
         ],
         [
           "Your friend did well last night. It appears the <color=#B70000>Eyes</color> know things we do not.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "They seem to be harnessing magic from the <color=yellow>Spire</color>, no doubt to resurrect their elder god, the <color=red>Titan</color>.",
@@ -2369,7 +2369,7 @@
         ],
         [
           "Those who use magic must be wary. The <color=#01B117>College</color> understands that certain magics must be kept from the common person, but when it comes to their own boundaries...",
-          "NONE"
+          "special"
         ],
         [
           "...they have none.",
@@ -2394,7 +2394,7 @@
         ],
         [
           "Our disovery last night was... eye-opening... to say the least.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "The relic didn't strengthen or weaken within the <color=yellow>Spire</color>",
@@ -2584,7 +2584,7 @@
         ],
         [
           "We cannot thank you enough for your influence on the city council.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "Now that we are no longer strained between politics and guarding the <color=yellow>Spire</color>, we can focus on what truly matters: solving the <color=yellow>Spire</color>'s collapse.",
@@ -2592,7 +2592,7 @@
         ],
         [
           "Know, Barkeep, that our story is only beginning.",
-          "NONE"
+          "inquisitive"
         ],
         [
           "There is much to learn of the <color=yellow>Spire</color>'s history, and we must learn it quickly- within eight days time if I overheard your conversation accurately.",
@@ -2630,7 +2630,7 @@
         ],
         [
           "However, the <color=#01B117>College</color> recently gained access to the <color=yellow>Spire</color> because of your influence.",
-          "NONE"
+          "special"
         ],
         [
           "If they are not careful, they may hasten the <color=yellow>Spire</color>'s ruin.",
@@ -2642,7 +2642,7 @@
         ],
         [
           "But I believe it is time for me to act of my own accord- to take action where I see none.",
-          "NONE"
+          "Cheerful"
         ],
         [
           "I shall journey beyond <color=yellow>Seven Stones</color> to seek aid from the <color=yellow>Pantheon</color> itself.",
@@ -2650,7 +2650,7 @@
         ],
         [
           "Be sure that the <color=yellow>Spire</color> remains intact while I am away.",
-          "NONE"
+          "special"
         ]
       ],
       "PatronReward": [],
